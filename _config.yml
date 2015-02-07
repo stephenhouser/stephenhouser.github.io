@@ -10,7 +10,19 @@ xurl: "http://blog.stephenhouser.com" # the base hostname & protocol for your si
 timezone: America/New_York
 
 twitter_username: stephenhouser
-github_username:  stephenhouser
+github_username: stephenhouser
+linkedin_username: stephenahouser
+facebook_username: stephenhouser
+aboutme_username: stephenhouser
+googleplus_username: stephenhouser
+stackoverflow_username: stephenhouser
+flickr_username: stephenhouser
+youtube_username: stephenhouser
+qrz_username: n1sh
+arrl_username: stephen-houser
+pintrest_username: stephen_houser
+# tumblr_username:
+# instagram_username:
 
 # Build settings
 xmarkdown: kramdown
