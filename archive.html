@@ -1,0 +1,16 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+<div class="home">
+	<ul>
+	  {% for post in site.posts %}	  
+		<li>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			[{{ post.tags | array_to_sentence_string}}]
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		</li>
+	  {% endfor %}
+	</ul>
+</div>

@@ -1,0 +1,19 @@
+# Site settings
+title: Stephen Houser
+email: stephenhouser@gmail.com	
+description: > # this means to ignore newlines until "baseurl:"
+  A collection of thoughts, ideas, and work making things in
+  Software Development, Woodworking, Amatuer Radio, Electronics,
+  and more.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.stephenhouser.com" # the base hostname & protocol for your site
+timezone: America/New_York
+
+twitter_username: stephenhouser
+github_username:  stephenhouser
+
+# Build settings
+markdown: kramdown
+
+excerpt_separator: <!-- more -->
+paginate: 7
