@@ -1,2 +1,3 @@
-# stephenhouser.github.io
-Stephen Houser
+# Stephen Houser
+
+GitHub Personal Pages website for Stephen Houser.
