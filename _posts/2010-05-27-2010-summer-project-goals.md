@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  2010 Summer Project Goals
 date:   2010-05-27 08:43
-tags: [development] 
+tags: [development]
 ---
 Summer is here, in University terms, and I've been thinking about what projects to take on. I've always kept notebooks with doodles, designs, ideas, etc.. But only in the past year have I kept a separate "project notebook" separate from shopping lists and to-do items. This has been a love-hate idea in itself. Looking through the project notebook makes me think, "o.k., which one are you going to do?"
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Using Git with Subversion for a New Project
 date:   2010-06-18 08:51
 tags: development

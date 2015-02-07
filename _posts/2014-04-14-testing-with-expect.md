@@ -55,30 +55,36 @@ receive a HELLO message, and then proceed to login using the LOGIN
 request. Here's an example of that interaction using [Telnet][3] from
 a Linux box:
 
-	 $ telnet localhost 2222
-	 200 Welcome to the Game Matching Server v1.0
-	 LOGIN houser@maine.edu:0FF93785BC5AA9001
-	 200 houser:0.6:6:4
+````sh
+$ telnet localhost 2222
+200 Welcome to the Game Matching Server v1.0
+LOGIN houser@maine.edu:0FF93785BC5AA9001
+200 houser:0.6:6:4
+````
 
 The first line, after [Telnet][3] is sent from the server, the second
 from the client (with the username and password), the third from the
 server in response to a valid login. If the login failed with a bad
 username or password, the server would send something like:
 
-	 400 Invalid username or password
+````sh
+400 Invalid username or password
+````
 
 Putting this in [Expect][1] terms, we need to spawn [Netcat][2],
 wait for the HELLO message, send our credentials, and check the
 response.
 
-	#!/usr/bin/env expect
-	spawn nc localhost 2222
-	expect -re {200 [[:print:]]+\r\n}
-	send LOGIN houser@maine.edu:0FF93785BC5AA9001
-	expect {
-	       -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
-	       -re {40\d [[:print:]]+\r\n}
-	}
+````sh
+#!/usr/bin/env expect
+spawn nc localhost 2222
+expect -re {200 [[:print:]]+\r\n}
+send LOGIN houser@maine.edu:0FF93785BC5AA9001
+expect {
+	   -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
+	   -re {40\d [[:print:]]+\r\n}
+}
+````
 
 The first line is straigt forward, spawn [Netcat][2] to connect to
 the localhost on port 2222, this is where my server is listening. After
@@ -99,29 +105,31 @@ a successful login or a failed login as part of my test.
 Here is a more complete example pulled directly from my LOGIN testing
 script:
 
-	spawn nc localhost 2222
-	expect -re {200 [[:print:]]+\r\n}
+````sh
+spawn nc localhost 2222
+expect -re {200 [[:print:]]+\r\n}
 
-	    # Invalid before login
-      	send "GETP houser\n"
-      	expect -re {40\d [[:print:]]+\r\n}
+	# Invalid before login
+	send "GETP houser\n"
+	expect -re {40\d [[:print:]]+\r\n}
 
-	    # Login
-      	send "LOGIN houser:pass\n"
-      	expect -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
+	# Login
+	send "LOGIN houser:pass\n"
+	expect -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
 
-	    # Invalid after login
-      	send "LOGIN houser:pass\n"
-      	expect -re {40\d [[:print:]]+\r\n}
+	# Invalid after login
+	send "LOGIN houser:pass\n"
+	expect -re {40\d [[:print:]]+\r\n}
 
-	    send "GETP\n"
-      	expect -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
+	send "GETP\n"
+	expect -re {200 [\w\d]+:[\.\d]+:\d+:\d+\r\n}
 
-	    # Invalid after login
-      	send "Silly rabbit, Trix are for kids!\n"
-      	expect -re {40\d [[:print:]]+\r\n}
+	# Invalid after login
+	send "Silly rabbit, Trix are for kids!\n"
+	expect -re {40\d [[:print:]]+\r\n}
 
-	close
+close
+````
 
 These are only scratching the surface of [Expect][1] and [Netcat][2].
 Together they have provided me with a stable and feature rich method

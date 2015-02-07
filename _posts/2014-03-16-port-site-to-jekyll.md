@@ -4,6 +4,8 @@ tags: [site]
 date:   2014-03-16 21:25:38
 layout: post
 ---
+![Jekyll](http://jekyllrb.com/img/logo-2x.png)
+
 This weekend has gone, well..., a little off-track. I started out working on the
 [Good Turn Web][1] to update some of the [JSON][4] and [Google App Engine][3] code to be a little
 cleaner. Actually, I was resolving tickets I made for myself in [JIRA][2].

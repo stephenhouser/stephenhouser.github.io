@@ -4,12 +4,10 @@ tags: [book]
 date: 2013-02-15 00:00
 layout: post
 ---
+![The Art of Readable Code](http://ecx.images-amazon.com/images/I/51vnhzxNDaL.jpg)
+
 Here are a number of the "Key Ideas" I pulled from my reading of [The Art of
 Readable Code](http://www.amazon.com/The-Readable-Code-Theory-Practice/dp/0596802293) by [Dustin Boswell](http://dustwell.com) and Trevor Foucher.<div style="float:right; border: 1px solid grey; text-align: center;">
-
-<a href="http://www.amazon.com/The-Readable-Code-Theory-Practice/dp/0596802293"><img  width=150 src="http://dustwell.com/images/ArtOfReadableCode.jpg" alt="The Art of Reaable Code book cover"/>
-The Art of Reaable Code</a>
-</div>
 
   * Code should be easy to understand.
   * Code should be written to minimize the time it would take for someone else to read it.

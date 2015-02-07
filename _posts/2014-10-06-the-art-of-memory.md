@@ -7,6 +7,8 @@ layout: post
 Book notes from [ The Art Of Memory  ](https://kindle.amazon.com/work/the-art-memory-frances-
 yates-ebook/B000B1RAXS/B005TKD6UC) by Frances A Yates
 
+![The Art of Memory](http://ecx.images-amazon.com/images/I/51lq3XLHQzL.jpg)
+
 Monday, October 6, 2014 8:55 PM
 
 You have  20  highlighted passages

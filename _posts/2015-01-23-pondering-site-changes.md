@@ -10,8 +10,8 @@ result is, too much time goes into the site and not enough into the
 content. There must be an easier way. A way to encourage myself to write
 more content and avoid my temptation to tinker with site mechanics.
 
-There are also numerous places where I maintain some form of content. 
-Some are more regular than others. While they all have their primary goals, 
+There are also numerous places where I maintain some form of content.
+Some are more regular than others. While they all have their primary goals,
 I get them mixed
 up once in a while. And I also purposefully mix them up sometimes, while living
 on the edge of the life-work balance. I need to sort that out and make it require
@@ -41,7 +41,7 @@ Here is my initial category list for articles:
 
 Now I need to commit to some next steps to actually get this done. Here, of course,
 is where I usually fall down. For personal projects I tend not to be very good at
-following a schedule. It's my project, why should I? So here is a not-schedule but some 
+following a schedule. It's my project, why should I? So here is a not-schedule but some
 general ideas on next steps instead.
 
 * Commit to a template and stick to it.
@@ -53,4 +53,5 @@ general ideas on next steps instead.
 
 <!-- more -->
 ## Updates
-2015-02-07: Updated to include <code>raido</code> category and clean up the text.
+
+**February 7, 2015**: Updated to include <code>raido</code> category and clean up the text.

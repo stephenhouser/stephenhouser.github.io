@@ -13,13 +13,13 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-//$brand-color:      #2a7ae2;
 $brand-color:      #228B22;
 
-//$grey-color:       #828282;
 $grey-color:      #228B22;
 $grey-color-light: lighten($grey-color, 55%);
 $grey-color-dark:  darken($grey-color, 10%);
+
+$code-background-color: lighten($grey-color, 65%);;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -36,8 +36,6 @@ $on-laptop:        800px;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

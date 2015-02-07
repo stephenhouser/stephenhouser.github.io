@@ -72,7 +72,10 @@ application is worth making by playing it out a little more than you can
 with paper only. It will save me time mocking up in Xcode, only to determine
 the flow is wrong. And, it will allow me to doodle more.
 
-**Update April 7, 2014:** It's actually a bit tricky to get [POP][1] to
+<!-- more -->
+## Updates
+
+**April 7, 2014**: It's actually a bit tricky to get [POP][1] to
 take good pictures of the paper prototypes. The color and angle are
 often slightly off on the different screens. This makes each screen look
 different. Also having a tab bar on each screen means you have to redraw
@@ -85,5 +88,5 @@ no-go problems, but quirky enough to make it not as fun.
 [2]: http://projectpixelpress.com
 [3]: https://www.kickstarter.com/projects/robinrath/pixel-press-draw-your-own-video-game
 [4]: http://projectpixelpress.com/preorder/
-[5]: {{ site.baseurl }}/images/angry-drawings-sketch-small.jpg "Angry Drawings Sketch"
-[6]: {{ site.baseurl }}/images/angry-drawings-sketch.jpg "Angry Drawings Sketch"
+[5]: {{ site.baseurl }}/assets/angry-drawings-sketch-small.jpg "Angry Drawings Sketch"
+[6]: {{ site.baseurl }}/assets/angry-drawings-sketch.jpg "Angry Drawings Sketch"

@@ -2,8 +2,10 @@
 title: Another Day With Jekyll and My Website
 tags: [site]
 date:   2014-03-20 14:33:00
-layout: post 
---- 
+layout: post
+---
+![Jekyll](http://jekyllrb.com/img/logo-2x.png)
+
 So here I am, another few days into [Jekyll][1] and a statically
 generated website. It was a rabbit hole and the bottom is/was in
 sight. Oddly, it was not as deep as some other ones I've been

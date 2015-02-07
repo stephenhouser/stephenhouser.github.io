@@ -4,6 +4,8 @@ tags: [site]
 date:   2014-03-12 21:25:38
 layout: post
 ---
+![Jekyll](http://jekyllrb.com/img/logo-2x.png)
+
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
