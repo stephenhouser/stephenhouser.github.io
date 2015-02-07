@@ -72,7 +72,6 @@ application is worth making by playing it out a little more than you can
 with paper only. It will save me time mocking up in Xcode, only to determine
 the flow is wrong. And, it will allow me to doodle more.
 
-<!-- more -->
 ## Updates
 
 **April 7, 2014**: It's actually a bit tricky to get [POP][1] to

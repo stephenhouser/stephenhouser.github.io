@@ -51,7 +51,6 @@ general ideas on next steps instead.
 ** Amazon S3
 ** Google Sites
 
-<!-- more -->
 ## Updates
 
 **February 7, 2015**: Updated to include <code>raido</code> category and clean up the text.

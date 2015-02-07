@@ -3,3 +3,32 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
+
+<style>
+.grid-sizer {
+	width: 31%;
+}
+
+.item {
+	border: 2px solid green;
+	border-radius: 5px;
+ 	box-shadow: 5px 5px 5px #888888;
+ 	width: 29%;
+ 	margin-bottom: 10px;
+ 	padding: 5px;
+}
+.item.w2 { width: 50%; }
+</style>
+
+<div id="container" class="js-masonry"
+  data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
+	<div class="grid-sizer"></div>
+	{% for post in site.posts %}
+		{% if post.layout contains 'post' %}
+			<div class="item"><h1><a href="{{post.url}}">{{ post.title }}</a></h1>
+			{{ post.excerpt | markdownify }}
+		{% endif %}
+		</div>
+	{% endfor %}
+</div>

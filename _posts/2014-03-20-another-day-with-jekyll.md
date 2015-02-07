@@ -12,7 +12,6 @@ sight. Oddly, it was not as deep as some other ones I've been
 down. Here's my current state of affairs with my [Jekyll][1]
 relationship.
 
-
 The whole of [my site]({{site.baseurl}}/) is rather basic. The overall
 [architecture]({{site.baseurl}}/site-architecture-notes) is laid out
 and includes a few basic categories, though not exactly how Jekyll

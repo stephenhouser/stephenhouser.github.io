@@ -9,11 +9,7 @@ yates-ebook/B000B1RAXS/B005TKD6UC) by Frances A Yates
 
 ![The Art of Memory](http://ecx.images-amazon.com/images/I/51lq3XLHQzL.jpg)
 
-Monday, October 6, 2014 8:55 PM
-
 You have  20  highlighted passages
-
-You have  0  notes
 
 Last annotated on October 1, 2014
 
