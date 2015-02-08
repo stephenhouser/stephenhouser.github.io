@@ -6,7 +6,6 @@ description: In this study, we consider the relationship of client IO requests s
 tags: [publications, networks]
 created: 1996-10-01 00:00:00
 date: 1996-10-01 00:00:00
-layout: post
 ---
 In this study, we consider the relationship of client IO requests submitted to a file server and the server's disk subsystem IO traffic. We collected traces of client-server IOs and, during each trace period, we also traced server storage subsystem workloads. We analyze and compare trace pairs collected in each trace period. We evaluate file server performance and investigate the relationship between client file requests and server disk workloads.
 

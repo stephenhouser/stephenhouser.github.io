@@ -6,7 +6,6 @@ description: This paper looks at the workloads of network file server disk IO su
 tags: [publications, networks]
 created: 1995-10-01 00:00:00
 date: 1995-10-01 00:00:00
-layout: post
 ---
 Workloads of network file server disk IO subsystems have very different characteristics than observed in time sharing or local IO systems described in the literature. In this study we provide a detailed analysis of disk workload traces collected from network file servers. Our results characterize file server disk traffic and give insights into file server disk access patterns.  Measurements and statistics presented in this paper will aid designers and managers in developing and tuning disk subsystems for network file servers.  Moreover, our results can be used by analysts to parameterize synthetic workloads for server subsystem studies.
 
