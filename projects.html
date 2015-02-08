@@ -8,7 +8,7 @@ permalink: /projects/
     {% for page in site.posts %}
             {% if page.archive != true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li><a href="{{ site.baseurl }}{{ page.url }}">
+                <li><a href="{{ page.url | prepend:site.baseurl }}">
 {% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/assets/{{ page.thumbnail }}{% endif %}{% endcapture %}
                     <img style="float:right; max-height: 100px;" src="{{ thumbnail }}"/>
                     <h1>{{page.title}}</h1>
@@ -26,7 +26,7 @@ permalink: /projects/
     {% for page in site.pages | sort_by: "date" %}
             {% if page.archive == true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li>{{ page_updated | date: '%b %Y' }} • <a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></li>
+                <li>{{ page_updated | date: '%b %Y' }} • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
             {% endif %}
     {% endfor %}
     </ul>

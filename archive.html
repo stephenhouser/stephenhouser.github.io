@@ -27,7 +27,7 @@ permalink: /archive/
 			{% endif %}
 		{% endunless %}
 		<li><time>{{ post.date | date:"%d %b" }}</time>
-			• <a href="{{ post.url }}">{{ post.title }}</a>
+			• <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
 			<span class="post-meta" style="display: none;">[{{ post.tags | array_to_sentence_string }}]</span>
 		</li>
 	{% endfor %}
