@@ -18,6 +18,9 @@ redcarpet:
 #excerpt_separator: <!-- more -->
 paginate: 7
 
+gems:
+  - jekyll-sitemap
+
 defaults:
   -
     # Make default layout for posts be post
