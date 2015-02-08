@@ -50,4 +50,4 @@ With that all said, go and [give it a try][4].
   [4]: http://goo.gl/UIndL8
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap]: {{site.baseurl}}/assets/2014-05-16-womens-history-trail-prototype.png
+  [screencap]: {{site.baseurl}}/assets/pwht-prototype-2014-05-16

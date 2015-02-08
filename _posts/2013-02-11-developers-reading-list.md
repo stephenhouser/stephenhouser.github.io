@@ -13,7 +13,7 @@ Often people, students, and colleagues ask "_where did you find that information
 
 These are the books I would suggest you get a copy of and read cover to cover. They range from hard-core code to interfacing with the end user and include some physical (meaning hardware) titles. Later on there is a selection of other helpful resources, but these are the ones you cannot do without.
 
-1. <img alt="The Art of Readable Code" src="{{site.baseurl}}/assets/ArtOfReadableCode.jpg" style="width: 111px; height: 140px; float:right;"/>_[The Art of Readable Code][2]_ by Dustin Boswell and Trevor Foucher.
+1. <img alt="The Art of Readable Code" src="http://ecx.images-amazon.com/images/I/51vnhzxNDaL.jpg" style="width: 111px; height: 140px; float:right;"/>_[The Art of Readable Code][2]_ by Dustin Boswell and Trevor Foucher.
 
     This replaces my previous number one pick. It is up-to-date with recent languages and techniques. Though I don't agree with all of them (specifically class member variable naming with a trailing underscore) and the sample code often violates some of their guidelines, the advice is solid. In fact, the key ideas should be written on a 3x5 card, laminated, and kept in every developers pocket! If you forget to do that, at least remember, "Code should be easy to understand."
 

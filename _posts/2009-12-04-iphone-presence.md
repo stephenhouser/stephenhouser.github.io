@@ -3,18 +3,17 @@ title: iPhone Presence/Twitter App
 tags: [mobile, development, course, cos497]
 keywords: iphone twitter cos497 cs193p presence application
 description: Implementation of Twitter application for iPhone as part of COS497 course
-icon: iphone-presence-64.png
+thumbnail: iphone-presence-icon64.png
 date: 2009-12-04 00:00:00
 layout: project
-archive: true
 ---
 An Implementation of a <a href="http://twitter.com">Twitter</a> application built while offering an independent study course over the summer of 2009. The application is based on specifications from <a href="http://stanford.edu">Stanford's</a> <a href="http://www.stanford.edu/class/cs193p/">CS 193P</a> course. The <a href="http://usm.maine.edu">USM</a> version of the course is in my <a href="../courses.html">courses</a> section and is <a href="../cos497/index.html">COS 497 - iPhone Application Programming</a>.
 
 ## Screenshots
 
-<img src="friends-medium.png" alt="image of friends list" />
-<img src="status-medium.png" alt="image of status view" />
-<img src="contact-medium.png" alt="image of contact add view" />
+![image of friends list]({{site.baseurl}}/assets/iphone-presence-friends-medium.png)
+![image of status view]({{site.baseurl}}/assets/iphone-presence-status-medium.png)
+![image of contact add view]({{site.baseurl}}/assets/iphone-presence-contact-medium.png)
 
 ## The Code
 
