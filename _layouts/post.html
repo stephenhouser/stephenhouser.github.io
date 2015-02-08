@@ -13,8 +13,8 @@ layout: default
 		{{ content }}
 	</article>
 	<footer class="post-footer">
-	    <h2>Related Articles</h2>
         {% if page.project %}
+    	    <h2>Related Articles</h2>
             <ul class="archive-list">
                 {%for post in site.posts %}
                     {% if post.project == page.project and post.id != page.id %}

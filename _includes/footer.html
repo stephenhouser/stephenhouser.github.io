@@ -11,20 +11,17 @@
 
 			<div class="footer-col  footer-col-2">
 				<ul class="social-media-list">
-					{% for account in site.data.social %}
-						{% if account.type == "social" %}
-							<li>
-							<a href="{{ account.url }}">
-							<span class="icon">
-							<img height="16" src="{{site.baseurl}}/{{ account.svg }}" alt="{{ account.name }}" title="{{ account.name }}"/>
-							</span>
-							<span class="username">{{ account.name }}</span>
-							</li>
-						{% endif %}
-					{% endfor %}
+    				{% for account in site.data.social %}{% if account.type == "social" %}<li>
+                        <a href="{{ account.url }}">
+                            <span class="icon">
+                                <img height="16" src="{{site.baseurl}}/{{ account.svg }}" alt="{{ account.name }}" title="{{ account.name }}"/>
+                            </span>
+                            <span class="username">{{ account.name }}</span>
+                        </a>
+                    </li>{% endif %}{% endfor %}
 				</ul>
 			</div>
-
+			
 			<div class="footer-col  footer-col-3">
 				<p class="text">{{ site.description }}</p>
 			</div>
