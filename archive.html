@@ -9,7 +9,7 @@ permalink: /archive/
         <h2>Tags</h2>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | plus:10 %}
-            <a href="#" class="tag" style="font-size:{{fontsize}}pt;">{{t | downcase | replace:" ","-" }}</a>
+            <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}pt;">{{t | downcase | replace:" ","-" }}</a>
         {% endfor %}
     </div>    
 
@@ -28,8 +28,35 @@ permalink: /archive/
 		{% endunless %}
 		<li><time>{{ post.date | date:"%d %b" }}</time>
 			• <a href="{{ post.url }}">{{ post.title }}</a>
-			<!-- in <span class="post-meta">{{ post.tags | array_to_sentence_string }}</span> -->
+			<span class="post-meta" style="display: none;">[{{ post.tags | array_to_sentence_string }}]</span>
 		</li>
 	{% endfor %}
 	</ul>
 </div>
+
+<script>
+/*
+Filters the article list based on tag passed as query string to page.
+TODO: Should also highlight the tag in the tag cloud. And have a way to clear selection.
+*/
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var tag = getParameterByName('tag');
+if (tag) {
+    var elements = document.getElementsByTagName('li');
+    for (var i=0; i<elements.length; i++) {
+        var span = elements[i].getElementsByTagName('span')[0].childNodes[0];
+        var postTags = span.nodeValue;
+        if (postTags.indexOf(tag) > -1) {
+            elements[i].style.display = 'list-item';
+        } else {
+            elements[i].style.display = 'none';
+        }
+    }
+}
+</script>
