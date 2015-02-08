@@ -15,7 +15,7 @@ Mr. Houser's professional and research activities fall into three broad categori
 
 ## Places to find Stephen
 
-<div id="connections" style="width: 40%; float:right;">
+<div id="connections-right">
     <a href="http://usm.maine.edu"><img id="hero" src="{{site.baseurl}}/logos/usm-horizontal.gif" alt="USM Logo" /></a><br/>
     {% for account in site.data.social %}
         {% if account.icon %}
@@ -25,7 +25,7 @@ Mr. Houser's professional and research activities fall into three broad categori
     {% endfor %}
 </div>
 
-<div id="connections" style="width: 40%">
+<div id="connections-left">
     <ul>
     {% for account in site.data.social %}
         {% if account.type != 'email' %}

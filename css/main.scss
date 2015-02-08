@@ -44,6 +44,29 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+#connections-right {
+    width: 40%; 
+    float:right;
+    @include media-query($on-palm) {
+            width: 100%;
+            float: none;
+    }
+}
+
+.project-list li img {
+    float:right; 
+    max-height: 100px;
+}
+
+// Float tags to the right on the archive page
+// Don't display them on palm devices
+.archive-tags {
+    width: 33%;
+    float: right;
+    @include media-query($on-palm) {
+            display: none;
+    }
+}
 
 .archive-list li {
 	list-style-type: none;

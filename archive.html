@@ -5,7 +5,7 @@ permalink: /archive/
 ---
 <div class="home">
     <!-- Tags -->
-    <div class="tags" style="width: 33%; float: right;">
+    <div class="archive-tags">
         <h2>Tags</h2>{% assign post_count = site.posts | size | times: 100 %}
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
