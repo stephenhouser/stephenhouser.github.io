@@ -1,6 +1,6 @@
 ---
 title: iPhone Presence/Twitter App
-tags: [mobile, development, course, cos497]
+tags: [mobile, development, courses, cos497]
 keywords: iphone twitter cos497 cs193p presence application
 description: Implementation of Twitter application for iPhone as part of COS497 course
 thumbnail: iphone-presence-icon64.png

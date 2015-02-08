@@ -9,7 +9,7 @@ permalink: /archive/
         <h2>Tags</h2>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | plus:10 %}
-            <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}pt;">{{t | downcase | replace:" ","-" }}</a>
+            <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}pt;">{{t | downcase | replace:" ","-" }}({{posts|size}})</a>
         {% endfor %}
     </div>    
 
