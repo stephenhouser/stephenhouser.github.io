@@ -1,0 +1,17 @@
+fieldset.input label {
+    display: inline;
+}
+
+fieldset.input input {
+    display: inline;
+}
+
+fieldset.result label {
+    text-align: right;
+    float: left;
+    width: 7em;
+    margin-right: 1em;
+}
+fieldset.result input {
+    display: block;
+}

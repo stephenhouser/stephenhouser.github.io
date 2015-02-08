@@ -1,8 +1,7 @@
 ---
 title: Testing With Expect (and Netcat)
-tags: [courses, cos450, development]
-date:   2014-04-14 10:00:00
-layout: post
+date : 2014-04-14 10:00:00
+tags : [courses, cos450, development]
 ---
 Each time I teach Computer Networks (COS 460/540) the last two
 programming projects focus on development of a TCP/IP protocol. In

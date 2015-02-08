@@ -1,8 +1,7 @@
 ---
 title: Portland Women's History Trail Prototype
-tags: [development, mobile]
-date:   2014-05-16 21:25:38
-layout: post
+date : 2014-05-16 21:25:38
+tags : [mobile, development]
 ---
 This past week I had a bit of time in-between other work and projects to
 develop a quick [prototype][4] for [Eileen Eagan][1]'s [Portland Women's History Trail][2]

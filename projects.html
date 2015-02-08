@@ -21,14 +21,68 @@ permalink: /projects/
 .item.w2 { width: 50%; }
 </style>
 
+<!--
 <div id="container" class="js-masonry"
   data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
 	<div class="grid-sizer"></div>
-	{% for post in site.posts %}
-		{% if post.layout contains 'post' %}
-			<div class="item"><h1><a href="{{post.url}}">{{ post.title }}</a></h1>
-			{{ post.excerpt | markdownify }}
+	{% for page in site.pages %}
+		{% if page.layout and page.layout == 'project' %}
+			<div class="item"><h1><a href="{{page.url}}">{{page.title}}</a></h1>
+			{{ page.excerpt }}
 		{% endif %}
 		</div>
 	{% endfor %}
+</div>
+-->
+
+<div class="home">
+	<ul class="post-list">
+    {% for page in site.posts %}
+            {% if page.archive != true and page.layout == 'project' %}
+                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+                {% capture page_icon %}{% if page.icon contains 'http' %}{{ page.icon }}{% else %}{{ site.baseurl }}/{{ page.path | split: '/' | first }}/{{ page.icon }}{% endif %}{% endcapture %}
+                <li><a href="{{ site.baseurl }}{{ page.url }}">
+                    <img style="float:right; max-height: 100px;" src="{{ page_icon }}"/>
+                    <h1>{{page.title}}</h1>
+                    </a>
+                    <div class="excerpt">
+                      {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
+                    </div>
+                </li>
+            {% endif %}
+    {% endfor %}
+    </ul>
+    
+    <h2>Project Archive</h2>    
+	<ul class="archive-list">
+    {% for page in site.pages | sort_by: "date" %}
+            {% if page.archive == true and page.layout == 'project' %}
+                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+                <li>{{ page_updated | date: '%b %Y' }} • <a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></li>
+            {% endif %}
+    {% endfor %}
+    </ul>
+
+<!--
+   	<div class="archive-list js-masonry"
+        data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
+        <div class="grid-sizer"></div>
+        {% for page in site.pages | sort_by: "date" %}
+                {% if page.archive == true and page.layout == 'project' %}
+                    {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+                    {% capture page_icon %}{% if page.icon contains 'http' %}{{ page.icon }}{% else %}{{ site.baseurl }}/{{ page.path | split: '/' | first }}/{{ page.icon }}{% endif %}{% endcapture %}
+                    
+                    <div class="item">
+                    <a href="{{ site.baseurl }}{{ page.url }}">
+                        <img style="display: block; max-height: 100px;" src="{{ page_icon }}"/>
+                        <h1>{{page.title}}</h1>
+                    </a>
+                        <div class="excerpt">
+                          {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
+                        </div>
+                    </div>
+                {% endif %}
+        {% endfor %}
+	</div>
+-->
 </div>

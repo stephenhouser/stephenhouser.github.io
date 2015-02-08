@@ -4,7 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="category" content="{{ page.tags }}" />
+    <meta name="author" content="{{ page.author }}" />
+    {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+    <meta name="revised" content="{{ page_updated }}" />
+    {% capture page_created %}{% if page.created != null %}{{ page.created }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+    <meta name="created" content="{{ page_created }}" />
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

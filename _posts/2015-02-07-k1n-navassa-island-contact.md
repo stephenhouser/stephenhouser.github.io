@@ -1,8 +1,7 @@
 ---
 title: K1N Navassa Island Contact
-tags: [radio]
-date: 2015-02-07 10:37
-layout: post
+date : 2015-02-07 10:37
+tags : [radio]
 ---
 I managed to make contact with the "rarest of the rare" remote locations for amateur radio
 operators this morning, [K1N][k1n], on [Navassa Island][wiki]. It's a tiny place between 

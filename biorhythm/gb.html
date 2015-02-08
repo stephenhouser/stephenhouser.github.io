@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["scatterchart"]});
+      function drawChart(equation,xmin,xmax, numPoints, pointSize) {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'x');
+        data.addColumn('number', 'y');
+        data.addRows(numPoints);
+        var step = (xmax-xmin) / (numPoints-1);
+        for(var i = 0; i < numPoints; i++)
+        {
+          var x = xmin + step * i;
+          data.setValue(i,0,x);
+          with(Math) {
+            var y = eval(equation);
+          }
+          data.setValue(i,1,y);
+        }
+        document.getElementById("chart_div").innerHTML = "";
+        var chart = new google.visualization.ScatterChart(
+            document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height: 400, titleX: 'X',
+            titleY: 'Y', legend: 'none', pointSize: pointSize});
+      }
+    </script>
+  </head>
+
+  <body>
+      equation: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input id="txteq" type="text" value="-sin(2*x)" />
+      <br />
+      minimum value(x): &nbsp;<input id="txtmin" type="text" value="-3.14" />
+      <br />
+      maximum value(x): &nbsp;<input id="txtmax" type="text" value="3.14"/>
+      <br />
+      Precision (number of points): &nbsp;<input id="precision" type="text" value="1000"/>
+      <br />
+      Point size: &nbsp; <input id="pointSize" type="text" value="2"/>
+      <br />
+      <input id="Button1" type="button" value="Draw Graph"
+          onclick="javascript:drawChart(
+              document.getElementById('txteq').value,
+              parseFloat(document.getElementById('txtmin').value, 10),
+              parseFloat(document.getElementById('txtmax').value, 10),
+              parseInt(document.getElementById('precision').value, 10),
+              parseInt(document.getElementById('pointSize').value, 10))" />
+
+    <div id="chart_div"></div>
+  </body>
+</html>

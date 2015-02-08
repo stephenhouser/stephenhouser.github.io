@@ -1,8 +1,7 @@
 ---
 title: Pondering Site Changes
-date: 2015-01-23 00:00
-tags:  [site]
-layout: post
+date : 2015-01-23 00:00
+tags : [website]
 ---
 Here I sit, looking at past projects (portfolio) and posts thinking of the
 work that goes into the site versus the work that goes into the content. The
@@ -38,6 +37,8 @@ Here is my initial category list for articles:
 * <code>book</code> -- book notes, taken from Kindle, iBooks, etc.
 * <code>car</code> -- related to fixing vehicles and motors
 * <code>radio</code> -- related to amatuer radio
+* <code>electronics</code> -- electronic projects, hardware
+* <code>games</code> -- related to games, video or otherwise
 
 Now I need to commit to some next steps to actually get this done. Here, of course,
 is where I usually fall down. For personal projects I tend not to be very good at

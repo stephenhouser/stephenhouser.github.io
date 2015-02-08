@@ -1,0 +1,58 @@
+.ui-page {
+    -webkit-backface-visibility: hidden;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+body {
+    background-color: black !important;
+    overflow: hidden;
+}
+
+.ui-content {
+    padding: 0 0 0 0;
+}
+
+#coin_container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-webkit-perspective: 1000;
+}
+
+#coin {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+}
+
+#coin div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+#coin div p {
+    height: 32px;
+}
+
+#coin .front {
+}
+
+#coin .back {
+	-webkit-transform: rotateY(180deg);
+}
+
+#coin.flipped {
+	-webkit-transform: rotateY(180deg);
+}
+
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 100ms !important;
+}

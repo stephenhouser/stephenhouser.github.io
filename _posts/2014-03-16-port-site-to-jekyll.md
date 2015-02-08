@@ -1,8 +1,7 @@
 ---
-title:  "Port Site to Jekyll"
-tags: [site]
-date:   2014-03-16 21:25:38
-layout: post
+title: Port Site to Jekyll
+date : 2014-03-16 21:25:38
+tags : [website]
 ---
 ![Jekyll](http://jekyllrb.com/img/logo-2x.png)
 

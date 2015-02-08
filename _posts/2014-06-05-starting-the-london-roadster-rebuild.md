@@ -1,8 +1,7 @@
 ---
 title: Starting the London Roadster Rebuild
-tags: [car]
-date:   2014-06-5 10:00:00
-layout: post
+date : 2014-05-16 21:25:38
+tags : [mechanic]
 ---
 It was a few weeks ago that I found I might need to travel around the
 state for work, visiting many towns of Maine from Wells to Fort

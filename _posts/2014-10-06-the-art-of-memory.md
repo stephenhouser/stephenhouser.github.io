@@ -1,8 +1,7 @@
 ---
 title:  The Art of Memory by Frances A Yates
-tags: [book]
-date:   2014-10-06 21:25:38
-layout: post
+date :  2014-10-06 21:25:38
+tags : [books]
 ---
 Book notes from [ The Art Of Memory  ](https://kindle.amazon.com/work/the-art-memory-frances-
 yates-ebook/B000B1RAXS/B005TKD6UC) by Frances A Yates

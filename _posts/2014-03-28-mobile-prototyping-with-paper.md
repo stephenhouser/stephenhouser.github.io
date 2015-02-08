@@ -1,8 +1,7 @@
 ---
 title: Mobile Prototyping with Paper
-tags: [mobile, development]
-date:   2014-03-28 10:00:00
-layout: post
+date : 2014-03-28 10:00:00
+tags : [mobile, development]
 ---
 Drawing on paper tends to be the fastet way for me to work on ideas.
 It works well when working alone or with others. The speed of pencil

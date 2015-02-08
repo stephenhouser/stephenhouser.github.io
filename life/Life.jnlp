@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <jnlp spec="1.0+" codebase="http://people.usm.maine.edu/houser/life"  
+ 	href="Life.jnlp">
+ 	<information>
+ 		<title>Conway's Game of Life</title>
+ 		<vendor>Stepen Houser</vendor>
+ 		<homepage href="index.html"/>
+ 		<description>Java Implementation of Conway's Game of Life</description>
+ 		<description kind="short">Conway's Game of Life</description>
+
+ 		<icon href="glider.gif"/>     
+ 		<icon kind="splash" href="LifeSplash.gif"/>
+ 	     
+ 		<offline-allowed/>   
+ 	</information>   
+
+ 	<!--security>       
+ 		<all-permissions/>   
+ 	</security -->   
+ 	<resources>     
+ 		<j2se version="1.3+"/>     
+	 	<jar href="Life.jar"/>     
+ 		<jar href="log4j-1.2.8.jar"/>
+	</resources>
+
+	<application-desc main-class="com.stephenhouser.Life2.ui.SwingGame"/> 
+</jnlp> 

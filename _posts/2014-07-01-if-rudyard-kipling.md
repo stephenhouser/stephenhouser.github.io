@@ -1,8 +1,7 @@
 ---
-title: If - Rudyard Kipling
-tags: [quote]
-date:   2014-07-01 10:00:00
-layout: post
+title: If by Rudyard Kipling
+date : 2014-07-01 10:00:00
+tags : [quotes]
 ---
 ![Rudyard Kipling](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg/225px-Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg)
 
