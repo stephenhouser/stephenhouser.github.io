@@ -3,6 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+<!--
 <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
 
 <style>
@@ -21,17 +22,25 @@ permalink: /projects/
 .item.w2 { width: 50%; }
 </style>
 
-<!--
-<div id="container" class="js-masonry"
-  data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
-	<div class="grid-sizer"></div>
-	{% for page in site.pages %}
-		{% if page.layout and page.layout == 'project' %}
-			<div class="item"><h1><a href="{{page.url}}">{{page.title}}</a></h1>
-			{{ page.excerpt }}
-		{% endif %}
-		</div>
-	{% endfor %}
+<div class="archive-list js-masonry"
+    data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
+    <div class="grid-sizer"></div>
+    {% for page in site.pages | sort_by: "date" %}
+            {% if page.archive == true and page.layout == 'project' %}
+                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+                {% capture page_icon %}{% if page.icon contains 'http' %}{{ page.icon }}{% else %}{{ site.baseurl }}/{{ page.path | split: '/' | first }}/{{ page.icon }}{% endif %}{% endcapture %}
+                
+                <div class="item">
+                <a href="{{ site.baseurl }}{{ page.url }}">
+                    <img style="display: block; max-height: 100px;" src="{{ page_icon }}"/>
+                    <h1>{{page.title}}</h1>
+                </a>
+                    <div class="excerpt">
+                      {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
+                    </div>
+                </div>
+            {% endif %}
+    {% endfor %}
 </div>
 -->
 
@@ -40,9 +49,9 @@ permalink: /projects/
     {% for page in site.posts %}
             {% if page.archive != true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                {% capture page_icon %}{% if page.icon contains 'http' %}{{ page.icon }}{% else %}{{ site.baseurl }}/{{ page.path | split: '/' | first }}/{{ page.icon }}{% endif %}{% endcapture %}
                 <li><a href="{{ site.baseurl }}{{ page.url }}">
-                    <img style="float:right; max-height: 100px;" src="{{ page_icon }}"/>
+{% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/assets/{{ page.thumbnail }}{% endif %}{% endcapture %}
+                    <img style="float:right; max-height: 100px;" src="{{ thumbnail }}"/>
                     <h1>{{page.title}}</h1>
                     </a>
                     <div class="excerpt">
@@ -62,27 +71,4 @@ permalink: /projects/
             {% endif %}
     {% endfor %}
     </ul>
-
-<!--
-   	<div class="archive-list js-masonry"
-        data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".item", "gutter": 10 }'>
-        <div class="grid-sizer"></div>
-        {% for page in site.pages | sort_by: "date" %}
-                {% if page.archive == true and page.layout == 'project' %}
-                    {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                    {% capture page_icon %}{% if page.icon contains 'http' %}{{ page.icon }}{% else %}{{ site.baseurl }}/{{ page.path | split: '/' | first }}/{{ page.icon }}{% endif %}{% endcapture %}
-                    
-                    <div class="item">
-                    <a href="{{ site.baseurl }}{{ page.url }}">
-                        <img style="display: block; max-height: 100px;" src="{{ page_icon }}"/>
-                        <h1>{{page.title}}</h1>
-                    </a>
-                        <div class="excerpt">
-                          {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
-                        </div>
-                    </div>
-                {% endif %}
-        {% endfor %}
-	</div>
--->
 </div>
