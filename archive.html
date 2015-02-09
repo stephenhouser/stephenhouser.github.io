@@ -69,6 +69,31 @@ function getParameterByName(name) {
 var tag = getParameterByName('tag');
 if (tag) {
     // hide list items that don't have the tag
+    var years = document.querySelectorAll('div[id^=year]');
+    for (var y=0; y<years.length; y++) {		// for each year/div
+    	var hiddenCount = 0;
+		var items = years[y].getElementsByTagName('li');
+		for (var i=0; i<items.length; i++) {	// for each list item
+			var span = items[i].getElementsByTagName('span')[0].childNodes[0];
+			var postTags = span.nodeValue;
+			if (postTags.indexOf(tag) > -1) {
+				items[i].style.display = 'list-item';
+			} else {
+				items[i].style.display = 'none';
+				hiddenCount++;
+			}
+		}
+
+		// hide div if all items hidden
+		//console.log('total=' + items.length + ', hidden=' + hiddenCount);
+		if (hiddenCount == items.length) {
+			years[y].style.display = 'none';
+		} else {
+			years[y].style.display = 'block';
+		}
+    }
+
+/*
     var elements = document.getElementsByTagName('li');
     for (var i=0; i<elements.length; i++) {
         var span = elements[i].getElementsByTagName('span')[0].childNodes[0];
@@ -79,5 +104,6 @@ if (tag) {
             elements[i].style.display = 'none';
         }
     }
+*/
 }
 </script>
