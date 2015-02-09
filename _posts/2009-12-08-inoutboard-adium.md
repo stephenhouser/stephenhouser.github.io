@@ -18,21 +18,21 @@ The plugin was originally developed for <a href="http://developer.pidgin.im/wiki
 
 ## Files
 
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5.9+-v.1.1.zip">InOutBoardPlugin-Adium1.5.9+-v.1.1.zip</a>: binary of version 1.1 to work with Adium >= version 1.5.9
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5.9+-v.1.1.zip">InOutBoardPlugin-Adium1.5.9+-v.1.1.zip</a>: binary of version 1.1 to work with Adium >= version 1.5.9
 * <b>Adium Plugin Source</b>: Not yet available.
 * <a href="http://people.usm.maine.edu/pgillis/pidgin/">Pidgin Plugin</a>: Pete's core plugin code (binary and source).
 
 ## Archive
 
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip">InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip</a>: binary of version 1.0.7 to work with Adium >= version 1.5.8
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip">InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip</a>: binary of version 1.0.6 to work with Adium >= version 1.5.6
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5.4+-v.1.0.5.zip">InOutBoardPlugin-Adium1.5.4+-v.1.0.5.zip</a>: binary of version 1.0.5 to work with Adium >= version 1.5.4
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5.1+-v1.0.4.zip">InOutBoardPlugin-Adium1.5.1+-v1.0.4.zip</a>: binary of version 1.0.4 to work with Adium >= version 1.5.1b1
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.5+-v1.0.3.zip">InOutBoardPlugin-Adium1.5+-v1.0.3.zip</a>: binary of version 1.0.3 to work with Adium >= version 1.5b3
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.4+-v1.0.3.zip">InOutBoardPlugin-Adium1.4+-v1.0.3.zip</a>: binary of version 1.0.3 to work with Adium >= version 1.4b18
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.4+-v1.0.2.zip">InOutBoardPlugin-Adium1.4+-v1.0.2.zip</a>: binary of version 1.0.2 to work with Adium >= version 1.4.
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.4+-v1.0.1.zip">InOutBoardPlugin-Adium1.4+-v1.0.1.zip</a>: binary of version 1.0.1 to work with Adium >= version 1.4.
-* <a href="{{site.fileurl}}/InOutBoardPlugin-Adium1.4+-v1.0.0.zip">InOutBoardPlugin-Adium1.4+-v1.0.0.zip</a>: binary of version 1.0.0 to work with Adium >= version 1.4.
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip">InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip</a>: binary of version 1.0.7 to work with Adium >= version 1.5.8
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip">InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip</a>: binary of version 1.0.6 to work with Adium >= version 1.5.6
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5.4+-v.1.0.5.zip">InOutBoardPlugin-Adium1.5.4+-v.1.0.5.zip</a>: binary of version 1.0.5 to work with Adium >= version 1.5.4
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5.1+-v1.0.4.zip">InOutBoardPlugin-Adium1.5.1+-v1.0.4.zip</a>: binary of version 1.0.4 to work with Adium >= version 1.5.1b1
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.5+-v1.0.3.zip">InOutBoardPlugin-Adium1.5+-v1.0.3.zip</a>: binary of version 1.0.3 to work with Adium >= version 1.5b3
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.4+-v1.0.3.zip">InOutBoardPlugin-Adium1.4+-v1.0.3.zip</a>: binary of version 1.0.3 to work with Adium >= version 1.4b18
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.4+-v1.0.2.zip">InOutBoardPlugin-Adium1.4+-v1.0.2.zip</a>: binary of version 1.0.2 to work with Adium >= version 1.4.
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.4+-v1.0.1.zip">InOutBoardPlugin-Adium1.4+-v1.0.1.zip</a>: binary of version 1.0.1 to work with Adium >= version 1.4.
+* <a href="{{site.fileurl}}/InOutBoard/InOutBoardPlugin-Adium1.4+-v1.0.0.zip">InOutBoardPlugin-Adium1.4+-v1.0.0.zip</a>: binary of version 1.0.0 to work with Adium >= version 1.4.
 
 ## Screenshots
 
