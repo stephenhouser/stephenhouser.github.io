@@ -18,13 +18,13 @@ permalink: /courses/
             {% endif %}
     {% endfor %}
     </ul>
-    
-    <h2>Course Archive</h2>    
+
+    <h2>Course Archive</h2>
 	<ul class="archive-list">
     {% for page in site.posts | sort_by: "date" %}
             {% if page.archive == true and page.layout == 'course' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li>{{ page_updated | date: '%b %Y' }} • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
+                <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
             {% endif %}
     {% endfor %}
     </ul>
