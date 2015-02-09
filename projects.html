@@ -27,5 +27,13 @@ permalink: /projects/
                 <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
             {% endif %}
     {% endfor %}
+
+    <-- include pages that have not been made posts yet -->
+    {% for page in site.pages | sort_by: "date" %}
+            {% if page.archive == true and page.layout == 'project' %}
+                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
+                <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
+            {% endif %}
+    {% endfor %}
     </ul>
 </div>
