@@ -1,17 +1,21 @@
 ---
-title: The United States iPad App
-thumbnail: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
-tags: [product, mobile, development, games]
-date: 2012-04-16 12:00:00
-layout: project
-project: usa
+title: 		The United States iPad App
+date: 		2012-04-16 12:00:00
+thumbnail: 	http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
+category: 	projects
+tags: 		[product, mobile, development, games]
+keywords:
+description:
+
+layout: 	project
+project: 	USA
 ---
 [The United States][3] is an educational application designed to help K-5 students learn their United States geography. It was originally envisioned by my son after many interruptions from my daughter asking where a particular state was on the map. Developed by me over several months and play tested by my daughter. Now that all our family members are experts at identifying the states of the Union, it's your turn.
 
 [![The United States][1]][3]
 [![The United States][2]][3]
 
-There are two main aspects of the application; an interactive map and several games based on state facts. Each has a lot to explore and each was a blast to put together. 
+There are two main aspects of the application; an interactive map and several games based on state facts. Each has a lot to explore and each was a blast to put together.
 
 The interactive map allows you to tap on any state and show its name and a small version of the state flag. If you continue further and tap on the name (in a button) the application will reveal a full screen of information about the state. Centered around a web-view of theWikipedia page about the state, this view lets you learn some pertinent and fun state facts.
 

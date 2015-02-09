@@ -1,7 +1,11 @@
 ---
-title: Pondering Site Changes
-date : 2015-01-23 12:00
-tags : [website]
+title: 		Pondering Site Changes
+date: 		2015-01-23 12:00
+thumbnail:
+category:	website
+tags: 		[website]
+keywords:
+description:
 ---
 Here I sit, looking at past projects (portfolio) and posts thinking of the
 work that goes into the site versus the work that goes into the content. The

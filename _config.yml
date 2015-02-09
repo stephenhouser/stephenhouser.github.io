@@ -5,12 +5,14 @@ description: > # this means to ignore newlines until "baseurl:"
   A collection of thoughts, ideas, and work making things in
   Software Development, Woodworking, Amatuer Radio, Electronics,
   and more.
-  
+
 #url: "http://blog.stephenhouser.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 asseturl: /assets
 fileurl: /files
 timezone: America/New_York
+
+permalink: /:categories/:year-:month-:day-:title.html
 
 # Build settings
 highlight: pygments
@@ -38,4 +40,4 @@ defaults:
 keep_files: ['CampusCrush']
 exclude: ['makefile']
 include: []
-safe: true    
+safe: true

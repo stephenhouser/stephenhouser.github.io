@@ -1,7 +1,11 @@
 ---
-title: Using Git with Subversion for a New Project
-date : 2010-06-18 08:51
-tags : [development]
+title: 		Using Git with Subversion for a New Project
+date: 		2010-06-18 08:51
+thumbnail:
+category:	development
+tags: 		[development]
+keywords:
+description:
 ---
 A few weeks before leaving for a conference, where connectivity was in question, I asked the question, "how can I continue to use version control on my project?" Subversion has been my best friend for quite a while, both at work and home. Even though most of my projects are single-developer project, the work, test, check-in cycle has been the staple of my work cycle. It allows me to be ruthless with removing large chunks of code, with re-factoring like a madman, and letting the keyboard take over in tying new approaches.
 

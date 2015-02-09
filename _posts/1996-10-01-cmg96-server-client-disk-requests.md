@@ -1,11 +1,16 @@
 ---
-title:  On the Relationship of Server Disk Workloads and Client File Requests (CMG 96)
-thumbnail: /logos/cmg-icon64.png
-keywords: computer measurement group cmg 96 analysis disk workloads network file server client requests
-description: In this study, we consider the relationship of client IO requests submitted to a file server and the server's disk subsystem IO traffic.
-tags: [publications, networks]
-created: 1996-10-01 00:00:00
-date: 1996-10-01 00:00:00
+title:  	On the Relationship of Server Disk Workloads and Client File Requests (CMG 96)
+date: 		1996-10-01 00:00:00
+thumbnail: 	/logos/cmg-icon64.png
+category: 	publications
+tags: 		[publications, networks]
+keywords: 	computer measurement group cmg 96 disk network file server
+description: >
+    In this study, we consider the relationship of client IO
+    requests submitted to a file server and the server's disk subsystem
+    IO traffic.
+
+revised: 	1996-10-01 00:00:00
 ---
 In this study, we consider the relationship of client IO requests submitted to a file server and the server's disk subsystem IO traffic. We collected traces of client-server IOs and, during each trace period, we also traced server storage subsystem workloads. We analyze and compare trace pairs collected in each trace period. We evaluate file server performance and investigate the relationship between client file requests and server disk workloads.
 

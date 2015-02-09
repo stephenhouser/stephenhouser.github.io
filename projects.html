@@ -18,10 +18,10 @@ permalink: /projects/
             {% endif %}
     {% endfor %}
     </ul>
-    
-    <h2>Project Archive</h2>    
+
+    <h2>Project Archive</h2>
 	<ul class="archive-list">
-    {% for page in site.pages | sort_by: "date" %}
+    {% for page in site.posts | sort_by: "date" %}
             {% if page.archive == true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
                 <li>{{ page_updated | date: '%b %Y' }} • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>

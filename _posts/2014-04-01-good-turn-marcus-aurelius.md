@@ -1,7 +1,11 @@
 ---
-title: Good Turn - Marcus Aurelius
-date : 2014-04-01 10:00:00
-tags : [quotes]
+title: 		Good Turn - Marcus Aurelius
+date: 		2014-04-01 10:00:00
+thumbnail:
+category:	quotes
+tags: 		[quotes]
+keywords:
+description:
 ---
 ![Marcus Aurelius](http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg/220px-L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg)
 

@@ -4,8 +4,8 @@ title: Archive
 permalink: /archive/
 ---
 <div class="home">
-    <!-- Tags -->
     <div class="archive-tags">
+	    <!-- Tag cloud -->
         <h2>Tags</h2>{% assign post_count = site.posts | size | times: 100 %}
         <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
@@ -13,27 +13,45 @@ permalink: /archive/
             <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}%;">{{t | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
         {% endfor %}
         </p>
-    </div>    
 
-	<h2>This Year</h2>
+	    <!-- Category cloud -->
+        <h2>Categories</h2>{% assign post_count = site.posts | size | times: 100 %}
+        <p>
+        {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
+            {% assign fontsize = posts | size | times:5 | plus:80 %}
+            <a href="?tag={{cat|first}}" class="tag" style="font-size:{{fontsize}}%;">{{c | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
+        {% endfor %}
+        </p>
+    </div>
+
 	{%for post in site.posts %}
-		{% unless post.next %}
+		{% if post.next == nil %}
+			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+			<div id="year{{year}}">
+			<h2>{{ year }}</h2>
 			<ul class="archive-list current">
 		{% else %}
 			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 			{% if year != nyear %}
 				</ul>
-				<h2>{{ post.date | date: '%Y' }}</h2>
+				</div>
+				<div id="year{{year}}">
+				<h2>{{ year }}</h2>
 				<ul class="archive-list past">
 			{% endif %}
-		{% endunless %}
+		{% endif %}
+
 		<li><time>{{ post.date | date:"%d %b" }}</time>
 			• <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-			<span class="post-meta" style="display: none;">[{{ post.tags | array_to_sentence_string }}]</span>
+			<span class="post-meta" style="display: none;">
+				{{ post.categories | array_to_sentence_string }}
+				{{ post.tags | array_to_sentence_string }}
+			</span>
 		</li>
 	{% endfor %}
 	</ul>
+	</div>
 </div>
 
 <script>
