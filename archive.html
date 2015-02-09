@@ -7,10 +7,12 @@ permalink: /archive/
     <!-- Tags -->
     <div class="archive-tags">
         <h2>Tags</h2>{% assign post_count = site.posts | size | times: 100 %}
+        <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
             <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}%;">{{t | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
         {% endfor %}
+        </p>
     </div>    
 
 	<h2>This Year</h2>
