@@ -10,7 +10,7 @@ permalink: /archive/
         <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}%;">{{t | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
+            <a id="tag_{{tag|first}}" href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}%;">{{t | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
         {% endfor %}
         </p>
 
@@ -19,7 +19,7 @@ permalink: /archive/
         <p>
         {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a href="?tag={{cat|first}}" class="tag" style="font-size:{{fontsize}}%;">{{c | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
+            <a id="category_{{cat|first}}" href="?category={{cat|first}}" class="tag" style="font-size:{{fontsize}}%;">{{c | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
         {% endfor %}
         </p>
     </div>
@@ -44,9 +44,11 @@ permalink: /archive/
 
 		<li><time>{{ post.date | date:"%d %b" }}</time>
 			• <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-			<span class="post-meta" style="display: none;">
-				{{ post.categories | array_to_sentence_string }}
+			<span class="post-meta tags" style="display: none;">
 				{{ post.tags | array_to_sentence_string }}
+			</span>
+			<span class="post-meta categories" style="display: none;">
+				{{ post.categories | array_to_sentence_string }}
 			</span>
 		</li>
 	{% endfor %}
@@ -66,17 +68,23 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+// hide list items that don't have the tag or category
 var tag = getParameterByName('tag');
-if (tag) {
-    // hide list items that don't have the tag
+var category = getParameterByName('category');
+if (category || tag) {
     var years = document.querySelectorAll('div[id^=year]');
     for (var y=0; y<years.length; y++) {		// for each year/div
-    	var hiddenCount = 0;
+    	var hiddenCount = 0;					// number of elements hidden
 		var items = years[y].getElementsByTagName('li');
 		for (var i=0; i<items.length; i++) {	// for each list item
-			var span = items[i].getElementsByTagName('span')[0].childNodes[0];
-			var postTags = span.nodeValue;
-			if (postTags.indexOf(tag) > -1) {
+			var searchFor = tag;
+			var span = items[i].querySelectorAll('span[class*="tags"]')[0].childNodes[0];
+			if (category) {	// category has priority in filtering
+				searchFor = category;
+				span = items[i].querySelectorAll('span[class*="categories"]')[0].childNodes[0];
+			}
+
+			if (span.nodeValue.indexOf(searchFor) > -1) {
 				items[i].style.display = 'list-item';
 			} else {
 				items[i].style.display = 'none';
@@ -84,26 +92,13 @@ if (tag) {
 			}
 		}
 
-		// hide div if all items hidden
-		//console.log('total=' + items.length + ', hidden=' + hiddenCount);
+		// hide outer div if all items hidden
+		// show if any items are visible (not hidden)
 		if (hiddenCount == items.length) {
 			years[y].style.display = 'none';
 		} else {
 			years[y].style.display = 'block';
 		}
     }
-
-/*
-    var elements = document.getElementsByTagName('li');
-    for (var i=0; i<elements.length; i++) {
-        var span = elements[i].getElementsByTagName('span')[0].childNodes[0];
-        var postTags = span.nodeValue;
-        if (postTags.indexOf(tag) > -1) {
-            elements[i].style.display = 'list-item';
-        } else {
-            elements[i].style.display = 'none';
-        }
-    }
-*/
 }
 </script>
