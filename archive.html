@@ -11,7 +11,7 @@ permalink: /archive/
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
             <a onClick="handleSelection(this, 'tags', '{{tag|first}}')"
-                class="tag" 
+                class="tag"
                 style="font-size:{{fontsize}}%;">
                 {{t | downcase | replace:" ","-" }}</a>
         {% endfor %}
@@ -23,7 +23,7 @@ permalink: /archive/
         {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
             <a onClick="handleSelection(this, 'categories', '{{cat|first}}')"
-                class="category" 
+                class="category"
                 style="font-size:{{fontsize}}%;">
                 {{c | downcase | replace:" ","-" }}</a>
         {% endfor %}
