@@ -1,6 +1,6 @@
 ---
 title: The Art of Readable Code - Key Ideas
-date : 2013-02-15 00:00
+date : 2013-02-15 12:00
 tags : [books]
 ---
 ![The Art of Readable Code](http://ecx.images-amazon.com/images/I/51vnhzxNDaL.jpg)

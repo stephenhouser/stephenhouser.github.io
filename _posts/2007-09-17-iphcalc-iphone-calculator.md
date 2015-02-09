@@ -1,6 +1,6 @@
 ---
 title: iPhcalc iPhone Calculator
-date: 2007-09-17 00:00:00
+date: 2007-09-17 12:00:00
 tags: [development]
 thumbnail: iphcalc-icon64.png
 layout: project

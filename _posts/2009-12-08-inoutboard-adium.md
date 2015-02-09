@@ -1,6 +1,6 @@
 ---
 title : InOut Board Adium/Libpurple Plugin
-date  : 2009-12-08 00:00:00
+date  : 2009-12-08 12:00:00
 tags  : [development]
 keywords: adium plugin libpurple develop pidgin
 description: libpurple plugin adapted to work in Adium the Mac OS X instant messaging client"

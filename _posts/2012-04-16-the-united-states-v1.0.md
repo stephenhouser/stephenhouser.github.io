@@ -1,6 +1,6 @@
 ---
 title: The United States v1.0 Released
-date : 2012-04-16 00:00
+date : 2012-04-16 12:00
 thumbnail: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
 tags: [product, mobile, development, games, release]
 project: usa

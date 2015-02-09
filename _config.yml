@@ -5,7 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A collection of thoughts, ideas, and work making things in
   Software Development, Woodworking, Amatuer Radio, Electronics,
   and more.
-#baseurl: "" # the subpath of your site, e.g. /blog/
+  
+baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://blog.stephenhouser.com" # the base hostname & protocol for your site
 timezone: America/New_York
 
@@ -15,7 +16,7 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-#excerpt_separator: <!-- more -->
+#excerpt_separator: <!-- more --> # default is \n\n
 paginate: 7
 
 gems:
@@ -25,8 +26,14 @@ defaults:
   -
     # Make default layout for posts be post
     scope:
-      path: ""
+      path: "" # empty = all files
       type: "posts"
     values:
       layout: "post"
       author: "Stephen Houser"
+
+# When clobbering the destination, don't muck with these
+keep_files: ['CampusCrush']
+exclude: ['makefile']
+include: []
+safe: true    

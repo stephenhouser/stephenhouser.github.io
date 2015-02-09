@@ -1,6 +1,6 @@
 ---
 title : Big Brother Traffic Light
-date  : 2006-01-20 00:00:00
+date  : 2006-01-20 12:00:00
 tags  : [development, hardware]
 layout: project
 thumbnail: bblight-index64.png

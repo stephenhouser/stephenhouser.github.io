@@ -1,6 +1,6 @@
 ---
 title: Pondering Site Changes
-date : 2015-01-23 00:00
+date : 2015-01-23 12:00
 tags : [website]
 ---
 Here I sit, looking at past projects (portfolio) and posts thinking of the

@@ -1,6 +1,6 @@
 ---
 title: USM CS' Best Movies 2012
-date : 2012-04-01 00:00
+date : 2012-04-01 12:00
 tags : [courses]
 ---
 In March 2012 we conducted a survey of The Computer Science Department's favorite movies.

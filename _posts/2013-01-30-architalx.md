@@ -1,6 +1,6 @@
 ---
 title : Architalx Audio Portal Application
-date  : 2013-01-30 00:00:00
+date  : 2013-01-30 12:00:00
 tags  : [mobile, development]
 layout: project
 thumbnail: architalx.org-20130130.png

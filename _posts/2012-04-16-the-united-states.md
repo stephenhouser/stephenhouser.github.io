@@ -2,7 +2,7 @@
 title: The United States iPad App
 thumbnail: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
 tags: [product, mobile, development, games]
-date: 2012-04-16 00:00:00
+date: 2012-04-16 12:00:00
 layout: project
 project: usa
 ---

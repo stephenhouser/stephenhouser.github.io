@@ -2,57 +2,57 @@
 - name: About.me
   url: http://about.me/stephenhouser
   username: stephenhouser
-  icon: logos/icon-aboutme.png
-  svg: logos/icon-aboutme.png
+  icon: assets/logos/icon-aboutme.png
+  svg: assets/logos/icon-aboutme.png
   type: social
 
 - name: Google+
   url: http://profiles.google.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-google-plus.png
-  svg: logos/svg/googleplus.svg
+  icon: assets/logos/icon-google-plus.png
+  svg: assets/logos/svg/googleplus.svg
 #  type: social
 
 - name: Twitter
   url: http://twitter.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-twitter.png
-  svg: logos/svg/twitter.svg
+  icon: assets/logos/icon-twitter.png
+  svg: assets/logos/svg/twitter.svg
   type: social
 
 - name: LinkedIn
   url: http://www.linkedin.com/in/stephenahouser
   username: stephenhouser
-  icon: logos/icon-linkedin.png
-  svg: logos/svg/linkedin.svg
+  icon: assets/logos/icon-linkedin.png
+  svg: assets/logos/svg/linkedin.svg
   type: social
 
 - name: YouTube
   url: http://www.youtube.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-youtube.png
-  svg: logos/svg/youtube.svg
+  icon: assets/logos/icon-youtube.png
+  svg: assets/logos/svg/youtube.svg
 #  type: social
 
 - name: flickr
   url: http://www.flickr.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-flickr.png
-  svg: logos/svg/flickr.svg
+  icon: assets/logos/icon-flickr.png
+  svg: assets/logos/svg/flickr.svg
 #  type: social
 
 - name: Github
   url: http://github.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-github.png
-  svg: logos/svg/github.svg
+  icon: assets/logos/icon-github.png
+  svg: assets/logos/svg/github.svg
   type: social
 
 - name: StackOverflow
   url: http://stackoverflow.com/users/1277343/stephenhouser
   username: stephenhouser
-  icon: logos/icon-stackoverflow.png
-  svg: logos/icon-stackoverflow.png
+  icon: assets/logos/icon-stackoverflow.png
+  svg: assets/logos/icon-stackoverflow.png
   type: social
 
 - name: StephenHouser.com
@@ -80,8 +80,8 @@
 - name: Facebook
   url: http://www.facebook.com/stephenhouser
   username: stephenhouser
-  icon: logos/icon-facebook.png
-  svg: logos/svg/facebook.svg
+  icon: assets/logos/icon-facebook.png
+  svg: assets/logos/svg/facebook.svg
   type: social
 
 - name: iCloud
@@ -91,19 +91,19 @@
 
 - name: QRZ
   url:  http://www.qrz.com/db/N1SH
-  icon: logos/icon-qrz.png
+  icon: assets/logos/icon-qrz.png
   type: radio
   username: N1SH
 
 - name: ARRL
   url:  http://www.arrl.org/member-profile/stephen-houser
-  icon: logos/icon-arrl.png
+  icon: assets/logos/icon-arrl.png
   username: N1SH
   type: radio
 
 - name: On Air
   url:  N1SH
-  icon: logos/icon-hamradio.png
+  icon: assets/logos/icon-hamradio.png
   type: radio
   username: N1SH
 

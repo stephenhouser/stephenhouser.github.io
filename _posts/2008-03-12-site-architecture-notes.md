@@ -3,8 +3,8 @@ title: Site Architecture Notes
 keywords:
 description:
 tags: [website]
-created: 2008-03-12 00:00:00
-date: 2008-03-12 00:00:00
+created: 2008-03-12 12:00:00
+date: 2008-03-12 12:00:00
 ---
 This article outlines plans for redesigning Stephen's personal/work web site located at http://people.usm.maine.edu. Work began in the Spring of 2008 to develop needed static content with a view towards a more dynamic creation of index/listing pages and RSS content of updates.
 
