@@ -62,8 +62,15 @@ $on-laptop:        800px;
 // Float tags to the right on the archive page
 // Don't display them on palm devices
 .archive-tags {
-    width: 33%;
+    width: 25%;
     float: right;
+    text-align: right;
+    /*
+    border: 1px solid $grey-color;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    */
     @include media-query($on-palm) {
             display: none;
     }

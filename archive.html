@@ -50,6 +50,7 @@ function getParameterByName(name) {
 
 var tag = getParameterByName('tag');
 if (tag) {
+    // hide list items that don't have the tag
     var elements = document.getElementsByTagName('li');
     for (var i=0; i<elements.length; i++) {
         var span = elements[i].getElementsByTagName('span')[0].childNodes[0];
