@@ -1,7 +1,11 @@
 ---
-title: Port Site to Jekyll
-date : 2014-03-16 21:25:38
-tags : [website]
+title: 		Port Site to Jekyll
+date: 		2014-03-16 21:25:38
+thumbnail:
+category:	website
+tags: 		[website]
+keywords:
+description:
 ---
 ![Jekyll](http://jekyllrb.com/img/logo-2x.png)
 

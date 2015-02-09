@@ -44,8 +44,14 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+time {
+	display: inline-block;
+	text-align: right;
+	width: 5em;
+}
+
 #connections-right {
-    width: 40%; 
+    width: 40%;
     float:right;
     @include media-query($on-palm) {
             width: 100%;
@@ -53,9 +59,13 @@ $on-laptop:        800px;
     }
 }
 
+.archive-list {
+	margin-left: 0;
+}
+
 .course-list li img,
 .project-list li img {
-    float:right; 
+    float:right;
     max-height: 100px;
 }
 

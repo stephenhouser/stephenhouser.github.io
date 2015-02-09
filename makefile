@@ -4,12 +4,12 @@
 # make build            : Builds content to local _site
 # make serve		    : Builds and serves locally (for development)
 # make watch            : Builds and rebuilds on changes (for alternate web server)
-# make local            : Builds to ~user/public_html or ~user/Sites 
+# make local            : Builds to ~user/public_html or ~user/Sites
 #
 # make publish-people	: Publishes the USM       -- http://people.usm.maine.edu/houser
 # make publish-n1sh     : Publish to n1sh.net     -- http://n1sh.net/~houser
 # make publish-google   : Publish to Google Drive -- http://goo.gl/I7jER8
-# make publish-github   : Publish to Git Hub      -- http://stephenhouser.githib.io 
+# make publish-github   : Publish to Git Hub      -- http://stephenhouser.githib.io
 #
 
 # Set to do a dry run.
@@ -31,7 +31,7 @@ JEKYLL_CMD=bundle exec jekyll
 # Build into _site
 build:
 	$(JEKYLL_CMD) build
-	make tidy DEST=_site
+	#make tidy DEST=_site
 
 # Build and watch
 # - assumes another webserver is serving the content
@@ -71,13 +71,13 @@ publish-google:
 	#make tidy DEST="$(GOOGLE_DEST)"
 
 	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml
-	make tidy DEST=_site
+	#make tidy DEST=_site
 	rsync -avz _site/* /Users/houser/Google\ Drive/Public/
 
 publish-people: clean-mac-files
 	@test -d $(PEOPLE_DEST) || { echo "ERROR: $(PEOPLE_DEST) not mounted. Exiting..."; exit 1; }
 	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml -d "$(PEOPLE_DEST)"
-	make tidy DEST=$(PEOPLE_DEST)
+	#make tidy DEST=$(PEOPLE_DEST)
 
 publish-media: clean-mac-files
 	{ cd ../media.usm.maine.edu; rsync $(RSOPTS) -vauzC --exclude ._* . "$(MEDIA_DEST)"; }

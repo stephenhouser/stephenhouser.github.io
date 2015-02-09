@@ -1,7 +1,11 @@
 ---
-title: Another Day With Jekyll and My Website
-date : 2014-03-20 14:33:00
-tags : [website]
+title: 		Another Day With Jekyll and My Website
+date: 		2014-03-20 14:33:00
+thumbnail:
+category:	website
+tags: 		[website]
+keywords:
+description:
 ---
 ![Jekyll](http://jekyllrb.com/img/logo-2x.png)
 

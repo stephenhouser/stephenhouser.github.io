@@ -1,10 +1,17 @@
 ---
-title: Developer's Reading List
-keywords: reading list computer science electronics reference
-description: A list of reading materials that I have gathered over the years. Helpful background material for my classes and projects. This would be a good place to start your Technology reading
-tags: [development]
-date: 2013-02-11 12:00:00
-permalink: /reading-list/
+title: 		Developer's Reading List
+date: 		2013-02-11 12:00:00
+thumbnail:
+category:	books
+tags: 		[books, development]
+keywords: 	reading list computer science electronics reference
+description: >
+    A list of reading materials that I have gathered over the years.
+    Helpful background material for my classes and projects.
+    This would be a good place to start your Technology reading
+
+revised:	2013-02-11 12:00:00
+permalink: 	/reading-list/
 ---
 Often people, students, and colleagues ask "_where did you find that information_", or "_where is a good place to start doing so and so._" To answer those questions, this page collects a variety of materials that have been useful to me over the years as reference, as learning materials, and to keep up to date with current practice.
 

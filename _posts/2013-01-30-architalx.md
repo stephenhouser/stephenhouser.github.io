@@ -1,9 +1,13 @@
 ---
-title : Architalx Audio Portal Application
-date  : 2013-01-30 12:00:00
-tags  : [mobile, development]
-layout: project
-thumbnail: /architalx.org-20130130.png
+title: 		Architalx Audio Portal Application
+date: 		2013-01-30 12:00:00
+thumbnail: 	/architalx.org-20130130.png
+category: 	projects
+tags: 		[mobile, development]
+keywords:
+description:
+
+layout: 	project
 ---
 An interactive audio controller app that mimics the 17-foot interactive tower as part of [Architalx's][architalx] 25th anniversary exhibit, "_Voices of Design: 25 Years of Architalx_." At the [Portland Museum of Art][pma] from February 2nd through May 19th, 2013. In collaboration with [Raphael DiLuzio][raphael] and [Matthias Oostrik][matthias]. The iPad app controls the audio portals and allows visitors to listen to snippets of audio from past lectures on architecture by visiting architects.
 

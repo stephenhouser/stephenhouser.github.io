@@ -1,10 +1,15 @@
 ---
-title : Big Brother Traffic Light
-date  : 2006-01-20 12:00:00
-tags  : [development, hardware]
-layout: project
-thumbnail: /bblight-index64.png
-permalink: /bblight/
+title: 		Big Brother Traffic Light
+date: 		2006-01-20 12:00:00
+thumbnail: 	/bblight-index64.png
+category: 	projects
+tags: 		[development, hardware]
+keywords:
+description:
+
+revised:	2012-08-23 12:00
+layout: 	project
+permalink: 	/bblight/
 ---
 Network Operations Centers and Help Desks all over monitor their systems and networks with an open source product called [Big Brother][bigbrother] -- the freely available version is now [Hobbit][hobbit]. Here's how to add a traffic light to indicate network status.
 
