@@ -10,7 +10,10 @@ permalink: /archive/
         <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a id="tag_{{tag|first}}" href="?tag={{tag|first}}" class="tag" style="font-size:{{fontsize}}%;">{{t | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
+            <a onClick="handleSelection(this, 'tags', '{{tag|first}}')"
+                class="tag"
+                style="font-size:{{fontsize}}%;">
+                {{t | downcase | replace:" ","-" }}</a>
         {% endfor %}
         </p>
 
@@ -19,7 +22,10 @@ permalink: /archive/
         <p>
         {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a id="category_{{cat|first}}" href="?category={{cat|first}}" class="tag" style="font-size:{{fontsize}}%;">{{c | downcase | replace:" ","-" }}<!--({{posts|size}})--></a>
+            <a onClick="handleSelection(this, 'categories', '{{cat|first}}')"
+                class="category"
+                style="font-size:{{fontsize}}%;">
+                {{c | downcase | replace:" ","-" }}</a>
         {% endfor %}
         </p>
     </div>
@@ -68,23 +74,67 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-// hide list items that don't have the tag or category
-var tag = getParameterByName('tag');
-var category = getParameterByName('category');
-if (category || tag) {
+
+function handleSelection(element, type, tag) {
+    console.log("handleSelection(" + element + ", " + type + ", " + tag + ")");
+
+    if (isHighlighted(element)) {
+        clearHighlight();
+        clearArchiveFilter();
+    } else {
+        clearHighlight();
+        addHighlight(element);
+        filterArchiveByTag(type, tag);
+    }
+}
+
+function isHighlighted(element) {
+    return element.className.indexOf("highlight") > -1;
+}
+
+function clearHighlight() {
+    console.log('clearHighlight()');
+    
+    // clear previous selections
+    var elements = document.querySelectorAll('.tag, .category');
+    for (var i=0; i<elements.length; i++) {
+        elements[i].className = elements[i].className.replace("highlight", "");
+    }
+}
+
+function addHighlight(element) {    
+    console.log('addHighlight(' + element + ')');
+    
+    // highlght current selection
+    element.className = element.className + " highlight";
+}
+
+function clearArchiveFilter() {
+    console.log('clearArchiveFilter()');
+    
+    var years = document.querySelectorAll('div[id^=year]');
+    for (var y=0; y<years.length; y++) {		// for each year/div
+		var items = years[y].getElementsByTagName('li');
+		for (var i=0; i<items.length; i++) {	// for each list item
+			items[i].style.display = 'list-item';   // show the list item
+		}
+		
+    	years[y].style.display = 'block';       // show the year
+    }
+}
+
+function filterArchiveByTag(searchClass, searchTag) {
+    console.log('filterArchiveByTag(' + searchClass + ', ' + searchTag + ')');
+    
+    var filterSelector = 'span[class*="' + searchClass + '"]';
+    
     var years = document.querySelectorAll('div[id^=year]');
     for (var y=0; y<years.length; y++) {		// for each year/div
     	var hiddenCount = 0;					// number of elements hidden
 		var items = years[y].getElementsByTagName('li');
 		for (var i=0; i<items.length; i++) {	// for each list item
-			var searchFor = tag;
-			var span = items[i].querySelectorAll('span[class*="tags"]')[0].childNodes[0];
-			if (category) {	// category has priority in filtering
-				searchFor = category;
-				span = items[i].querySelectorAll('span[class*="categories"]')[0].childNodes[0];
-			}
-
-			if (span.nodeValue.indexOf(searchFor) > -1) {
+			var span = items[i].querySelectorAll(filterSelector)[0].childNodes[0];
+			if (span.nodeValue.indexOf(searchTag) > -1) {
 				items[i].style.display = 'list-item';
 			} else {
 				items[i].style.display = 'none';

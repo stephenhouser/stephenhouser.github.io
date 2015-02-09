@@ -44,6 +44,15 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+.highlight {
+    color: $text-color;
+    text-decoration: underline;
+    border: 1px solid $grey-color-dark;
+    border-radius: 3px;
+    background-color: $code-background-color;
+    padding: 1px 5px;
+}
+
 time {
 	display: inline-block;
 	text-align: right;
@@ -88,4 +97,8 @@ time {
 
 .archive-list li {
 	list-style-type: none;
+	list-style-position: inside;
+	padding-left: 6em;
+	text-indent: -6em;
 }
+
