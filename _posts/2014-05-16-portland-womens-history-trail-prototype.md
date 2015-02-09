@@ -1,13 +1,13 @@
 ---
-title: 		Portland Women's History Trail Prototype
-date: 		2014-05-16 21:25:38
-thumbnail: 	/pwht-icon.png
-category:	projects
-tags: 		[mobile, development]
+title:      Portland Women's History Trail Prototype
+date:       2014-05-16 21:25:38
+thumbnail:  /pwht/water-girl-small.png
+category:   projects
+tags:       [mobile, development]
 keywords:
 description:
 
-layout:		project
+layout:     project
 ---
 This past week I had a bit of time in-between other work and projects to
 develop a quick [prototype][4] for [Eileen Eagan][1]'s [Portland Women's History Trail][2]
@@ -56,4 +56,4 @@ With that all said, go and [give it a try][4].
   [4]: http://goo.gl/UIndL8
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap]: {{site.asseturl}}/pwht-prototype-2014-05-16.png
+  [screencap]: {{site.asseturl}}/pwht/pwht-prototype-2014-05-16.png
