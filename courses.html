@@ -4,7 +4,7 @@ title: Courses
 permalink: /courses/
 ---
 <div class="home">
-	<ul class="post-list course-list">
+    <ul class="post-list course-list">
     {% for page in site.posts %}
             {% if page.archive != true and page.layout == 'course' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
@@ -20,7 +20,7 @@ permalink: /courses/
     </ul>
 
     <h2>Course Archive</h2>
-	<ul class="archive-list">
+    <ul class="archive-list">
     {% for page in site.posts | sort_by: "date" %}
             {% if page.archive == true and page.layout == 'course' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}

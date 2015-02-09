@@ -1,17 +1,17 @@
 <footer class="site-footer">
-	<div class="wrapper">
-		<!-- h2 class="footer-heading">{{ site.title }}</h2 -->
-		<div class="footer-col-wrapper">
-			<div class="footer-col  footer-col-1">
-				<ul class="contact-list">
-					<li>{{ site.title }}</li>
-					<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-				</ul>
-			</div>
+    <div class="wrapper">
+        <!-- h2 class="footer-heading">{{ site.title }}</h2 -->
+        <div class="footer-col-wrapper">
+            <div class="footer-col  footer-col-1">
+                <ul class="contact-list">
+                    <li>{{ site.title }}</li>
+                    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                </ul>
+            </div>
 
-			<div class="footer-col  footer-col-2">
-				<ul class="social-media-list">
-    				{% for account in site.data.social %}{% if account.type == "social" %}<li>
+            <div class="footer-col  footer-col-2">
+                <ul class="social-media-list">
+                    {% for account in site.data.social %}{% if account.type == "social" %}<li>
                         <a href="{{ account.url }}">
                             <span class="icon">
                                 <img height="16" src="{{ account.svg | prepend:site.asseturl }}" alt="{{ account.name }}" title="{{ account.name }}"/>
@@ -19,12 +19,12 @@
                             <span class="username">{{ account.name }}</span>
                         </a>
                     </li>{% endif %}{% endfor %}
-				</ul>
-			</div>
-			
-			<div class="footer-col  footer-col-3">
-				<p class="text">{{ site.description }}</p>
-			</div>
-		</div>
-	</div>
+                </ul>
+            </div>
+            
+            <div class="footer-col  footer-col-3">
+                <p class="text">{{ site.description }}</p>
+            </div>
+        </div>
+    </div>
 </footer>
