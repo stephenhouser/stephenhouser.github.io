@@ -4,6 +4,7 @@
 # make build            : Builds content to local _site
 # make serve		    : Builds and serves locally (for development)
 # make watch            : Builds and rebuilds on changes (for alternate web server)
+# make local            : Builds to ~user/public_html or ~user/Sites 
 #
 # make publish-people	: Publishes the USM       -- http://people.usm.maine.edu/houser
 # make publish-n1sh     : Publish to n1sh.net     -- http://n1sh.net/~houser
@@ -12,7 +13,7 @@
 #
 
 # Set to do a dry run.
-RSOPTS=-n --delete
+#RSOPTS=-n --delete
 
 # default destination
 DEST=_site
@@ -33,7 +34,7 @@ build:
 	make tidy DEST=_site
 
 # Build and watch
-# - assumes another webserver is serving the conten
+# - assumes another webserver is serving the content
 watch:
 	$(JEKYLL_CMD) build --watch
 
@@ -55,9 +56,12 @@ clean-mac-files:
 	@find . -name .DS_Store -exec rm {} \;
 	@find . -name *~ -exec rm {} \;
 
+local:
+	$(JEKYLL_CMD) build --config _config.yml,_config/n1sh.yml -d ~/Sites
+
 publish-n1sh:
 	$(JEKYLL_CMD) build --config _config.yml,_config/n1sh.yml
-	make tidy
+	#make tidy DEST=_site
 	rsync $(RSOPTS) -vauzC --exclude .DS_Store --exclude ._* _site/ n1sh.net:public_html
 
 # Publish to Google Drive folder

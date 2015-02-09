@@ -16,8 +16,8 @@ The whole of [my site]({{site.baseurl}}/) is rather basic. The overall
 and includes a few basic categories, though not exactly how Jekyll
 identifies categories.
 
-* [Courses]({{site.baseurl}}/courses.html)
-* [Projects]({{site.baseurl}}/projects.html)
+* [Courses]({{site.baseurl}}/courses)
+* [Projects]({{site.baseurl}}/projects)
 * [Publications and Writing]({{site.baseurl}}/publications.html)
 * [Data Sets]({{site.baseurl}}/data.html)
 

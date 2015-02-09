@@ -9,7 +9,7 @@ permalink: /courses/
             {% if page.archive != true and page.layout == 'course' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
                 <li><a href="{{ page.url | prepend:site.baseurl }}">
-{% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/assets/{{ page.thumbnail }}{% endif %}{% endcapture %}
+{% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ page.thumbnail | prepend:"/assets/" | prepend:site.baseurl }}{% endif %}{% endcapture %}
                     <img src="{{ thumbnail }}"/><h1>{{page.title}}</h1></a>
                     <div class="excerpt">
                       {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}

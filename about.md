@@ -20,7 +20,7 @@ Mr. Houser's professional and research activities fall into three broad categori
     {% for account in site.data.social %}
         {% if account.icon %}
             <a href="{{ account.url }}">
-                <img style="height: 50px; padding: 5px;" src="{{site.baseurl}}/{{ account.icon }}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
+                <img style="height: 50px; padding: 5px;" src="{{ account.icon | prepend:"/assets/" | prepend:site.baseurl }}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
         {% endif %}
     {% endfor %}
 </div>

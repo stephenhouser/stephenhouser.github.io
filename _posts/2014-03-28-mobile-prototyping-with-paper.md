@@ -86,5 +86,5 @@ no-go problems, but quirky enough to make it not as fun.
 [2]: http://projectpixelpress.com
 [3]: https://www.kickstarter.com/projects/robinrath/pixel-press-draw-your-own-video-game
 [4]: http://projectpixelpress.com/preorder/
-[5]: {{ site.baseurl }}/assets/angry-drawings-sketch-small.jpg "Angry Drawings Sketch"
-[6]: {{ site.baseurl }}/assets/angry-drawings-sketch.jpg "Angry Drawings Sketch"
+[5]: {{site.asseturl}}/angry-drawings-sketch-small.jpg "Angry Drawings Sketch"
+[6]: {{site.asseturl}}/angry-drawings-sketch.jpg "Angry Drawings Sketch"

@@ -1,2 +1,4 @@
-url: http://people.usm.maine.edu/houser
+#url: http://people.usm.maine.edu/houser
 baseurl: /houser
+asseturl: /houser/assets
+fileurl: /houser/files

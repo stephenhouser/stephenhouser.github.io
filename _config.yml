@@ -6,8 +6,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Software Development, Woodworking, Amatuer Radio, Electronics,
   and more.
   
-baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://blog.stephenhouser.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+asseturl: /assets
+fileurl: /files
 timezone: America/New_York
 
 # Build settings
