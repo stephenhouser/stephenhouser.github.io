@@ -14,7 +14,7 @@ layout: default
 	</article>
 	<footer class="post-footer">
         {% if page.course %}
-    	    <h2>Related Materials</h2>
+    	    <h2>Related To This Course</h2>
             <ul class="archive-list">
                 {%for post in site.posts %}
                     {% if post.course == page.course and post.id != page.id %}
