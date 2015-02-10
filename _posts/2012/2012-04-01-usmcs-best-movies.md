@@ -7,9 +7,11 @@ tags: 		[courses]
 keywords:
 description:
 ---
-In March 2012 we conducted a survey of The Computer Science Department's favorite movies.
-All students, faculty, and staff related to Computer science were free to nominate
-movies and then vote on them. Here are the results...
+In March 2012 we conducted a survey of The Computer Science Department's
+favorite movies. All students, faculty, and staff related to Computer
+science were free to nominate movies and then vote on them. Here are the
+results...
+
 
 ## Spring 2012 Winners (not in order)
 

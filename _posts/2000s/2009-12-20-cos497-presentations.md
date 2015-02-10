@@ -1,7 +1,7 @@
 ---
 title: 		COS 497 - Student App Presentations
 date: 		2009-12-20 12:00:00
-thumbnail: 	/courses/cos497-icon115.png
+thumbnail: 	/cos497/cos497-icon115.png
 category: 	cos497
 tags: 		[courses, cos497, mobile, development]
 keywords: 	software development mobile iOS
@@ -9,9 +9,10 @@ description:
 
 course: 	cos497
 ---
-[COS497]({{site.baseurl}}/cos497) students presented their final projects at a department sponsored
-lecture. Each student presented a short overview of their application
-and had a few minutes for questions and answers afterwards.
+[COS 497]({{site.baseurl}}/cos497) students presented their final projects at a department
+sponsored lecture. Each student presented a short overview of their
+application and had a few minutes for questions and answers afterwards.
+
 
 The recorded presentations are available on
 [YouTube](http://www.youtube.com/view_play_list?p=4C2F8BB93B97044B).

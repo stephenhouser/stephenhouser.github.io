@@ -9,19 +9,43 @@ description:
 
 layout: 	project
 project: 	USA
+archive:	false
 ---
-[The United States][3] is an educational application designed to help K-5 students learn their United States geography. It was originally envisioned by my son after many interruptions from my daughter asking where a particular state was on the map. Developed by me over several months and play tested by my daughter. Now that all our family members are experts at identifying the states of the Union, it's your turn.
+[The United States][3] is an educational application designed to help
+K-5 students learn their United States geography. It was originally
+envisioned by my son after many interruptions from my daughter asking
+where a particular state was on the map. Developed by me over several
+months and play tested by my daughter. Now that all our family members
+are experts at identifying the states of the Union, it's your turn.
 
 [![The United States][1]][3]
 [![The United States][2]][3]
 
-There are two main aspects of the application; an interactive map and several games based on state facts. Each has a lot to explore and each was a blast to put together.
+There are two main aspects of the application; an interactive map and
+several games based on state facts. Each has a lot to explore and each
+was a blast to put together.
 
-The interactive map allows you to tap on any state and show its name and a small version of the state flag. If you continue further and tap on the name (in a button) the application will reveal a full screen of information about the state. Centered around a web-view of theWikipedia page about the state, this view lets you learn some pertinent and fun state facts.
+The interactive map allows you to tap on any state and show its name and
+a small version of the state flag. If you continue further and tap on
+the name (in a button) the application will reveal a full screen of
+information about the state. Centered around a web-view of theWikipedia
+page about the state, this view lets you learn some pertinent and fun
+state facts.
 
-The games are accessed from a popup menu on the interactive map. Currently there are several games; some of which are easy and others quite difficult. Name the State is the most basic of the games. When you begin, a state flips out of the blank map into the center of the screen. You are given three possible state names and are asked to identify which state is shown. Find the State is the next style of game. In this game you must find the named state on the map by tapping on it. Each of the following games is in one of these two styles but with more difficult state information.
+The games are accessed from a popup menu on the interactive map.
+Currently there are several games; some of which are easy and others
+quite difficult. Name the State is the most basic of the games. When you
+begin, a state flips out of the blank map into the center of the screen.
+You are given three possible state names and are asked to identify which
+state is shown. Find the State is the next style of game. In this game
+you must find the named state on the map by tapping on it. Each of the
+following games is in one of these two styles but with more difficult
+state information.
 
-Much of the information for the facts and games were gathered from Wikipedia and other web sites, including those of the states themselves. All the data was combined into attributes in an SVG file, also originally from Wikipedia.
+Much of the information for the facts and games were gathered from
+Wikipedia and other web sites, including those of the states themselves.
+All the data was combined into attributes in an SVG file, also
+originally from Wikipedia.
 
   [1]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
   [2]: http://goodturn.stephenhouser.com/images/AvailableOnTheAppStore-Small.png

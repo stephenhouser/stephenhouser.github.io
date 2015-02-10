@@ -9,7 +9,10 @@ description:
 
 project: 	USA
 ---
-An updated version of The United States iPad app was released today to fix few minor bugs. Version 1.0.2 is due out soon with additional bugs squashed.
+An updated version of The United States iPad app was released today to
+fix few minor bugs. Version 1.0.2 is due out soon with additional bugs
+squashed.
+
 
 [![The United States][1]][3]
 [![The United States][2]][3]

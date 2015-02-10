@@ -37,7 +37,7 @@
 - name: flickr
   url: http://www.flickr.com/stephenhouser
   username: stephenhouser
-  icon: /logo-png/icon-flickr.png
+  icon: /logos-png/icon-flickr.png
   svg: /logos-svg/flickr.svg
 #  type: social
 
