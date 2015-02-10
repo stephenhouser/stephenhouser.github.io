@@ -2,7 +2,7 @@
 title: 		Starting the London Roadster Rebuild
 date: 		2014-05-16 21:25:38
 thumbnail:
-category:	automotive
+category:	random
 tags: 		[automotive]
 keywords:
 description:
@@ -15,6 +15,7 @@ motorcycle across Maine in the summer. Out in the air, experiencing
 summer.  Well, one thing led to another and here I am working on
 fixing up the 1982 London Roadster that has sat in my garage since
 2005 when I took the engine out and apart.
+
 
 My first thought was a nice [Ural][2] with a sidecar would be a
 wonderful bike, with some storage room and good visibility to cars on

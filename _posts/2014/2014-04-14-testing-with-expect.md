@@ -16,6 +16,7 @@ develop both a server program and the associated socket-level protocol
 that will network-enable my application.  This semester the service
 was a distributed game matching service.
 
+
 The product is a simple game between two players. The server system
 needs to match up opponents and keep track of the games and player
 history. Simple until you get to the game matching process in the

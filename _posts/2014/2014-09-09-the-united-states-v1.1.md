@@ -7,11 +7,16 @@ tags: 		[product, mobile, development, games, release]
 keywords:
 description:
 
-project:	USA
+project:	usa
 ---
-An updated version of The United States iPad app was released that includes changes to the user interface to make it feel more at home on iOS 7. There were changes to colors and the style of the user interface. Also, corrected a spelling error or two!
+An updated version of The United States iPad app was released that
+includes changes to the user interface to make it feel more at home on
+iOS 7. There were changes to colors and the style of the user interface.
+Also, corrected a spelling error or two!
 
-This update still maintains compatibility with iOS 6 devices and should run on all iPad models.
+
+This update still maintains compatibility with iOS 6 devices and should
+run on all iPad models.
 
 [![The United States][1]][3]
 [![The United States][2]][3]

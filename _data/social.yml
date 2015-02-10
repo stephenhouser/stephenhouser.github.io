@@ -37,7 +37,7 @@
 - name: flickr
   url: http://www.flickr.com/stephenhouser
   username: stephenhouser
-  icon: /logo-pngs/icon-flickr.png
+  icon: /logo-png/icon-flickr.png
   svg: /logos-svg/flickr.svg
 #  type: social
 
@@ -91,7 +91,7 @@
 
 - name: QRZ
   url:  http://www.qrz.com/db/N1SH
-  icon: /logos/icon-qrz.png
+  icon: /logos-png/icon-qrz.png
   type: radio
   username: N1SH
 

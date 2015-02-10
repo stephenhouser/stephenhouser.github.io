@@ -10,7 +10,7 @@ permalink: /courses/
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
                 <li><a href="{{ page.url | prepend:site.baseurl }}">
 {% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ page.thumbnail | prepend:site.asseturl }}{% endif %}{% endcapture %}
-                    <img src="{%include asset.inc%}{{thumbnail}}"/><h1>{{page.title}}</h1></a>
+                    <img src="{{ thumbnail | prepend:site.assetsurl }}"/><h1>{{page.title}}</h1></a>
                     <div class="excerpt">
                       {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
                     </div>

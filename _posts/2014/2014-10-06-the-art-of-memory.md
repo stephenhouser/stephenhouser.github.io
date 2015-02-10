@@ -3,12 +3,13 @@ title:  	The Art of Memory by Frances A Yates
 date:  		2014-10-06 21:25:38
 thumbnail:
 category:	books
-tags: 		[books]
+tags: 		[book notes]
 keywords:
 description:
 ---
 Book notes from [ The Art Of Memory  ](https://kindle.amazon.com/work/the-art-memory-frances-
 yates-ebook/B000B1RAXS/B005TKD6UC) by Frances A Yates
+
 
 ![The Art of Memory](http://ecx.images-amazon.com/images/I/51lq3XLHQzL.jpg)
 

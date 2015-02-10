@@ -2,7 +2,7 @@
 title: 		Good Turn - Marcus Aurelius
 date: 		2014-04-01 10:00:00
 thumbnail:
-category:	quotes
+category:	reading
 tags: 		[quotes]
 keywords:
 description:
