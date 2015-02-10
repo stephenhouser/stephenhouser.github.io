@@ -28,7 +28,7 @@ permalink: /projects/
             {% endif %}
     {% endfor %}
 
-    <-- include pages that have not been made posts yet -->
+    <!-- include pages that have not been made posts yet -->
     {% for page in site.pages | sort_by: "date" %}
             {% if page.archive == true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}

@@ -1,16 +1,16 @@
 ---
-title: 		InOut Board Adium/Libpurple Plugin
-date: 		2009-12-08 12:00:00
-thumbnail: 	/inoutboard-adium.png
-category: 	projects
-tags: 		[development]
-keywords: 	adium plugin libpurple develop pidgin
+title:      InOut Board Adium/Libpurple Plugin
+date:       2009-12-08 12:00:00
+thumbnail:  /inoutboard/inoutboard-adium.png
+category:   projects
+tags:       [development]
+keywords:   adium plugin libpurple develop pidgin
 description: >
     libpurple plugin adapted to work in Adium the Mac OS X instant
     messaging client"
 
-layout: 	project
-archive:	true
+layout:     project
+archive:    true
 ---
 A <a href="http://developer.pidgin.im/wiki/WhatIsLibpurple">libpurple</a> plugin adapted to work in <a href="http://adium.im/">Adium</a>, the <a href="http://www.apple.com/macosx/">Mac OS X</a> instant messaging client. The purpose of the plugin is to coordinate with our local staff <a href="http://webapp.usm.maine.edu/InOutBoard">In Out Board</a>, a virtual equivalent to regular office <a href="http://www.google.com/search?q=magnetic+in+out+board">magnetic in out boards</a> showing who is in the office and who is not. This makes the actual work of the plugin useless outside our small environment. However, the method of creating a plugin, the wrapper code for <a href="http://adium.im/">Adium</a> and <a href="http://developer.pidgin.im/wiki/WhatIsLibpurple">libpurple</a> plugins, and the documentation here are all potentially useful.
 
@@ -36,15 +36,15 @@ The plugin was originally developed for <a href="http://developer.pidgin.im/wiki
 
 ## Screenshots
 
-<img src="{{site.asseturl}}/inoutboard-preferences.png" alt="image of the preferences window" />
+<img src="{{site.asseturl}}/inoutboard/inoutboard-preferences.png" alt="image of the preferences window" />
 
 The Adium advanced preference view for the plugin.
 
-<img src="{{site.asseturl}}/inoutboard-status.png" alt="image of status selections in Adium" />
+<img src="{{site.asseturl}}/inoutboard/inoutboard-status.png" alt="image of status selections in Adium" />
 
 The Adium status selection menu.
 
-<img src="{{site.asseturl}}/inoutboard-web.png" alt="image of the In Out Board web application" width="90%"/>
+<img src="{{site.asseturl}}/inoutboard/inoutboard-web.png" alt="image of the In Out Board web application" width="90%"/>
 
 The USM InOutBoard web application.
 
