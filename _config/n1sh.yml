@@ -1,6 +1,6 @@
 # Config file to serve from houser's home directory
 #url: http://n1sh.net/~houser
 baseurl: /~houser
-asseturl: /~houser/assets
-fileurl: /~houser/files
+assetsurl: /~houser/assets
+filesurl: /~houser/files
 

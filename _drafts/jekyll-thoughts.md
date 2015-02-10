@@ -18,7 +18,7 @@ archive:    [true, false]
 
 Here are some thoughts on what I'd like to add to the current (new) site:
 
-* Plugin that lets you tweak content based on Google Analytics data:                             
+* Plugin that lets you tweak content based on Google Analytics data:
     http://www.developmentseed.org/blog/google-analytics-jekyll-plugin/
 
 * Would like some form of image gallery. Something that can pull
@@ -34,3 +34,31 @@ up images -- maybe from _data files?
     * Shawn-Sk8r
     * pwht
     * ...
+
+* Custom post assets and scripts
+	http://mattgemmell.com/page-specific-assets-with-jekyll/
+
+````
+---
+custom_css: authormarks
+custom_js:
+- jquery.min
+- authormarks
+---
+````
+
+and in HEAD
+
+````
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+  <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+  {% endfor %}
+{% endif %}
+````

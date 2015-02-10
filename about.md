@@ -1,26 +1,29 @@
 ---
-title: About
-permalink: /about/
-keywords: stephen houser about
-description: Details pertinent information about Stephen Houser (me) including work history, education, other sites, and some links.
-created: 2008-03-20 00:00:00
-date: 2015-02-08 00:00:00
-layout: page
+title:      About
+date:       2008-03-20 00:00:00
+tags:
+category:
+keywords:   stephen houser about
+description: >
+    Details pertinent information about Stephen Houser (me) including work
+    history, education, other sites, and some links.
+revised:    2015-02-08 00:00:00
+layout:     page
+permalink:  /about/
 ---
-![Stephen at Architalx Opening]({{site.baseurl}}/assets/stephen-architalx.png)
+![Stephen at Architalx Opening]({{site.assetsurl}}/projects/stephen-architalx.png)
 
 Mr. Stephen Houser is a technology professional with extensive experience in software development, data networking, and information technology project management. An adjunct faculty member in the Department of Computer Science, he teaches courses in data communications, operating systems, mobile development, and robotics. Mr. Houser is an enthusiastic software developer, woodworker, tinkerer, father, and scoutmaster, who enjoys the outdoors as much as the indoors with his two children.
 
 Mr. Houser's professional and research activities fall into three broad categories: management/leadership, software (mobile) development, and digital studies. As a veteran technology leader, he continues to advance technology leadership through seminars, books, conferences, and institutes. A long-time software developer, he uses the mobile platform and has published or delivered numerous successful apps on iOS and Android. Mr. Houser's keenness for interdisciplinary work leads him to frequently cross the borders of computer science and technology in order to creatively apply or modify the tools and approaches of computing in fields such as art, gaming, and communication.
 
 ## Places to find Stephen
-
 <div id="connections-right">
-    <a href="http://usm.maine.edu"><img id="hero" src="{{site.asseturl}}/logos/usm-horizontal.gif" alt="USM Logo" /></a><br/>
+    <a href="http://usm.maine.edu"><img id="hero" src="{%include asset.inc fn="/logos-png/usm-horizontal.gif"%}"     <a href="http://usm.maine.edu"><img id="hero" src="{{site.assetsurl}}/logos-png/usm-horizontal.gif" alt="USM Logo" /></a><br/>
     {% for account in site.data.social %}
         {% if account.icon %}
             <a href="{{ account.url }}">
-                <img style="height: 50px; padding: 5px;" src="{{ account.icon | prepend:"/assets/" | prepend:site.baseurl }}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
+                <img style="height: 50px; padding: 5px;" src="{{account.icon | prepend:site.assetsurl}}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
         {% endif %}
     {% endfor %}
 </div>
@@ -29,7 +32,7 @@ Mr. Houser's professional and research activities fall into three broad categori
     <ul>
     {% for account in site.data.social %}
         {% if account.type != 'email' %}
-            <li><a href="{{ account.url }}">{{ account.name }} 
+            <li><a href="{{ account.url }}">{{ account.name }}
                 {% if account.username %}({{account.username}}){% endif %}</a></li>
         {% endif %}
     {% endfor %}
