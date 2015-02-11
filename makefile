@@ -21,7 +21,7 @@ DEST=_site
 # Other publishable places
 PEOPLE_DEST=/Volumes/usmfiles/home/houser/public.www
 GOOGLE_DEST=~/Google Drive/Public
-MEDIA_DEST=media.usm.maine.edu:public_html/
+MEDIA_DEST=media.usm.maine.edu:public_html
 N1SH_DEST=~/public_html
 
 DATE=$(shell date +"%Y-%m-%d")
@@ -79,8 +79,8 @@ publish-people: clean-mac-files
 	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml -d "$(PEOPLE_DEST)"
 	#make tidy DEST=$(PEOPLE_DEST)
 
-publish-media: clean-mac-files
-	{ cd ../media.usm.maine.edu; rsync $(RSOPTS) -vauzC --exclude ._* . "$(MEDIA_DEST)"; }
+publish-filesusm: clean-mac-files
+	rsync $(RSOPTS) -vauzC --exclude ._* ./files/ "$(MEDIA_DEST)"
 
-pull-media:
-	{ cd ../media.usm.maine.edu; rsync $(RSOPTS) -vauzC --exclude ._* "$(MEDIA_DEST)" .; }
+pull-filesusm:
+	rsync $(RSOPTS) -vauzC --exclude ._* "$(MEDIA_DEST)/" ./files
