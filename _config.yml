@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
 #url: "http://blog.stephenhouser.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 assetsurl: /assets
-filesurl: /files
+filesurl: http://media.usm.maine.edu/~houser
 timezone: America/New_York
 
 permalink: /:categories/:year-:month-:day-:title.html
@@ -38,6 +38,6 @@ defaults:
 
 # When clobbering the destination, don't muck with these
 keep_files: ['CampusCrush']
-exclude: ['makefile']
+exclude: ['makefile', 'files']
 include: []
 safe: true

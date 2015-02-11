@@ -39,9 +39,9 @@ Where t indicates the number of days since birth. Source: <a href="http://en.wik
 
         <input class="submit" type="button" value="Compute" onClick="bio_calc(biorhythm_form); return false;"/>
         <input class="submit" type="button" value="Save Settings" onClick="save_bio_cookie(biorhythm_form); return false;"/>
-        <span class="hovertip"><a href="">(?)</a><span>Saves the currently entered birth date information as a cookie so when you visit next you won't have to enter it again.</span></span>
+        <span class="hovertip"><a href="#">(?)</a><span>Saves the currently entered birth date information as a cookie so when you visit next you won't have to enter it again.</span></span>
         <input class="submit" type="button" value="Forget Settings" onClick="clear_bio_cookie(biorhythm_form); return true;"/>
-        <span class="hovertip"><a href="">(?)</a><span>Forgets the currently entered birth date information by deleting the saved cookie.</span></span>
+        <span class="hovertip"><a href="#">(?)</a><span>Forgets the currently entered birth date information by deleting the saved cookie.</span></span>
 
         <script type="text/javascript">
             load_bio_cookie(biorhythm_form);

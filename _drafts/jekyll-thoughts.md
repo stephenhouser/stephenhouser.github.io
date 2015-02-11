@@ -35,6 +35,10 @@ up images -- maybe from _data files?
     * pwht
     * ...
 
+* use post_url for internal links
+	{% post_url /subdir/2010-07-21-name-of-post %}
+
+
 * Custom post assets and scripts
 	http://mattgemmell.com/page-specific-assets-with-jekyll/
 
