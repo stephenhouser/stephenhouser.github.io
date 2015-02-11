@@ -102,7 +102,7 @@
   type: radio
 
 - name: On Air
-  url:  N1SH
+  #url:  N1SH
   icon: /logos-png/icon-hamradio.png
   type: radio
   username: N1SH

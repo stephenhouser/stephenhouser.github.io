@@ -54,4 +54,4 @@ The game begins with the stones evenly distributed among the twelve playing bins
 
 * <a href="http://www.lookoutnow.com/game">JavaScript Mancala</a>, This is where the Images for the above applet are from. Thanks to Chet Gottfried at LookoutNow.Com for letting me use them, even after years of me not asking!
 * Toy analysis of Mancala (gone)
-* <a href="http://imagiware.com/mancala">Mancala Web Home</a>
+* Mancala Web Home (defunct: imagiware.com/mancala)

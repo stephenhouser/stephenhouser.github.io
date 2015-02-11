@@ -1,1 +1,0 @@
-{% if page.course %}{{site.filesurl|append:"/"|append:page.course}}{% elsif page.project %}{{site.filesurl|append:"/"|append:page.project}}{% endif %}

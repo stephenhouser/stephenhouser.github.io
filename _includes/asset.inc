@@ -1,1 +1,0 @@
-{% if page.course %}{{site.assetsurl | append:"/" | append:page.course | append:"/" | append:fn }}{% elsif page.project %}{{site.assetsurl | append:"/" | append:page.project | append:"/" | append:fn }}{% else %}{{site.assetsurl | append:"/" | append:fn }}{% endif %}

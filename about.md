@@ -45,14 +45,20 @@ fields such as art, gaming, and communication.
 </div>
 
 <div id="connections-left">
-    <ul>
-    {% for account in site.data.social %}
-        {% if account.type != 'email' %}
-            <li><a href="{{ account.url }}">{{ account.name }}
-                {% if account.username %}({{account.username}}){% endif %}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
+	<ul>
+	{% for account in site.data.social %}
+		{% if account.type != 'email' %}
+			<li>
+			{% if account.url %}
+				<a href="{{account.url}}">{{account.name}}</a>
+			{% else %}
+				{{account.name}}
+			{% endif %}
+			{% if account.username %}({{account.username}}){% endif %}
+			</li>
+		{% endif %}
+	{% endfor %}
+	</ul>
 </div>
 
 ## Education
@@ -68,7 +74,7 @@ fields such as art, gaming, and communication.
 * <b>1991-2001</b> Software Developer, <a href="http://usm.maine.edu/computing">Information and Technology</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>1989-1991</b> Software Developer, <a href="http://www.schroff.com">Schroff Development Inc.</a>
 
-[Full Resume]({{site.baseurl}}/files/StephenHouser-Resume-20130418.pdf).
+[Full Resume]({{"/random/StephenHouser-Resume-20130418.pdf"|prepend:site.filesurl}}).
 
 ## Links
 
