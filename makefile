@@ -87,7 +87,7 @@ publish-n1sh:
 
 tidy: clean-mac-files
 	@echo "ERROR: TIDY IS BROKEN"
-x@echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
+	@echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
 
 clean:
 	rm -rf _site/*
