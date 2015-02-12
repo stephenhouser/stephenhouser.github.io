@@ -52,6 +52,10 @@ pull-media:
 
 ##### GITHUB-DROPBOX ######
 
+# Add the github remote configuration to .git/config
+add-github:
+	git remote add github https://github.com/stephenhouser/stephenhouser.github.io.git
+    
 publish-github: clean-mac-files
 	# Don't need to build, github will do that.
 	git push github -v --all
