@@ -1,6 +1,6 @@
 ---
 title:      Maine Campus Crush
-date:       2015-02-11 12:00
+date:       2015-02-11 07:00
 thumbnail:  /projects/ccrush-icon.png
 category:   projects
 tags:       [mobile, development]
@@ -15,7 +15,7 @@ archive:    false
 ---
 [Maine Campus Crush][campuscrush] is a tile-matching puzzle video game. It is also a
 challenge game between the University of Maine System campuses. Choose
-your team and play for the highest scores! 
+your team and play for the highest scores!
 
 
 [![Play Maine Campus Crush Now]({{"/projects/ccrush-splash.png"|prepend:site.assetsurl}})][campuscrush]
