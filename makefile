@@ -48,6 +48,10 @@ serve:
 serve-houser:
 	$(JEKYLL_CMD) serve -b /houser --watch
 
+serve-dropbox:
+	$(JEKYLL_CMD) serve --config _config.yml,_config/dropbox-files.yml --watch
+
+
 tidy: clean-mac-files
 	find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
 
