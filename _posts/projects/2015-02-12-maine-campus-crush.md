@@ -10,7 +10,7 @@ description: >
     your team and play for the highest scores!
 
 layout:     project
-project:    CCRUSH
+#project:    CCRUSH
 archive:    false
 ---
 [Maine Campus Crush][campuscrush] is a tile-matching puzzle video game. It is also a
@@ -18,7 +18,7 @@ challenge game between the University of Maine System campuses. Choose
 your team and play for the highest scores! 
 
 
-![[Play Maine Campus Crush Now][campuscrush]]({{"/projects/ccrush-splash.png"|prepend:site.filesurl}})
+[![Play Maine Campus Crush Now]({{"/projects/ccrush-splash.png"|prepend:site.assetsurl}})][campuscrush]
 
 ## Gameplay
 
