@@ -17,8 +17,57 @@ archive:    false
 challenge game between the University of Maine System campuses. Choose
 your team and play for the highest scores!
 
+<style>
+#leaderboard {
+	display: inline-block;
+	float: right;
+	border: 1px solid green;
+	border-radius: 5px;
+	width: 200px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#leaderboard h3 {
+	text-align: center;
+	border-bottom: 1px solid green;
+	margin: 10;
+}
+
+#scores {
+	list-style-type: none;
+}
+
+#scores li p {
+	display: inline-block;
+	margin: 0;
+}
+
+.score {
+	display: inline-block;
+	width: 33%;
+	text-align: right;
+	font-weight: bold;
+}
+</style>
+<div id="leaderboard">
+	<h3>Leaderboard</h3>
+	<ul id="scores">
+		<li class="loading">Loading Leaderboard...</li>
+		<li class="team0"><span class="score">0</span> <p>Undeclared</p></li>
+		<li class="team1"><span class="score">0</span> <p>Moose</p></li>
+		<li class="team2"><span class="score">0</span> <p>Beavers</p></li>
+		<li class="team3"><span class="score">0</span> <p>Bengals</p></li>
+		<li class="team4"><span class="score">0</span> <p>Owls</p></li>
+		<li class="team5"><span class="score">0</span> <p>Black Bears</p></li>
+		<li class="team6"><span class="score">0</span> <p>Huskies</p></li>
+		<li class="team7"><span class="score">0</span> <p>Clippers</p></li>
+		<li class="team8"><span class="score">0</span> <p>System</p></li>
+	</ul>
+</div>
+
 
 [![Play Maine Campus Crush Now]({{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}})][campuscrush]
+
 
 ## Gameplay
 
@@ -44,6 +93,51 @@ ranked on the leaderboard.
 ## Background
 
 The game is heavily based on [Bejewled][bejewled]
+
+<script type="application/x-javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+var scoreURL = "https://script.google.com/macros/s/AKfycbwBINdsC6ygyp2ojzFboO_cRxvS0U1joxWfUkNhfT-XDHiK_kU/exec";
+
+function loadScores() {
+	var teams = 8;
+
+    // Send out a request to get leaderboard data from the "server"
+    $.ajax({
+        url: scoreURL,
+        cache : false,
+        dataType: 'jsonp',
+        success: function(data) {
+			// Modify the leaderboard DOM elements
+			var leaderboard = data.leaderboard;
+			for (var team = 0; team < teams; team++) {
+				var teamData = leaderboard[team];
+				var scoreSpan = $('#scores ' + '.team' + team + ' .score');
+				scoreSpan.text(teamData.score);
+			}
+
+            $('#scores ' + '.loading').hide();
+
+			/* Sort the leaderboard */
+			var ul = $('ul#scores');
+			var	li = ul.children('li');
+
+			li.detach().sort(function(a,b) {
+				var scoreA = parseInt($(a).children('.score').text());
+				var scoreB = parseInt($(b).children('.score').text());
+				return scoreB - scoreA;
+			});
+
+			ul.append(li);
+        },
+        error: function(e) {
+            console.log(e);
+        }
+    });
+}
+
+loadScores();
+</script>
 
  [campuscrush]: http://people.usm.maine.edu/houser/CampusCrush/
  [bejewled]:    http://en.wikipedia.org/wiki/Bejeweled
