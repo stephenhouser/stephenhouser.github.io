@@ -53,7 +53,8 @@ pull-media:
 ##### GITHUB-DROPBOX ######
 
 publish-github: clean-mac-files
-	$(JEKYLL_CMD) build --config _config.yml,_config/github-site.yml
+	# Don't need to build, github will do that.
+	git push github -v --all
 
 ##### UMS-GOOGLE #####
 
