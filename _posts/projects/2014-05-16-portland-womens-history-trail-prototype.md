@@ -7,7 +7,7 @@ tags:       [mobile, development]
 keywords:
 description:
 
-project:    pwht
+project:    PWHT
 ---
 This past week I had a bit of time in-between other work and projects to
 develop a quick [prototype][4] for [Eileen Eagan][1]'s [Portland Women's
