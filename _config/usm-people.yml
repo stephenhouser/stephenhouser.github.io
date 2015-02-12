@@ -1,4 +1,9 @@
-#url: http://people.usm.maine.edu/houser
-baseurl: /houser
-assetsurl: /houser/assets
-filesurl: http://media.usm.maine.edu/~houser
+#
+# USM-PEOPLE Configuration
+# * Base site on USM's "people" server http://people.usm.maine.edu/houser
+# * Files served from USM's "media" server, http://media.usm.maine.edu/~houser
+#
+#url:        http://people.usm.maine.edu/houser
+baseurl:    /houser
+assetsurl:  /houser/assets
+filesurl:   http://media.usm.maine.edu/~houser

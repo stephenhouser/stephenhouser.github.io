@@ -1,0 +1,11 @@
+#
+# ~houser Configuration
+# * Base site from ~houser directory
+# * Files served from "/files" subdirectory
+#
+# Config file to serve from houser's home directory
+#url:        http://DOMAIN.NAME/~houser
+baseurl:    /~houser
+assetsurl:  /~houser/assets
+#filesurl:   /~houser/files
+
