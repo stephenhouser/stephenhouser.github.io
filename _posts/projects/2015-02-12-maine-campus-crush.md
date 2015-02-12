@@ -1,7 +1,7 @@
 ---
 title:      Maine Campus Crush
 date:       2015-02-11 07:00
-thumbnail:  /projects/ccrush-icon.png
+thumbnail:  /projects/ccrush/ccrush-icon.png
 category:   projects
 tags:       [mobile, development]
 keywords:   html5 css3 javascript web application game university maine system campuses usm uma umm umaine umf umfk umm umpi ums
@@ -18,7 +18,7 @@ challenge game between the University of Maine System campuses. Choose
 your team and play for the highest scores!
 
 
-[![Play Maine Campus Crush Now]({{"/projects/ccrush-splash.png"|prepend:site.assetsurl}})][campuscrush]
+[![Play Maine Campus Crush Now]({{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}})][campuscrush]
 
 ## Gameplay
 
