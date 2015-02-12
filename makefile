@@ -64,7 +64,7 @@ GOOGLE_DEST=~/Google Drive/Public
 publish-google:
 	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d "$(GOOGLE_DEST)"
 
-    # Alternate makes locally and then rsync's
+	# Alternate makes locally and then rsync's
 	#$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml
 	#rsync -avz _site/* /Users/houser/Google\ Drive/Public/
 
@@ -76,7 +76,7 @@ serve-local:
 ##### HOUSER #####
 
 publish-houser:
-    @echo "ERROR: publish-houser is not running."
+	@echo "ERROR: publish-houser is not running."
 	@echo #$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml 
 
 N1SH_DEST=~/public_html
@@ -86,8 +86,11 @@ publish-n1sh:
 	rsync $(RSOPTS) -vauzC --exclude .DS_Store --exclude ._* _site/ n1sh.net:public_html
 
 tidy: clean-mac-files
-    @echo "ERROR: TIDY IS BROKEN"
-    @echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
+	@echo "ERROR: TIDY IS BROKEN"
+x@echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
+
+clean:
+	rm -rf _site/*
 
 clean-mac-files:
 	@find . -name ._* -exec rm -rf {} \;
