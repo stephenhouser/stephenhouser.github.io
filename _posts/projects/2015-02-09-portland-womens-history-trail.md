@@ -8,7 +8,7 @@ keywords:
 description:
 
 layout:     project
-project:    pwht
+project:    PWHT
 archive:	false
 ---
 A mobile, web-based version of the [Portland Women's History Trail][2]
