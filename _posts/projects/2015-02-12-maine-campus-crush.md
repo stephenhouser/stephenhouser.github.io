@@ -17,6 +17,7 @@ archive:    false
 challenge game between the University of Maine System campuses. Choose
 your team and play for the highest scores!
 
+
 <style>
 #leaderboard {
 	display: inline-block;
@@ -49,6 +50,15 @@ your team and play for the highest scores!
 	font-weight: bold;
 }
 </style>
+
+<div id="playgame" style="float: left;">
+        <img src="{{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}}"
+            alt="Play Maine Campus Crush"/>
+        <br/>
+        <a href="http://people.usm.maine.edu/houser/CampusCrush/">
+        <p align="center">Play Campus Crush Now</p>
+        </a>
+</div>
 <div id="leaderboard">
 	<h3>Leaderboard</h3>
 	<ul id="scores">
@@ -64,10 +74,8 @@ your team and play for the highest scores!
 		<li class="team8"><span class="score">0</span> <p>System</p></li>
 	</ul>
 </div>
-
-
-[![Play Maine Campus Crush Now]({{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}})][campuscrush]
-
+<div style="clear: both;">
+</div>
 
 ## Gameplay
 
