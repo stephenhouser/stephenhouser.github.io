@@ -55,19 +55,21 @@ pull-media:
 # Add the github remote configuration to .git/config
 add-github:
 	git remote add github https://github.com/stephenhouser/stephenhouser.github.io.git
-    
+
 publish-github: clean-mac-files
 	# Don't need to build, github will do that.
 	git push github -v --all
 
 ##### UMS-GOOGLE #####
 
-GOOGLE_DEST=~/Google Drive/Public
+GOOGLE_DEST="~/Google Drive/Sites/people-mirror"
+GOOGLE_FILES=~/Google\ Drive/Sites/media-mirror
 
 # Publish to Google Drive folder
 # - sync'd in "~/Google Drive"
 publish-google:
-	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d "$(GOOGLE_DEST)"
+	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d $(GOOGLE_DEST)
+	#rsync $(RSOPTS) -vauzC --exclude ._* ./files/ $(GOOGLE_FILES)/files
 
 	# Alternate makes locally and then rsync's
 	#$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml
@@ -82,7 +84,7 @@ serve-local:
 
 publish-houser:
 	@echo "ERROR: publish-houser is not running."
-	@echo #$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml 
+	@echo #$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml
 
 N1SH_DEST=~/public_html
 
