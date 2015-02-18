@@ -20,8 +20,9 @@ in Portland (Maine). The app is built using [jQuery Mobile][3] and
 **The app is not complete!** We are still working on the content and have
 engaged a design studio to help with the look and feel.
 
-[Launch the Trail Now
-![prototype screen capture][screencap]][4]
+[![prototype screen capture][screencap]][4]
+
+[Visit the Trail Now][4]
 
 The content is all [markdown][6] and incredibly simple to maintain.
 [Jekyll][5] is used to convert the content to HTML which is then

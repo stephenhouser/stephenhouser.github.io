@@ -21,6 +21,7 @@ are experts at identifying the states of the Union, it's your turn.
 [![The United States][1]][3]
 [![The United States][2]][3]
 
+
 There are two main aspects of the application; an interactive map and
 several games based on state facts. Each has a lot to explore and each
 was a blast to put together.

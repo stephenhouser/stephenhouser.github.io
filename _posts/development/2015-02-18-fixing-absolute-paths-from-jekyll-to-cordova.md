@@ -13,6 +13,7 @@ description:
 
 Using a site map, we can look at a specific example.
 
+````
     wwwroot/                                    
       index.html                                
       trails.html                               
@@ -38,6 +39,7 @@ Using a site map, we can look at a specific example.
         ...                                     
       js                                        
         ...                                     
+````
 
 In the top-level pages (`index.html`, `trails.html`, `places.html`, and `map.html`) all is well. Their links to each other and to deeper pages all work with the default [Jekyll][jekyll] configuration. That is a link in `trails.html` referring to the Congress Street Trail gets constructed as `trails/congress-street.html`.
 
@@ -64,12 +66,12 @@ def relrepl(match):
     return match.group(1) + match.group(2) + fix + match.group(3) + match.group(2)
 ````
 
-I was quite content with this quaint post-processing approach for about 8 hours. Then it hit me, I was fighting the framework that [Jekyll][jekyll] provides. _*I almost always find that if things seem hard or impossible to do within the framework you are working with, your approach is wrong. You are not using the framework how it was designed, you are fighting it.*_
+I was quite content with this quaint post-processing approach for about 8 hours. Then it hit me, I was fighting the framework that [Jekyll][jekyll] provides. **_I almost always find that if things seem hard or impossible to do within the framework you are working with, your approach is wrong. You are not using the framework how it was designed, you are fighting it._**
 
 The _in-framework_ approach is to use [Liquid][liquid] tags to figure out at what depth the page is and add that many `../`'s to the front of problematic URLs. Actually it's cleaner to create a variable (e.g. `site_root`) that has the right number of `../`'s and prepend that where needed. Unfortunately the variable scope in [Liquid][liquid] is very local, so the variable creation code needs to go at the beginning of any file that will use it. Here's a specific example, the project's includable page footer, `footer.inc`
 
+{% raw %}
 ````
-<!-- persistent footer navigation on all pages; always takes theme "a" -->
 {% capture my_lvl %}{{ page.url | split:'/' | size }}{% endcapture %}{% capture site_root %}{% for i in (3..my_lvl) %}../{% endfor %}{% endcapture %}
 <div data-id="footer" data-role="footer" data-position="fixed" data-tap-toggle="true" data-theme="a">
      <div data-role="navbar">
@@ -80,12 +82,16 @@ The _in-framework_ approach is to use [Liquid][liquid] tags to figure out at wha
           </ul>
      </div>
 </div>
+
 ````
+{% endraw %}
 
-Note that all hard-coded URLs are prefix-less; they lack a '/' at their start, making them relative. This is contrary to many of the framework examples. In fact, [Jekyll][jekyll] generates `page.url` with the '/' prefix. For links to be relative that needs to be stripped off. The following does just that, on a page that lists all the sites associated with a particular trail.
+Note that all hard-coded URLs are prefix-less; they lack a `/` at their start, making them relative. This is contrary to many of the framework examples. In fact, [Jekyll][jekyll] generates `page.url` with the `/` prefix. For links to be relative that needs to be stripped off. The following does just that, on a page that lists all the sites associated with a particular trail.
 
+{% raw %}
 ````
 <ul id="place-list" data-role="listview">
+	{% assign trail_places = site.places | where:"trail", page.trail %}
      {% for place in trail_places %}
           <li><a href="{{ place.url | remove_first:'/' | prepend:site_root }}">
                {{ place.title }}</a>
@@ -93,6 +99,7 @@ Note that all hard-coded URLs are prefix-less; they lack a '/' at their start, m
      {% endfor %}
 </ul>
 ````
+{% endraw %}
 
 Both of these approaches work in either a web-hosted and bundled application. They both make all the internal links relative to the current page. They both appear to function the same. However, the Python version uses a post-processing step that makes the generated product different in the web-hosted and bundled applications. This could easily introduce bugs or currently unseen functional differences that would be difficult to track down in the future. Working with rather than against the framework is the right choice.
 
