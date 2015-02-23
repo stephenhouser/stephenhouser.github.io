@@ -14,20 +14,31 @@ comments: 	true
         {{ content }}
     </article>
     <footer class="post-footer">
-        <!--
         {% if page.project %}
-            <h2>Related Articles</h2>
-            <ul class="archive-list">
-                {%for post in site.posts %}
-                    {% if post.project == page.project and post.id != page.id %}
-                    <li><time>{{ post.date | date:"%b %Y" }}</time>
-                        • <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        {% endif %}
-        -->
+	    	{% assign related_project = site.posts | where:"project", page.project %}
+	    	{% assign related_project_size = related_project | size %}{% if related_project_size > 1 %}
+				<h2>Related Posts</h2>
+				<ul class="archive-list">
+				{% for post in related_project %}{% if post.id != page.id %}
+					<li><time>{{ post.date | date:"%b %Y" }}</time>
+						• <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+					</li>
+				{% endif %}{% endfor %}
+			{% endif %}
+		{% endif %}
+
+        {% if page.course %}
+	    	{% assign related_course = site.posts | where:"course", page.course %}
+	    	{% assign related_course_size = related_course | size %}{% if related_course_size | size > 1 %}
+				<h2>Related Courses and Posts</h2>
+				<ul class="archive-list">
+				{% for post in related_course %}{% if post.id != page.id %}
+					<li><time>{{ post.date | date:"%b %Y" }}</time>
+						• <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+					</li>
+				{% endif %}{% endfor %}
+			{% endif %}
+		{% endif %}
     </footer>
 </div>
 
@@ -36,7 +47,7 @@ comments: 	true
     <script type="text/javascript">
         var disqus_shortname = 'stephenhouser'; // required: replace example with your forum shortname
 	    var disqus_identifier = '{{ page.id }}';
-    	var disqus_title = '{{ page.title }}';
+    	var disqus_title = '{{ page.title | cgi_escape }}';
     	//var disqus_url = '{{ page.url | prepend:site.baseurl }}';
     	/* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
