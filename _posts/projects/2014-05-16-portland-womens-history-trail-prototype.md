@@ -58,7 +58,7 @@ With that all said, go and [give it a try][4].
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
   [3]: http://jquerymobile.com
-  [4]: http://media.usm.maine.edu/~pwht
+  [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
   [screencap]: {{"/projects/pwht/pwht-prototype-2014-05-16.png" | prepend:site.assetsurl}}

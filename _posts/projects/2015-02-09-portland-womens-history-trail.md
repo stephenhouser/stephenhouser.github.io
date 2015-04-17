@@ -1,7 +1,7 @@
 ---
 title:      Portland Women's History Trail
 date:       2015-02-09 19:44:38
-thumbnail:  /projects/pwht/water-girl-small.png
+thumbnail:  /projects/pwht/icon-76@2x.png
 category:   projects
 tags:       [mobile, development]
 keywords:
@@ -17,12 +17,11 @@ in Portland (Maine). The app is built using [jQuery Mobile][3] and
 [jekyll][5] to create a complete HTML5/CSS3/JavaScript application.
 
 
-**The app is not complete!** We are still working on the content and have
-engaged a design studio to help with the look and feel.
+[![screen capture][screencap1] &nbsp; ![screen capture][screencap2]][4]
 
-[![prototype screen capture][screencap]][4]
+[Visit the Trail on the Web][4]
 
-[Visit the Trail Now][4]
+[![Android app on Google play][playlogo]][googlestore]
 
 The content is all [markdown][6] and incredibly simple to maintain.
 [Jekyll][5] is used to convert the content to HTML which is then
@@ -42,8 +41,10 @@ a possible implementation. And, as with any prototype, it needs work.
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
   [3]: http://jquerymobile.com
-  <!-- [4]: http://goo.gl/UIndL8 -->
-  [4]: http://media.usm.maine.edu/~pwht
+  [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap]: {{"/projects/pwht/pwht-prototype-2014-05-16.png" | prepend:site.assetsurl}}
+  [screencap1]: {{"/projects/pwht/pwht-map.png" | prepend:site.assetsurl}}
+  [screencap2]: {{"/projects/pwht/pwht-site.png" | prepend:site.assetsurl}}
+  [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
+  [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
