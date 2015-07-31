@@ -67,7 +67,8 @@ fields such as art, gaming, and communication.
 * <b>1985-1993</b> B.S. <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 
 ## Professional
-* <b>2009-Present</b> Executive Director for <a href="http://usm.maine.edu/computing">Computing Services</a> <a href="http://usm.maine.edu">University of Southern Maine</a>
+* <b>2015-Present</b> Director of Academic Technology and Consulting at <a href="http://bowdoin.edu">Bowdoin College</a>
+* <b>2009-2015</b> Executive Director for <a href="http://usm.maine.edu/computing">Computing Services</a> <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>2006-2009</b> Director, ITNS &amp; DBAS, <a href="http://usm.maine.edu/computing">Information and Technology</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>1994-present</b> Adjunct Faculty, <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>2001-2006</b> Director Database and Application Support, <a href="http://usm.maine.edu/computing">Information and Technology</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
@@ -76,10 +77,12 @@ fields such as art, gaming, and communication.
 
 [Full Resume]({{"/random/StephenHouser-Resume-20130418.pdf"|prepend:site.filesurl}}).
 
+<!--
 ## Links
 
 * <a href="http://goo.gl/I7jER8">Google Drive version</a>.
 * <a href="http://www.google.com/calendar/embed?src=houser%40maine.edu&ctz=America/New_York">Stephen's Calendar</a>
+-->
 
 ## Web Standards
 
