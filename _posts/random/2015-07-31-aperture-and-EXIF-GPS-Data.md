@@ -3,7 +3,7 @@ title: 		Aperture and EXIF GPS Data
 date: 		2015-07-31 14:00:00
 thumbnail:
 category:	random
-tags: 		[random, deveopment]
+tags: 		[random, development]
 keywords:
 description:
 ---
