@@ -74,6 +74,12 @@ publish-github: clean-mac-files
 	# Don't need to build, github will do that.
 	git push github -v --all
 
+###
+sync-s3:
+	cd ~/Dropbox/Public
+	aws s3 sync ~/Dropbox/Public s3://media.stephenhouser.com --acl public-read --exclude .dropbox --exclude *.DS_Store
+
+
 ##### N1SH.NET #####
 
 publish-houser:
