@@ -10,10 +10,10 @@
 # make publish		: Publish to Production (GitHub)
 #
 # Underlying alternate publishing locations
-# make publish-people	: Publishes the USM       -- http://people.usm.maine.edu/houser
-# make publish-n1sh     : Publish to n1sh.net     -- http://n1sh.net/~houser
-# make publish-google   : Publish to Google Drive -- http://goo.gl/I7jER8
-# make publish-github   : Publish to Git Hub      -- http://stephenhouser.github.io
+# make publish-people	: Publishes the USM		  -- http://people.usm.maine.edu/houser
+# make publish-n1sh		: Publish to n1sh.net	  -- http://n1sh.net/~houser
+# make publish-google	: Publish to Google Drive -- http://goo.gl/I7jER8
+# make publish-github	: Publish to Git Hub	  -- http://stephenhouser.github.io
 #
 
 # How to run jekyll
@@ -54,6 +54,52 @@ local:
 
 publish: publish-github
 
+##### UTILITY TARGETS #####
+
+tidy: clean-mac-files
+	@echo "ERROR: TIDY IS BROKEN"
+	@echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
+
+clean:
+	rm -rf _site/*
+
+clean-mac-files:
+	@find . -name ._* -exec rm -rf {} \;
+	@find . -name .DS_Store -exec rm {} \;
+	@find . -name *~ -exec rm {} \;
+
+##### GITHUB and DROPBOX ######
+
+# Site is hosted on GitHub and using GitHub Pages
+# files are hosted from Dropbox (no "publish" option, all are public)
+
+# Utility target to add github remote configuration to .git/config
+add-github:
+	git remote add github https://github.com/stephenhouser/stephenhouser.github.io.git
+
+publish-github: clean-mac-files
+	# Don't need to build, github will do that.
+	git push github -v --all
+
+##### N1SH.NET #####
+
+publish-houser:
+	@echo "ERROR: publish-houser is not running."
+	@echo #$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml
+
+N1SH_DEST=~/public_html
+
+publish-n1sh:
+	$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml
+	rsync $(RSOPTS) -vauzC --exclude .DS_Store --exclude ._* _site/ n1sh.net:public_html
+
+###### OLD TARGETS ######
+
+##### LOCAL-FILES #####
+
+serve-local:
+	$(JEKYLL_CMD) serve --watch --config _config.yml,_config/local-files.yml
+
 ##### USM: PEOPLE and MEDIA #####
 # Site is hosted on people.usm.maine.edu
 # files are hosted on media.usm.maine.edu
@@ -72,19 +118,6 @@ publish-media: clean-mac-files
 pull-media:
 	rsync $(RSOPTS) -vauzC --exclude ._* "$(MEDIA_DEST)/" ./files
 
-##### GITHUB and DROPBOX ######
-
-# Site is hosted on GitHub and using GitHub Pages
-# files are hosted from Dropbox (no "publish" option, all are public)
-
-# Utility target to add github remote configuration to .git/config
-add-github:
-	git remote add github https://github.com/stephenhouser/stephenhouser.github.io.git
-
-publish-github: clean-mac-files
-	# Don't need to build, github will do that.
-	git push github -v --all
-
 ##### UMS: GOOGLE #####
 # Site is hosted on Google Drive
 # files are co-located on Google Drive as files subdirectory
@@ -101,34 +134,4 @@ publish-google:
 	# Alternate makes locally and then rsync's
 	#$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml
 	#rsync -avz _site/* /Users/houser/Google\ Drive/Public/
-
-##### LOCAL-FILES #####
-
-serve-local:
-	$(JEKYLL_CMD) serve --watch --config _config.yml,_config/local-files.yml
-
-##### HOUSER #####
-
-publish-houser:
-	@echo "ERROR: publish-houser is not running."
-	@echo #$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml
-
-N1SH_DEST=~/public_html
-
-publish-n1sh:
-	$(JEKYLL_CMD) build --config _config.yml,_config/houser.yml
-	rsync $(RSOPTS) -vauzC --exclude .DS_Store --exclude ._* _site/ n1sh.net:public_html
-
-tidy: clean-mac-files
-	@echo "ERROR: TIDY IS BROKEN"
-	@echo find "$(DEST)" -type f -name "*.html" -exec tidy -config _config/tidy.conf {} \;
-
-clean:
-	rm -rf _site/*
-
-clean-mac-files:
-	@find . -name ._* -exec rm -rf {} \;
-	@find . -name .DS_Store -exec rm {} \;
-	@find . -name *~ -exec rm {} \;
-
 
