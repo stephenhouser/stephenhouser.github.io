@@ -34,7 +34,7 @@ paginate:   7
 
 # When clobbering the destination, don't muck with these
 keep_files: ['CampusCrush', 'files']
-exclude:    ['makefile', 'files', 'Gemfile*']
+exclude:    ['makefile', 'files', 'Gemfile*', 'CNAME']
 include:    []
 safe:       true
 
