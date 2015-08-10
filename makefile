@@ -2,10 +2,9 @@
 # makefile - make based maintenance for Stephen Houser's website
 #
 # Development Targets:
-# make build            : Builds content to local _site
-# make serve		: Builds and serves locally (for development)
-# make watch            : Builds and rebuilds on changes (for alternate web server)
-# make local            : Builds to ~user/public_html or ~user/Sites
+# make build            : Build content to internal "_site" (default target)
+# make serve		: Build and serve from internal "_site" (primary development target)
+# make local            : Build to ~user/public_html or ~user/Sites
 #
 # Production Target:
 # make publish		: Publish to Production (GitHub)
@@ -38,10 +37,18 @@ serve:
 
 # Build and watch
 # - assumes another webserver is serving the content
-watch:
-	$(JEKYLL_CMD) build --watch
+# Disabled: this would be more useful as part of the local build below.
+#watch:
+#	$(JEKYLL_CMD) build --watch
+
+# Set "local" destination based on platform/host type
+LOCAL_DEST=~/public_html
+ifeq ($(shell uname), Darwin)
+$(eval LOCAL_DEST=~/Sites)
+endif
 
 local:
+	$(JEKYLL_CMD) build -d $(LOCAL_DEST)
 
 ##### PRODUCTION TARGET ####
 
