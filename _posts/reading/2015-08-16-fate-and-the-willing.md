@@ -1,6 +1,6 @@
 ---
 title: 		Fate Leads the Willing - Cicero
-date: 		2014-08-16 10:00:00
+date: 		2015-08-16 10:00:00
 thumbnail:
 category:	reading
 tags: 		[quotes]
