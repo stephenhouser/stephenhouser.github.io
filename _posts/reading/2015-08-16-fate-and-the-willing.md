@@ -4,7 +4,7 @@ date: 		2014-08-16 10:00:00
 thumbnail:
 category:	reading
 tags: 		[quotes]
-keywords:	
+keywords:	cicero fate seneca philosophy roman
 description:
 ---
 
