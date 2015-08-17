@@ -1,26 +1,25 @@
 ---
-title: 		Fate Leads the Willing - Cicero
-date: 		2014-08-16 10:00:00
+title: 		
+date: 		2015-08-17 10:00:00
 thumbnail:
-category:	reading
+category:	
 tags: 		[quotes]
 keywords:	
 description:
 ---
 
-> Lead me, Master of the soaring vault
-> Of Heaven, lead me, Father, where you will.
-> I stand here prompt and eager to obey.
-> And ev'n suppose I were unwilling, still
-> I should attend you and know suffering,
-> Dishonourably and grumbling, when I might
-> Have done so and been good as well. For Fate
-> The willing leads, the unwilling drags along.
+This is the content it's not very complex. It has [one][1] link and [two][two] links.
+Don't forget the ![Image Title](http://ima.ge/link) or ![Image Title][img]
 
--- Cicero (via Seneca)
+* List
+* of items
 
-Also quoted as
+Here is a quote
+ 
+> quoted items  
+> leave two spaces at end of line for line break
+>
 
-> Fate leads the willing, and drags along the reluctant.
-
--- Cicero 
+  [1]: http://link.one/url
+  [two]: http://link.two/url
+  [img]: http:/ima.ge/link
