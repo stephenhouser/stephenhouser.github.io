@@ -1,0 +1,43 @@
+<style>
+html, body{
+  min-height: 100%;
+}
+body{
+  position: relative;
+}
+/* overlay styles, all needed */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    margin-top: -25%;
+    margin-left: -25%;
+    background-color: #c4f1c4;
+    border-radius: 10px;
+    border: 4px solid #108010;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+</style>
+<div class="overlay">
+</div>
+<div class="modal">
+	<h1>Stephen Houser Has Moved!</h1>
+	<h2><a href="http://stephenhouser.com{{ page.url }}">StephenHouser.com</a></h2>
+	<p>The content here will not be updated any longer. Please follow the link
+	to my new location to get the most up-to-date information. I'm doing my
+	best to redirect things to their new homes.</p>
+</div>
