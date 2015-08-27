@@ -20,10 +20,9 @@ body{
 .modal {
     width: 50%;
     position: fixed;
-    top: 50%;
+    top: 10%;
     left: 50%;
     padding: 20px;
-    margin-top: -25%;
     margin-left: -25%;
     background-color: #c4f1c4;
     border-radius: 10px;
@@ -31,13 +30,20 @@ body{
     text-align: center;
     z-index: 11; /* 1px higher than the overlay layer */
 }
+
 </style>
-<div class="overlay">
-</div>
+<script>
+function hideOverlay() {
+    document.getElementById("overlay").style.display = 'none';
+}
+</script>
+<div id="overlay" class="overlay">
 <div class="modal">
 	<h1>Stephen Houser Has Moved!</h1>
 	<h2><a href="http://stephenhouser.com{{ page.url }}">StephenHouser.com</a></h2>
-	<p>The content here will not be updated any longer. Please follow the link
-	to my new location to get the most up-to-date information. I'm doing my
-	best to redirect things to their new homes.</p>
+	<p>The content here will not be updated any longer. Please follow the link above
+	to this page's new location to get the most up-to-date information.</p>
+	<a href="#" onClick="hideOverlay();">Ignore and Continue</a>
+    </label>
+</div>
 </div>
