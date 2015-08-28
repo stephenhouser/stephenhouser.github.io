@@ -3,3 +3,4 @@ _site/
 files/
 .DS_Store
 ._*
+Gemfile.lock
