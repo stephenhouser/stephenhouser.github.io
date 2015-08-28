@@ -17,11 +17,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # May get overriden by other --config's when building
 
 # Google Analytics Configuration
-# http://people.usm.maine.edu/houser
-# google_analytics: UA-2571363-5
-# http://bowdoin.edu/~houser
-# google_analytics: UA-2571363-10
-# http://stephenhouser.com
+# DEFAULT: http://stephenhouser.com
 google_analytics: UA-2571363-2
 
 #
