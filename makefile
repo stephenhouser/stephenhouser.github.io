@@ -10,9 +10,9 @@
 # make publish		: Publish to Production (GitHub)
 #
 # Underlying alternate publishing locations
-# make publish-people	: Publishes the USM		  -- http://people.usm.maine.edu/houser
+# make publish-usm	    : Publishes the USM		  -- http://people.usm.maine.edu/houser
+# make publish-ums	: Publish to Google Drive -- http://goo.gl/I7jER8
 # make publish-n1sh		: Publish to n1sh.net	  -- http://n1sh.net/~houser
-# make publish-google	: Publish to Google Drive -- http://goo.gl/I7jER8
 # make publish-github	: Publish to Git Hub	  -- http://stephenhouser.github.io
 #
 
@@ -110,32 +110,35 @@ serve-local:
 # Site is hosted on people.usm.maine.edu
 # files are hosted on media.usm.maine.edu
 
-PEOPLE_DEST=/Volumes/usmfiles/home/houser/public.www
-MEDIA_DEST=media.usm.maine.edu:public_html
+USM_WEB=/Volumes/usmfiles/home/houser/public.www
+USM_FILES=media.usm.maine.edu:public_html
 
-publish-people: clean-mac-files
-	@test -d $(PEOPLE_DEST) || { echo "ERROR: $(PEOPLE_DEST) not mounted. Exiting..."; exit 1; }
-	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml -d "$(PEOPLE_DEST)"
+usm: 
+	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml
+	
+publish-usm: clean-mac-files
+	@test -d $(PEOPLE_DEST) || { echo "ERROR: $(USM_WEB) not mounted. Exiting..."; exit 1; }
+	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml -d "$(USM_WEB)"
 
 # These handle pushing and pulling FILES from USM's media server
-publish-media: clean-mac-files
-	rsync $(RSOPTS) -vauzC --exclude ._* ./files/ "$(MEDIA_DEST)"
+publish-usm-media: clean-mac-files
+	rsync $(RSOPTS) -vauzC --exclude ._* ./files/ "$(USM_FILES)"
 
-pull-media:
-	rsync $(RSOPTS) -vauzC --exclude ._* "$(MEDIA_DEST)/" ./files
+pull-usm-media:
+	rsync $(RSOPTS) -vauzC --exclude ._* "$(USM_FILES)/" ./files
 
 ##### UMS: GOOGLE #####
 # Site is hosted on Google Drive
 # files are co-located on Google Drive as files subdirectory
 
-GOOGLE_DEST="~/Google Drive/Sites/people-mirror"
-GOOGLE_FILES=~/Google\ Drive/Sites/media-mirror
+UMS_WEB="~/Google Drive/Sites/people-mirror"
+UMS_FILES=~/Google\ Drive/Sites/media-mirror
 
 # Publish to Google Drive folder
 # - sync'd in "~/Google Drive"
-publish-google:
-	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d $(GOOGLE_DEST)
-	#rsync $(RSOPTS) -vauzC --exclude ._* ./files/ $(GOOGLE_FILES)/files
+publish-ums:
+	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d $(UMS_WEB)
+	#rsync $(RSOPTS) -vauzC --exclude ._* ./files/ $(UMS_FILES)/files
 
 	# Alternate makes locally and then rsync's
 	#$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml

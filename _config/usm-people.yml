@@ -4,6 +4,7 @@
 # * Files served from USM's "media" server, http://media.usm.maine.edu/~houser
 #
 google_analytics: UA-2571363-5
+movedurl: http://stephenhouser.com
 
 #url:        http://people.usm.maine.edu/houser
 baseurl:    /houser
