@@ -113,6 +113,10 @@ serve-local:
 USM_WEB=/Volumes/usmfiles/home/houser/public.www
 USM_FILES=media.usm.maine.edu:public_html
 
+usm-mount: clean
+	@test -d _site 
+	sshfs -o defer_permissions people-ftp.usm.maine.edu:public.www _site
+
 usm: 
 	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml
 	
