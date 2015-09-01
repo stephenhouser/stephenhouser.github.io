@@ -1,9 +1,0 @@
-#
-# UMS-GOOGLE Configuration (http://goo.gl/I7jER8)
-# * Base site on UMS' "Google Drive" server https://googledrive.com/host/0B-dNF1GpqqFhSjVMMWZuajl2WXM
-# * Files served from "/files" subdirectory
-#
-#url:        https://googledrive.com
-baseurl:    /host/0B-dNF1GpqqFhSjVMMWZuajl2WXM
-assetsurl:  /host/0B-dNF1GpqqFhSjVMMWZuajl2WXM/assets
-filesurl:   /host/0B-dNF1GpqqFhSjVMMWZuajl2WXM/files

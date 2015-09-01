@@ -11,7 +11,6 @@
 #
 # Underlying alternate publishing locations
 # make publish-usm	    : Publishes the USM		  -- http://people.usm.maine.edu/houser
-# make publish-ums	: Publish to Google Drive -- http://goo.gl/I7jER8
 # make publish-n1sh		: Publish to n1sh.net	  -- http://n1sh.net/~houser
 # make publish-github	: Publish to Git Hub	  -- http://stephenhouser.github.io
 #
@@ -130,21 +129,3 @@ publish-usm-media: clean-mac-files
 
 pull-usm-media:
 	rsync $(RSOPTS) -vauzC --exclude ._* "$(USM_FILES)/" ./files
-
-##### UMS: GOOGLE #####
-# Site is hosted on Google Drive
-# files are co-located on Google Drive as files subdirectory
-
-UMS_WEB="~/Google Drive/Sites/people-mirror"
-UMS_FILES=~/Google\ Drive/Sites/media-mirror
-
-# Publish to Google Drive folder
-# - sync'd in "~/Google Drive"
-publish-ums:
-	$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml -d $(UMS_WEB)
-	#rsync $(RSOPTS) -vauzC --exclude ._* ./files/ $(UMS_FILES)/files
-
-	# Alternate makes locally and then rsync's
-	#$(JEKYLL_CMD) build --config _config.yml,_config/ums-google.yml
-	#rsync -avz _site/* /Users/houser/Google\ Drive/Public/
-
