@@ -35,7 +35,8 @@ fields such as art, gaming, and communication.
 
 ## Places to find Stephen
 <div id="connections-right">
-    <a href="http://usm.maine.edu"><img id="hero" src="{{"/logos-png/usm-horizontal.gif"|prepend:site.assetsurl}}" alt="USM Logo" /></a><br/>
+    <a href="http://bowdoin.edu"><img id="hero" src="{{"/logos-png/bowdoin.png"|prepend:site.assetsurl}}" alt="Bowdoin Logo" /></a><br/><br/>
+    <a href="http://usm.maine.edu"><img id="hero" src="{{"/logos-png/usm-horizontal.gif"|prepend:site.assetsurl}}" alt="USM Logo" /></a><br/><br/>
     {% for account in site.data.social %}
         {% if account.icon %}
             <a href="{{ account.url }}">
