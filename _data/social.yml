@@ -62,11 +62,25 @@
 - name: Maker9
   url: http://maker9.com
   type: web
+  
+# Work (Bowdoin)
+- name: Stephen Houser @ Bowdoin
+  url: http://bowdoin.edu/~houser
+  type: web
+
+- name: Stephen Houser @ Bowdoin
+  url: mailto:houser@bowdoin.edu
+  type: email
 
 # Work (USM and UMS)
 - name: Stephen Houser @ USM
   url: http://people.usm.maine.edu/houser
   type: web
+
+#- name: Stephen Houser @ USM
+#  icon: /logos-png/icon-usm.png
+#  url: http://people.usm.maine.edu/houser
+#  type: social
 
 - name: Stephen Houser @ USM
   url: mailto:houser@usm.maine.edu
