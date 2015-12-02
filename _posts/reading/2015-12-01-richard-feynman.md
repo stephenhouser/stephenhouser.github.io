@@ -8,7 +8,7 @@ keywords:	feynman philosophy scouts
 description:
 ---
 
-I just finished, “Surely You’re Joking, Mr. Feynman” and had been a bit dissatisfied with the book. It’s not much of a read, it is as if someone just dictated him telling stories. There was a light at the end of the tunnel though, in this singularly genius passage (my emphasis added):
+<img alt="Surely You're Joking, Mr. Feynman" src="http://ecx.images-amazon.com/images/I/51bfXgajOUL._SX312_BO1,204,203,200_.jpg" style="width: 111px; height: 140px; float:right;"/>I just finished, “Surely You’re Joking, Mr. Feynman” and had been a bit dissatisfied with the book. It’s not much of a read, it is as if someone just dictated him telling stories. There was a light at the end of the tunnel though, in this singularly genius passage (my emphasis added):
 
 > ..the idea of distributing everything evenly is based on a theory that there’s only X amount of stuff in the world, that somehow we took it away from the poorer countries in the first place, and therefore we should give it back to them. But this theory doesn’t take into account the real reason for the differences between countries — that is, the development of new techniques for growing food, the development of machinery to grow food and to do other things, and the fact that all this machinery requires the concentration of capital. It isn’t the stuff, but **the power to make the stuff, that is important**. But I realize now that these people were not in science; they didn’t understand it. They didn’t understand technology; they didn’t understand their time.
 
