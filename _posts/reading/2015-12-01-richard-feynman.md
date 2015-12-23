@@ -3,7 +3,7 @@ title: 		Surely You're Joking, Mr. Feynman
 date: 		2015-12-01 21:00:00
 thumbnail:
 category:	reading
-tags: 		[quotes]
+tags: 		[quotes, reading]
 keywords:	feynman philosophy scouts
 description:
 ---

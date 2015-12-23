@@ -3,7 +3,7 @@ title: 		If by Rudyard Kipling
 date : 		2014-07-01 10:00:00
 thumbnail:
 category:	reading
-tags: 		[quotes]
+tags: 		[quotes, poetry]
 keywords:
 description:
 ---
@@ -12,7 +12,6 @@ description:
 This is one of my favorite poems. It is a wonderful
 series of thoughts for young folk to be strong in
 the face of adversity and peer pressure.
-
 
 > If you can keep your head when all about you  
 > Are losing theirs and blaming it on you;  
