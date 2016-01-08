@@ -36,6 +36,7 @@ timezone:   America/New_York
 permalink:  /:categories/:year-:month-:day-:title.html
 #excerpt_separator: <!-- more --> # default is \n\n
 paginate:   7
+#paginate_path: "/:categories/:year-:month-:day-:title.html"
 
 # When clobbering the destination, don't muck with these
 keep_files: ['CampusCrush', 'files']
@@ -45,13 +46,12 @@ safe:       true
 
 # Code highlighting
 highlight:  pygments
-markdown:   redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+#markdown:   redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 # Generate the sitemap.xml file
-gems:
-  - jekyll-sitemap
+gems: ['jekyll-sitemap', 'jekyll-paginate']
 
 # Default settings for posts and the like...
 defaults:
