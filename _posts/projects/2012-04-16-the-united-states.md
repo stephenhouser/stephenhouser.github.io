@@ -10,6 +10,7 @@ description:
 layout: 	project
 project: 	USA
 archive:	false
+permalink: /theusa/
 ---
 [The United States][3] is an educational application designed to help
 K-5 students learn their United States geography. It was originally

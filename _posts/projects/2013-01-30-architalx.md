@@ -10,6 +10,7 @@ description:
 layout: 	project
 project:	architalx
 archive:	false
+permalink: /architalx/
 ---
 An interactive audio controller app that mimics the 17-foot interactive
 tower as part of [Architalx's][architalx] 25th anniversary exhibit,

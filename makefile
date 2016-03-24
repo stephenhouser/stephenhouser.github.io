@@ -27,7 +27,7 @@ default: build
 
 # Build into _site
 build:
-	$(JEKYLL_CMD) build
+	$(JEKYLL_CMD) build --safe
 
 # Start local web server
 # - Serve content from http://localhost:4000 (root)
