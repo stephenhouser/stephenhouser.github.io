@@ -32,7 +32,7 @@ build:
 # Start local web server
 # - Serve content from http://localhost:4000 (root)
 serve:
-	$(JEKYLL_CMD) serve --watch
+	$(JEKYLL_CMD) serve --watch --host=0.0.0.0
 
 # Build and watch
 # - assumes another webserver is serving the content
