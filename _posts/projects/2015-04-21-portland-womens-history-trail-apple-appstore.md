@@ -1,13 +1,13 @@
 ---
 title:      Portland Women's History Trail in Apple AppStore
 date:       2015-04-21 12:00
-thumbnail:  /projects/pwht/icon-76@2x.png
+thumbnail:  /projects/pmwht/icon-76@2x.png
 category:   projects
 tags:       [mobile, development]
 keywords:
 description:
 
-project:    PWHT
+project:    PMWHT
 ---
 Today iOS version of the [Portland Women's History Trail][2]
 went live in the [Apple AppStore][applestore].

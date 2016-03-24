@@ -9,6 +9,7 @@ description:
 
 layout:     project
 archive:    false
+permalink: /iPhcalc/
 ---
 A native iPhone calculator application. The interface is based on the
 distributed iPhone calculator application. The goal was to cplay around

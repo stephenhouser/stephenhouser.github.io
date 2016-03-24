@@ -1,15 +1,16 @@
 ---
 title:      Portland Women's History Trail
 date:       2015-02-09 19:44:38
-thumbnail:  /projects/pwht/icon-76@2x.png
+thumbnail:  /projects/pmwht/icon-76@2x.png
 category:   projects
 tags:       [mobile, development]
 keywords:
 description:
 
 layout:     project
-project:    PWHT
+project:    PMWHT
 archive:	false
+permalink: /pmwht/
 ---
 A mobile, web-based version of the [Portland Women's History Trail][2]
 originally created by [Eileen Eagan][1] and Polly Welts Kaufman
@@ -44,7 +45,7 @@ a possible implementation. And, as with any prototype, it needs work.
   [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap1]: {{"/projects/pwht/pwht-map.png" | prepend:site.assetsurl}}
-  [screencap2]: {{"/projects/pwht/pwht-site.png" | prepend:site.assetsurl}}
+  [screencap1]: {{"/projects/pmwht/pwht-map.png" | prepend:site.assetsurl}}
+  [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
