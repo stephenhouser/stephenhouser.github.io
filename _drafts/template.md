@@ -1,11 +1,8 @@
 ---
-title: 		
-date: 		2015-08-17 10:00:00
-thumbnail:
-category:	
-tags: 		[quotes]
-keywords:	
-description:
+title: 		DRAFT Post Template
+date:       1990-01-01 12:00:00
+category:	draft
+tags:       [draft] 		
 ---
 
 This is the content it's not very complex. It has [one][1] link and [two][two] links.

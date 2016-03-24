@@ -1,10 +1,11 @@
 ---
-layout: post
+title:  DRAFT Post Layout Information
+date:   1990-01-01 12:00:00
+category:	draft
+tags:       [draft] 		
 ---
 
-## Post Layout
-
-this is the standard header fields that are used in each post or page
+This is the standard header fields that are used in each post or page
 header. The order should remain the same for all, just to keep my mind
 at ease. There is no real significance to it.
 
@@ -41,7 +42,7 @@ up images -- maybe from _data files?
     * or should they go elsewhere?
 
 * use post_url for internal links
-	{% post_url /subdir/2010-07-21-name-of-post %}
+	{ % post_url /subdir/2010-07-21-name-of-post % }
 
 
 * Custom post assets and scripts: http://mattgemmell.com/page-specific-assets-with-jekyll/

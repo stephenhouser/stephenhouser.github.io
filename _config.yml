@@ -44,6 +44,7 @@ keep_files: ['CampusCrush', 'files']
 exclude:    ['makefile', 'files', 'Gemfile*', 'CNAME']
 include:    []
 safe:       true
+future:     false
 
 # Code highlighting
 highlight:  pygments

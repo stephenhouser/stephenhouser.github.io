@@ -27,12 +27,12 @@ default: build
 
 # Build into _site
 build:
-	$(JEKYLL_CMD) build --safe
+	$(JEKYLL_CMD) build
 
 # Start local web server
 # - Serve content from http://localhost:4000 (root)
 serve:
-	$(JEKYLL_CMD) serve --watch --host=0.0.0.0
+	$(JEKYLL_CMD) serve --watch --host=0.0.0.0 --drafts --unpublished --future
 
 # Build and watch
 # - assumes another webserver is serving the content
