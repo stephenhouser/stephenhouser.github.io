@@ -55,7 +55,7 @@ your team and play for the highest scores!
         <img src="{{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}}"
             alt="Play Maine Campus Crush"/>
         <br/>
-        <a href="http://people.usm.maine.edu/houser/CampusCrush/">
+        <a href="http://stephenhouser.com/MaineCampusCrush">
         <p align="center">Play Campus Crush Now</p>
         </a>
 </div>
@@ -148,4 +148,5 @@ loadScores();
 </script>
 
  [campuscrush]: http://people.usm.maine.edu/houser/CampusCrush/
+ [mainecampuscrush]: http://stephenhouser.com/MaineCampusCrush
  [bejewled]:    http://en.wikipedia.org/wiki/Bejeweled
