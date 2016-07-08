@@ -1,5 +1,5 @@
 ---
-title: 		Reading on Continuious Integration
+title: 		Fowler on Continuious Integration
 date: 		2016-07-08 10:11:00
 thumbnail:
 category:	development
