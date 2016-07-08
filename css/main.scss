@@ -102,3 +102,10 @@ time {
     text-indent: -6em;
 }
 
+.post-list > li {
+    border-bottom: 2px solid $brand-color;
+}
+
+.post-list > li:last-child {
+    border-bottom: none;
+}
