@@ -1,13 +1,13 @@
 ---
 title: 		Good Turn - Marcus Aurelius
 date: 		2014-04-01 10:00:00
-thumbnail:
+thumbnail:  http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg/220px-L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg
 category:	reading
 tags: 		[quotes]
 keywords:
 description:
 ---
-![Marcus Aurelius](http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg/220px-L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg)
+
 
 > Such There Be, Who when They Have Done a Good Turn to Any,
 > Are Ready to set them on the score for it, and to require
@@ -21,3 +21,5 @@ description:
 > seeks for no further recompense.
 
 -- Marcus Aurelius
+
+![Marcus Aurelius](http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg/220px-L%27Image_et_le_Pouvoir_-_Buste_cuirassé_de_Marc_Aurèle_agé_-_3.jpg)

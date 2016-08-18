@@ -11,7 +11,6 @@ I had the opportunity to present at this year's University of Scouting (Pine Tre
 
 There are many aspects of Amateur Radio (Ham Radio) and we won't be able to cover them all here either -- this is just a summary and recap of the presentation. With that in mind, lets jump right in.
 
-
 [![Mind Map of Presentation]({{"/radio/2015-03-19-ham-radio-at-uos.png"|prepend:site.assetsurl}})][mindmap]
 
 You can see the full [Mind Map of the presentation][mindmap] by clicking on the summary image.

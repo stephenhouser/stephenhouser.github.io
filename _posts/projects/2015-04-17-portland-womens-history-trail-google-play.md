@@ -14,7 +14,6 @@ went live in the [Google play][googlestore].
 
 [![Android app on Google play][playlogo]][googlestore]
 
-
 The [web version][4] has been live for some time and the iOS version is currently
 waiting for review by Apple.
 

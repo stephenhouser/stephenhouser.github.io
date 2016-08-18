@@ -12,7 +12,6 @@ for amateur radio operators this morning, [K1N][k1n], on [Navassa
 Island][wiki]. It's a tiny place between Hati, Cuba, and Jamacia. It is
 administered by the US, but remains disputed between the US and Hati.
 
-
 ![Navassa Island][map]
 
 From the news and the [K1N website][k1n], I knew they would be on the

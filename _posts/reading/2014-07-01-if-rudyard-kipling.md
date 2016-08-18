@@ -1,17 +1,17 @@
 ---
 title: 		If by Rudyard Kipling
 date : 		2014-07-01 10:00:00
-thumbnail:
+thumbnail:  http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg/225px-Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg
 category:	reading
 tags: 		[quotes, poetry]
 keywords:
 description:
 ---
-![Rudyard Kipling](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg/225px-Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg)
-
 This is one of my favorite poems. It is a wonderful
 series of thoughts for young folk to be strong in
 the face of adversity and peer pressure.
+
+![Rudyard Kipling](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg/225px-Rudyard_Kipling%2C_by_Elliott_%26_Fry.jpg)
 
 > If you can keep your head when all about you  
 > Are losing theirs and blaming it on you;  

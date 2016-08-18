@@ -10,7 +10,7 @@ description:
 In working with students and colleagues on good development practices, 
 and generally keeping my own skills and knowledge up-to-date, I've been 
 doing more reading on *continuious integration*. Below are some highlights
-and key ideas I pulled from reading [Martin Fowler's article on Continuous Integration][fowler].
+and key ideas I pulled from reading [Martin Fowler's article on Continuous Integration](http://www.dccia.ua.es/dccia/inf/asignaturas/MADS/2013-14/lecturas/10_Fowler_Continuous_Integration.pdf).
 
 Defining continuious integration:
 
@@ -82,4 +82,3 @@ References and Further Reading:
 * [Continuous Integration, Improving Software Quality and Reducing Risk by Paul Duvall, Steve Matyas, and Andrew Glover](http://martinfowler.com/books/duvall.html)
 * [Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble and David Farley](http://martinfowler.com/books/continuousDelivery.html)
 
-  [fowler]: http://www.dccia.ua.es/dccia/inf/asignaturas/MADS/2013-14/lecturas/10_Fowler_Continuous_Integration.pdf

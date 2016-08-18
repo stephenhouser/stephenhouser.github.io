@@ -1,7 +1,6 @@
 ---
 title:      Network File Server Performance in a University Environment - A Case Study (Proposal)
 date:       1994-03-10 12:00:00
-thumbnail:  /logos/
 category:   publications
 tags:       [publications, networks]
 keywords:   

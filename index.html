@@ -7,8 +7,16 @@ layout: default
         <li>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             in <span class="post-meta">{{ post.tags | array_to_sentence_string }}</span>
-            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            {{ post.content }}
+            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+                {% if post.thumbnail %}
+                    {% capture thumbnail %}{% if post.thumbnail contains 'http' %}{{ post.thumbnail }}{% else %}{{ post.thumbnail | prepend:site.assetsurl }}{% endif %}{% endcapture %}
+                    <img src="{{ thumbnail }}"/>
+                {% endif %}</a></h2>
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                    <a href="{{ post.url | prepend: site.baseurl }}#more">read more...</a>
+                </div>
+            </p>
         </li>
     {% endfor %}
     </ul>

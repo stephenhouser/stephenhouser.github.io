@@ -17,7 +17,6 @@ archive:    false
 challenge game between the University of Maine System campuses. Choose
 your team and play for the highest scores!
 
-
 <style>
 #leaderboard {
 	display: inline-block;

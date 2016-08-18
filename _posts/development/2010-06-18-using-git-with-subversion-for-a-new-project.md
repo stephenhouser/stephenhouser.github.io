@@ -16,6 +16,7 @@ staple of my work cycle. It allows me to be ruthless with removing large
 chunks of code, with re-factoring like a madman, and letting the
 keyboard take over in tying new approaches.
 
+
 So, there I sat wondering, how to take this on the road. Git has been
 out for a while and promises a robust and distributed version control
 paradigm. Even better, git-svn is touted to allow a (local) git

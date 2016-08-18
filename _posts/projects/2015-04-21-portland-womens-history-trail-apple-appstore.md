@@ -14,7 +14,6 @@ went live in the [Apple AppStore][applestore].
 
 [![iOS app in the AppStore][appstorelogo]][applestore]
 
-
 The [web version][4] has been live for some time. The [Android version][googlestore]
 went live just over a week ago. Now, the final version is live for iOS users
 to find easily in the [Apple AppStore][applestore].
