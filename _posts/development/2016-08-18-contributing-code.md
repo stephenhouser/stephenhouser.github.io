@@ -57,6 +57,7 @@ walked away from. Make your interaction be part of the team not apart from the t
 Then when you start your own project, use your style, ask for contributors to do the same. And ask
 them all to have fun in that hyper-focused zone of writing solid code.
 
+UPDATE 2016/08/29: I found a nice post in my news feed this morning, [45 GitHub Issues Dos and Dont's][https://hackernoon.com/45-github-issues-dos-and-donts-dfec9ab4b612#.pdw2ovmea] by Jason Chen that seems quite appropriate to my own post. It's got some great things to be aware of.  
 
 
 
