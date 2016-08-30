@@ -64,8 +64,9 @@ defaults:
   -
     scope:
       path: "" # empty = all files
-      type: "posts"
+      type: "posts"      
     values:
       layout: "post"
       author: "Stephen Houser"
+      comments: true
 
