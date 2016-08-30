@@ -16,6 +16,9 @@ The Internet provided a few pay applications for this purpose. [HoudaGeo][HoudaG
 I worked at the `bash` command line with [`exiftool`][EXIFTool] for some time before deciding to use [AppleScript][AppleScript] rather than `bash` or `Python` as a control script. [AppleScript][AppleScript] was the only way I could find to get the underlying "managed" file names of the photos within [Aperture][Aperture]. [Lindsay Berger](http://bergersoft.com/personal/AppleScript/) has a well done script that displays the EXIF data from [Aperture][Aperture]. Some simple modifications
 were all I needed. In the end, the [AppleScript][AppleScript] below did the trick, with [`exiftool`][EXIFTool] installed and doing the grunt-work in the background.
 
+{% gist stephenhouser/5ff52a6105ca1451d500bd221d64f93d %}
+
+<!--
 ````AppleScript
 -- Script Name: Aperture Update EXIF GPS Data
 -- Description: This AppleScript will use EXIFtool to set EXIF GPS data for the photos 
@@ -135,6 +138,7 @@ on formatText(aStr, aDelimiter)
     return theArray
 end formatText
 ````
+-->
 
   [Apple]: http://apple.com
   [Photos]: https://www.apple.com/osx/photos/

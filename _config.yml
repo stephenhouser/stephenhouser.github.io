@@ -53,11 +53,13 @@ highlight:  pygments
 gems: 
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-gist
 
 # Whitelist plugins for working in safe mode locally
 whitelist: 
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-gist
 
 # Default settings for posts and the like...
 defaults:

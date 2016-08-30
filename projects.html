@@ -20,7 +20,8 @@ permalink: /projects/
 
     <h2>Project Archive</h2>
     <ul class="archive-list">
-    {% for page in site.posts | sort_by: "date" %}
+    {% assign archive_list = site.posts | sort_by: "date" %}
+    {% for page in archive_list %}
             {% if page.archive == true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
                 <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
@@ -28,7 +29,8 @@ permalink: /projects/
     {% endfor %}
 
     <!-- include pages that have not been made posts yet -->
-    {% for page in site.pages | sort_by: "date" %}
+    {% assign archive_list = site.pages | sort_by: "date" %}
+    {% for page in archive_list %}
             {% if page.archive == true and page.layout == 'project' %}
                 {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
                 <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
