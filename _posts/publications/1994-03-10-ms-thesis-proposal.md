@@ -55,6 +55,6 @@ drivers for use with Novell NetWare.
 
 ## Related Documents
 
-* [Network File Server Performance in a University Environment - A Case Study]({% post_url /publications/1996-08-07-ms-thesis %})
+* [Network File Server Performance in a University Environment - A Case Study]({% post_url 1996-08-07-ms-thesis %})
 * [MSCS Thesis Full Text (PDF)]({{"/publications/MSCS-Thesis.pdf"|prepend:site.filesurl}})
 * [MSCS Thesis Proposal (PDF)]({{"/publications/MSCS-Thesis-Proposal.pdf"|prepend:site.filesurl}})

@@ -28,10 +28,11 @@ google_analytics: UA-2571363-2
 baseurl:    "" # the subpath of your site, e.g. /blog/
 assetsurl:  /assets
 # Larger files are located in DropBox's Public directory
-filesurl:   https://dl.dropboxusercontent.com/u/9832808
+# 2016/12/16: Dropbox is dropping public directories.
+#filesurl:   https://dl.dropboxusercontent.com/u/9832808
 # These are other locations where files might go...
 #filesurl:   "/files"       # files are in a local directory
-#filesurl:   "http://media.stephenhouser.com" # Amazon S3
+filesurl:   "http://media.stephenhouser.com" # Amazon S3
 
 # Site Build settings
 timezone:   America/New_York
@@ -53,19 +54,22 @@ highlight:  pygments
 gems: 
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-gist
 
 # Whitelist plugins for working in safe mode locally
 whitelist: 
     - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-gist
 
 # Default settings for posts and the like...
 defaults:
   -
     scope:
       path: "" # empty = all files
-      type: "posts"
+      type: "posts"      
     values:
       layout: "post"
       author: "Stephen Houser"
+      comments: true
 

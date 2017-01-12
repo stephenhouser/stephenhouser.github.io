@@ -1,6 +1,5 @@
 ---
 layout: 	default
-comments: 	true
 ---
 <div class="post">
     <header class="post-header">
@@ -29,7 +28,7 @@ comments: 	true
 
         {% if page.course %}
 	    	{% assign related_course = site.posts | where:"course", page.course %}
-	    	{% assign related_course_size = related_course | size %}{% if related_course_size | size > 1 %}
+	    	{% assign related_course_size = related_course | size %}{% if related_course_size > 1 %}
 				<h2>Related Courses and Posts</h2>
 				<ul class="archive-list">
 				{% for post in related_course %}{% if post.id != page.id %}
