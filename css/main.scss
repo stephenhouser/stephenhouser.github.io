@@ -77,6 +77,7 @@ time {
     float:right;
     max-height: 145px;
     max-width: 100px;
+    padding-left: 10px;
 }
 
 // Float tags to the right on the archive page
@@ -109,4 +110,28 @@ time {
 
 .post-list > li:last-child {
     border-bottom: none;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;    
+}
+
+.center img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#app-store {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#app-store img {
+    height: 50px;
 }
