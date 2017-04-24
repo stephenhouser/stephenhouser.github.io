@@ -25,6 +25,8 @@ google_analytics: UA-2571363-2
 # The base hostname & protocol for your site
 #url: "http://stephenhouser.com"
 
+repository: stephenhouser/stephenhouser.githib.io
+
 baseurl:    "" # the subpath of your site, e.g. /blog/
 assetsurl:  /assets
 # Larger files are located in DropBox's Public directory

@@ -4,7 +4,7 @@ date:	 	2000-02-01 12:00:00
 thumbnail: 	/logos-png/java-logo.png
 category: 	development
 tags: 		[development, courses]
-keywords: 	java code programmin style usm computer science
+keywords: 	java code programming style usm computer science
 description: >
     USM Computer Science department's guidelines for
     programming style, for use by students, faculty, and staff.
