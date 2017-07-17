@@ -1,6 +1,6 @@
 ---
 title: 		SoME Book Club Book List
-date: 		2017-03-10 12:00:00
+date: 		2017-04-10 12:00:00
 thumbnail: 	/projects/books.png
 category: 	projects
 tags: 		[development, reading, javascript]
