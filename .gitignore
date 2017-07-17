@@ -4,3 +4,5 @@ files/
 .DS_Store
 ._*
 Gemfile.lock
+.gems
+.rbenv-gemsets
