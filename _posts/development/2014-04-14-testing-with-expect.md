@@ -16,7 +16,6 @@ develop both a server program and the associated socket-level protocol
 that will network-enable my application.  This semester the service
 was a distributed game matching service.
 
-
 The product is a simple game between two players. The server system
 needs to match up opponents and keep track of the games and player
 history. Simple until you get to the game matching process in the
@@ -45,7 +44,7 @@ the network. I needed a simple TCP/IP client that could send scripted
 requests and receive the servers response. [Netcat][2] provides that
 perfectly.
 
-The second sentence on the [Expect][2] home page is the most telling,
+The second sentence on the [Expect][1] home page is the most telling,
 "Expect really makes ... stuff trivial." That stuff being the
 automation of "... interactive applications such as telnet, ftp,
 passwd, fsck, rlogin, tip, etc."  [Expect][1] is designed to send
