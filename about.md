@@ -76,6 +76,8 @@ fields such as art, gaming, and communication.
 * <b>1991-2001</b> Software Developer, <a href="http://usm.maine.edu/computing">Information and Technology</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>1989-1991</b> Software Developer, <a href="http://www.schroff.com">Schroff Development Inc.</a>
 
+<iframe frameborder="0" scrolling="no" src="https://credly.com/earnedembed/2193650/12/35946/1/1" width="720" height="225"></iframe>
+
 [Full Resume]({{"/random/StephenHouser-Resume-20130418.pdf"|prepend:site.filesurl}}).
 
 <!--
