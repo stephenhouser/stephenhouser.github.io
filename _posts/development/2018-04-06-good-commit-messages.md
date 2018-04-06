@@ -1,6 +1,6 @@
 ---
 title: 		'Good Commit Messages'
-date: 		2018-03-06 13:20:00
+date: 		2018-04-06 13:20:00
 category:	development
 tags: 		[development, reading, quote]
 keywords:
