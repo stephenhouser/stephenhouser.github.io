@@ -12,16 +12,15 @@ project: 	USA
 archive:	false
 permalink: /theusa/
 ---
-[The United States][3] is an educational application designed to help
+[The United States][appstore] is an educational application designed to help
 K-5 students learn their United States geography. It was originally
 envisioned by my son after many interruptions from my daughter asking
 where a particular state was on the map. Developed by me over several
 months and play tested by my daughter. Now that all our family members
 are experts at identifying the states of the Union, it's your turn.
 
-[![The United States][1]][3]
-[![The United States][2]][3]
 
+[![The United States][screenshot]][appstore]
 
 There are two main aspects of the application; an interactive map and
 several games based on state facts. Each has a lot to explore and each
@@ -49,10 +48,15 @@ Wikipedia and other web sites, including those of the states themselves.
 All the data was combined into attributes in an SVG file, also
 originally from Wikipedia.
 
-  [1]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
-  [2]: http://goodturn.stephenhouser.com/images/AvailableOnTheAppStore-Small.png
-  [3]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
+<div id="app-store">
+    <a href="http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8">
+      <img alt="Available on the App Store" src='{{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}' />
+    </a>
+</div>
 
+  [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
+  [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
+  [screenshot]: {{"/projects/the-united-states.png"|prepend:site.assetsurl}}
 <!--
 # Redirecting ...
 <meta http-equiv="refresh" content="0;url=http://www.stephenhouser.com/products/the-united-states" />

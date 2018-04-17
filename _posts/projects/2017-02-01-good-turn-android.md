@@ -8,7 +8,7 @@ keywords:
 description:
 
 layout: 	project
-project: 	GTA
+project: 	GOODTURN
 archive:	false
 permalink: /goodturn-android/
 ---
@@ -18,6 +18,7 @@ The app is a complete rewrite in Java using Google Firebase for
 the data back-end. This version has actually been in development
 since 2010 after the [iOS version][appstore] was released, I just never got
 it to a state where I felt it was releasable until now.
+
 
 <div class="center">
     <img src='{{"/projects/goodturn/goodturn-android-front.png"|prepend:site.assetsurl}}' />
@@ -51,7 +52,6 @@ hamburger menu) which seems to be the current (dominant) interface.
 I chose this based on a purely unscientific look at several recent Google apps.
 They all just seemed to use some form of this interface. So goodbye
 tab bar.
-
 
 The Choice between Activity and Fragment was another mind-bender for me.
 The coin-flipping screen, the list of turns you have done, and the map of

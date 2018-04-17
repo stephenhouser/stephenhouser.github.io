@@ -9,14 +9,13 @@ description:
 
 project: 	USA
 ---
-My latest product, [The United States for iPad][3] hit the App Store
+My latest product, [The United States for iPad][appstore] hit the App Store
 just in time for Patriot's Day (April 16th) 2012!
 
-[![The United States][1]][3]
-[![The United States][2]][3]
 
+[![The United States][screenshot]][appstore]
 
-[The United States][3] is an educational application designed to help
+[The United States][appstore] is an educational application designed to help
 K-5 students learn their United States geography. It was originally
 envisioned by my son after many interruptions from my daughter asking
 where a particular state was on the map. Developed by me over several
@@ -49,6 +48,12 @@ Wikipedia and other web sites, including those of the states themselves.
 All the data was combined into attributes in an SVG file, also
 originally from Wikipedia.
 
-  [1]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
-  [2]: http://goodturn.stephenhouser.com/images/AvailableOnTheAppStore-Small.png
-  [3]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
+<div id="app-store">
+    <a href="http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8">
+      <img alt="Available on the App Store" src='{{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}' />
+    </a>
+</div>
+
+  [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
+  [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
+  [screenshot]: {{"/projects/the-united-states.png"|prepend:site.assetsurl}}
