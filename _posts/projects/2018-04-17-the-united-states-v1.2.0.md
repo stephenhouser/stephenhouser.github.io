@@ -26,4 +26,4 @@ If you're interested in being a beta tester, drop me an email. I've got about a 
 
   [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
   [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
-  [screenshot]: {{"/projects/the-united-states.png"|prepend:site.assetsurl}}
+  [screenshot]: {{"/projects/theusa/the-united-states.png"|prepend:site.assetsurl}}

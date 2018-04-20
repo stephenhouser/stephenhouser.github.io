@@ -1,5 +1,5 @@
 ---
-title: 		Good Turn Android App
+title: 		Good Turn (Android)
 date: 		2017-02-01 12:00:00
 thumbnail: 	/projects/goodturn/goodturn-android-icon.png
 category: 	projects
