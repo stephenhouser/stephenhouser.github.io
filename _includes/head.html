@@ -13,6 +13,7 @@
     {% capture page_created %}{% if page.created != null %}{{ page.created }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
     <meta name="created" content="{{ page_created }}" />
     -->
+    
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Google Analytics -->
