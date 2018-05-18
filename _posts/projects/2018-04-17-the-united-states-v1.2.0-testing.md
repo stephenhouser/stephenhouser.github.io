@@ -3,7 +3,7 @@ title: 		The United States v1.2.0 Testing
 date: 		2018-04-17 12:09
 thumbnail: 	http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
 category:	projects
-tags: 		[product, mobile, development, games, release]
+tags: 		[product, mobile, development, games]
 keywords:
 description:
 
