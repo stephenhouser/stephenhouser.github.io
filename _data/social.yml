@@ -6,12 +6,24 @@
   svg: /logos-png/icon-aboutme.png
   type: social
 
-- name: Google+
-  url: http://profiles.google.com/stephenhouser
+- name: ORCID
+  url: https://orcid.org/0000-0003-0753-5940
+  username: 0000-0003-0753-5940
+  icon: /logos-png/orcid_64x64.png
+
+- name: Academia.edu
+  url: https://bowdoin.academia.edu/StephenHouser
   username: stephenhouser
-  icon: /logos-png/icon-google-plus.png
-  svg: /logos-svg/googleplus.svg
+  icon: /logos-png/academia-edu.png
+  svg: /logos-svg/academia-edu.svg
+
 #  type: social
+
+# - name: Google+
+#   url: http://profiles.google.com/stephenhouser
+#   username: stephenhouser
+#   icon: /logos-png/icon-google-plus.png
+#   svg: /logos-svg/googleplus.svg
 
 - name: Twitter
   url: http://twitter.com/stephenhouser
@@ -59,9 +71,9 @@
   url: http://stephenhouser.com
   type: web
 
-- name: Maker9
-  url: http://maker9.com
-  type: web
+# - name: Maker9
+#   url: http://maker9.com
+#   type: web
   
 # Work (Bowdoin)
 - name: Stephen Houser @ Bowdoin
@@ -86,7 +98,7 @@
   url: mailto:houser@usm.maine.edu
   type: email
 
-- name: Stephen Houser @ UMS
+- name: Stephen Houser @ USM
   url: mailto:houser@maine.edu
   type: email
 
