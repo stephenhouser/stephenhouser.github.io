@@ -11,7 +11,6 @@ project: 	MiniPin
 archive:	false
 permalink: /minipin/
 ---
-
 It was August 28, 2011 when I first made a mockup of a virtual pinball machine that came to be known as 'MiniPin'. The virtual pinball feever had started a few days earler when a friend saw the [Kids Mame 1][kidsmame1] build on my website and said, innocently, "...*you should build a virtual pin cabinet*.". Of course, that's exactly what I did.
 
 <img src="{{"/projects/minipin/minipin-480.png"|prepend:site.assetsurl}}" alt="Shawn playing Medieval Madness on the MiniPin in 2011" />
