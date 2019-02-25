@@ -16,5 +16,5 @@ A simple game I created in an hour or so this past weekend at the Colby/Bates/Bo
 You are a hungry polar bear (Bowdoin's mascot) on a chunk of flaoting ice. You need to catch fish to keep yourself alive. Use the arrow keys to catch the jumping fish to extend your time and increase your score. As time goes on, the fish don't fill your belly (time) as well as they used to so you need to get quicker at catching them!
 
 <script type="text/javascript">
-    window.location = "https://stephenhouser/polarfish";
+    window.location = "https://stephenhouser.com/polarfish";
 </script>
