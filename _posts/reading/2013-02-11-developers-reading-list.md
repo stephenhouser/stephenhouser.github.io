@@ -264,7 +264,7 @@ to the Galaxy Trilogy_ by Douglas Adams)
    [8]: http://www.pearsonhighered.com/academic/product/0,,0132017997,00%2Ben-USS_01DBC.html
    [9]: http://www.cs.vu.nl/~ast/books/mos2/
    [10]: http://dragonbook.stanford.edu/
-   [11]: http://www.cuj.com
+   [11]: https://en.wikipedia.org/wiki/C/C%2B%2B_Users_Journal 
    [12]: http://msdn.microsoft.com/msdnmag/
    [13]: http://www.microsoft.com
    [14]: http://www.windows.com
