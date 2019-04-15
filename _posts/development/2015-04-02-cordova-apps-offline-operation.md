@@ -140,7 +140,7 @@ Now the app is ready native bundling and will work nicely online and offline. Th
 
 Now, back to my list of getting the app ready for publication in the App Stores.
 
- [adam]: http://www.adamwadeharris.com/sign-publish-phonegap-app-google-play-store-windows/
+ [adam]: https://adam.garrett-harris.com/how-to-sign-and-publish-a-phonegap-app-in-the-google-play-store
  [gsign]: http://developer.android.com/tools/publishing/app-signing.html#cert
  [spike]: https://codingwithspike.wordpress.com/2014/08/13/loading-google-maps-in-cordova-the-right-way/
  [jQm]: http://jquerymobile.com
