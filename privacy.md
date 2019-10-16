@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Privacy Policy
 permalink: /privacy
 ---
+# Privacy Policy
 
 *Stephen Houser* built the applications, *GoodTurn*, *Portland Women's History Trail*, *The United States*, and *this website* as both free and commercial applications. These applications (the Service) are provided by me, Stephen Houser and are intended for use as is.
 
