@@ -11,10 +11,12 @@
             </a>
             <div class="trigger">
             	{% assign pages = site.pages | where:"layout", "page" | reverse %}
-            	{% for page in pages %}
-                    {% if page.title and page.layout == 'page' %}
-                        <a class="page-link" href="{{ page.url | prepend:site.baseurl }}">
-                        {{ page.title }}</a>
+                {% for page in pages %}
+                    {% if page.title %}
+                        {% unless page.hide_tab %}
+                            <a class="page-link" href="{{ page.url | prepend:site.baseurl }}">
+                            {{ page.title }}</a>
+                        {% endunless %}
                     {% endif %}
                 {% endfor %}
             </div>

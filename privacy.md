@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /privacy
+hide_tab: true
 ---
 # Privacy Policy
 

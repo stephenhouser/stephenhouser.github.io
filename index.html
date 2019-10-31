@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="home">
+    <!-- Posts and pages -->
     <ul class="post-list">
     {% for post in paginator.posts %}
         <li>
@@ -21,6 +22,7 @@ layout: default
     {% endfor %}
     </ul>
 
+    <!-- The page index at the bottom of the page -->
     <div id="paginator" class="center">
         {% if paginator.total_pages > 1 %}
             <div class="pagination">
