@@ -44,6 +44,11 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+
+.page-content p a {
+    text-decoration: underline;
+}
+
 .highlight {
     color: $text-color;
     border: 1px solid $grey-color-dark;

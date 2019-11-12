@@ -70,7 +70,7 @@ clean-mac-files:
 ##### GITHUB and DROPBOX ######
 
 # Site is hosted on GitHub and using GitHub Pages
-# files are hosted from Dropbox (no "publish" option, all are public)
+# files are hosted on AWS S3 (no "publish" option, all are public)
 
 # Utility target to add github remote configuration to .git/config
 add-github:
@@ -81,10 +81,9 @@ publish-github: clean-mac-files
 	git push github -v --all
 
 ###
-sync-s3:
-	cd ~/Dropbox/Public
-	aws s3 sync ~/Dropbox/Public s3://media.stephenhouser.com --acl public-read --exclude .dropbox --exclude *.DS_Store
-
+publish-s3:
+	cd files
+	aws s3 sync --acl public-read --exclude *.DS_Store . s3://media.stephenhouser.com
 
 ##### N1SH.NET #####
 
@@ -123,9 +122,9 @@ publish-usm: clean-mac-files
 	@test -d $(PEOPLE_DEST) || { echo "ERROR: $(USM_WEB) not mounted. Exiting..."; exit 1; }
 	$(JEKYLL_CMD) build --config _config.yml,_config/usm-people.yml -d "$(USM_WEB)"
 
-# These handle pushing and pulling FILES from USM's media server
-publish-usm-media: clean-mac-files
-	rsync $(RSOPTS) -vauzC --exclude ._* ./files/ "$(USM_FILES)"
+# # These handle pushing and pulling FILES from USM's media server
+# publish-usm-media: clean-mac-files
+# 	rsync $(RSOPTS) -vauzC --exclude ._* ./files/ "$(USM_FILES)"
 
-pull-usm-media:
-	rsync $(RSOPTS) -vauzC --exclude ._* "$(USM_FILES)/" ./files
+# pull-usm-media:
+# 	rsync $(RSOPTS) -vauzC --exclude ._* "$(USM_FILES)/" ./files
