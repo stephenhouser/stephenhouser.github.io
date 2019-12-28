@@ -1,7 +1,7 @@
 ---
 title: 		Crokinole Board!
 date: 		2019-12-28 10:23
-thumbnail:	
+thumbnail:	/projects/crokinole/crokinole-top-115.jpg
 category:	woodworking
 tags: 		[woodworking, project]
 keywords:
