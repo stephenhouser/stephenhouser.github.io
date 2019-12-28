@@ -23,7 +23,7 @@ need to sort that out and make it require much less mental energy.
 
 There are several different chunks of content out there; course
 materials, past projects, quotes, book notes, development notes, project
-ideas, publications, and other uncategorised things. Looking at the
+ideas, publications, and other uncategorized things. Looking at the
 spread, coming up with a category list might be a great first step.
 
 Here is my initial category list for articles:
@@ -41,7 +41,7 @@ Here is my initial category list for articles:
 * <code>quote</code> -- collected quotes
 * <code>book</code> -- book notes, taken from Kindle, iBooks, etc.
 * <code>car</code> -- related to fixing vehicles and motors
-* <code>radio</code> -- related to amatuer radio
+* <code>radio</code> -- related to amateur radio
 * <code>electronics</code> -- electronic projects, hardware
 * <code>games</code> -- related to games, video or otherwise
 
@@ -60,5 +60,5 @@ instead.
 
 ## Updates
 
-**February 7, 2015**: Updated to include <code>raido</code> category and
+**February 7, 2015**: Updated to include <code>radio</code> category and
 clean up the text.

@@ -10,7 +10,7 @@ description:
 > After a recording session on one of those large mixing desks, after you've twiddled countless knobs and push around many faders you do something called zeroing the desk. This is were you turn every control and push every fader back to zero, so that when the next engineer comes in he or she isn't going to jump out of their seat when a large sub-bass whacks them straight in the face and possibly blows something up. -- [Brendan Dawes](https://superyesmore.com/zeroing-the-desk-3a166215eee0758e9e84d1b76eacdf7f)
 
 This cleanup after every project is something I often forget and regret every time. Brendan, in 
-his article, has some nice clear actions and descriptions of them; Tagging, Archiving, Cleaning Up, and Play. My process is similar in some ways and depends on the project itself. Courses are 'recurring projects' for me and the ones I'm most dilligent about. Other projects, not so much. There's always something to improve upon.
+his article, has some nice clear actions and descriptions of them; Tagging, Archiving, Cleaning Up, and Play. My process is similar in some ways and depends on the project itself. Courses are 'recurring projects' for me and the ones I'm most diligent about. Other projects, not so much. There's always something to improve upon.
 
 ## Post Course Cleanup
 
@@ -29,8 +29,8 @@ Roughly I try to make sure all the documents are in PDF format so that I can sha
 I'm much looser on development work. It's hard to say when a project is over, so many seem to linger in the not-complete yet not-active state. Once I get better at recognizing a project is no longer active perhaps I can get better post project clean up. It's usually the research notes, pictures, web-clips, thought provoking assets and such collected from the web that give me the most grief. I call these `unversioned` files. A little more on that problem below.
 
 - [ ] Update README.md, INSTALL.md, and other documentation files to be accurate
-- [ ] Update any issue tracking (TODO.md) to syncronize with the state of released code
-- [ ] Update any issue tracking (TODO.md) to syncronize with the state of released code
+- [ ] Update any issue tracking (TODO.md) to synchronize with the state of released code
+- [ ] Update any issue tracking (TODO.md) to synchronize with the state of released code
 - [ ] Make sure `master` is the current released code and that it is clean
 - [ ] Commit any non-production changes to new branch, label it something like `future`
 - [ ] Push to git server (private or [GitHub](http://github.com))

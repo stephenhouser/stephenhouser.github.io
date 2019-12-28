@@ -14,7 +14,7 @@ This is the premise of [Chris Beams](http://chris.beams.io)'s August 2014 blog p
 2. Limit the subject line to 50 characters
 3. Capitalize the subject line
 4. Do not end the subject line with a period
-5. Use the imperitive mood in the subject line
+5. Use the imperative mood in the subject line
 6. Wrap the body ay 72 characters
 7. Use the body to explain *what* and *why* vs. *how*
 

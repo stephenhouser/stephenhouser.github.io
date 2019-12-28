@@ -9,12 +9,12 @@ description:
 
 project: 	USA
 ---
-I've been poking at an updated version (1.2.0) of The United States iPad app. The last release was in 2014 and [Apple](http://apple.com) sent me a message that it was going to be removed from the App Store unless I updated it. I don't really make any money off the $0.99 price tag. It used to be enough to pay for the developer account but has dropped off over the years. Could be I'm not a great app/software markerter too.
+I've been poking at an updated version (1.2.0) of The United States iPad app. The last release was in 2014 and [Apple](http://apple.com) sent me a message that it was going to be removed from the App Store unless I updated it. I don't really make any money off the $0.99 price tag. It used to be enough to pay for the developer account but has dropped off over the years. Could be I'm not a great app/software marketer too.
 
 
 [![The United States][screenshot]][appstore]
 
-From the current development code, I've really only patched up problems with the [SVGKit](https://github.com/stephenhouser/SVGKit) that I use to display the map. For the moment I also removed [GameKit](apple gamekit) and acheivements as the API has completely changed and I'm not sure the time investment in updating would be worth it.
+From the current development code, I've really only patched up problems with the [SVGKit](https://github.com/stephenhouser/SVGKit) that I use to display the map. For the moment I also removed [GameKit](apple gamekit) and achievements as the API has completely changed and I'm not sure the time investment in updating would be worth it.
 
 If you're interested in being a beta tester, drop me an email. I've got about a month to get things cleaned up and ready for release.
 

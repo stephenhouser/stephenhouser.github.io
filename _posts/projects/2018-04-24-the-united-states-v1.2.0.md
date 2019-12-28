@@ -17,7 +17,7 @@ The updated version (1.2.0) of The United States iPad app is out! The last relea
 There are really only a two fixes outside the recompilation and project file updates.
 
 * Update to and tweak an old version of [SVGKit](https://github.com/stephenhouser/SVGKit) used to display the map.
-* Changes to the Apple [GameKit](apple gamekit) and how acheivements are tracked as the API changed.
+* Changes to the Apple [GameKit](apple gamekit) and how achievements are tracked as the API changed.
 
 <div id="app-store">
     <a href="http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8">

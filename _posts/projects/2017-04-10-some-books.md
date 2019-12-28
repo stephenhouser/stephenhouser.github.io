@@ -13,7 +13,7 @@ archive:	false
 permalink:	/some-books
 ---
 A small, lightweight, system for keeping tack of the books we (the Southern Maine
-Men's Book club) have read over the years. It's a substibute for sites like
+Men's Book club) have read over the years. It's a substitute for sites like
 [Google Groups](http://groups.google.com) and [GoodReads](http://goodreads.com)
 that we used for a while. Built using some very basic JavaScript with 
 [jQuery](https://jquery.com/) and a few add-ons, like 

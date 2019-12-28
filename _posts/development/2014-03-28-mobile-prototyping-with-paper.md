@@ -41,7 +41,7 @@ to areas on the screen, and then simulate your idea. Viola! Demo On.
 It's a brilliant method of getting an idea on paper to an interactive
 prototype. Additionally, anything you can draw, sketch or highly
 detailed, you can incorporate into your simulation quickly and easily.
-So easily, any moderately saavy *end user* should be able to mock up
+So easily, any moderately savvy *end user* should be able to mock up
 their ideas with ease.
 
 Of course with [POP][1] you can also share prototypes with others. You
@@ -51,7 +51,7 @@ demonstrate the idea, this is are incredibly useful features. They allow
 you to give out a working demo to your partners, customers or
 communities. They can instantly understand what the app is trying to do
 and how your design intends to do it. It makes super fast idea to
-deployable prototypes possibile.
+deployable prototypes possible.
 
 [POP][1] is not the only method of this low-friction prototype approach.
 PowerPoint and Keynote have been my long-time standby recommendations

@@ -26,7 +26,7 @@ of the network, and systems. The web interface allows you to drill down
 and see the status of any device monitored. It does all this in a very
 simple and elegant way, by providing color indications, red, yellow, and
 green to tell you how things are going. Well all of this really can put
-the idea of traffic lights into your head if you like to "repurpose"
+the idea of traffic lights into your head if you like to "re-purpose"
 consumer electronics like I do. So lets get to task and use our desktop
 computer, running Java to monitor a BigBrother web page and change a
 faux traffic light to match the color-status of our network.
@@ -38,14 +38,14 @@ controllers and even microcontrollers, like the PIC, AVR, and Basic
 Stamps. As described here, this project ends up being a little pricey.
 So  consider it a proof of concept that we can later work into a much
 cheaper product. [This is the case with a home-made PC board and a $2
-Dallas Semicondctor DS2408 chip to be covered in the future in the
+Dallas Semiconductor DS2408 chip to be covered in the future in the
 MiniStopLight project]
 
 ### The components that we will be working with include:
 
 **Faux Stop Light $20 from Spencer Gifts.** This stop light is almost
 perfect for our needs. It has 120V AC night-light bulbs, 12V DC would be
-perferred so they could be powered the relay board without needing a
+preferred so they could be powered the relay board without needing a
 power supply. Unfortunately the lights blink, actually the bulbs have
 the blinking built-in. We don't want blinking lights! Fortunately the
 bulbs can easily be replaced with standard night-light bulbs from the
@@ -62,7 +62,7 @@ four (4) inputs on the board. This project only used the relays. Three
 built around a Dallas Semiconductor DS2408 8 way addressable switch.
 
 **Wall Wart and Telephone Jacks $10-$15 (maybe), these might be in a
-well-stocked junk box** These are more or less in the miscelaneous parts
+well-stocked junk box** These are more or less in the miscellaneous parts
 section. 12V DC "wall wart" power supplies are easily found, as are old
 telephone jacks, and a 12V buzzer could always be gotten at RadioShack.
 As well as wire, how could you live without a pile of wire at your house

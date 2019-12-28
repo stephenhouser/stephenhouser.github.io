@@ -10,11 +10,11 @@ description:
 
 It's really easy to start writing code and it's really fun. I mean *REALLY* fun. 
 I develop a sort of  hyper-focus once the editor opens and somewhere after the second 
-or third compilation attempt. The warnings and errors from typos in my code scorll by
+or third compilation attempt. The warnings and errors from typos in my code scroll by
 on the screen. I fix them, I think on the problem a little more, I adjust the approach,
 refactor, reorganize. A few comments here to remind myself what my architecture is,
-sprinke in some sample inputs and outputs like fairy dust to attract a correct
-solution. I'm in hevan, angels are singning, kittens are being born.
+sprinkle in some sample inputs and outputs like fairy dust to attract a correct
+solution. I'm in heaven, angels are singing, kittens are being born.
 
 Then I hit a roadblock and do a quick search on [Stack Overflow](http://stackoverflow.com). 
 The flow is still with me, this is part of the process. But then, it hits me.
@@ -30,15 +30,15 @@ Their shoes are too small to be a real programmer. Worse, I think they used `ema
 not `vi` (or the reverse depending on your religion). Any excuse I can think of runs
 through the analysis of how I should continue. Should I build or should I grow?
 
-In this case, I decided to contribute to someone else's existing code. This is a 
+In this case, I decided to contribute to someone elses existing code. This is a 
 difficult decision for me as I expect it may be for you. You have to sacrifice
 some of your non-negotiables. You have to give up tabs for spaces, non-braced `if`
 statements, `//` comments. The list is endless. Buy in now and be done with it.
 Once you choose the path of contributing don't look back. You are working on someone
-else's project not your own. You are working in a community with standards that,
+elses project not your own. You are working in a community with standards that,
 if you want to be a part of, you must adopt.
 
-Loog at the details of the existing code style. While I cannot give a 
+Look at the details of the existing code style. While I cannot give a 
 complete list, here are a few examples of things I look for:
 
 * Indentation: Don't invent your own, match the existing tabs/space indents.

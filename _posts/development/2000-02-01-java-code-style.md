@@ -16,7 +16,7 @@ Many programs are modified during their useful life, either to correct
 errors or to extend their capabilities. It has been estimated that as
 much as 80% of the cost of software development is incurred by such
 modifications during the so-called "maintenance period" of the software
-lifecycle. In most cases, the programmers making the modifications are
+life cycle. In most cases, the programmers making the modifications are
 <strong>not</strong> the authors of the program, and their task is eased
 if the code has been written to be understood. We here discuss a few
 techniques which help to make the source code of a program more
