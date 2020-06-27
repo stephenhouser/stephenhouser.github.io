@@ -6,7 +6,7 @@ category: 	publications
 tags: 		[publications, digital-humanities]
 keywords: 	digital liberal arts women history trail app development
 ---
-John Muthyala had a very nice article published in [EDUCAUSE Review](https://er.educause.edu) that features our work on the Portland Women's History Trail.
+John Muthyala had a very nice article published in [EDUCAUSE Review](https://er.educause.edu/articles/2020/6/digital-innovation-in-the-liberal-arts) that features our work on the Portland Women's History Trail.
 
   <div style="margin: auto; text-align: center; margin-bottom: 1em;">
     <a href="https://er.educause.edu/articles/2020/6/digital-innovation-in-the-liberal-arts">
