@@ -104,11 +104,8 @@ store interfaces, but the myriad of details are a project in themselves.
 It's good to get to this point. The app is out. It's on both [iOS][appstore] and Android.
 Go out an do a good turn today.
 
-<div id="app-store">
-    <a href="https://itunes.apple.com/us/app/good-turn/id380482273?mt=8"><img alt="Available on the App Store" src='{{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}' /></a>
-    <a href='https://play.google.com/store/apps/details?id=com.stephenhouser.goodturn&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src=' {{"/projects/google-play-badge.png"|prepend:site.assetsurl}}'/></a>
-    <p>Download the app today, for free, and join others who are doing a good turn daily.</p>
-</div>
+{%include goodturn-links.html %}
+
 
  [GoodTurnWeb]: http://goodturn.stephenhouser.com/
 

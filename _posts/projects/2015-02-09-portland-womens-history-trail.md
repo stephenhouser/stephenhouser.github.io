@@ -20,10 +20,6 @@ in Portland (Maine). The app is built using [jQuery Mobile][3] and
 
 [![screen capture][screencap1] &nbsp; ![screen capture][screencap2]][4]
 
-[Visit the Trail on the Web][4]
-
-[![Android app on Google play][playlogo]][googlestore]
-
 The content is all [markdown][6] and incredibly simple to maintain.
 [Jekyll][5] is used to convert the content to HTML which is then
 laid into templates for each content type (trail, sites, etc.).
@@ -39,6 +35,9 @@ hours. It has the features and ideas that make it easy to show others,
 including non-technical folks. It gives the feel of the design and shows
 a possible implementation. And, as with any prototype, it needs work.
 
+{% include pmwht-links.html %}
+
+
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
   [3]: http://jquerymobile.com
@@ -49,3 +48,5 @@ a possible implementation. And, as with any prototype, it needs work.
   [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
+  [appstorelogo]: {{ "/projects/download-on-the-app-store.png"|prepend:site.assetsurl }}
+  [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8

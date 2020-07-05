@@ -26,6 +26,8 @@ Here's a few screenshots to whet your appetite:
 
 [![screen capture][screencap1] &nbsp; ![screen capture][screencap2]][4]
 
+{% include pmwht-links.html %}
+
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
   [3]: http://jquerymobile.com

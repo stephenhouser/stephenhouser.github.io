@@ -1,7 +1,7 @@
 ---
 title: 		The United States v1.2.0 Released
 date: 		2018-04-24 12:09
-thumbnail: 	http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
+thumbnail: 	/projects/theusa/TheUnitedStatesv1.1.png
 category:	projects
 tags: 		[product, mobile, development, games, release]
 keywords:
@@ -19,11 +19,8 @@ There are really only a two fixes outside the recompilation and project file upd
 * Update to and tweak an old version of [SVGKit](https://github.com/stephenhouser/SVGKit) used to display the map.
 * Changes to the Apple [GameKit](apple gamekit) and how achievements are tracked as the API changed.
 
-<div id="app-store">
-    <a href="http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8">
-      <img alt="Available on the App Store" src='{{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}' />
-    </a>
-</div>
+{%include usa-links.html %}
+
 
   [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
   [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8

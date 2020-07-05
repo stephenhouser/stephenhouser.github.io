@@ -1,7 +1,7 @@
 ---
 title: 		The United States v1.2.0 Testing
 date: 		2018-04-17 12:09
-thumbnail: 	http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
+thumbnail: 	/projects/theusa/TheUnitedStatesv1.1.png
 category:	projects
 tags: 		[product, mobile, development, games]
 keywords:
@@ -18,11 +18,8 @@ From the current development code, I've really only patched up problems with the
 
 If you're interested in being a beta tester, drop me an email. I've got about a month to get things cleaned up and ready for release.
 
-<div id="app-store">
-    <a href="http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8">
-      <img alt="Available on the App Store" src='{{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}' />
-    </a>
-</div>
+{%include usa-links.html %}
+
 
   [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
   [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8

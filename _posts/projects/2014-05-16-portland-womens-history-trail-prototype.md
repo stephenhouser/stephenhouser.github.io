@@ -55,6 +55,9 @@ a possible implementation. And, as with any prototype, it needs work.
 
 With that all said, go and [give it a try][4].
 
+{% include pmwht-links.html %}
+
+
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
   [3]: http://jquerymobile.com

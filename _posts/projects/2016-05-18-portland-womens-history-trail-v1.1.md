@@ -25,8 +25,7 @@ There was also a little external pressure as the version of [Cordova][cordova]
 used in v1.0 had some exploits discovered. Google gave developers until May
 9th, 2016 to update their apps or be pulled from the [Google play store][googlestore]. This actually helped put a deadline on the release of v1.1.
 
-[![iOS app in the AppStore][appstorelogo]][applestore]
-[![Android app on Google play][playlogo]][googlestore]
+{% include pmwht-links.html %}
 
   [1]: http://usm.maine.edu/wgs/eileen-eagan
   [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
@@ -39,5 +38,5 @@ used in v1.0 had some exploits discovered. Google gave developers until May
   [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
-  [appstorelogo]: https://devimages.apple.com.edgekey.net/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg
+  [appstorelogo]: {{ "/projects/download-on-the-app-store.png"|prepend:site.assetsurl }}
   [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8
