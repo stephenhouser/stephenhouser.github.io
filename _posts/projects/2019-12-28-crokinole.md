@@ -15,11 +15,11 @@ It was a day like any other when a colleague and avid tabletop gamer asked, "Hav
 
 There were two guiding lights (sites) in my build, [Woodgears.ca](https://www.woodgears.ca/crokinole/index.html) and [Hilinski](http://www.hilinski.net/woodgames/).  Those two sites combined with a lot of outside research to make sure I had all the dimensions correct, some of which are surprisingly difficult to find! The overall dimensions are found in a number of places:
 
-* Overall playing surface diameter: 26" (13"/33cm radius)
-* Outer circle diameter: 24" (12"/408mm radius)
-* Middle circle diameter: 16" (8"/204mm radius)
-* Inner circle diameter: 8" (4"/102mm radius)
-* Ditch: 2" (51mm) minimum
+* Overall playing surface diameter: 26" (13" / ~330mm radius)
+* Outer circle diameter: 24" (12" / ~305mm radius)
+* Middle circle diameter: 16" (8" / ~203mm radius)
+* Inner circle diameter: 8" (4" / ~102mm radius)
+* Ditch: 2" (~51mm) minimum
 
 That's about where most sites leave off, neglecting some relevant dimensions which [Mayday Games Kickstarter](https://www.kickstarter.com/projects/maydaygames/2019-crokinole-board-2-4-player-maple-or-rosewood-season-2) fortunately provided:
 
