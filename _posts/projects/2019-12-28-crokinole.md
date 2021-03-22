@@ -40,7 +40,7 @@ The pegs were a real dilemma. I could find no solid information on their size. D
 
 I really liked the [Hilinski](http://www.hilinski.net/woodgames/) method using a 1/2 sheet of 1/2" plywood. From that 1/2 sheet you can get two playing surfaces, and using the cutoffs make up the base/ditch. This was just an amazing layout and planning job with hardly anything wasted. Even better, it would provide me **two Crokinole boards**! I used my small router to cut out the two playing surfaces, using a simple "nail through a piece of wood in the center" trick. I could have used a jig saw if I actually had one and then cleaned it up on the band saw. The router however, left a nice finished edge, so no additional work needed.
 
-![Crokinole Base Parts]({{site.baseurl}}/assetsprojects/crokinole/crokinole-base.jpg)
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-base.jpg)
 ![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-top-on-base.jpg)
 
 After cutting out the playing surface and assembling the base from the cutoffs, I used a wooden story stick to mark out the 15, 10, 5, and 0 circles as a sanity check. *Measure twice cut once.* Then, using the same stick, but this time with my small router attached, I cut 1/16" wide 1/8" deep groves. Into these grooves I glued some very thin black walnut. It was tricky and kept breaking on me, but eventually it all went in. Mostly. More on that during the finishing steps later on.
