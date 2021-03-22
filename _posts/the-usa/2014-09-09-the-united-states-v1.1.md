@@ -1,7 +1,7 @@
 ---
 title: 		  The United States v1.1 Released
 date: 		  2014-09-09 12:00
-thumbnail: 	/projects/theusa/TheUnitedStatesv1.1.png
+thumbnail: 	/the-usa/TheUnitedStatesv1.1.png
 category:	  software
 tags: 		  [product, mobile, software, iOS, games, swift]
 keywords:
@@ -17,7 +17,7 @@ Also, corrected a spelling error or two!
 This update still maintains compatibility with iOS 6 devices and should
 run on all iPad models.
 
-{%include usa-links.html %}
+{%include the-usa-links.html %}
 
 
   [1]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png

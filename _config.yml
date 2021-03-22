@@ -20,21 +20,17 @@ description: > # this means to ignore newlines until "baseurl:"
 # DEFAULT: http://stephenhouser.com
 google_analytics: UA-2571363-2
 
+# The place I keep the source
+repository: stephenhouser/stephenhouser.githib.io
+
 #
 # I don't use "url" anyhere, kept here for reference.
 # The base hostname & protocol for your site
 #url: "http://stephenhouser.com"
 
-repository: stephenhouser/stephenhouser.githib.io
-
-baseurl:    "" # the subpath of your site, e.g. /blog/
-assetsurl:  /assets
-# Larger files are located in DropBox's Public directory
-# 2016/12/16: Dropbox is dropping public directories.
-#filesurl:   https://dl.dropboxusercontent.com/u/9832808
-# These are other locations where files might go...
-#filesurl:   "/files"       # files are in a local directory
-filesurl:   "http://media.stephenhouser.com" # Amazon S3
+baseurl:    ""        # the subpath of the site, e.g. /~houser
+assetsurl:  "/assets" # images, icons, and small assets used in posts
+filesurl:   "http://media.stephenhouser.com" # Where the larger "files" go
 
 # Site Build settings
 timezone:   America/New_York

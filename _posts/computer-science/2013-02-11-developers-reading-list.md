@@ -1,7 +1,7 @@
 ---
 title: 		Developer's Reading List
 date: 		2013-02-11 12:00:00
-thumbnail:
+thumbnail: 	/projects/books.png
 category:   computer-science
 tags: 		[software, computer-science]
 keywords: 	reading list computer science electronics reference

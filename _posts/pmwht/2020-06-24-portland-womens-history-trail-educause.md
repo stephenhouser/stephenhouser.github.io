@@ -1,7 +1,7 @@
 ---
 title: 		"Digital Innovation in the Liberal Arts (EDUCAUSE Review)"
 date: 		2020-06-24 12:00:00
-thumbnail:  /projects/pmwht/icon-76@2x.png
+thumbnail:  /pmwht/icon-76@2x.png
 category: 	publications
 tags:       [publications, mobile, software, javascript, iOS, android]
 keywords: 	digital liberal arts women history trail app development

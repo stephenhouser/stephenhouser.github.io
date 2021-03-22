@@ -19,7 +19,7 @@ and networks with an open source product called [Big Brother][bigbrother]
 status.
 
 
-<img style="float: right;" src="{{"/projects/bblight/bblight-LightComplete1.png"|prepend:site.assetsurl}}" alt="Photo of the Traffic Light" />
+<img style="float: right;" src="{{site.baseurl}}/assets/projects/bblight/bblight-LightComplete1.png" alt="Photo of the Traffic Light" />
 
 [Big Brother][bigbrother] provides a web interface that shows the status
 of the network, and systems. The web interface allows you to drill down
@@ -88,7 +88,7 @@ was another stop light!
 
 We want the traffic light to look professional, so to the Dremel tool!
 
-![Photo of the phone connection]({{"/projects/bblight/bblight-PhoneConnection1.png"|prepend:site.assetsurl}})
+![Photo of the phone connection]({{site.baseurl}}/assets/projects/bblight/bblight-PhoneConnection1.png)
 
 In the photo you can see an opening cut into the traffic light case to
 mount some old-school 4-wire telephone jacks. I had these laying about
@@ -98,7 +98,7 @@ well. They snap-in to wall face plates. Also, in retrospect, we maybe
 should use cat-5 8-wire jacks for compatibility with some other
 off-the-shelf one wire products.
 
-![Photo of the phone connection]({{"/projects/bblight/bblight-PhoneConnection2.png"|prepend:site.assetsurl}})
+![Photo of the phone connection]({{site.baseurl}}/assets/projects/bblight/bblight-PhoneConnection2.png)
 
 Here we can see how the telephone jacks are mounted from the inside.
 They snap-in cleanly, but I added a touch of hot melt glue just in case.
@@ -107,14 +107,14 @@ lets get to it!
 
 ### Update Electronics:
 
-![Photo of the relay board]({{"/projects/bblight/bblight-RelayBoard3.png"|prepend:site.assetsurl}})
+![Photo of the relay board]({{site.baseurl}}/assets/projects/bblight/bblight-RelayBoard3.png)
 
 The first issue to attack was where to place the OneWire relay board.
 This photo shows it close to where the phone jacks will be (at the
 bottom). The best placement seems to be between the green and yellow
 lights. A bit of double sided tape and/or a wire-tie holds it in place.
 
-![Photo of the relay board]({{"/projects/bblight/bblight-RelayBoard2.png"|prepend:site.assetsurl}})
+![Photo of the relay board]({{site.baseurl}}/assets/projects/bblight/bblight-RelayBoard2.png)
 
 Here's a closer view of the placement and the beginning of rewiring.
 
@@ -128,7 +128,7 @@ terminals.
 
 ### Modify Power Supply:
 
-![Photo of the relay board]({{"/projects/bblight/bblight-RelayBoard1.png"|prepend:site.assetsurl}})
+![Photo of the relay board]({{site.baseurl}}/assets/projects/bblight/bblight-RelayBoard1.png)
 
 Perhaps the most difficult hardware modification is getting 12V to the
 relay board. To do this, we scavenge an old wall-wart style power supply
@@ -155,7 +155,7 @@ relay board 12V supply. I'm cheap so I used what I had on hand.
 
 ### Reassemble Traffic Light:
 
-![Photo of the completed project]({{"/projects/bblight/bblight-LightComplete1.png"|prepend:site.assetsurl}})
+![Photo of the completed project]({{site.baseurl}}/assets/projects/bblight/bblight-LightComplete1.png)
 
 During re-assembly remember to clean up the wiring with wire ties to
 keep things looking nice. People will want to see the guts of your
@@ -193,8 +193,8 @@ OneWire Relay Board from AAG. Of course, it's another repurposed toy.
 This one was from Wally-world for $10.00 if I recall correctly. I'll get
 the schematics and details up soon, I hope.
 
-![Photo of the original package]({{"/projects/bblight/bblight-DesktopTrafficLight01.png"|prepend:site.assetsurl}})
-![Photo of the desktop version]({{"/projects/bblight/bblight-DesktopTrafficLight02.png"|prepend:site.assetsurl}})
+![Photo of the original package]({{site.baseurl}}/assets/projects/bblight/bblight-DesktopTrafficLight01.png)
+![Photo of the desktop version]({{site.baseurl}}/assets/projects/bblight/bblight-DesktopTrafficLight02.png)
 
 ## Why did I do this?
 

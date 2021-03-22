@@ -93,5 +93,5 @@ problems, but quirky enough to make it not as fun.
 [2]: http://projectpixelpress.com
 [3]: https://www.kickstarter.com/projects/robinrath/pixel-press-draw-your-own-video-game
 [4]: http://projectpixelpress.com
-[5]: {{"/projects/angry-drawings-sketch-small.jpg"|prepend:site.assetsurl}}
-[6]: {{"/projects/angry-drawings-sketch.jpg"|prepend:site.assetsurl}}
+[5]: {{site.baseurl}}/assets/projects/angry-drawings-sketch-small.jpg
+[6]: {{site.baseurl}}/assets/projects/angry-drawings-sketch.jpg

@@ -1,7 +1,7 @@
 ---
 title:      Portland Women's History Trail
 date:       2015-02-09 19:44:38
-thumbnail:  /projects/pmwht/icon-76@2x.png
+thumbnail:  /pmwht/icon-76@2x.png
 category:   software
 tags:       [mobile, software, javascript, iOS, android]
 keywords:
@@ -44,9 +44,9 @@ a possible implementation. And, as with any prototype, it needs work.
   [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap1]: {{"/projects/pmwht/pwht-map.png" | prepend:site.assetsurl}}
-  [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
+  [screencap1]: {{site.baseurl}}/assets/pmwht/pwht-map.png
+  [screencap2]: {{site.baseurl}}/assets/pmwht/pwht-site.png
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
-  [appstorelogo]: {{ "/projects/download-on-the-app-store.png"|prepend:site.assetsurl }}
+  [appstorelogo]: {{site.baseurl}}/assets/logos/download-on-the-app-store.png
   [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8

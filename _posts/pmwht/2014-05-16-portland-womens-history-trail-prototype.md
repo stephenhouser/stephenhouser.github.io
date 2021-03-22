@@ -64,4 +64,4 @@ With that all said, go and [give it a try][4].
   [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap]: {{"/projects/pmwht/pwht-prototype-2014-05-16.png" | prepend:site.assetsurl}}
+  [screencap]: {{site.baseurl}}/assets/pmwht/pwht-prototype-2014-05-16.png

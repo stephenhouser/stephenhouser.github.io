@@ -1,7 +1,7 @@
 ---
 title: 		QSO Mapper
 date: 		2018-09-20 12:00:00
-thumbnail: 	/projects/qso-mapper.png
+thumbnail: 	/radio/qso-mapper/qso-mapper.png
 category: 	radio
 tags: 		[software, javascript, radio]
 keywords:

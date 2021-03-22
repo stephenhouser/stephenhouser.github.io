@@ -23,9 +23,9 @@ iPhone Application Programming</a>.
 
 ## Screenshots
 
-![image of friends list]({{"/projects/iphone-presence/iphone-presence-friends-medium.png"|prepend:site.assetsurl}})
-![image of status view]({{"/projects/iphone-presence/iphone-presence-status-medium.png"|prepend:site.assetsurl}})
-![image of contact add view]({{"/projects/iphone-presence/iphone-presence-contact-medium.png"|prepend:site.assetsurl}})
+![image of friends list]({{site.baseurl}}/assets/projects/iphone-presence/iphone-presence-friends-medium.png)
+![image of status view]({{site.baseurl}}/assets/projects/iphone-presence/iphone-presence-status-medium.png)
+![image of contact add view]({{site.baseurl}}/assets/projects/iphone-presence/iphone-presence-contact-medium.png)
 
 ## The Code
 

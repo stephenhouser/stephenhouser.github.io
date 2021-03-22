@@ -60,15 +60,15 @@ needed changes are being contributed back to his codebase.
 
 ## Screenshots
 
-<img src="{{"/projects/inoutboard-adium/inoutboard-preferences.png"|prepend:site.assetsurl}}" alt="image of the preferences window" />
+<img src="{{site.baseurl}}/assets/projects/inoutboard-adium/inoutboard-preferences.png" alt="image of the preferences window" />
 
 The Adium advanced preference view for the plugin.
 
-<img src="{{"/projects/inoutboard-adium/inoutboard-status.png"|prepend:site.assetsurl}}" alt="image of status selections in Adium" />
+<img src="{{site.baseurl}}/assets/projects/inoutboard-adium/inoutboard-status.png" alt="image of status selections in Adium" />
 
 The Adium status selection menu.
 
-<img src="{{"/projects/inoutboard-adium/inoutboard-web.png"|prepend:site.assetsurl}}" alt="image of the In Out Board web application" width="90%"/>
+<img src="{{site.baseurl}}/assets/projects/inoutboard-adium/inoutboard-web.png" alt="image of the In Out Board web application" width="90%"/>
 
 The USM InOutBoard web application.
 

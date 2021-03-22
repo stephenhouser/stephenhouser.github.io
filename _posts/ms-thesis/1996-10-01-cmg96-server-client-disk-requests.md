@@ -22,13 +22,13 @@ server performance and investigate the relationship between client file
 requests and server disk workloads.
 
 
-<img src="{{"/logos-png/cmglogo.png"|prepend:site.assetsurl}}" style="float: right;" alt="CMG Logo" />
+<img src="{{site.baseurl}}/assets/logos/cmglogo.png" style="float: right;" alt="CMG Logo" />
 
 ## Documents
 
 The paper is available in several formats</p>
 
-* <a href="{{"/publications/cmg96.pdf"|prepend:site.filesurl}}">Adobe PDF</a> of entire paper
-* <a href="{{"/publications//cmg96.ps"|prepend:site.filesurl}}">Adobe PostScript</a> of entire paper
-* <a href="{{"/publications//cmg96.txt"|prepend:site.filesurl}}">LaTex</a> source of entire paper
-* <a href="{{"/publications//cmg96.ppt"|prepend:site.filesurl}}">Microsoft PowerPoint</a> of slides used for presentation
+* <a href="{{site.filesurl}}/publications/cmg96.pdf">Adobe PDF</a> of entire paper
+* <a href="{{site.filesurl}}/publications/cmg96.ps">Adobe PostScript</a> of entire paper
+* <a href="{{site.filesurl}}/publications/cmg96.txt">LaTex</a> source of entire paper
+* <a href="{{site.filesurl}}/publications/cmg96.ppt">Microsoft PowerPoint</a> of slides used for presentation

@@ -25,13 +25,13 @@ used by analysts to parameterize synthetic workloads for server
 subsystem studies.
 
 
-<img src="{{"/logos-png/cmglogo.png"|prepend:site.assetsurl}}" style="float:right;" alt="CMG Logo" />
+<img src="{{site.baseurl}}/assets/logos/cmglogo.png" style="float:right;" alt="CMG Logo" />
 
 ## Documents
 
 The paper is available in several formats
 
-* <a href="{{"/publications/cmg95.pdf"|prepend:site.filesurl}}">Adobe PDF</a> of entire paper
-* <a href="{{"/publications/cmg95.ps"|prepend:site.filesurl}}">Adobe PostScript</a> of entire paper
-* <a href="{{"/publications/cmg95.txt"|prepend:site.filesurl}}">LaTex</a> source of entire paper
-* <a href="{{"/publications/cmg95.ppt"|prepend:site.filesurl}}">Microsoft PowerPoint</a> of slides used for presentation
+* <a href="{{site.filesurl}}/publications/cmg95.pdf">Adobe PDF</a> of entire paper
+* <a href="{{site.filesurl}}/publications/cmg95.ps">Adobe PostScript</a> of entire paper
+* <a href="{{site.filesurl}}/publications/cmg95.txt">LaTex</a> source of entire paper
+* <a href="{{site.filesurl}}/publications/cmg95.ppt">Microsoft PowerPoint</a> of slides used for presentation

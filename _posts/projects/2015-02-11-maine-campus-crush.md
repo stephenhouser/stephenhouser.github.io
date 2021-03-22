@@ -51,7 +51,7 @@ your team and play for the highest scores!
 </style>
 
 <div id="playgame" style="float: left;">
-        <img src="{{"/projects/ccrush/ccrush-1.png"|prepend:site.assetsurl}}"
+        <img src="{{site.baseurl}}/assets/projects/ccrush/ccrush-1.png"
             alt="Play Maine Campus Crush"/>
         <br/>
         <a href="http://stephenhouser.com/MaineCampusCrush">

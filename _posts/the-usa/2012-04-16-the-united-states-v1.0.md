@@ -1,7 +1,7 @@
 ---
 title: 		  The United States v1.0 Released
 date: 		  2012-04-16 12:00
-thumbnail: 	/projects/theusa/TheUnitedStatesv1.1.png
+thumbnail: 	/the-usa/TheUnitedStatesv1.1.png
 category:	  software
 tags: 		  [product, mobile, software, iOS, games, swift]
 keywords:
@@ -48,9 +48,9 @@ Wikipedia and other web sites, including those of the states themselves.
 All the data was combined into attributes in an SVG file, also
 originally from Wikipedia.
 
-{%include usa-links.html %}
+{%include the-usa-links.html %}
 
 
   [appicon]: http://a3.mzstatic.com/us/r30/Purple3/v4/02/93/2b/02932b52-b671-9400-177c-4c2ede537434/icon175x175.png
   [appstore]: http://itunes.apple.com/us/app/the-united-states/id503146680?ls=1&amp;mt=8
-  [screenshot]: {{"/projects/theusa/TheUSHome.png"|prepend:site.assetsurl}}
+  [screenshot]: {{site.baseurl}}/assets/the-usa/TheUSHome.png

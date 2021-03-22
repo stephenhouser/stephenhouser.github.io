@@ -1,7 +1,7 @@
 ---
 title:      Portland Women's History Trail on Google play Store
 date:       2015-04-17 19:44:38
-thumbnail:  /projects/pmwht/icon-76@2x.png
+thumbnail:  /pmwht/icon-76@2x.png
 category:   software
 tags:       [mobile, software, javascript, iOS, android]
 keywords:
@@ -34,7 +34,7 @@ Here's a few screenshots to whet your appetite:
   [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [screencap1]: {{"/projects/pmwht/pwht-map.png" | prepend:site.assetsurl}}
-  [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
+  [screencap1]: {{site.baseurl}}/assets/pmwht/pwht-map.png
+  [screencap2]: {{site.baseurl}}/assets/pmwht/pwht-site.png
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png

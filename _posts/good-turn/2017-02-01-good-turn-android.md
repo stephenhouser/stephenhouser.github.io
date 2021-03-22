@@ -1,7 +1,7 @@
 ---
 title: 		Good Turn (Android)
 date: 		2017-02-01 12:00:00
-thumbnail: 	/projects/goodturn/goodturn-android-icon.png
+thumbnail: 	/good-turn/goodturn-android-icon.png
 category: 	software
 tags: 		[product, mobile, android, software, boy-scouts, java]
 keywords:
@@ -10,7 +10,7 @@ description:
 layout: 	project
 project: 	good-turn
 archive:	false
-permalink: /goodturn-android
+permalink: /good-turn-android
 ---
 After a few months of code-doodling the [Good Turn][appstore] that I
 developed way back in 2010 on iOS is now available on Android!
@@ -21,10 +21,10 @@ it to a state where I felt it was releasable until now.
 
 
 <div class="center">
-    <img src='{{"/projects/goodturn/goodturn-android-front.png"|prepend:site.assetsurl}}' />
-    <img src='{{"/projects/goodturn/goodturn-android-back.png"|prepend:site.assetsurl}}' />
-    <img src='{{"/projects/goodturn/goodturn-android-map.png"|prepend:site.assetsurl}}' />
-    <!-- img src='{{"/projects/goodturn/goodturn-android-navbar.png"|prepend:site.assetsurl}}' / -->
+    <img src='{{site.baseurl}}/assets/good-turn/goodturn-android-front.png' />
+    <img src='{{site.baseurl}}/assets/good-turn/goodturn-android-back.png' />
+    <img src='{{site.baseurl}}/assets/good-turn/goodturn-android-map.png' />
+    <!-- img src='{{site.baseurl}}/assets/good-turn/goodturn-android-navbar.png' / -->
 </div>
 
 The app itself is a native Java application written using Android 
@@ -46,7 +46,7 @@ with new widgets and design patterns. For example, the original [Good Turn][apps
 uses a tab bar for its main interface. Android had this widget a few
 years/versions back, then did away with it, and now has put it back in.
 
-<img style="float: right; display: inline;" src='{{"/projects/goodturn/goodturn-android-navbar.png"|prepend:site.assetsurl}}' />
+<img style="float: right; display: inline;" src='{{site.baseurl}}/assets/good-turn/goodturn-android-navbar.png' />
 Ultimately, I chose the left-side slide in navigation panel (from a
 hamburger menu) which seems to be the current (dominant) interface.
 I chose this based on a purely unscientific look at several recent Google apps.
@@ -104,19 +104,15 @@ store interfaces, but the myriad of details are a project in themselves.
 It's good to get to this point. The app is out. It's on both [iOS][appstore] and Android.
 Go out an do a good turn today.
 
-{%include goodturn-links.html %}
-
+{%include good-turn-links.html %}
 
  [GoodTurnWeb]: http://goodturn.stephenhouser.com/
-
  [Troop349]: https://sites.google.com/a/stephenhouser.com/troop349/
  [Pack349]: https://sites.google.com/site/pack349buxton/
  [GoogleMaps]: http://maps.google.com/
- 
  [appstore]: https://itunes.apple.com/us/app/good-turn/id380482273?mt=8
- [appstore-badge]: {{"/projects/download-on-the-app-store.png"|prepend:site.assetsurl}}
+ [appstore-badge]: {{site.baseurl}}/assets/logos/download-on-the-app-store.png
  [playstore]: https://play.google.com/store/apps/details?id=com.stephenhouser.goodturn&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1
- [playstore-badge]: {{"/projects/google-play-badge.png"|prepend:site.assetsurl}}
- 
- [appicon-highres]: {{"/projects/goodturn-web-map.png"|prepend:site.assetsurl}}
- [appicon]: {{"/projects/goodturn-web-map.png"|prepend:site.assetsurl}}
+ [playstore-badge]: {{site.baseurl}}/assets/logos/google-play-badge.png
+ [appicon-highres]: {{site.baseurl}}/assets/good-turn/goodturn-web-map.png
+ [appicon]: {{site.baseurl}}/assets/good-turn/goodturn-web-map.png

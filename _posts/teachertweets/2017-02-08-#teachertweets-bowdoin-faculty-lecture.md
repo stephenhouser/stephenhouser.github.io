@@ -6,7 +6,7 @@ keywords:
 description:
 project:    teachertweets
 ---
-![Doris and Stephen presenting]({{"/random/teachertweets-1.jpeg"|prepend:site.assetsurl}})
+![Doris and Stephen presenting]({{site.baseurl}}/assets/images/teachertweets-1.jpeg)
 [@DorisASantoro](https://twitter.com/DorisASantoro) and 
 [@stephenhouser](https://twitter.com/stephenhouser) present 
 _Machine Learning and Moral Communities_ 

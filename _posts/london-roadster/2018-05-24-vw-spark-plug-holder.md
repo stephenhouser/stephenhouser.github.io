@@ -15,9 +15,9 @@ I've been using [Autodesk Fusion 360][fusion360] for designing wood CNC projects
 
 Here's what I came up with. The part is available on [Autodesk][f360vwplug] and on [Thingiverse][tversevwplug] if you have a similar problem.
 
-![The 3D Design]( {{"/random/vwplug-stl.jpg"|prepend:site.assetsurl}})
+![The 3D Design]( {{site.baseurl}}/assets/london-roadster/vwplug-stl.jpg)
 
-![Comparison of the original to the designed and printed part]( {{"/random/vwplug-comparison.jpg"|prepend:site.assetsurl}})
+![Comparison of the original to the designed and printed part]( {{site.baseurl}}/assets/london-roadster/vwplug-comparison.jpg)
 
 Live Autodesk Fusion 360 View:
 <iframe src="https://myhub.autodesk360.com/ue28706c8/shares/public/SH7f1edQT22b515c761e82476543a8c03fe0?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>

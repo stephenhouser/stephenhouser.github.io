@@ -1,7 +1,7 @@
 ---
 title: 		Good Turn (iOS)
 date: 		2010-10-15 12:00:00
-thumbnail: 	/projects/goodturn/goodturn-ios-icon.jpeg
+thumbnail: 	/good-turn/goodturn-ios-icon.jpeg
 category: 	software
 tags: 		[product, mobile, software, iOS, boy-scouts, swift]
 keywords:
@@ -10,7 +10,7 @@ description:
 layout: 	project
 project: 	good-turn
 archive:	false
-permalink: /goodturn
+permalink: /good-turn
 ---
 The [Good Turn][GoodTurnApp] application is a simple yet hi-tech
 replacement for the age-old good turn coin carried by many scouts to
@@ -29,9 +29,9 @@ are doing all over the world. You can navigate around a dynamic [Google
 Map][GoogleMaps] with markers on recent good turn locations. The site
 also provides support information for the application.
 
-[![Good Turn Web Map]({{"/projects/goodturn-web-map.png"|prepend:site.assetsurl}})][GoodTurnWeb]
+[![Good Turn Web Map]({{site.baseurl}}/assets/good-turn/goodturn-web-map.png)][GoodTurnWeb]
 
-{%include goodturn-links.html %}
+{%include good-turn-links.html %}
 
 
  [GoodTurnApp]: http://itunes.apple.com/us/app/good-turn/id380482273?mt=8
@@ -41,5 +41,6 @@ also provides support information for the application.
  [GoogleMaps]: http://maps.google.com/
  [AppStore]: http://itunes.apple.com/us/genre/mobile-software-applications/id36?mt=8
  [appicon-highres]: http://a3.mzstatic.com/us/r30/Purple/v4/0f/24/75/0f24757a-0373-25dd-ab7f-577c08e6a311/icon350x350.jpeg
- [appicon]: http://a1.mzstatic.com/us/r30/Purple/v4/0f/24/75/0f24757a-0373-25dd-ab7f-577c08e6a311/icon175x175.png
+ [appiconX]: http://a1.mzstatic.com/us/r30/Purple/v4/0f/24/75/0f24757a-0373-25dd-ab7f-577c08e6a311/icon175x175.png
+ [appicon]: {{site.baseurl}}/assets/good-turn/goodturn-ios-icon.jpeg
 

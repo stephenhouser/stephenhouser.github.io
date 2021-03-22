@@ -1,7 +1,7 @@
 ---
 title:      Portland Women's History Trail in Apple AppStore
 date:       2015-04-21 12:00
-thumbnail:  /projects/pmwht/icon-76@2x.png
+thumbnail:  /pmwht/icon-76@2x.png
 category:   software
 tags:       [mobile, software, javascript, iOS, android]
 keywords:
@@ -30,8 +30,7 @@ about the application, check the related posts below.
   [4]: http://pmwht.org
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
-  [appstorelogo]: {{ "/projects/download-on-the-app-store.png"|prepend:site.assetsurl }}
+  [appstorelogo]: {{site.baseurl}}/assets/logos/download-on-the-app-store.png
   [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8
-
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png

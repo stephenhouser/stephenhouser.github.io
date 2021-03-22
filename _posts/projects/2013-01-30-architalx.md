@@ -37,5 +37,5 @@ a live demo.
  [raphael]: http://www.raphaeldiluzio.com
  [matthias]: http://www.magdatt.nl
  [pma]: http://www.portlandmuseum.org/
- [tower]: {{"/projects/architalx-tower-500x300.png"|prepend:site.assetsurl}}
- [architalxweb]:{{"/projects/architalx.org-20130130.png"|prepend:site.assetsurl}}
+ [tower]: {{site.baseurl}}/assets/projects/architalx-tower-500x300.png
+ [architalxweb]:{{site.baseurl}}/assets/projects/architalx.org-20130130.png

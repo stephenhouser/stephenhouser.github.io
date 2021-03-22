@@ -11,5 +11,5 @@ A biorhythm is a hypothetical cycle in physiological, emotional, or intellectual
 The equations for the curves are:
 
 <script type="text/javascript">
-    window.location = "{{site.url}}/biorhythm";
+    window.location = "{{site.baseurl}}/biorhythm";
 </script>

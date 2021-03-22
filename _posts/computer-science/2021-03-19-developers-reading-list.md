@@ -1,7 +1,7 @@
 ---
 title: 		Developer's Reading List (2021)
 date: 		2021-03-19 12:00:00
-thumbnail:
+thumbnail: 	/projects/books.png
 category:   computer-science
 tags: 		[software, computer-science]
 keywords: 	reading list computer science electronics reference

@@ -20,7 +20,7 @@ radio today. I was hoping they  would be on <code>20m upper sideband
 made a brief <code>5x9</code> QSO with the 2015 Navassa DXpedition among
 the huge pileup of others across the world.
 
-![N1SH in the K1N Log]({{"/radio/k1n-log-2015-02-01.png" | prepend:site.assetsurl}})
+![N1SH in the K1N Log]({{site.baseurl}}/assets/radio/k1n-log-2015-02-01.png)
 
 Now I can sit back and wait for the QSL card and the ARRL LoTW entry.
 Good luck to the other folks out there trying to get a QSO with them.

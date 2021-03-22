@@ -15,7 +15,7 @@ It was a day like any other when a colleague and avid tabletop gamer asked, "Hav
 
 <!-- more -->
 
-![Finished Crokinole Board]({{ "/projects/crokinole/crokinole-complete.jpg" | prepend:site.assetsurl }})
+![Finished Crokinole Board]({{site.baseurl}}/assets/projects/crokinole/crokinole-complete.jpg)
 
 There were two guiding lights (sites) in my build, [Woodgears.ca](https://www.woodgears.ca/crokinole/index.html) and [Hilinski](http://www.hilinski.net/woodgames/).  Those two sites combined with a lot of outside research to make sure I had all the dimensions correct, some of which are surprisingly difficult to find! The overall dimensions are found in a number of places:
 
@@ -40,20 +40,20 @@ The pegs were a real dilemma. I could find no solid information on their size. D
 
 I really liked the [Hilinski](http://www.hilinski.net/woodgames/) method using a 1/2 sheet of 1/2" plywood. From that 1/2 sheet you can get two playing surfaces, and using the cutoffs make up the base/ditch. This was just an amazing layout and planning job with hardly anything wasted. Even better, it would provide me **two Crokinole boards**! I used my small router to cut out the two playing surfaces, using a simple "nail through a piece of wood in the center" trick. I could have used a jig saw if I actually had one and then cleaned it up on the band saw. The router however, left a nice finished edge, so no additional work needed.
 
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-base.jpg" | prepend:site.assetsurl }})
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-top-on-base.jpg" | prepend:site.assetsurl }})
+![Crokinole Base Parts]({{site.baseurl}}/assetsprojects/crokinole/crokinole-base.jpg)
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-top-on-base.jpg)
 
 After cutting out the playing surface and assembling the base from the cutoffs, I used a wooden story stick to mark out the 15, 10, 5, and 0 circles as a sanity check. *Measure twice cut once.* Then, using the same stick, but this time with my small router attached, I cut 1/16" wide 1/8" deep groves. Into these grooves I glued some very thin black walnut. It was tricky and kept breaking on me, but eventually it all went in. Mostly. More on that during the finishing steps later on.
 
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-marking-out.jpg" | prepend:site.assetsurl }})
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-marking-out.jpg)
 
 With everything marked out and inlaid, I put some effort into some early finishing steps. Mostly so that when I glued things together the glue wouldn't stick where I didn't want it.
 
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-major-parts.jpg" | prepend:site.assetsurl }})
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-major-parts.jpg)
 
 Then came the rim glued onto the base. I cut and re-sawed an 8" x 2" x 3/4" maple board into 8" x 1 1/2 x 1/8" strips, two strips for each rim. These went on easy enough with glue and some 1/2" brads for the inside strip. An attentive mathematician will see that 8" is about 1/4" short of the outer strip's circumference. To make up this small chunk, I used the little bit of leftover from the inside strip which is about 1" too long. After the glue set, I evened everything up with a plane and sandpaper.
 
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-rim.jpg" | prepend:site.assetsurl }})
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-rim.jpg)
 
 With the rim complete I could glue the playing surface in the middle. Again, using most of my clamps to keep all the edges in place, it was mostly a waiting game and a prelude to finishing.
 
@@ -71,7 +71,7 @@ Then came the 400 grit sandpaper, 600 grit, 1000 grit, and polishing. Then a few
 
 For the moment, I'm just using discs from [Crokinole Depot](http://www.crokinoledepot.com). I haven't figured out how I'd make them properly, with one side concave and the other convex and rounded edges. Every process I've seen looks a little to risky/scary for me -- I'm an overly safety conscious power-tool user. In looking at the ones from Crokinole Depot, they seem to have just a tiny dimple on the "convex" side, so not really convex, just a manufacturing artifact. Regardless, these discs are working wonderfully. So much so, I ordered more colors!
 
-![Crokinole Base Parts]({{ "/projects/crokinole/crokinole-complete.jpg" | prepend:site.assetsurl }})
+![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-complete.jpg)
 
 In the end, it was a fun project and we've played a handful of games on it. The surface is much slicker than the back of those old Carrom boards my father has!
 

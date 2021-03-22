@@ -1,7 +1,7 @@
 ---
 title: 		Portland Womens History Trail v1.1 Released
 date: 		2016-05-18 13:00:00
-thumbnail:  /projects/pmwht/icon-76@2x.png
+thumbnail:  /pmwht/icon-76@2x.png
 category:   software
 tags:       [mobile, software, javascript, iOS, android]
 keywords:
@@ -13,7 +13,9 @@ project:    pmwht
 Today version 1.1 of the [Portland Women's History Trail][2] went live in the
 [Apple AppStore][applestore], the [Google play][googlestore], and on the [web][4].
 
-<img src="{{"/projects/pmwht/icon-76@2x.png" | prepend:site.assetsurl}}" alt="Portland Women's History Trail" style="float: right;" />
+<img src="{{site.baseurl}}/assets/pmwht/icon-76@2x.png" 
+    alt="Portland Women's History Trail" 
+    style="float: right;" />
 
 The march to version 1.1 took quite a bit of time, most of which was finding
 and getting use rights for some historic photos. We also worked to include
@@ -34,9 +36,9 @@ used in v1.0 had some exploits discovered. Google gave developers until May
   [5]: http://jekyllrb.com
   [6]: http://daringfireball.net/projects/markdown/
   [cordova]: http://apache.org
-  [screencap1]: {{"/projects/pmwht/pwht-map.png" | prepend:site.assetsurl}}
-  [screencap2]: {{"/projects/pmwht/pwht-site.png" | prepend:site.assetsurl}}
+  [screencap1]: {{site.baseurl}}/assets/pmwht/pwht-map.png
+  [screencap2]: {{site.baseurl}}/assetspmwht/pwht-site.png
   [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
   [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
-  [appstorelogo]: {{ "/projects/download-on-the-app-store.png"|prepend:site.assetsurl }}
+  [appstorelogo]: {{site.baseurl}}/assets/logos/download-on-the-app-store.png
   [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8

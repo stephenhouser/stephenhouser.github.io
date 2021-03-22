@@ -21,4 +21,4 @@ Available on <a href="http://code.google.com/p/iphcalc/">Google Code</a>.
 This was built on an original iPhone with the "development toolchain,"
 well before Apple allowed for native application development.
 
-![iPhCalc Screenshot]({{"/projects/iphcalc-screenshot.png"|prepend:site.assetsurl}})
+![iPhCalc Screenshot]({{site.baseurl}}/assets/projects/iphcalc-screenshot.png)
