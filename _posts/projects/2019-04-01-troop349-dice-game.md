@@ -2,15 +2,14 @@
 title: 	Troop 349 The Dice Game
 date: 		2019-04-01 14:30:00
 thumbnail: 	/projects/troop349-dice.jpg
-category: 	projects
-tags: 		[development, games]
+category: 	games
+tags: 		[software, python, games]
 keywords:
 description:
 
 layout: 	project
-project: 	troop349-dice
 archive:	false
-permalink:  /troop349-dice/
+permalink:  /troop349-dice
 ---
 This is what happens when you have a laser engraver/cutter and too much free time on your hands while driving to and from work. You get a custom dice game and computer simulation to determine how playable it is! This game is really designed for the upcoming (tonight) game playing troop meeting the Scouts have scheduled. It's incredibly simple, you roll two dice to determine the _winning point total_ and then take turns trying to roll your way there by adding or subtracting your rolls. It's that simple... except that the dice only have `3`, `4`, and `9` on the faces!
 

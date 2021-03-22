@@ -2,8 +2,8 @@
 title:      InOut Board Adium/Libpurple Plugin
 date:       2009-12-08 12:00:00
 thumbnail:  /projects/inoutboard-adium/inoutboard-adium.png
-category:   projects
-tags:       [development]
+category:   software
+tags:       [software, C]
 keywords:   adium plugin libpurple develop pidgin
 description: >
     libpurple plugin adapted to work in Adium the Mac OS X instant
@@ -11,6 +11,7 @@ description: >
 
 layout:     project
 archive:    true
+permalink:  /inout-board
 ---
 A <a
 href="http://developer.pidgin.im/wiki/WhatIsLibpurple">libpurple</a>

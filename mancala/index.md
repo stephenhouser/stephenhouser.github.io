@@ -1,6 +1,7 @@
 ---
 title: Mancala - The African Stone Game
-tags: [games, development, course, cos249]
+category: software
+tags: [games, software, java]
 icon: index-64.png
 keywords: mancala african stone game java
 description: Java applet implementation of Mancala, the ancient African stone game.
@@ -11,6 +12,8 @@ archive: true
 A Java Applet that plays the ancient African game of Mancala. It was done as a project and example for COS246 Java Programming (now renumbered as COS244) class (which it was assigned for their final exam).
 
 ## Online Java Applet Version
+
+*Java Applets* have been deprecated by almost all browsers (as of 2020) so the following snippet will likely just show an error message for you. If you happen to be running a really old browser, it might still work.
 
 <div align="center">
     <!--[if !IE]> Hidden to IE -->

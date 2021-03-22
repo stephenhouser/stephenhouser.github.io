@@ -1,17 +1,16 @@
 ---
 title:      About
-date:       2008-03-20 00:00:00
+date:       2021-03-22 00:00:00
 tags:
 category:
 keywords:   stephen houser about
 description: >
     Details pertinent information about Stephen Houser (me) including work
     history, education, other sites, and some links.
-revised:    2015-02-08 00:00:00
 layout:     page
 permalink:  /about/
 ---
-![Stephen at Architalx Opening]({{"/projects/stephen-architalx.png"|prepend:site.assetsurl}})
+![Stephen at Architalx Opening]({{site.baseurl}}/assets/images/stephen-architalx.png)
 
 Mr. Stephen Houser is a technology professional with extensive
 experience in software development, data networking, and information
@@ -33,14 +32,14 @@ frequently cross the borders of computer science and technology in order
 to creatively apply or modify the tools and approaches of computing in
 fields such as art, gaming, and communication.
 
-## Places to find Stephen
+## More Places to find Stephen
 <div id="connections-right">
-    <a href="http://bowdoin.edu"><img id="hero" src="{{"/logos-png/bowdoin.png"|prepend:site.assetsurl}}" alt="Bowdoin Logo" /></a><br/><br/>
-    <a href="http://usm.maine.edu"><img id="hero" src="{{"/logos-png/usm-horizontal.gif"|prepend:site.assetsurl}}" alt="USM Logo" /></a><br/><br/>
+    <a href="http://usm.maine.edu"><img class="hero" src="{{site.baseurl}}/assets/logos/usm-horizontal.gif" alt="USM Logo" /></a><br/><br/>
+    <a href="http://bowdoin.edu"><img class="hero" src="{{site.baseurl}}/assets/logos/bowdoin.png" alt="Bowdoin Logo" /></a><br/><br/>
     {% for account in site.data.social %}
         {% if account.icon %}
             <a href="{{ account.url }}">
-                <img style="height: 50px; padding: 5px;" src="{{account.icon|prepend:site.assetsurl}}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
+                <img style="height: 50px; padding: 5px;" src="{{site.baseurl}}/assets{{account.icon}}" alt="{{ account.name }}" title="{{ account.name }}"/></a>
         {% endif %}
     {% endfor %}
 </div>
@@ -71,8 +70,8 @@ fields such as art, gaming, and communication.
 
 Current:
 
-* <b>2015-Present</b> Director of Academic Technology and Consulting at <a href="http://bowdoin.edu">Bowdoin College</a>
-* <b>1994-present</b> Adjunct Faculty, <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
+* <b>2015-Present</b> Senior Director of Academic Technology and Consulting at <a href="http://bowdoin.edu">Bowdoin College</a>
+* <b>1994-present</b> Adjunct Professor, <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 
 Prior:
 
@@ -82,16 +81,7 @@ Prior:
 * <b>1991-2001</b> Software Developer, <a href="http://usm.maine.edu/computing">Information and Technology</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
 * <b>1989-1991</b> Software Developer, <a href="http://www.schroff.com">Schroff Development Inc.</a>
 
-<iframe frameborder="0" scrolling="no" src="https://credly.com/earnedembed/2193650/12/35946/1/1" width="720" height="225"></iframe>
-
-[Full Resume]({{"/random/StephenHouser-Resume-20130418.pdf"|prepend:site.filesurl}}).
-
-<!--
-## Links
-
-* <a href="http://goo.gl/I7jER8">Google Drive version</a>.
-* <a href="http://www.google.com/calendar/embed?src=houser%40maine.edu&ctz=America/New_York">Stephen's Calendar</a>
--->
+[Full Resume](https://stephenhouser.com).
 
 ## Web Standards
 

@@ -2,15 +2,14 @@
 title: 		SoME Book Club Book List
 date: 		2017-04-10 12:00:00
 thumbnail: 	/projects/books.png
-category: 	projects
-tags: 		[development, reading, javascript]
+category: 	software
+tags: 		[software, javascript]
 keywords:
 description:
 
 layout: 	project
-project: 	SOMEBOOKS
 archive:	false
-permalink:	/some-books
+permalink:  /some-books
 ---
 A small, lightweight, system for keeping tack of the books we (the Southern Maine
 Men's Book club) have read over the years. It's a substitute for sites like
@@ -19,4 +18,7 @@ that we used for a while. Built using some very basic JavaScript with
 [jQuery](https://jquery.com/) and a few add-ons, like 
 [data tables](https://datatables.net/).
 
-<!-- img src="{{"/projects/books.png"|prepend:site.assetsurl}}" alt="Stack of books" /-->
+
+<script type="text/javascript">
+    window.location = "https://stephenhouser.com/some-books";
+</script>

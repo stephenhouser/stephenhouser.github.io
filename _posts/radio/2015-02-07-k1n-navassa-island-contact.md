@@ -2,7 +2,7 @@
 title: 		K1N Navassa Island Contact
 date: 		2015-02-07 10:37
 thumbnail:
-category:	radio
+category:   radio
 tags: 		[radio]
 keywords:
 description:

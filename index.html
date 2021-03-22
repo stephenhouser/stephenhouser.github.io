@@ -8,16 +8,16 @@ layout: default
         <li>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             in <span class="post-meta">{{ post.tags | array_to_sentence_string }}</span>
-            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+            <h2><a class="post-link" href="{{site.baseurl}}{{post.url}}">{{ post.title }}
                 {% if post.thumbnail %}
-                    {% capture thumbnail %}{% if post.thumbnail contains 'http' %}{{ post.thumbnail }}{% else %}{{ post.thumbnail | prepend:site.assetsurl }}{% endif %}{% endcapture %}
-                    <img src="{{ thumbnail }}"/>
-                {% endif %}</a></h2>
-                <div class="excerpt">
-                    {{ post.excerpt }}
-                    <a href="{{ post.url | prepend: site.baseurl }}#more">read more...</a>
-                </div>
-            </p>
+                    {% capture thumbnail %}{% if post.thumbnail contains 'http' %}{{ post.thumbnail }}{% else %}{{site.baseurl}}/assets{{post.thumbnail}}{% endif %}{% endcapture %}
+                    <img src="{{thumbnail}}" alt="{{page.title}}"/>
+                {% endif %}
+            </a></h2>
+            <div class="excerpt">
+                {{ post.excerpt }}
+                <a href="{{site.baseurl}}{{post.url}}#more">read more...</a>
+            </div>
         </li>
     {% endfor %}
     </ul>
@@ -27,7 +27,7 @@ layout: default
         {% if paginator.total_pages > 1 %}
             <div class="pagination">
                 {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev </a>
+                    <a href="{{site.baseurl}}{{paginator.previous_page_path}}">&laquo; Prev </a>
                 {% else %}
                     <span>&laquo; Prev</span>
                 {% endif %}
@@ -37,21 +37,19 @@ layout: default
                     {% if page == paginator.page %}
                         <strong>{{ page }}</strong>
                     {% elsif page == 1 %}
-                        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                        <a href="{{site.baseurl}}{{"/index.html"}}">{{ page }}</a>
                     {% else %}
-                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                        <a href="{{site.baseurl}}{{site.paginate_path | replace: ':num', page}}">{{ page }}</a>
                     {% endif %}
                 {% endfor %}
 
                 ]
                 {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                    <a href="{{site.baseurl}}{{paginator.next_page_path}}">Next &raquo;</a>
                 {% else %}
                     <span>Next &raquo;</span>
                 {% endif %}
             </div>
         {% endif %}
     </div>
-
-    <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 </div>

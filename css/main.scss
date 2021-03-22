@@ -19,7 +19,7 @@ $grey-color:      #228B22;
 $grey-color-light: lighten($grey-color, 55%);
 $grey-color-dark:  darken($grey-color, 10%);
 
-$code-background-color: lighten($grey-color, 65%);;
+$code-background-color: #DDFDEEEE;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -44,16 +44,19 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+.active {
+    text-decoration: underline;
+}
 
 .page-content p a {
     text-decoration: underline;
 }
 
-.highlight {
+pre.highlight {
     color: $text-color;
-    border: 1px solid $grey-color-dark;
+    border: 1px solid lighten($grey-color-dark, 5%);
     border-radius: 3px;
-    background-color: darken($code-background-color, 2%);
+    background-color: $code-background-color;
     padding: 1px 5px;
 }
 

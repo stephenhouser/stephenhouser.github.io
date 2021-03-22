@@ -2,14 +2,14 @@
 title:      iPhcalc iPhone Calculator
 date:       2007-09-17 12:00:00
 thumbnail:  /projects/iphcalc-icon64.png
-category:   projects
-tags:       [development]
+category:   software
+tags:       [software, objective-c]
 keywords:
 description:
 
 layout:     project
-archive:    false
-permalink: /iPhcalc/
+archive:    true
+permalink:  /iphcalc
 ---
 A native iPhone calculator application. The interface is based on the
 distributed iPhone calculator application. The goal was to cplay around

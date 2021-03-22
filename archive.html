@@ -3,14 +3,15 @@ layout: page
 title: Archive
 permalink: /archive/
 ---
+{% assign everything = site.posts | sort:"date" | reverse %}
 <div class="home">
     <div class="archive-tags">
         <!-- Tag cloud -->
-        <h2>Tags</h2>{% assign post_count = site.posts | size | times: 100 %}
+        <h2>Tags</h2>{% assign post_count = everything | size | times: 100 %}
         <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a onClick="handleSelection(this, 'tags', '{{tag|first}}')"
+            <a href="#" onClick="handleSelection(this, 'tags', '{{tag|first}}')"
                 class="tag"
                 style="font-size:{{fontsize}}%;">
                 {{t | downcase | replace:" ","-" }}</a>
@@ -18,11 +19,11 @@ permalink: /archive/
         </p>
 
         <!-- Category cloud -->
-        <h2>Categories</h2>{% assign post_count = site.posts | size | times: 100 %}
+        <h2>Categories</h2>{% assign post_count = everything | size | times: 100 %}
         <p>
         {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
             {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a onClick="handleSelection(this, 'categories', '{{cat|first}}')"
+            <a href="#" onClick="handleSelection(this, 'categories', '{{cat|first}}')"
                 class="category"
                 style="font-size:{{fontsize}}%;">
                 {{c | downcase | replace:" ","-" }}</a>
@@ -30,16 +31,18 @@ permalink: /archive/
         </p>
     </div>
 
-    {%for post in site.posts %}
-        {% if post.next == nil %}
-            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {%for post in everything %}
+        {% assign year = post.date | date: '%Y' %}
+        {% if forloop.first %}
             <div id="year{{year}}">
             <h2>{{ year }}</h2>
             <ul class="archive-list current">
         {% else %}
-            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-            {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-            {% if year != nyear %}
+            <!-- for loop is 1-indexed, while array is 0-indexed -->
+            {% assign prev_index = forloop.index | minus: 2 %}
+            {% assign prev_item = everything[prev_index] %}
+            {% assign prev_item_year = prev_item.date | date: '%Y' %}
+            {% if year != prev_item_year %}
                 </ul>
                 </div>
                 <div id="year{{year}}">
@@ -49,7 +52,7 @@ permalink: /archive/
         {% endif %}
 
         <li><time>{{ post.date | date:"%d %b" }}</time> • 
-             <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+             <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
             <span class="post-meta tags" style="display: none;">
                 {{ post.tags | array_to_sentence_string }}
             </span>

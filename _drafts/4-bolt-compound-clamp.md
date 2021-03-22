@@ -1,8 +1,8 @@
 ---
 title: 		'4-Bolt Compound Clamp for Asian 9x20 Lathe'
 date: 		2018-06-24 08:00:00
-category:	random
-tags: 		[random, metal, make]
+category:	metalworking
+tags: 		[metalworking]
 keywords:
 description:
 ---

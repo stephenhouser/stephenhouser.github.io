@@ -2,13 +2,14 @@
 title:      iPhone Presence/Twitter App
 date:       2009-12-04 12:00:00
 thumbnail:  /projects/iphone-presence/iphone-presence-icon64.png
-category:   projects
-tags:       [mobile, development, courses, cos497]
+category:   software
+tags:       [mobile, software, objective-c]
 keywords:   iphone twitter cos497 cs193p presence application
 description: Implementation of Twitter application for iPhone as part of COS497 course
 
 layout:     project
 archive:    true
+permalink:  /iphone-presence
 ---
 An Implementation of a <a href="http://twitter.com">Twitter</a>
 application built while offering an independent study course over the

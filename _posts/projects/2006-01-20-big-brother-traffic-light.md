@@ -1,16 +1,16 @@
 ---
 title:      Big Brother Traffic Light
 date:       2006-01-20 12:00:00
+revised:    2012-08-23 12:00:00
 thumbnail:  /projects/bblight/bblight-index64.png
-category:   projects
-tags:       [development, hardware]
+category:   electronics
+tags:       [hardware, iot, electronics]
 keywords:
 description:
 
-revised:    2012-08-23 12:00
 layout:     project
 archive:	false
-permalink:  /bblight/
+permalink:  /bblight
 ---
 Network Operations Centers and Help Desks all over monitor their systems
 and networks with an open source product called [Big Brother][bigbrother]
@@ -32,6 +32,7 @@ computer, running Java to monitor a BigBrother web page and change a
 faux traffic light to match the color-status of our network.
 
 ## Project Details
+
 The project makes use of the "OneWire" protocol and chips from Dallas
 Semiconductor. These easily interface with RS-232 or USB "host"
 controllers and even microcontrollers, like the PIC, AVR, and Basic

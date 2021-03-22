@@ -1,6 +1,10 @@
 <header class="site-header">
     <div class="wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% if page.path == "index.html" %}
+            <a class="site-title active" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% else %}
+            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% endif %}
         <nav class="site-nav">
             <a href="#" class="menu-icon">
                 <svg viewBox="0 0 18 15">
@@ -11,11 +15,14 @@
             </a>
             <div class="trigger">
             	{% assign pages = site.pages | where:"layout", "page" | reverse %}
-                {% for page in pages %}
-                    {% if page.title %}
-                        {% unless page.hide_tab %}
-                            <a class="page-link" href="{{ page.url | prepend:site.baseurl }}">
-                            {{ page.title }}</a>
+                {% for node in pages %}
+                    {% if node.title %}
+                        {% unless node.hide_tab %}
+                            {% if page.url == node.url %}
+                                <a class="page-link active" href="{{site.baseurl}}{{node.url}}">{{ node.title }}</a>
+                            {% else %}
+                                <a class="page-link" href="{{site.baseurl}}{{node.url}}">{{ node.title }}</a>
+                            {% endif %}
                         {% endunless %}
                     {% endif %}
                 {% endfor %}

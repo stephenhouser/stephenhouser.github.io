@@ -2,8 +2,8 @@
 title: 		Ham Radio at the University of Scouting 2015
 date: 		2015-03-19 07:30
 thumbnail:
-category:	radio
-tags: 		[radio, scouting]
+category:   radio
+tags: 		[radio, boy-scouts]
 keywords:
 description:
 ---

@@ -2,14 +2,15 @@
 title: 		MiniPin - Virtal Pinball
 date: 		2017-03-23 12:00:00
 thumbnail: 	/projects/minipin/minipin-120.png
-category: 	projects
-tags: 		[poject, game, pinball, woodworking]
+category: 	games
+tags: 		[games, electronics, software, hardware, woodworking, emulation]
 keywords:	[pinball, game, virutual pinball, visual pinball, woodworking, electronics]
-description: Description of the MiniPin Virtual Pinball cabinet built with Visual Pinball, PinMAME, PinballX and other open and free software. 
+description: Description of the MiniPin Virtual Pinball cabinet built with Visual Pinball, PinMAME, PinballY and other open and free software. 
+
 layout: 	project
 project: 	MiniPin
 archive:	false
-permalink: /minipin/
+permalink: /minipin
 ---
 It was August 28, 2011 when I first made a mockup of a virtual pinball machine that came to be known as 'MiniPin'. The virtual pinball feever had started a few days earler when a friend saw the [Kids Mame 1][kidsmame1] build on my website and said, innocently, "...*you should build a virtual pin cabinet*.". Of course, that's exactly what I did.
 
@@ -173,5 +174,5 @@ href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.c
 
 -->	
 
- [kidsmame1]: {% post_url /projects/2003-10-23-kids-mame-1 %})
+ [kidsmame1]: {{site.baseurl}}/kids-mame-1
 

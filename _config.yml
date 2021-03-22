@@ -38,9 +38,11 @@ filesurl:   "http://media.stephenhouser.com" # Amazon S3
 
 # Site Build settings
 timezone:   America/New_York
-permalink:  /:categories/:year-:month-:day-:title.html
+
 #excerpt_separator: <!-- more --> # default is \n\n
+permalink:  /blog/:year/:month-:day-:title.html
 paginate:   7
+paginate_path: /blog/pager/page-:num/
 
 # When clobbering the destination, don't muck with these
 keep_files: ['CampusCrush', 'files']
@@ -53,7 +55,7 @@ future:     false
 highlight:  pygments
 
 # Generate the sitemap.xml file
-gems: 
+plugins: 
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-gist
@@ -66,12 +68,15 @@ whitelist:
 
 # Default settings for posts and the like...
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # empty = all files
       type: "posts"      
     values:
       layout: "post"
-      author: "Stephen Houser"
       comments: true
-
+  - scope:
+      path: "" # empty = all files
+      type: "project"      
+    values:
+      layout: "project"
+      comments: false

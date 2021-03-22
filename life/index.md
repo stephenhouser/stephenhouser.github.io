@@ -1,16 +1,20 @@
 ---
 title: Conways Game of Life
-tags: [games, development]
+category: software
+tags: [games, software, java]
 icon: index-64.png
 keywords: conway life cellular automota java game
 description: Java applet and application implementation of John Conway's Game of Life.
 date: 2002-09-30 00:00:00
 layout: project
 archive: true
+permalink: /life/
 ---
 An implementation of John Conway's cellular automota know as Life. The application was originally done as an example and project for a Java Programming class I taught (quite a while ago now). I never assigned this one for homework or anything, but it was interesting and a good use of many of Java's features. Of course it is based on John Conway's Life game from Scientific American.
 
 ## Online Java Applet Version
+
+*Java Applets* have been deprecated by almost all browsers (as of 2020) so the following snippet will likely just show an error message for you. If you happen to be running a really old browser, it might still work. Check the *Local Java Application Version* below for a downloadable version that should still work.
 
 <div align="center">
     <!--[if !IE]> Hidden to IE -->
@@ -37,6 +41,7 @@ An implementation of John Conway's cellular automota know as Life. The applicati
 
 After a little tweaking I have produced a Java WebStart(R) version of Conway's Game of Life. This is a complete rewrite of my previous version(s). It is still in development and has quite a few "bugs" and "unimplemented features" that I am continuing to work on. However, it does have basic functionality enabling it to run a game and let you kill and spawn cells among the 100x100 playing board.
 
+[Launch Life Application](Life.jnlp) (using Java WebStart)
 <a href="Life.jnlp">Launch Life Application</a> (using Java WebStart)
 
 ## Future Work

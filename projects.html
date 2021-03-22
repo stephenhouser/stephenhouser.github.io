@@ -3,38 +3,28 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+{% assign projects = site.posts | where:"layout", "project" | sort_by: "date" %}
+
 <div class="home">
     <ul class="post-list project-list">
-    {% for page in site.posts %}
-            {% if page.archive != true and page.layout == 'project' %}
-                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li><a href="{{ page.url | prepend:site.baseurl }}">{% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ page.thumbnail | prepend:site.assetsurl }}{% endif %}{% endcapture %}
-                    <img src="{{ thumbnail }}"/><h1>{{page.title}}</h1></a>
-                    <div class="excerpt">
-                      {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
-                    </div>
-                </li>
-            {% endif %}
+    {% for page in projects %}
+        {% if page.archive != true  %}
+            <li><a href="{{site.baseurl}}{{page.url}}">{% capture thumbnail %}{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ page.thumbnail | prepend:site.assetsurl }}{% endif %}{% endcapture %}
+                <img src="{{ thumbnail }}"/><h1>{{page.title}}</h1></a>
+                <div class="excerpt">
+                    {{ page.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
+                </div>
+            </li>
+        {% endif %}
     {% endfor %}
     </ul>
 
     <h2>Project Archive</h2>
     <ul class="archive-list">
-    {% assign archive_list = site.posts | sort_by: "date" %}
-    {% for page in archive_list %}
-            {% if page.archive == true and page.layout == 'project' %}
-                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
-            {% endif %}
-    {% endfor %}
-
-    <!-- include pages that have not been made posts yet -->
-    {% assign archive_list = site.pages | sort_by: "date" %}
-    {% for page in archive_list %}
-            {% if page.archive == true and page.layout == 'project' %}
-                {% capture page_updated %}{% if page.date != null %}{{ page.date }}{% else %}{{ site.time }}{% endif %}{% endcapture %}
-                <li><time>{{ page_updated | date: '%b %Y' }}</time> • <a href="{{ page.url | prepend:site.baseurl }}">{{page.title}}</a></li>
-            {% endif %}
+    {% for page in projects %}
+        {% if page.archive == true %}
+            <li><time>{{ page.date | date: '%b %Y' }}</time> • <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
+        {% endif %}
     {% endfor %}
     </ul>
 </div>

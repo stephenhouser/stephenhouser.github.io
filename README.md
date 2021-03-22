@@ -2,6 +2,16 @@
 
 GitHub Personal Pages website for Stephen Houser.
 
+## Projects, Blogs, and Pages, oh my!
+
+There are two places _projects_ show up:
+
+- Project writeup and/or blurb to show on "Projects" page goes in `_projects`
+- Projects themselves and their media go in `/project_name` or can be hosted by github in a repo of the same name if github pages is turned on for the project. Example is `some-books`
+
+These two locations are merged for the project listing on the `/projects/` page.
+
+There may also be a _blog_ entry about a project, for example to announce a version of say *Good Turn*.
 
 ## Hosting Configurations
 

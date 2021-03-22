@@ -1,8 +1,8 @@
 ---
-title: 		Coding Style
+title: 		  Coding Style
 date:       2017-04-20 14:23:00
-category:	development
-tags:       [development] 		
+category:	  software
+tags:       [software] 		
 ---
 # Coding Style
 

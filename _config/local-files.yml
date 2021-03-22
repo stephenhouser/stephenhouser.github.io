@@ -1,7 +1,0 @@
-#
-# LOCAL Configuration
-# * Files served from "/files" subdirectory of _site
-#
-# need to symlink or copy files or they will be bad links!
-filesurl:   /files
-

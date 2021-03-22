@@ -2,15 +2,15 @@
 title: 		Architalx Audio Portal Application
 date: 		2013-01-30 12:00:00
 thumbnail: 	/projects/architalx.org-20130130.png
-category: 	projects
-tags: 		[mobile, development]
+category: 	software
+tags: 		[mobile, software, art, objective-c]
 keywords:
 description:
 
 layout: 	project
 project:	architalx
-archive:	false
-permalink: /architalx/
+archive:	true
+permalink:  /architalx
 ---
 An interactive audio controller app that mimics the 17-foot interactive
 tower as part of [Architalx's][architalx] 25th anniversary exhibit,

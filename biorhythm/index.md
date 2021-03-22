@@ -1,7 +1,8 @@
 ---
 title : Biorhythm Readings
 date  : 2008-12-23 00:00:00
-tags  : [development]
+category: software
+tags  : [software, javascript]
 icon  : index-64.png
 layout: project
 archive: true

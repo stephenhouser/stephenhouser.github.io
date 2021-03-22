@@ -1,11 +1,15 @@
 ---
 title: 		Crokinole Board!
-date: 		2019-12-28 10:23
+date: 		2019-12-28 10:23:00
 thumbnail:	/projects/crokinole/crokinole-top-115.jpg
 category:	woodworking
-tags: 		[woodworking, project]
+tags: 		[woodworking, games]
 keywords:
 description:    Building a Crokinole board.
+
+layout:     project
+archive:	false
+permalink:  /crokinole
 ---
 It was a day like any other when a colleague and avid tabletop gamer asked, "Have you ever thought about making a Crokinole board?" I suspect he had recently seen the [Shut Up & Sit Down Review of Crokinole](https://www.shutupandsitdown.com/videos/review-crokinole/) earlier this year and the magnificent board they played on. Then, on Thanksgiving holiday, I had the epiphany that this was the game on the back side of the [Carrom](https://carrom.com) boards that have been around my family for at least two generations! So, of course, I had to build one.
 
