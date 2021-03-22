@@ -1,7 +1,7 @@
 ---
 title:  	On the Relationship of Server Disk Workloads and Client File Requests (CMG 96)
 date: 		1996-10-01 00:00:00
-thumbnail: 	/logos-png/cmg-icon64.png
+thumbnail: 	/logos/cmg-icon64.png
 category: 	publications
 tags:       [publications, networks, software]
 keywords: 	computer measurement group cmg 96 disk network file server

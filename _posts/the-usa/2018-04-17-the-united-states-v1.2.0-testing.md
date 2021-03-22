@@ -14,7 +14,7 @@ I've been poking at an updated version (1.2.0) of The United States iPad app. Th
 
 [![The United States][screenshot]][appstore]
 
-From the current development code, I've really only patched up problems with the [SVGKit](https://github.com/stephenhouser/SVGKit) that I use to display the map. For the moment I also removed [GameKit](apple gamekit) and achievements as the API has completely changed and I'm not sure the time investment in updating would be worth it.
+From the current development code, I've really only patched up problems with the [SVGKit](https://github.com/stephenhouser/SVGKit) that I use to display the map. For the moment I also removed _Apple GameKit_ and achievements as the API has completely changed and I'm not sure the time investment in updating would be worth it.
 
 If you're interested in being a beta tester, drop me an email. I've got about a month to get things cleaned up and ready for release.
 

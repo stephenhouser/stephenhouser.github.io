@@ -1,7 +1,7 @@
 ---
 title:      Portland Women's History Trail Prototype
 date:       2014-05-16 21:25:38
-thumbnail:  /projects/pmwht/water-girl-small.png
+thumbnail:  /pmwht/water-girl-small.png
 category:   software
 tags:       [mobile, software, javascript, iOS, android]
 keywords:

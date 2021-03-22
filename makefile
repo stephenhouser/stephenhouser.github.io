@@ -34,6 +34,13 @@ build:
 serve:
 	$(JEKYLL_CMD) serve --watch --host=0.0.0.0 --drafts --unpublished --future
 
+check:
+	python -m venv venv
+	source venv/bin/activate
+	pip3 install install git+https://github.com/linkchecker/linkchecker.git
+	linkchecker https://stephenhouser.com
+	deactivate
+
 # Build and watch
 # - assumes another webserver is serving the content
 # Disabled: this would be more useful as part of the local build below.

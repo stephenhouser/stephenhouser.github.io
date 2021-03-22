@@ -1,7 +1,7 @@
 ---
 title: 		Guidelines for Programming Style (Java version)
 date:	 	2000-02-01 12:00:00
-thumbnail: 	/logos-png/java-logo.png
+thumbnail: 	/logos/java-logo.png
 category:   computer-science
 tags: 		[computer-science]
 keywords: 	java code programming style usm computer science

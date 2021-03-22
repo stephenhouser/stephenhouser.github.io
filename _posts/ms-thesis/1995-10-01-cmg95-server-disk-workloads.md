@@ -1,7 +1,7 @@
 ---
 title: 		Analysis of Disk Workloads in Network File Server Environments (CMG 95)
 date: 		1995-10-01 12:00:00
-thumbnail: 	/logos-png/cmg-icon64.png
+thumbnail: 	/logos/cmg-icon64.png
 category: 	publications
 tags:       [publications, networks, software]
 keywords: 	computer measurement group cmg 95 disk file server

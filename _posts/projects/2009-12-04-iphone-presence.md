@@ -17,8 +17,8 @@ summer of 2009. The application is based on specifications from <a
 href="http://stanford.edu">Stanford's</a> <a
 href="http://www.stanford.edu/class/cs193p/">CS 193P</a> course. The <a
 href="http://usm.maine.edu">USM</a> version of the course is in my
-courses section and is <a href="{{site.baseurl}}/cos497">COS 497 -
-iPhone Application Programming</a>.
+courses section and is _COS 497 -
+iPhone Application Programming_.
 
 
 ## Screenshots
