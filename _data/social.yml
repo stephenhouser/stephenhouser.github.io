@@ -52,6 +52,7 @@
   icon: /logos/icon-github.png
   svg: /logos/github.svg
   type: social
+  show: header
 
 - name: StackOverflow
   url: http://stackoverflow.com/users/1277343/stephenhouser
