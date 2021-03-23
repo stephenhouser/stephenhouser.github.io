@@ -10,7 +10,7 @@ description: >
     programming style, for use by students, faculty, and staff.
 
 revised: 	2000-03-14 12:00:00
-permalink: 	/java-code-style/
+#permalink: 	/java-code-style/
 ---
 Many programs are modified during their useful life, either to correct
 errors or to extend their capabilities. It has been estimated that as
