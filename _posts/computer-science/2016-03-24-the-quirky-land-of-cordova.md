@@ -3,7 +3,7 @@ title: 		The Quirky Land of Cordova
 date: 		2016-03-24 13:00:00
 thumbnail:
 category:   computer-science
-tags: 		[software, computer-science, jacascript]
+tags: 		[software, computer-science, javascript]
 keywords:   
 description:
 ---

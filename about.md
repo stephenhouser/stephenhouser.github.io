@@ -12,25 +12,23 @@ permalink:  /about/
 ---
 ![Stephen at Architalx Opening]({{site.baseurl}}/assets/images/stephen-architalx.png)
 
-Mr. Stephen Houser is a technology professional with extensive
-experience in software development, data networking, and information
-technology project management. An adjunct faculty member in the
-Department of Computer Science, he teaches courses in data
-communications, operating systems, mobile development, and robotics. Mr.
-Houser is an enthusiastic software developer, woodworker, tinkerer,
-father, and scoutmaster, who enjoys the outdoors as much as the indoors
-with his two children.
+Stephen Houser is a technology professional with extensive experience in
+software development, data networking, and information technology project
+management. An adjunct faculty member in the Department of Computer Science, he
+teaches courses in data communications, operating systems, mobile development,
+and robotics. Mr. Houser is an enthusiastic software developer, woodworker,
+tinkerer, father, and scoutmaster, who enjoys the outdoors as much as the
+indoors with his two children.
 
-Mr. Houser's professional and research activities fall into three broad
-categories: management/leadership, software (mobile) development, and
-digital studies. As a veteran technology leader, he continues to advance
-technology leadership through seminars, books, conferences, and
-institutes. A long-time software developer, he uses the mobile platform
-and has published or delivered numerous successful apps on iOS and
-Android. Mr. Houser's keenness for interdisciplinary work leads him to
-frequently cross the borders of computer science and technology in order
-to creatively apply or modify the tools and approaches of computing in
-fields such as art, gaming, and communication.
+Stephen's professional and research activities fall into three broad categories:
+management/leadership, software (mobile) development, and digital studies. As a
+veteran technology leader, he continues to advance technology leadership through
+seminars, books, conferences, and institutes. A long-time software developer, he
+uses the mobile platform and has published or delivered numerous successful apps
+on iOS and Android. Mr. Houser's keenness for interdisciplinary work leads him
+to frequently cross the borders of computer science and technology in order to
+creatively apply or modify the tools and approaches of computing in fields such
+as art, gaming, and communication.
 
 ## More Places to find Stephen
 <div id="connections-right">
