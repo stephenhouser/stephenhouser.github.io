@@ -70,7 +70,7 @@ Current:
 
 * <b>2015-Present</b> Senior Director of Academic Technology and Consulting at <a href="http://bowdoin.edu">Bowdoin College</a>
 * <b>2020-present</b> Adjunct Lecturer, <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">Bowdoin College</a>
-* <b>1994-present</b> Adjunct Professor, <a href="http://usm.maine.edu/cos">Computer Science</a>, <a href="http://usm.maine.edu">University of Southern Maine</a>
+* <b>1994-present</b> Adjunct Professor, <a href="https://www.bowdoin.edu/computer-science/">Computer Science</a>, <a href="https://bowdoin.edu">University of Southern Maine</a>
 
 Prior:
 
