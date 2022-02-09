@@ -18,6 +18,7 @@ that we used for a while. Built using some very basic JavaScript with
 [jQuery](https://jquery.com/) and a few add-ons, like 
 [data tables](https://datatables.net/).
 
+<!-- more -->
 
 <script type="text/javascript">
     window.location = "https://stephenhouser.com/some-books";
