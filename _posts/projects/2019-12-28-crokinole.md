@@ -51,7 +51,7 @@ With everything marked out and inlaid, I put some effort into some early finishi
 
 ![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-major-parts.jpg)
 
-Then came the rim glued onto the base. I cut and re-sawed an 8" x 2" x 3/4" maple board into 8" x 1 1/2 x 1/8" strips, two strips for each rim. These went on easy enough with glue and some 1/2" brads for the inside strip. An attentive mathematician will see that 8" is about 1/4" short of the outer strip's circumference. To make up this small chunk, I used the little bit of leftover from the inside strip which is about 1" too long. After the glue set, I evened everything up with a plane and sandpaper.
+Then came the rim glued onto the base. I cut and re-sawed an 8' x 2" x 3/4" maple board into 8' x 1 1/2 x 1/8" strips, two strips for each rim. These went on easy enough with glue and some 1/2" brads for the inside strip. An attentive mathematician will see that 8' is about 1/4" short of the outer strip's circumference. To make up this small chunk, I used the little bit of leftover from the inside strip which is about 1" too long. After the glue set, I evened everything up with a plane and sandpaper.
 
 ![Crokinole Base Parts]({{site.baseurl}}/assets/projects/crokinole/crokinole-rim.jpg)
 
