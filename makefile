@@ -23,7 +23,8 @@ JEKYLL_CMD=bundle exec jekyll
 DATE=$(shell date +"%Y-%m-%d")
 
 ##### DEVELOPMENT TARGETS ####
-default: build
+default:
+	docker run --rm --volume="$PWD:/srv/jekyll:Z" -p 4000:4000 -it jekyll/jekyll:3.8 jekyll serve
 
 # Build into _site
 build:
