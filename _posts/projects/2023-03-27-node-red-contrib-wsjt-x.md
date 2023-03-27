@@ -11,7 +11,7 @@ layout:     project
 archive:	false
 permalink:  /node-red-contrib-wsjt-x
 ---
-A set of "nodes" for the flow based programming tool [Node-RED Nodes for ](https://nodered.org) that connect to, control, and monitor [WSJT-X](https://wsjt.sourceforge.io/wsjtx.html) software over the network. With these nodes you can decode messages sent from WSJT-X and inject the data into a flow or using data in your flow encode and send commands to WSJT-X.
+A set of "nodes" for the flow based programming tool [Node-RED](https://nodered.org) that connect to, control, and monitor [WSJT-X](https://wsjt.sourceforge.io/wsjtx.html) software over the network. With these nodes you can decode messages sent from WSJT-X and inject the data into a flow or using data in your flow encode and send commands to WSJT-X.
 
 ![WSJT-X Decoding]({{site.baseurl}}/assets/projects/wsjt-x-decode.png)
 
