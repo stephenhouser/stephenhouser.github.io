@@ -15,7 +15,7 @@ A set of "nodes" for the flow based programming tool [Node-RED](https://nodered.
 
 ![WSJT-X Decoding]({{site.baseurl}}/assets/projects/wsjt-x-decode.png)
 
-Releases are installed from within [Node-RED Nodes for ](https://nodered.org) via the "Manage Palette" features. Current and test releases are available on [NPM](https://www.npmjs.com/package/node-red-contrib-flexradio).
+Releases are installed from within [Node-RED Nodes for ](https://nodered.org) via the "Manage Palette" feature. Current and test releases are available on [NPM](https://www.npmjs.com/package/node-red-contrib-flexradio).
 
 * Discussion on [groups.io/nodered-hamradio](https://groups.io/g/nodered-hamradio)
 * [node-red-contrib-wsjt-x on NPM](https://www.npmjs.com/package/node-red-contrib-wsjt-x)

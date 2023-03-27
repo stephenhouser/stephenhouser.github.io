@@ -15,7 +15,7 @@ A set of "nodes" for the flow based programming tool [Node-RED](https://nodered.
 
 ![Flexradio Dashboard]({{site.baseurl}}/assets/projects/flex-dashboard.png)
 
-Releases are installed from within [Node-RED](https://nodered.org) via the "Manage Palette" features. Current and test releases are available on [NPM](https://www.npmjs.com/package/node-red-contrib-flexradio).
+Releases are installed from within [Node-RED](https://nodered.org) via the "Manage Palette" feature. Current and test releases are available on [NPM](https://www.npmjs.com/package/node-red-contrib-flexradio).
 
 * Discussion on [groups.io/nodered-hamradio](https://groups.io/g/nodered-hamradio)
 * [node-red-contrib-flexradio on NPM](https://www.npmjs.com/package/node-red-contrib-flexradio)
