@@ -6,6 +6,8 @@ category: 	radio
 tags: 		[radio, development, software, javascript, nodered]
 keywords:   node-red nodered radio flex flexradio javascript, node
 description: nodes for node-red flow based programming environment to work with FlexRadio radios
+
+layout:     project
 archive:	false
 permalink:  /node-red-contrib-flexradio
 ---

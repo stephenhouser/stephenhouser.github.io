@@ -6,6 +6,8 @@ category: 	radio
 tags: 		[radio, development, software, javascript, nodered]
 keywords:   node-red nodered radio wsjt wsjtx ft8 javascript, node
 description: nodes for node-red flow based programming environment to work with WSJT-X software
+
+layout:     project
 archive:	false
 permalink:  /node-red-contrib-wsjt-x
 ---
