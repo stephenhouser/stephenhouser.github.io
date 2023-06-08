@@ -16,7 +16,9 @@
 #
 
 # How to run jekyll
-JEKYLL_CMD=bundle exec jekyll
+#JEKYLL_CMD=bundle exec jekyll
+WD=$(shell pwd)
+JEKYLL_CMD=docker run --rm --volume=$(WD):/srv/jekyll:Z --publish 4000:4000 -it jekyll/jekyll jekyll
 
 # Set to do a dry run.
 #RSOPTS=-n --delete
@@ -33,7 +35,7 @@ build:
 # Start local web server
 # - Serve content from http://localhost:4000 (root)
 serve:
-	$(JEKYLL_CMD) serve --watch --host=0.0.0.0 --drafts --unpublished --future
+	$(JEKYLL_CMD) serve --watch --drafts --unpublished --future
 
 check:
 	python -m venv venv

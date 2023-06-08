@@ -13,20 +13,13 @@ description: > # this means to ignore newlines until "baseurl:"
 #
 # DEFAULT GitHub/Dropbox Configuration
 # * Base site on GitHub -- http://stephenhouser.github.io
-# * Files served from Dropbox -- https://dl.dropboxusercontent.com/u/9832808
-# May get overriden by other --config's when building
 
 # Google Analytics Configuration
 # DEFAULT: http://stephenhouser.com
-google_analytics: UA-2571363-2
+#google_analytics: UA-2571363-2
 
 # The place I keep the source
 repository: stephenhouser/stephenhouser.githib.io
-
-#
-# I don't use "url" anyhere, kept here for reference.
-# The base hostname & protocol for your site
-#url: "http://stephenhouser.com"
 
 baseurl:    ""        # the subpath of the site, e.g. /~houser
 assetsurl:  "/assets" # images, icons, and small assets used in posts
@@ -35,7 +28,6 @@ filesurl:   "http://media.stephenhouser.com" # Where the larger "files" go
 # Site Build settings
 timezone:   America/New_York
 
-#excerpt_separator: <!-- more --> # default is \n\n
 permalink:  /blog/:year/:month-:day-:title.html
 paginate:   7
 paginate_path: /blog/pager/page-:num/

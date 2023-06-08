@@ -18,6 +18,14 @@
   svg: /logos/academia-edu.svg
 
 #  type: social
+- name: Instagram
+  url: https://www.instagram.com/stephen_houser/
+  username: stephen_houser
+  icon: /logos/icon-instagram.png
+  svg: /logos/instagram.svg
+  type: social
+  show: [header, footer]
+
 - name: Twitter
   url: http://twitter.com/stephenhouser
   username: stephenhouser
@@ -37,14 +45,15 @@
   username: stephenhouser
   icon: /logos/icon-youtube.png
   svg: /logos/youtube.svg
-#  type: social
+  type: social
+  show: footer
 
 - name: flickr
   url: http://www.flickr.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-flickr.png
   svg: /logos/flickr.svg
-#  type: social
+  type: social
 
 - name: Github
   url: http://github.com/stephenhouser
@@ -52,7 +61,7 @@
   icon: /logos/icon-github.png
   svg: /logos/github.svg
   type: social
-  show: header
+  show: [header, footer]
 
 - name: StackOverflow
   url: http://stackoverflow.com/users/1277343/stephenhouser
@@ -60,6 +69,7 @@
   icon: /logos/icon-stackoverflow.png
   svg: /logos/icon-stackoverflow.png
   type: social
+  show: footer
 
 - name: StephenHouser.com
   url: http://stephenhouser.com

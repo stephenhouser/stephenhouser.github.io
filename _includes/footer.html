@@ -7,16 +7,19 @@
                     <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
                 </ul>
             </div>
-            <div class="footer-col  footer-col-2">
+            <div class="footer-col footer-col-2">
                 <ul class="social-media-list">
-                    {% for account in site.data.social %}{% if account.type == "social" %}<li>
+                    {% assign social_links = site.data.social | where:"type", "social" | where:"show", "footer" %}
+                    {% for account in social_links %}
+                    <li>
                         <a href="{{ account.url }}">
                             <span class="icon">
                                 <img height="16" src="{{site.baseurl}}/assets{{account.svg}}" alt="{{ account.name }}" title="{{ account.name }}"/>
                             </span>
                             <span class="username">{{ account.name }}</span>
                         </a>
-                    </li>{% endif %}{% endfor %}
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="footer-col  footer-col-3">
