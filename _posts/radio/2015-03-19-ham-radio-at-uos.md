@@ -70,4 +70,4 @@ N1SH
 
  [k2bsa]: http://www.k2bsa.net
  [arrl]: http://arrl.org
- [mindmap]: {{site.filesurl}}/radio/ham-radio-at-uos-mindmap.pdf
+ [mindmap]: {{site.baseurl}}/assets/radio/ham-radio-at-uos-mindmap.pdf

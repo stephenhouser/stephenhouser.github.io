@@ -28,7 +28,7 @@ requests and server disk workloads.
 
 The paper is available in several formats</p>
 
-* <a href="{{site.filesurl}}/publications/cmg96.pdf">Adobe PDF</a> of entire paper
-* <a href="{{site.filesurl}}/publications/cmg96.ps">Adobe PostScript</a> of entire paper
-* <a href="{{site.filesurl}}/publications/cmg96.txt">LaTex</a> source of entire paper
-* <a href="{{site.filesurl}}/publications/cmg96.ppt">Microsoft PowerPoint</a> of slides used for presentation
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg96.pdf">Adobe PDF</a> of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg96.ps">Adobe PostScript</a> of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg96.txt">LaTex</a> source of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg96.ppt">Microsoft PowerPoint</a> of slides used for presentation

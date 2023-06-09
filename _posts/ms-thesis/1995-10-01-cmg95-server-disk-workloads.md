@@ -31,7 +31,7 @@ subsystem studies.
 
 The paper is available in several formats
 
-* <a href="{{site.filesurl}}/publications/cmg95.pdf">Adobe PDF</a> of entire paper
-* <a href="{{site.filesurl}}/publications/cmg95.ps">Adobe PostScript</a> of entire paper
-* <a href="{{site.filesurl}}/publications/cmg95.txt">LaTex</a> source of entire paper
-* <a href="{{site.filesurl}}/publications/cmg95.ppt">Microsoft PowerPoint</a> of slides used for presentation
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg95.pdf">Adobe PDF</a> of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg95.ps">Adobe PostScript</a> of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg95.txt">LaTex</a> source of entire paper
+* <a href="{{site.baseurl}}/assets/ms-thesis/cmg95.ppt">Microsoft PowerPoint</a> of slides used for presentation

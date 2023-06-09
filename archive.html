@@ -10,10 +10,7 @@ permalink: /archive/
         <h2>Tags</h2>{% assign post_count = everything | size | times: 100 %}
         <p>
         {% for tag in site.tags %}{% assign t = tag | first %}{% assign posts = tag | last %}
-            {% assign fontsize = posts | size | times:5 | plus:80 %}
-            <a href="#" onClick="handleSelection(this, 'tags', '{{tag|first}}')"
-                class="tag"
-                style="font-size:{{fontsize}}%;">
+            <a href="#" onClick="handleSelection(this, 'tags', '{{tag|first}}')" class="tag">
                 {{t | downcase | replace:" ","-" }}</a>
         {% endfor %}
         </p>
@@ -22,11 +19,8 @@ permalink: /archive/
         <h2>Categories</h2>{% assign post_count = everything | size | times: 100 %}
         <p>
         {% for cat in site.categories %}{% assign c = cat | first %}{% assign posts = cat | last %}
-            {% assign fontsize = posts | size | times:5 | plus:80 %}
             <a href="#" onClick="handleSelection(this, 'categories', '{{cat|first}}')"
-                class="category"
-                style="font-size:{{fontsize}}%;">
-                {{c | downcase | replace:" ","-" }}</a>
+                class="category">{{c | downcase | replace:" ","-" }}</a>
         {% endfor %}
         </p>
     </div>

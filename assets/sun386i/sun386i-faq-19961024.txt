@@ -1,0 +1,3249 @@
+======================================================================
+
+Sun 386i ("Roadrunner") Frequently Asked Questions
+
+Version 1.00.12
+Last modified: October 24, 1996
+
+======================================================================
+
+Section 0  - Table of contents
+
+Section 1  - General Information about the FAQ and mailing-list
+
+     1.01    About this FAQ.
+     1.02    Where is the FAQ?
+     1.03    How do I ask questions?
+     1.04    Where is the 386i FTP site?
+
+Section 2  - General information about the Sun 386i ("Roadrunner")
+
+     2.01    What is a Sun 386i?
+     2.02    Why did Sun produce the 386i?
+     2.03    Why did Sun stop producing it?
+     2.04    Is there any "official" support for the 386i?
+     2.05    Where did the 386i get the name "Roadrunner"?
+     2.06    Was a Sun 486i ever produced?
+
+Section 3  - General hardware information about the Sun 386i
+
+     3.01    What are the differences between the three models?
+     3.02    What are the specifications of the memory boards?
+
+Section 4  - General operating-system information about the Sun 386i
+
+     4.01    What is the 386i's operating system?
+     4.02    What is the latest release of SunOS for the 386i?
+     4.03    Is it worth upgrading to 4.0.2?
+     4.04  # Are there any official patches for 4.0.2?
+     4.05    Can the 4.0.1 installation/4.0.2 upgrade and optional
+             clusters tapes/diskettes still be obtained?
+     4.06    Where can I get the hardware diagnostics diskette?
+     4.07    Are any operating systems other than SunOS available for
+             the 386i?
+     4.08    Has Linux been ported to the 386i?
+
+Section 5  - Frequently-asked hardware questions
+
+     5.01    Which boards go in which slots?
+     5.02    What is the maximum amount of RAM which can be installed?
+     5.03    In what order should SIMMs being inserted.
+     5.04    Can standard "PC" SIMMs be used in the 386i?
+     5.05    Can 4-MByte SIMMs be used in the 386i?
+     5.06    Can the empty slots (1 and 2) be used for anything other
+             than memory boards?
+     5.07  # What frame-buffers/monitors were supplied with the 386i?
+     5.08  # Can the cgfive frame buffer be used with the 386i?
+     5.09    Is the 386i "big-endian" or "little-endian"?
+     5.10    What is the maximum speed at which the on-board serial port
+             can be run?
+     5.11    Can additional serial ports be added?
+     5.12    What XT/AT cards can be installed?
+     5.13    What IRQ settings should be used for XT/AT boards?
+     5.14    Why are there two power connectors on the tape drive in
+             the peripheral (expansion) unit?
+     5.15    Can the system-unit speaker be used for real audio instead
+             of just beeping?
+     5.16  # Can the type-5 keyboard be used with the 386i?
+     5.17    Can a "PC" mouse/keyboard be used with the 386i?
+     5.18    Are there any speed-up modifications for the 386i?
+
+Section 6  - Mass-storage/back-up devices for the Sun 386i
+
+     6.01    Can "non-Sun" hard drives be used with the 386i?
+     6.02    What is the largest capacity for hard disks on the 386i?
+     6.03    What is the procedure for formatting and partitioning a
+             "non-Sun" drive?
+     6.04    Can SCSI-II devices be used with the 386i?
+     6.05    How much swap space is needed?
+     6.06    Is it worth spreading the swap space across two disks?
+     6.07    How can a second swap device be added?
+     6.08    What are the correct SCSI IDs for the hard-disk and tape
+             drive?
+     6.09    What are the correct jumper positions for the 91-MByte and
+             327-MByte hard drives?
+     6.10  # Can removable-media drives be used with the 386i?
+     6.11  # Can larger-capacity tape-drives be used with the 386i?
+     6.12    Can a CD-ROM drive be added to the 386i?
+
+Section 7  - Software for the Sun 386i
+
+     7.01    What C compilers are available for the 386i?
+     7.02    Is it worth keeping the System V and SunOS compilers?
+     7.03    What general software is available for the 386i?
+     7.04  # What software is available for running under SunView?
+     7.05    Is X11 available for the 386i?
+     7.06    What software is available for running under X11?
+     7.07    Where can I get the pre-compiled binaries?
+
+Section 8  - Frequently-asked software questions
+
+     8.01  # Why can't GCC produce shared libraries?
+     8.02    Is Netscape available for the 386i?
+     8.03  # Where can I get Motif for the 386i?
+     8.04    Will Microsoft Windows 3.1 run on the 386i?
+     8.05    Is SNAP really that bad?
+     8.06    Will the 386i have any "Year-2000" problems?
+
+Section 9  - Frequently-asked "how to do this" questions
+
+     9.01    How can I get into the ROM monitor?
+     9.02    How can I set the power-on mode?
+     9.03    How can I interpret the results of POST (Power On Self Test)?
+     9.04    What do the LEDs on the back panel indicate?
+     9.05    How can I boot the 386i in single-user mode?
+     9.06  # How can I boot to single-user mode using the installation
+             diskettes?
+     9.07    Is it possible to boot to single-user mode without knowing
+             the root password?
+     9.08    What can I do when I've lost/forgotten the root password?
+     9.09    How can I find my system's host ID?
+     9.10    How can I boot from the disk in the peripheral (expansion)
+             unit?
+     9.11    Why can't I boot from sd01 or sd03?
+     9.12    How can access to su be restricted?
+     9.13  # How can I restore a file system from dump tapes?
+     9.14    How can I add a new user without using SNAP?
+     9.15    How can the floppy diskette be accessed from SunOS?
+     9.16    How can MS-DOS floppy diskettes be accessed from SunOS?
+     9.17  # Can a boot diskette be created for the 386i?
+     9.18    How can copies of the boot/install diskettes be made?
+     9.19    What is the proper method for installing a boot block?
+     9.20    How do I rebuild the kernel?
+     9.21    How can the 386i be used with an ordinary terminal?
+     9.22    How can dial-in/dial-out access be enabled via the serial port?
+     9.23    How can terminal or dial-in/dial-out access be enabled via a
+             "PC" serial card or an internal modem?
+     9.24    How do I create the "/dev/ttym" and "/dev/cum" devices for use
+             with a "PC" serial card?
+     9.25    How can zmodem be run from KERMIT?
+     9.26  # Can PPP be set-up on the 386i?
+     9.27    How can I get a normal "login" prompt on the console without
+             running X11 or SunView at boot time?
+     9.28    How can I stop all those GCC warnings about "incompatible
+             types", making "a pointer from int without a cast" and so on?
+     9.29    How can I get "man" to access all the man pages?
+     9.30  # How can I disable Yellow Pages?
+     9.31  # Can MS-DOS programs be run from an X11 window?
+
+Section 10 - Frequently-encountered problems
+
+    10.01    What is the meaning of the "ie0: init failed: no intr:"
+             message at boot-up?
+    10.02    What is the meaning of "zs0: ring buffer overflow"?
+    10.03    Why does the system "freeze" for a few seconds every four
+             minutes?
+    10.04    Why do I get hard-disk (or other SCSI-bus) errors after the
+             386i has been operating for several hours?
+    10.05    Why has my 386i suddenly become unable to detect the
+             system-disk/tape-drive?
+    10.06    Why does the diagnostic diskette not recognise that my
+             system has a hard disk installed?       
+    10.07    Why does dump give write errors at the end of a tape?
+    10.08    I have this problem using SNAP ...
+
+Section 11 - Installing/upgrading SunOS 4.0.1/4.0.2    
+
+    11.01    What is the correct procedure for installing/upgrading?
+    11.02    What is the patch for the problems when loading clusters
+             from tape during the upgrade?
+
+Section 12 - NVRAM problems and solutions
+
+    12.01    General information about the 386i NVRAM (TIMEKEEPER) chip.
+    12.02    The functions of the NVRAM.
+    12.03    Getting a dump of your NVRAM contents.
+    12.04    Symptoms of NVRAM failure.
+    12.05    How to get a new NVRAM chip.
+    12.06    How to install the NVRAM chip.
+    12.07    How to program the NVRAM chip.
+    12.08    NVRAM data.
+    12.09    NVRAM-dump display utility.
+    12.10    Dumps of 386i/150 and 386i/250 NVRAM contents.
+
+======================================================================
+
+Section 1 - General Information about the FAQ and mailing-list
+
+     1.01    About this FAQ.
+
+             The original version of the Sun 386i FAQ was prepared and
+             maintained by Stephen Houser (houser@usm.maine.edu) but I
+             took it over, with his approval, when he simply ran out
+             of spare time.
+
+             There are many sources for the information contained in
+             this FAQ - the various 386i manuals including the Field
+             Service Manual, the original FAQ and last, but certainly
+             not least, the archives of the 386i mailing list.
+
+             I have tried to include all of the most-frequently-asked
+             questions.  However, you will note that the FAQ is
+             somewhat-light on the subjects of SunView and running
+             MS-DOS programs in a DOS window under SunView because I
+             have little experience of them and because there was not
+             that much information in the list archives.  Any input
+             would be more than welcome.
+
+             The same applies to networking the 386i but another
+             reason is that a tutorial which will take in the subject
+             of adding a 386i to a network is being prepared
+             elsewhere.
+
+             Finally, I have removed most of the questions and answers
+             dealing with problems encountered when compiling certain
+             programs because many of the common difficulties have
+             disappeared with the availability of GCC 2.6.3 for the
+             386i (see 7.01 and 7.03).
+
+             There are some topics on which the information available
+             was less than complete and for which I am actively
+             seeking feedback. Those topics are marked with a "#" in
+             the contents list.
+
+             This FAQ will be updated on a regular basis and whenever
+             any new questions and answers appear in the mailing-list. 
+             New topics or those for which the information has been
+             changed since the last version are marked with a "+" in
+             the contents list. Changed or new lines are also marked
+             with a "+" in the body of the text.
+
+             PostScript and HTML versions of the FAQ should be
+             available later this year (i.e.  RSN).
+
+             Please let me know if there is anything you feel should
+             be added to the FAQ (particularly if you have the answer
+             as well as the question) or if you find any of the
+             regrettably-inevitable errors.  Send e-mail to me (Ralphe
+             Neill) at ran@dgs.monash.edu.au
+
+     1.02    Where is the FAQ?
+
+             Compresssed and uncompressed versions of the FAQ are
+             available on the 386i FTP site (see 1.04) in the
+             "/pub/sun386i" directory and the latest version will
+             always be available at the following URL:
+
+                 http://www.dgs.monash.edu.au/~ran/sun386i/sun386i-FAQ.Z
+
+             An uncompressed version is also available at:
+       
+                 http://www.dgs.monash.edu.au/~ran/sun386i/sun386i-FAQ
+
+             Please direct all requests for the FAQ to the FTP site or
+             the WWW site instead of e-mailing a copy - the version
+             you have could be out of date.  I will always be willing
+             to e-mail the latest version to anybody who has
+             difficulty getting it.
+             
+     1.03    How do I ask questions?
+
+             The best source of information about the Sun 386i (after
+             reading this FAQ, of course) is the mailing list operated
+             by Troy Hacker (troy@itc.yorku.ca).
+
+             Subscribe to the mailing list by sending e-mail to:
+
+                 sun-386i-request@itc.yorku.ca
+
+             with the word "subscribe" (but without the "") as the first
+             and only line in the body of the message.
+
+             You can send e-mail to the list at:
+
+                 sun-386i@itc.yorku.ca
+
+             Please do not send subscription requests or e-mail
+             intended for the list directly to Troy's personal e-mail
+             address. 
+
+             The 386i mailing-list is a remarkably valuable resource -
+             particularly for a system that is no longer officially
+             supported by Sun and for which many users do not have all
+             (if any) of the documentation. All too often, however,
+             questions are answered by e-mail sent directly to the
+             questioner and the information never gets to the rest of
+             us on the list.  It is worth noting that mail from the
+             list will carry the e-mail address of the originator and
+             not that of the mailing-list site.  If you have any
+             worthwhile information, please edit the "To:" line if
+             replying so that we all get the e-mail (or cc to
+             sun-386i@itc.yorku.ca)
+
+             Archives of the mailing-list (going back to the late
+             1980s) are available from the 386i FTP site (see 1.04) in
+             the "/pub/sun386i/mailing_list" directory.
+
+     1.04    Where is the 386i FTP site?
+     
+             The 386i FTP site is maintained by Norman McBride
+             (norm@city.ac.uk) at:
+             
+                 ftp://sun386i.mono.org/pub/sun386i/
+
+             Note that "mono.org" is the domain of the United
+             Kingdom's largest Internet BBS.  It is run by David
+             Brownlee (david@mono.org) who has contributed a considerable
+             amount of expertise, information and software to the 386i
+             community.
+
+======================================================================
+
+Section 2  - General information about the Sun 386i ("Roadrunner")
+
+     2.01    What is a Sun 386i?
+
+             The Sun 386i is an Intel 80386 based SunOS (BSD/UNIX)
+             computer designed for stand-alone operation or for
+             connection to networks.  It is a multi-user, multi-tasking
+             system but is also capable of running many MS-DOS
+             applications. There are three models - the 150, the 150X
+             and the 250.
+
+     2.02    Why did Sun produce the 386i?
+
+             There are any number of theories but they all boil down
+             to the fact that Sun saw a market niche for a system that
+             ran BSD/UNIX but one which could also handle many MS-DOS
+             programs (remember when the first question asked about
+             any new computer was, "Yes, but is it PC-compatible?").
+
+             The overall concept was a good one - built-in networking
+             ability, a GUI for SunOS, the ability to run more than
+             one MS-DOS program at a time, an advanced (for its time)
+             SCSI bus, the use of many stock components and a promised
+             upgrade path to the 486i.
+
+     2.03    Why did Sun stop producing it?
+
+             There are even more theories about this one!
+
+             The demise of the 386i appears to have been brought about
+             by a combination of delays with the 80486 CPU, some market
+             resistance to the price of a 386i workstation (when
+             compared by PC-orientated users to that for a PC-clone)
+             and moves within Sun to standardise on an in-house CPU.
+
+             Many 386i owners felt betrayed - they had been promised
+             that their investment would be "protected" by the upgrade
+             path to the 486i.  However, Sun did offer what was, by
+             many measures, a good trade-in scheme for users who wanted
+             to upgrade to the SPARC.
+
+     2.04    Is there any "official" support for the 386i?
+
+             Not unless you still have an on-going maintenance
+             agreement!
+
+             Sun regards the 386i as having "reached the end of its
+             product life" and information can be difficult to obtain
+             from Sun.  Having said that, however, it must be
+             acknowledged that not a little of the information in this
+             FAQ has come from manuals provided by willing and helpful
+             people at Sun in the US and Australia who have gone out
+             of their way to help.
+
+     2.05    Where did the 386i get the name "Roadrunner"?
+
+             It was simply the in-house name for the 386i - legend has
+             it that it was given the name because it went "beep beep"
+             after passing the POST (see 9.03).  It has also been
+             suggested that the name had something to do with speed
+             and a belief that the 386i would run rings around any
+             80386-based PC-coyote ... I mean, PC-clone!
+
+             And, no, there were no problems with the use of the name.
+             Either Warner Bros. never heard about it or they were
+             less litigation-minded than a certain astronomer who was
+             said to have threatened Apple.
+
+     2.06    Was a Sun 486i ever produced?
+
+             There were certainly BETA versions of the 486i
+             motherboard and there are suggestions that systems were
+             shipped to some performance-hungry customers.  The 486i
+             had a Sun part number and there was even a glossy
+             brochure!
+
+             However, nobody on the list has ever claimed to have one
+             although it does seem that there are a few BETA versions
+             of SunOS 4.0.3 out there.
+
+======================================================================
+
+Section 3  - General hardware information about the Sun 386i
+
+     3.01    What are the differences between the three models?
+
+             The 386i/150 was supplied with:
+
+                 o  20 MHz Intel 80386 CPU
+                 o  20 MHz Intel 80387 FPU
+                 o  Intel 82380 (DMA, interrupt and timer controller)
+                 o  SCSI bus
+                 o  AT bus
+                 o  32-bit internal bus (40 MBytes/sec)
+                 o  1 memory board with 4 x 1-MByte SIMMs (capacity
+                    for 8 x 1-MByte SIMMs - see 3.02)
+                 o  1 frame buffer (video card and keyboard/mouse
+                    controller - see 5.07)
+                 o  1 on-board RS232 port
+                 o  1 on-board parallel port (Centronics compatible)
+                 o  1 on-board ethernet port (AUI)
+                 o  4 motherboard slots
+                 o  1 XT (8-bit) slot
+                 o  3 AT (16-bit) slots
+                 o  1.44 MByte 3.5" diskette drive
+                 o  91-Mbyte, 155-MByte or 327-MByte hard disk
+                 o  285-watt power supply
+                 o  keyboard, optical mouse and mouse-pad
+                 o  monitor (see 5.07)
+
+             The 386i/150X was identical to the 386i/150 except that
+             the 8-MByte capacity "dynamic memory" board was replaced
+             by the faster, XP cache board with 8 x 1-MByte SIMMs and
+             which had a capacity for 16 x 1-MByte SIMMs (see 3.02).
+
+             The 386i/250 was essentially the same as the 386i/150X
+             except for the following:
+
+                 o  25 MHz Intel 80386 CPU
+                 o  25 MHz Intel 80387 FPU
+                 o  32-bit internal bus (50 MBytes/sec)
+
+             An peripheral (expansion) unit was also available.  It
+             could be supplied with:
+
+                 o  SCSI-compatible quarter-inch cartridge tape drive
+                    (QIC-11 and QIC-24 formats)
+                 o  91-Mbyte, 155-MByte or 327-MByte hard disk
+                 o  120-watt power supply
+
+     3.02    What are the specifications of the memory boards?
+
+             The "dynamic memory" board was said by Sun to improve the
+             average memory-access time by using a "page mode"
+             feature.  This was said to provide the equivalent of
+             cache-memory speed when the system accessed a location in
+             the same "page" as the previous memory access. The card
+             can hold a maximum of 8 x 1-MByte SIMMs.
+
+             The XP cache-memory board has a 32-Kbyte physical address
+             cache managed by an Intel 82385 cache controller.  The
+             82385 allows modified cache blocks to be restored to main
+             memory in parallel with cache accesses by the CPU (or
+             DMA).  A cache hit requires no wait states - a miss
+             requires six wait states.  Cache-memory access time for
+             the 386i/150X is given as 100 nanoseconds and 80
+             nanoseconds for the 386i/250.  The card can hold a
+             maximum of 16 x 1-MByte SIMMs.
+
+======================================================================
+
+Section 4  - General operating-system information about the Sun 386i
+
+     4.01    What is the 386i's operating system?
+
+             The 386i was released with SunOS 4.0 - a converged
+             version of 4.2/4.3 BSD and AT&T System V.3 - and the
+             SunView window-based user interface.
+
+     4.02    What is the latest release of SunOS for the 386i?
+
+             The first version of SunOS for the 386i was 4.0.0
+             although it is unlikely that many systems ever ran that
+             version.  Most systems were released with 4.0.1 which was
+             followed by a 4.0.2 upgrade before on-going support for
+             the 386i came to an end.
+
+     4.03    Is it worth upgrading to 4.0.2?
+
+             Absolutely! Sun listed a significant number of 4.0.1 bugs
+             which were fixed in 4.0.2 (see Section 11 for details on
+             how to upgrade).
+
+     4.04    Are there any official patches for 4.0.2?
+
+             There were several patches released for SunOS 4.0.2 - the
+             following, partial list of patches was sent to the
+             mailing-list in September, 1994:
+
+                 100046-01       sendmail security
+                 100053-01       serial io buffer overflow
+                 100054-01       lpr could fail with -s option
+                 100084-01       patches for lotus 123
+                 100085-03       selection_svc security hole
+                 100108-01       sendmail security
+                 100152-01       nfsd hangs waiting for mbuf
+                 100320-01       snap has trouble on large NIS networks
+
+             There were no follow-ups about where they might be
+             obtained.  I am attempting to contact the poster for
+             further information.  Any input is more than welcome.
+
+     4.05    Can the 4.0.1 installation/4.0.2 upgrade and optional
+             clusters tapes/diskettes still be obtained?
+
+             As noted in 2.04, there is no longer any official support
+             from Sun for the 386i so the only source of SunOS
+             tapes/diskettes is from other users and they are
+             available on the 386i FTP site (see 1.04) in the
+             "/pub/sun386i/sunos4.0[12]" directories.  This has
+             caused some heart-searching but they are not available
+             from Sun and, surely, every 386i was released with an
+             operating system (although the same might not be said for
+             the optional clusters).  Sun's not-ungenerous reaction
+             appears to be that they know about it but don't want it
+             waved about in front of their faces.  Enough said?
+
+             There are 35 files:
+
+                 filename           type                  contents
+
+                 diag               Hardware Diagnostics  bootable disk
+                                    (and NVRAM setting)
+
+                 SunOS 4.0.1 Installation Kit
+
+                 filename           type                  contents
+
+                 app-01 - 02        Application SunOS     Recovery/Install
+                 app-03 - 13        Application SunOS     Core System
+                 app-14 - 20        Application SunOS     Optional Clusters
+
+                 dev-01 - 07    Developer's Toolkit   Optional Clusters
+
+                 SunOS 4.0.2 Upgrade Kit
+
+                 filename           type                  contents
+
+                 diskette-01 - 04   Application SunOS     Core System
+                 diskette-05        Application SunOs     Optional Clusters
+                 diskette-06 - 07   Developer's Toolkit   Optional Clusters
+
+             All the files are gzipped disk images. Gunzip and put
+             them onto a SunOS-formatted diskette using the following
+             command line:
+
+                 gunzip -c filename > /dev/rfd0c
+
+             Under MS-DOS you will need to gunzip the files and then
+             pick up a copy of rawrite.exe or similar utility from a
+             NetBSD/Linux archive and use it to make each disk.
+
+             See Section 11 for information on installing/upgrading
+             SunOS 4.0.1/4.0.2
+
+     4.06    Where can I get the hardware diagnostics diskette?
+
+             As noted in 4.05, the hardware diagnostics diskette is
+             available from the FTP site (see 1.04) in the
+             "/pub/sun386i/software/4.0.1" directory.
+             
+     4.07    Are any operating systems other than SunOS available for
+             the 386i?
+
+             The simple answer is - no. There have been suggestions
+             about porting NetBSD to the 386i although there does not
+             seem to have been any progress in that direction. More
+             than a few users have said they fail to see the point of
+             moving from SunOS (although having the source code would
+             be useful).
+
+     4.08    Has Linux been ported to the 386i?
+
+             No. Linux is specific to the IBM-PC architecture and the
+             386i is NOT "PC compatible" (see 4.07).
+
+======================================================================
+
+Section 5  - Frequently-asked hardware questions
+
+     5.01    Which boards go in which slots?
+
+             The main memory card must go in slot 3 (counting from the
+             top with slot 1 being the top slot). A second 8-MByte
+             board may be put in slot 2.
+
+             The frame buffer (if used) goes in slot 4 (it will not
+             fit in any other slot).
+             
+     5.02    What is the maximum amount of RAM which can be installed?
+
+             The official, and seemingly accurate, answer from all the
+             Sun documentation is 16 MBytes. But, first, a bit of
+             history ...
+
+             A diagram in an early version of the Field Service Manual
+             showed a motherboard with five main slots numbered from 0
+             to 4 - this was probably to allow four of the old 4-MByte
+             memory boards to be used.  Later documentation always
+             refers to the motherboard having only four main slots
+             (numbered from 1 to 4) but says that four (4-MByte)
+             memory boards may be inserted for a total of 16 MBytes if
+             no frame buffer is installed.  In other words, the
+             frame-buffer slot could be used for a memory board.
+
+             Most systems have 8-Mbyte or 16-MByte boards (see 3.02)
+             and the later documentation states categorically that
+             only two 8-MByte boards (in slots 2 and 3) or one
+             16-MByte board (in slot 3) can be used.
+
+             It must be added, however, that at least two users say
+             they have installed three 8-MByte boards in a 386i/150
+             (in slots 1, 2 and 3) and that their systems are
+             operating properly.
+
+     5.03    In what order should SIMMs being inserted.
+
+             Memory must be added in 4-MByte increments on either the
+             8-MByte or the 16-MByte board.  In either case, the SIMMs
+             are inserted starting with the slot nearest the end of
+             the board which is towards the front of the system unit.
+
+             On the 8-MByte board the SIMMs go in the slots marked
+             "DEVICE 1", "DEVICE 2" ...
+
+             The slots on the 16-MByte board are marked "SIMM # 1",
+             "SIMM # 2" and so on.
+
+             Older boards had jumpers that needed to be set for the
+             amount of memory and type of SIMM but these should be
+             soldered on later boards because memory size is detected
+             by the software.
+
+     5.04    Can standard "PC" SIMMs be used in the 386i?
+
+             Yes, but the SIMMs must have the parity bit.
+
+             Most sources say that 100 ns chips can be used but the
+             documentation suggests in places that 80 ns (or faster)
+             is required.
+
+             Either 9-chip or 3-chip 1-MByte SIMMs can be used but the
+             conventional wisdom seems to be that the two types should
+             not be mixed on the same board.
+
+     5.05    Can 4-MByte SIMMs be used in the 386i?
+
+             No.
+
+     5.06    Can the empty slots (1 and 2) be used for anything other
+             than memory boards?
+
+             No.
+
+     5.07    What frame-buffers/monitors were supplied with the 386i?
+
+             There were three, standard, frame-buffer options:
+
+                 o  1152 x 900 one-bit-per-pixel monochrome board
+                 o  1024 x 768 eight-bit-per-pixel colour board ("low-res")
+                 o  1152 x 900 eight-bit-per-pixel colour board ("hi-res")
+
+             The mouse, keyboard and video-monitor interfaces are all
+             on the frame-buffer board.
+
+             The monitors available for the 386i were:
+
+                 o  15" monochrome (compatible with the monochrome board)
+                 o  19" monochrome (monochrome board)
+                 o  14" colour (low-res board)
+                 o  16" colour (hi-res board)
+                 o  19" colour (hi-res board)
+
+             According to the documentation, the "low-res" and
+             "hi-res" boards were both cgthree boards and could be
+             converted from one to the other with a hardware
+             modification.  There is, however, a suggestion that some
+             of the "hi-res" boards worked with the 19" colour monitor
+             but would not work with the 16" colour monitor.
+
+     5.08    Can the cgfive frame buffer be used with the 386i?
+
+             Yes, but with some reservations.  The cgfive offers
+             faster performance than the standard cgthree.  There is
+             support for it on the 386i with a modload'able driver
+             under SunOS 4.0.2 and users with a cgfive board report
+             that it works under SunView but that it cannot be
+             accessed under X11.
+
+             To enable cgfive support, at least under Sunview,
+             uncomment (remove the leading "#" from) the following
+             line in "/etc/rc.local":
+
+                 modload cgfive.o -exec cgfive.script
+
+     5.09    Is the 386i "big-endian" or "little-endian"?
+
+             It is "little-endian".
+     
+     5.10    What is the maximum speed at which the on-board serial port
+             can be run?
+
+             The documentation states that the maximum speed for the
+             on-board serial port is 19,200 baud.  There are several
+             instances in the mailing-list archives of users saying
+             the port is limited to 2,400 baud and that they have had
+             no success running at faster speeds.  However, the only
+             mention I can find in the documentation of such a
+             speed-limitation refers to "PC" boards added to the XT/AT
+             slots (see 5.11 and 5.12).  I have run the on-board
+             serial port at 19,200 baud for dial-in/dial-out comms
+             without major difficulty.  I have even run it at 38,400
+             using KERMIT but I suspect the modem's error-correction
+             might have been working overtime.  Indeed, it may be that
+             an error-correcting modem is essential at 19,200 baud - I
+             have not tried it without one.
+
+             A definite problem is Sun's infamous, "one-way" hardware
+             flow control (a problem which is not confined to the
+             386i) but with the modem set to detect it the error rate
+             was not unacceptably high when transferring data.
+
+     5.11    Can additional serial ports be added?
+
+             Aurora Technologies (founded by former members of the
+             386i development team) in the US used to distribute a
+             multi-port serial board with a modload'able driver for
+             the 386i but they are no longer manufactured.
+
+             The only real option, therefore, would seem to be to add
+             a two-port board to one of the AT slots (see 9.23 for
+             details on installing and enabling the board).
+
+     5.12    What XT/AT cards can be installed?
+
+             Apart from a serial-port board, an internal modem can be
+             installed and a VGA board can be accessed from a DOS
+             window under SunView. A VGA board used to be available
+             from Sun but, presumably, any standard VGA board could be
+             used instead.
+
+     5.13    What IRQ settings should be used for XT/AT boards?
+
+             The only information which seems to be available concerns
+             the serial ports. Presumably most users would opt for a
+             dual-port serial card although an internal modem can also
+             be used.
+
+             The primary serial device should be set to "IRQ4" (memory
+             base address 3f8) and would be accessed from SunOS via
+             /dev/ttym0 or /dev/cum0
+
+             The setting for the secondary device would be "IRQ3"
+             (memory base address 2f8) and the devices would be
+             /dev/ttym1 or /dev/cum1
+
+             The /dev/ttym devices would normally have a getty running
+             and the /dev/cum devices would then be used for dial-out
+             access if a modem was installed.  See 9.23 for details on
+             setting-up the system to use the ports.
+
+     5.14    Why are there two power connectors on the tape drive in
+             the peripheral (expansion) unit?
+
+             Sun opted for a SCSI bus for the hard disks and tape
+             drive but there were few (if any) SCSI-compatible tape
+             drives at the time so an adaptor board had to be used. 
+             This meant that there had to be two power connections -
+             one for the adaptor and one for the drive itself.
+
+             And, by the way, it is normal for that LED at the rear of
+             the drive unit to flash all the time.
+
+     5.15    Can the system-unit speaker be used for real audio instead
+             of just beeping?
+
+             The speaker is driven by a simple oscillator and there is
+             no provision for complex modulation.
+
+     5.16    Can the type-5 keyboard be used with the 386i?
+
+             Yes, but for the arrow keys to be usable under X11 your
+             version of Xsun must have been compiled with the
+             appropriate patch.
+
+     5.17    Can a "PC" mouse/keyboard be used with the 386i?
+
+             No.
+
+     5.18    Are there any speed-up modifications for the 386i?
+
+             Yes and no.  The modification mentioned most frequently
+             involves Cyrix chips but the consensus is that they cannot
+             be used successfully in the 386i.  Indeed, Cyrix actually
+             documents their 386 upgrade chip as being incompatible
+             with the 386i.
+
+             However, there has been a modification by Tim Wood
+             (timwood@slip.net) of a 386i/150 using a Kingston/IBM
+             Blue Lightning 486 CPU running at 60 MHz. Results were
+             said to be mixed. CPU-intensive computations showed a 30%
+             to 40% speed-up and seemed particularly useful for DOS
+             applications. As one might expect, though, there seemed
+             to be little improvement where extensive I/O was
+             performed (the internal bus was still running at the same
+             speed) so basic SunOS and X11 functions did not benefit a
+             great deal.
+
+             Tim has always been most helpful but he no longer has his
+             386i.  The best bet would be to get his "k486.tar.Z"
+             package from the FTP site (see 1.04 and 7.03) - it
+             contains all the necessary software and documentation.
+
+======================================================================
+
+Section 6  - Mass-storage/back-up devices for the Sun 386i
+
+     6.01    Can "non-Sun" hard drives be used with the 386i?
+
+             Yes - although the installation procedure will be a
+             little more complicated - i.e. non-automated (see 6.03).
+
+             Effectively, any SCSI-I hard disk can be used in the 386i
+             but there are one or two things that must be remembered
+             (see 6.02).
+
+     6.02    What is the largest capacity for hard disks on the 386i?
+
+             The SunOS 4.0.2 "format" program has a problem with
+             drives having an overall capacity larger than
+             approximately 1.02 GBytes.  A variable overflows or there
+             is a time-out (nobody seems sure which is actually the
+             problem) when that limit is reached and the heads go back
+             to the start of the disk but keep on formatting!
+
+             This does not mean that larger disks cannot be used with
+             the 386i as long as you do not have to format them.  And
+             a new SCSI disk will be pre-formatted so you can use it
+             without formatting.  If it should need to be formatted
+             later you would have to do it on another SunOS machine
+             which does not have the "format" limitation or format it
+             to a smaller size.
+
+             All SunOS systems also have an upper limit of 2 GBytes
+             for partitions. There does not seem to be any record of
+             "format" on the 386i being unable to handle partitions up
+             to that limit.
+
+     6.03    What is the procedure for formatting and partitioning a
+             "non-Sun" drive?
+
+             It is some little while since I have had to format or
+             partition a disk. I believe that I have not missed any
+             steps in the following procedure but I would welcome any
+             feedback!
+
+             The procedure assumes that no "format.dat" entry is
+             available for the hard disk in question (and that will
+             certainly be the case if you are formatting the system's
+             only hard drive).
+
+             It is probably worth doing all your calculations in
+             advance (subject to any limitations that may be imposed
+             subsequently by "format") and writing them down.
+
+             Boot-up in single-user mode (see 9.05), using the
+             installation diskettes if necessary (see 9.06), and run
+             "format" without any options or arguments.  You will be
+             presented with the following menu:
+
+                 disk       - select a disk
+                 type       - select (define) a disk type
+                 partition  - select (define) a partition table
+                 current    - describe the current disk
+                 format     - format the disk
+                 repair     - repair a defective sector
+                 show       - show a disk address
+                 label      - label the disk
+                 analyze    - surface analysis
+                 defect     - defect list management
+                 backup     - search for backup labels
+                 quit
+
+             Select an item by entering one of the commands on the
+             left - only enough characters need to be entered to
+             ensure it is unique in the current menu (i.e. "di" for
+             "disk" and "de" for "defect").
+
+             First you must select a disk with with "disk" command. 
+             Those present on the system will be listed.  If it is a
+             new SCSI disk, "format" may well return a "defect list
+             not found" message.  This is NOT a problem!  In fact,
+             there are undoubtedly many, many bad tracks (which is
+             inevitable with today's densely-packed media) but details
+             are stored "internally" on reserved tracks so that a
+             "clean" disk is presented to the system.
+
+             The disk must then be defined - enter "type" and answer
+             the questions.  Note that you must give the actual number
+             of cylinders minus the number needed for alternate
+             tracks.  The default of two cylinders for alternate
+             tracks will be adequate.  (In the example below, the
+             actual number of cylinders is 1013 but is given as 1011.)
+             You can probably use the manufacturer's specifications
+             for the rest of the values.
+
+             Once again, if it is a new SCSI disk it will be formatted
+             already so you can skip the formatting step.  If it needs
+             to be reformatted you may find you need to "lie" to
+             "format" about the number of heads (see below) and so on
+             so that you get a combination that "format" will accept
+             but which reflects the true capacity of the disk (see
+             6.02 for information on maximum-size limitations).
+
+             Partitioning the disk is the next step and you will need
+             a calculator!
+
+             The convention for naming partitions is that the first
+             partition on the disk is named "a" and the second
+             partition, which is usually the swap space, is named "b"
+             and so on.  By the same convention, partition "c" refers
+             to the whole disk.
+
+             There is no fundamental reason why you should not create
+             a file system on the whole-disk partition and use it as
+             the only partition on the disk (although it would be a
+             bit cumbersome).  However, you would not then be able to
+             use any other partitions - and that would include swap
+             space - and you would not be able to install SunOS on it
+             or use it as a boot device.
+
+             Speaking of swap space (see 6.05, 6.06 and 6.07), the
+             swap space must NEVER be the first partition because the
+             label and any bootblock information would be over-written
+             (that, of course, is the reason for the convention of
+             naming it "b" and making it the second partition). 
+             Similarly, the first or the whole-disk partitions should
+             never be used as raw devices.
+
+             Here is a dump (created by "format") of the information
+             from one of my disks (the layout has been modified
+             slightly to compress it horizontally):
+
+                 /dev/sd2 (system unit)
+
+                 Current Disk =
+                     sd2: <CONNOR CFP1060S cyl 1011 alt 2 hd 64 sec 32>
+
+                 Current partition table (original sd2):
+                 partition a - starting cyl   0, # blocks    20479 (9/63/31)
+                 partition b - starting cyl  10, # blocks    81919 (39/63/31)
+                 partition c - starting cyl   0, # blocks  2070527 (1010/63/31)
+                 partition d - starting cyl  50, # blocks   739327 (360/63/31)
+                 partition e - starting cyl   0, # blocks        0 (0/0/0)
+                 partition f - starting cyl   0, # blocks        0 (0/0/0)
+                 partition g - starting cyl 411, # blocks    81919 (39/63/31)
+                 partition h - starting cyl 451, # blocks  1146879 (559/63/31)
+
+             Yes, that's right!  64 heads (remember about having to
+             "lie" to the "format" program)!  In this case, the figure
+             of 64 for the number of heads was actually part of the
+             manufacturer's specifications.
+
+             The example above is for a large hard-disk which is used
+             as a boot device and you may not have room for the "d"
+             partition if you have limited space.  The absolute
+             minimum for a boot device (i.e.  a disk onto which you
+             are installing SunOS) is shown in the following table:
+
+                 Partition  Mounted-as  Minimum-size
+
+                 a          /            5 MBytes
+                 b          swap-space  15 MBytes
+                 g          /usr        20 MBytes
+                 h          /files      rest of disk
+
+             It is vital to note when partitioning the disk that all
+             values are decimal and that ALL value-ranges start at
+             zero - just as with array-indexing in C.  (Note that this
+             zero-start applies to partitioning and not to defining
+             the disk with the "type" command.)
+
+             So, looking at partition "a" and referring to the figures
+             in parentheses at the right, the ACTUAL number of
+             cylinders (after allowing for those allocated for
+             alternate tracks) is still 1011 but is entered as "1010". 
+             Similarly, the ACTUAL number of heads is still 64 but is
+             entered as "63" and so on.  Thus, the starting cylinder
+             for partition "a" is "0".
+
+             There are two methods for specifying the size of each
+             partition.  In each case you must first enter the
+             starting cylinder. Then you enter either the number of blocks
+             (remembering to start at zero) or "cylinders/heads/sectors"
+             as in, for example "9/63/31" (with each value starting at
+             zero).  You will see that there is a relationship between
+             the two methods - blocks = cylinders * heads * sectors
+             although you must "start" at "1", for the purpose of the
+             calculation ONLY, for it to work.
+
+             Convention is followed in the example given so that
+             partition "a" is the "root" partition, "b" is the swap
+             space and "c" refers to the whole disk and so on.
+
+             Make sure that the partitions do not overlap. You should
+             get a warning if you try to "run off" the end of the
+             disk.
+
+             The next step is to label the disk and, in the example,
+             the label is "CONNOR CFP1060S" - it has to be entered as
+             shown WITH the enclosing quotes.
+
+             A file system then needs to be made on each defined
+             partition but NOT on "b" or "c" in the example shown!! 
+             Use "newfs" instead of "mkfs" because the former is much
+             friendlier and uses the disk label to get the information
+             needed by "mkfs". Quit the "format" program and enter the
+             command:
+
+                 /etc/newfs /dev/rsdnx
+
+             where "n" is the device number and "x" is the partition
+             so, for the example, the command for the "a" partition
+             would be:
+
+                 /etc/newfs /dev/rsd2a
+       
+             With large partitions you may get a complaint about the number
+             of cylinders per cylinder-group.  If so, call "newfs"
+             as follows:
+       
+                 /etc/newfs -c 12 /dev/rsda2
+
+             If the disk is to be a boot device, you will need to
+             install a bootblock (see 9.19).
+
+     6.04    Can SCSI-II devices be used with the 386i?
+
+             Yes, but the 386i's SCSI bus will not be able to take
+             advantage of SCSI-II features.  Notes in the mailing-list
+             archives suggest that hard-disks with faster rotational
+             speeds than 4,500 RPM cannot be used because format
+             cannot handle them.  And a user has experienced
+             data-corruption problems with a 4,500 RPM disk.
+
+     6.05    How much swap space is needed?
+
+             How long is a piece of string? Seriously, it depends, in
+             part, on how much physical memory is in the system and
+             how many programs are going to be running at once.
+
+             The general "rule" seems to be to allocate swap space in
+             a ratio of 4:1 - in others words, you allocate 64 MBytes
+             of swap if you have 16 MBytes of RAM. This may seem
+             excessive but I have seen 58 MBytes of swap being used
+             when running some memory-hungry programs under X11.
+
+             Allocating such large swap partitions would be difficult,
+             of course, on some of the smaller hard disks fitted as
+             original equipment but 1 GByte SCSI disks are now so
+             cheap ...
+
+     6.06    Is it worth spreading the swap space across two disks?
+
+             Without question, spreading the swap space across two hard
+             disks is one of the easiest ways of getting a SIGNIFICANT
+             performance boost for the 386i (apart, of course, from
+             adding more RAM)!
+
+             The following is from no less an authority than "The
+             Design and Implementation of the 4.3 BSD UNIX Operating
+             System" (Leffler, McKusick, Karels, Quarterman):
+
+                 "The addition of virtual memory placed new demands on
+                  the swap device ... To gain higher performance from
+                  the disks for paging, 4BSD uses swap areas on
+                  multiple disks. A single logical device is
+                  interleaved among the available swap partitions on
+                  the disks ... Swap areas need not be the same size;
+                  the interleaving is computed using the maximum size
+                  of the available devices.
+
+                 "The use of interleaving rather than concatenation
+                  tends to distribute the allocation of space evenly
+                  on the swap devices so as to spread the transfers
+                  among the disks used for paging and swapping."
+
+             It almost goes without saying that the second swap
+             partition should not be on a disk which is slower than
+             the "system" disk.
+
+             It is also worth noting that some performance increase
+             has been observed when the swap partitions are of equal
+             size as opposed to being of different sizes.
+
+             Do not be tempted to literally split the original swap
+             space size between two disks (unless, of course, you
+             already have 64 MBytes on one disk) but take the
+             opportunity to increase the overall swap space available
+             (I use 80 MBytes divided equally across two 1 GByte disks).
+
+     6.07    How can a second swap device be added?
+
+             There must always be a swap device available immediately
+             at boot time and this will be the swap partition on the
+             boot device.
+
+             The second device is added when booting into multi-user
+             mode and is achieved simply by an entry in "/etc/fstab"
+             as follows:
+
+                 /dev/sd0b  swap swap rw 0 0
+
+             You should also make sure that the following line is in
+             "/etc/rc" - just before the start of the code for
+             preserving "vi/ex" editor files and clearing "/tmp" is the
+             usual place:
+
+                 swapon -a > /dev/console
+
+             You would, of course, change the "sd0b" to reflect the
+             partition actually used but the entry shown above would
+             be correct for the "b" partition of the disk in the
+             peripheral (expansion) unit (assuming that Sun's
+             device-naming convention has been followed - see 6.08).
+
+             The second disk must be partitioned to include swap space
+             (see 6.03).  And it is worth repeating here that any swap
+             partition must NOT be the first partition on the disk!
+
+     6.08    What are the correct SCSI IDs for the hard-disk and tape
+             drive?
+
+             By "convention", the hard-disk in the system unit
+             (normally device "sd02") should be set to SCSI-ID "2" and
+             the disk in the peripheral (expansion) unit (normally
+             device "sd0") should be set to ID "0".  There is no
+             reason why the two disks cannot be swapped around but you
+             should not use other than IDs "0" and "2" for disks you
+             intend to use as boot devices because of ROM-monitor boot
+             limitations (see 9.11)
+
+             The tape-drive in the peripheral unit (device "rst8")
+             should be set to SCSI-ID "4".
+
+             Note that the diskette drive is on the AT-bus and not the
+             SCSI-bus.
+
+     6.09    What are the correct jumper positions for the 91-MByte and
+             327-MByte hard drives?
+
+             This is what the field service manual has to say:
+
+                 "Drive 0 is the main disk in the peripheral unit. 
+                  drive 2 is the main disk in the system unit.  Drives
+                  1 and 3 are the second disk drives in the peripheral
+                  and system units respectively.  These second drives
+                  are not currently supported."
+
+             Note, however, that drives 1 and 3 can be used if your
+             kernel has been configured to include them (see 9.20).
+
+                 91 MByte drives
+
+                                             o o o o
+                 drive 0    o o o-o o o o o        |
+                                             o o o o
+
+                                             o o o o
+                 drive 1    o o o-o o o o o      | |
+                                             o o o o
+
+                                             o o o o
+                 drive 2    o o o-o o o o o    |   |
+                                             o o o o
+
+                                             o o o o
+                 drive 3    o o o-o o o o o    | | |
+                                             o o o o
+
+                 327 MByte drives
+
+                 drive 0    o o o o o  o o
+                            |
+                            o o o o o  o o
+
+                 drive 1    o o o o o  o o
+                            |       |
+                            o o o o o  o o
+
+                 drive 2    o o o o o  o o
+                            |     |
+                            o o o o o  o o
+
+                 drive 3    o o o o o  o o
+                            |     | |
+                            o o o o o  o o
+
+     6.10    Can removable-media drives be used with the 386i?
+
+             The answer appears to be that a SCSI removable-media
+             drive can be used.
+
+             There is little information in the mailing-list on this
+             topic as to procedures and which, if any, drives might
+             not be suitable.  In general, however, the procedure
+             appears to be that the drive must remain "powered-up" all
+             the time even when no cartridge is in place.  And the
+             cartridge, which would probably have been pre-formatted
+             for SCSI devices, must have a normal, SunOS file-system.
+
+             The drive may be connected to the SCSI bus via the
+             external connector and must be terminated.
+
+             The kernel must have been compiled to support the total
+             number of hard-disks used - including the removable-media
+             drive (see 9.20)
+
+     6.11    Can larger-capacity tape-drives be used with the 386i?
+
+             QIC-120 and QIC-150 drives have been used successfully on
+             the 386i although most users have installed an "Archive
+             2150S" (QIC-150 drive) which can read/write QIC-120,
+             QIC-150 and QIC-250 tapes.  If you replace the existing
+             drive with a new one the SCSI ID should be set to 4.
+
+             Dump can be used with no problems although, of course,
+             the "-c" option can no longer be used on its own because
+             of its defaults and the various parameters will have to be
+             entered manually or via a shell script.
+
+             The ST driver does not support DAT tapes.
+
+     6.12    Can a CD-ROM drive be added to the 386i?
+
+             A CD-ROM drive cannot be connected directly to the 386i
+             because there is no driver available for such a device.
+             The only way a CD-ROM can be accessed (unless some kind
+             soul decides to write a driver) is if the drive is on a
+             machine to which the 386i has network access.
+
+======================================================================
+
+Section 7  - Software for the Sun 386i
+
+     7.01    What C compilers are available for the 386i?
+
+             Sun supplied two C compilers with the optional clusters
+             for the 386i - a BSD compiler and a System V compiler.
+
+             The BSD compiler appears to be 4.3 BSD compatible in most
+             respects.  It is not an ANSI compiler and does not, for
+             example, accept prototypes.  Programs can be linked
+             dynamically.  The System V Common Object File Format
+             (COFF) is used instead of the 4.2/4.3 BSD "a.out" format
+             (see 8.01).
+
+             The System V compiler incorporates the full requirement
+             specified by the base level of the System V Interface
+             Definition (SVID). Dynamic linking is not available. The
+             compiler is invoked with "/usr/5bin/cc" which will
+             automatically select the correct header files and
+             libraries where they differ from those for BSD.
+
+             Version 2.6.3 of the GCC compiler suite from GNU is
+             available on the FTP site (see 1.04).  The 386i package
+             was put together by David Brownlee and is a gzip'ped tar
+             archive that will put everything in the proper place
+             without affecting existing installations.  POSIX
+             extensions have been added to the GCC library and the
+             package solves most of the problems experienced when
+             compiling programs on the 386i.  Programs can be linked
+             dynamically but shared libraries with external references
+             cannot be produced by GCC (see 8.01).
+
+     7.02    Is it worth keeping the System V and SunOS compilers?
+
+             The SunOS compiler must be kept because many of the
+             libraries, header files and utilities (such as the
+             loader) are still used by GCC and are needed when
+             rebuilding the kernel.  And there's still a surprising
+             amount of code out there that has a 386i target in the
+             Makefile.
+
+             The System V compiler allows strictly-AT&T-UNIX programs
+             to be compiled with little or no modification and is
+             often useful.  The fact that it uses the System-V curses
+             package, which has major advantages over the "vanilla"
+             BSD version, is particularly valuable.
+
+             Some users want to get rid of as much as possible because
+             of disk-space limitations but, as is noted elsewhere, SCSI
+             hard disk prices are now low enough that 1-GByte drives
+             are a real and attractive option.
+
+     7.03    What general software is available for the 386i?
+
+             "General software" means programs/utilities which run
+             under SunOS and which do not require any of the
+             properties of SunView or X11.
+
+             The following packages are available on the FTP site (see
+             1.04) in the "/pub/sun386i/software" directory:
+
+                 bash          GNU shell replacement version 1.12
+                 bpe           binary editor version 2.00.04 (source
+                               and binary)
+                 dvipsk        TeX drivers for PostScript version 5.516a
+                 emacs         text editor (etc.) version 19.24
+                 gcc           complete installation package of GNU C
+                               version 2.6.3 (see 7.01)
+                 ghostscript   PostScript interpreter version 2.6.1
+                 gopher        version 2.010
+                 gzip          GNU compress/uncompress/archive
+                               version 1.2.4
+                 httpd         http daemon
+                 ispell        spelling-checker version 4.0
+                 k486          486 speed-up package (see 5.18)
+                 kermit        C-Kermit 5A(190)
+                 make          version 3.71
+                 mtools        DOS-diskette utilities
+                 ndump         NVRAM utility (see 12.03 and 12.09)
+                 ntalk         source only
+                 oleo          spreadsheet version 1.5
+                 patch         version 2.1
+                 perl          text processing language version 5
+                 ppp           PPP version 2.1.2 (see 9.26)
+                 tcsh          csh shell replacement version 6.03
+                 tex           text-formatting version 3.141 (C version
+                               6.1)
+                 top           process/resource-usage display version 3.3
+                 vile          multi-window vi-work-alike version 6.1
+                               (includes xvile - see 7.06)
+                 zmodem        file transfer (source and binaries)
+
+             Note that you may find several versions of some of the
+             packages - any versions earlier than those shown have
+             been omitted from this list.
+
+     7.04    What software is available for running under SunView?
+
+             There was certainly some commercial software available
+             for the 386i under SunView (that is, software which used
+             SunView's windowing capabilities and not software which
+             would run in a SunOS window).  However, no information on
+             the subject could be found and the software is unlikely
+             to be available today through normal, commercial channels.
+
+             There is a considerable amount of free and public-domain,
+             SunView-specific software available and efforts are being
+             made to have it placed on the FTP site (see 1.04).
+
+     7.05    Is X11 available for the 386i?
+
+             Two versions of X11 are available on the FTP site (see 1.04):
+
+                 X11R5pl26     binaries and man pages
+                 X11R6         statically-linked binaries
+
+     7.06    What software is available for running under X11?
+
+             To the best of my knowledge, all of the following
+             packages were compiled using X11R5 intrinsics:
+
+                 ghostview     PostScript viewer version 1.5 (requires
+                               ghostscript - see 7.03)
+                 mosaic        WWW client version 2.1
+                 mpeg_play     mpeg viewer
+                 suntetris     game
+                 tgif          2-D CAD package version 3.0 patch level 8
+                 xarchie
+                 xdvi          TeX viewer
+                 xearth        rotating Earth version 1.0
+                 xephem        astronomical ephemeris program version
+                               2.9.2
+                 xfig          2-D CAD package version 3.1 patch level 3
+                 xgrasp
+                 xloadimage    image viewer
+                 xmailtool
+                 xpaint        "drawing" program version 2.1.1 (compiled
+                               with the two, major bug fixes)
+                 xplaygizmo
+                 xsnow         root-screen Christmas scene
+                 xv            image viewing/manipulation version 3.10a
+                 xvile         multi-window vi-work-alike version 6.1 -
+                               part of the vile package (see 7.03)
+
+             Note that you may find several versions of some of the
+             packages - any versions earlier than those shown have
+             been omitted from this list.
+
+     7.07    Where can I get pre-compiled binaries?
+
+             Pre-compiled binaries (and, sometimes, the source code as
+             well) can be obtained from the 386i FTP site (see 1.04)
+             in the "/pub/sun386i/software" directory.
+
+======================================================================
+
+Section 8  - Frequently-asked software questions
+
+     8.01    Why can't GCC produce shared libraries?
+
+             The fundamental problem is that the 386i uses the System
+             V Common Object File Format (COFF) instead of the 4.2/4.3
+             BSD "a.out" format (see the coff(8) man page and 7.01).
+
+             A considerable amount of work was done on this by Jake
+             Hamby (jehamby@lightside.com) but he no longer has access
+             to a 386i and will be unable to help much.
+             
+             The assembler and linker need to work in conjunction with
+             the compiler to generate the position-independent code
+             (PIC) which is needed for shared libraries.  This is a
+             problem with the 386i although GCC 2.6.3 has been used to
+             generate shared libraries which contain no external
+             references.
+
+             There is no simple answer to the problem although it can
+             apparently be done if there is a brave enough programmer
+             out there.
+ 
+             One avenue would be to modify GCC to generate assembly
+             output compatible with the SunOS assembler.  This has
+             been done with an earlier version of GCC but,
+             unfortunately, the patches were lost.  Nevertheless,
+             shared XllR5 libraries were produced so the approach does
+             work.
+ 
+             Another method would be to port the GNU assembler (GAS)
+             to the 386i.  This does, in fact, work already but not
+             for shared libraries on the 386i.  GAS actually supports
+             COFF but not the shared-library mechanism which Sun
+             added.
+
+     8.02    Is Netscape available for the 386i?
+
+             No - and it is not likely to be because the source is not
+             available. Some time ago, Netscape said reportedly that
+             it would compile on the 386i and that the company would
+             compile it if a machine was made available.
+
+     8.03    Where can I get Motif for the 386i?
+
+             Motif is a commercial, GUI package from OSF which has
+             strict limitations on distribution.
+
+             Early versions have certainly been available for the 386i
+             but, unless you have a source licence, you will not be
+             able to get later versions (those after and including
+             1.2). In fact, the OSF licence even prohibits distribution
+             of statically-linked programs which include anything from
+             the Motif 1.2 or later libraries.
+
+             It is unfortunate that so many worthwhile programs require
+             Motif but this is not the place to get into a discussion
+             of OSF's licencing policies.
+
+             A "shareware" clone, LessTif, is under development but it
+             does not appear to have migrated to the 386i yet.
+
+     8.04    Will Microsoft Windows 3.1 run on the 386i?
+
+             There have been some claims that somebody, somewhere got
+             it going but Sun documentation dealing specifically with
+             that topic says that it is impossible.
+
+     8.05    Is SNAP really that bad?
+
+             Yes!  SNAP (System and Network Administration Program)
+             was a good idea and, as a window-based, "point-and-click"
+             facility running under SunView, it fitted-in with the
+             overall 386i philosophy of allowing the system to be used
+             without the user having to know some of the more-arcane
+             aspects of UNIX.  Unfortunately, the implementation of
+             SNAP left something to be desired and you will find
+             horror stories in the mailing-list of what can happen
+             when SNAP goes wrong - including deleting everything in
+             the "/files" directory.
+
+             A far better solution is to learn the basics of SunOS
+             system administration - things such as adding users are not
+             difficult (see Section 9).
+
+     8.06    Will the 386i have any "Year-2000" problems?
+
+             Yes and no - SunOS "knows" about the year 2000 and flags
+             it correctly as a leap year. However, the "date" command
+             will accept only two digits for the year and treats "00"
+             as being the year 1900. The year digits come first in the
+             argument to "date" so that utility will be effectively
+             useless after December 31, 1999. The answer will be to
+             use the SystemV "date" command (/usr/5bin/date), with
+             which the year digits are optional, to change the date
+             and time (but not the year) after the year 2000 rolls
+             around.
+       
+             The year 2000 can be "set", if necessary, by setting a
+             time of 2359 (and 59 seconds if you don't want to wait)
+             on December 31, 1999, and letting it just "roll-over"
+             into the new year.  The SysV "date" utility can then be
+             used to set the correct date and time.  The procedure
+             should be carried out in single-user mode (see 9.05).
+             
+             The new date will be maintained whenever the system is
+             rebooted but there will be a complaint about the hardware
+             clock (NVRAM Timekeeper chip - see Section 12) not being
+             initialised.
+       
+             The hardware clock is set whenever the "date" utility is
+             used or on a normal shut-down.  It has only an 8-bit
+             register for the year digits which "rolls-over" to "00"
+             for the year 2000 and so on.  Unfortunately, SunOS doesn't
+             recognise this as referring to the year 2000.  The
+             warning can, however, be ignored as it seems to be of no
+             more significance to system operation than the warning
+             after an abnormal shut-down.
+
+======================================================================
+
+Section 9  - Frequently-asked "how to do this" questions
+
+     9.01    How can I get into the ROM monitor?
+
+             Most 386i systems are set-up to boot into multi-user mode
+             on power-up or after a crash (see 9.02).
+
+             At power-on you can "escape" into the monitor with the
+             L1/A sequence - that is, press and hold down the L1
+             (stop) key and then press the "a" key at the start of the
+             boot sequence. Do not wait too long or you could cause
+             file-system corruption.  Repeat the key-sequence if it
+             does not "catch" the first time but do not treat the L1
+             key as a shift or control key and keep it held down while
+             repeatedly pressing the "a" key.  Both keys must be
+             released and the two-key sequence repeated.
+
+             You should get a ">" prompt - enter "h" followed by
+             <RETURN> for help.
+
+             If the system is already running, login as "root" (or run
+             "su") and enter the "shutdown" command to drop to
+             single-user mode (use "shutdown now" if there are no
+             other users on the system who need to be warned) and then
+             the "halt" command to drop to the ROM monitor.
+
+             One point is worth noting - if you have been running
+             graphics applications you may find that the colour-map
+             manipulation leaves you with a screen-colour combination
+             such as white-on-white in single-user mode which can be
+             hard to read.  Use a utility such as "xfreecolors" to
+             reset the colour-map before shutting-down.
+
+     9.02    How can I set the power-on mode?
+
+             As noted in 9.01, most systems are set to boot into
+             normal, multi-user mode at power-on or after a "watchdog"
+             reset. However, is is possible to change this either by
+             installing a jumper on the motherboard or setting an
+             NVRAM-based "soft switch" (see Section 12).
+
+             The three jumpers - 0, 1 and 2 - are on the motherboard
+             between the 80387 FPU and the disk-power connector. 
+             Install a jumper at position 0 (labeled "W600") to boot
+             in diagnostic mode.  The NVRAM value is used if no jumper
+             is installed.
+
+     9.03    How can I interpret the results of POST (Power On Self Test)?
+
+             A PROM, usually called the boot PROM, contains power-on
+             diagnostic code which initialises the system and runs the
+             POST. If possible, any error messages are displayed in
+             text on the console. If no frame-buffer is installed the
+             messages will be sent to the serial port for display on a
+             standard terminal which should be set for 9600 baud, 8
+             data bits, 1 stop bit and no parity. If no terminal is
+             connected, the LEDs on the back-panel can be used to
+             interpret the POST results See 9.04).
+
+     9.04    What do the LEDs on the back panel indicate?
+
+             When the system is running normally the LEDs light
+             sequentially in what Sun terms the "system heartbeat".
+
+             However, the LEDs can also be used as a "last-resort"
+             source of information when something goes wrong.  If the
+             system fails to boot properly or if there is a non-fatal
+             "warning" about a component problem that does not stop
+             boot-up, the resultant LED pattern can be used to
+             identify the faulty component using the following table.
+
+             If the system is mounted on a floor stand, the "status"
+             LED (marked "S") in the diagram will be at the top. The
+             status LED remains illuminated when the POST is running.
+
+             Use the LED "values" shown to calculate the sub-system
+             being tested and the test number.  Working from the left
+             in the diagram, the first LED is the "status" indicator,
+             the next three are the test-number LEDs and the last four
+             are the sub-system indicators.  As an example, if the
+             pattern is "o # # o o o # o" the problem would be with
+             test number 6 on sub-system 2 and would indicate a CPU
+             board failure involving the 82380.
+
+             sub-       # = on  o = off
+             sys  test     LED values   Error   Component
+                        S 4 2 1 8 4 2 1
+              0    1    o o o # o o o o fatal   CPU (80386)
+              0    2    o o # o o o o o warning CPU (LED register)
+              0    3    o o # # o o o o fatal   CPU (Boot PROM)
+              0    4    o # o o o o o o warning CPU (Serial Port)
+              0    5    o # o # o o o o warning CPU (Parallel Port)
+              0    6    o # # o o o o o fatal   CPU (NVRAM)
+              0    7    o # # # o o o o fatal   CPU (IDPROM)
+
+              1    0    o o o o o o o # fatal   CPU (82380)
+              1    1    o o o # o o o # fatal   CPU (82380)
+              1    2    o o # o o o o # fatal   CPU (82380)
+              1    3    o o # # o o o # fatal   CPU (82380)
+              1    4    o # o o o o o # fatal   CPU (82380)
+              1    5    o # o # o o o # fatal   CPU (82380)
+              1    6    o # # o o o o # fatal   CPU (82380)
+              1    7    o # # # o o o # warning CPU (Ethernet Controller)
+
+              2    0    o o o o o o # o fatal   CPU (82380)
+              2    1    o o o # o o # o fatal   CPU (82380)
+              2    2    o o # o o o # o fatal   CPU (82380)
+              2    3    o o # # o o # o fatal   CPU (82380)
+              2    4    o # o o o o # o fatal   CPU (82380)
+              2    5    o # o # o o # o fatal   CPU (82380)
+              2    6    o # # o o o # o fatal   CPU (82380)
+              2    7    o # # # o o # o fatal   CPU (SCSI Bus Controller)
+
+              3    0    o o o o o o # # noerror CPU (82380)
+              3    1    o o o # o o # # fatal   CPU (82380)
+              3    2    o o # o o o # # warning CPU (Floppy Disk Controller)
+              3    3    o o # # o o # # fatal   CPU (System Bus)
+              3    4    o # o o o o # # fatal   CPU (System Bus)
+              3    5    o # o # o o # # fatal   CPU (MUSCI ASIC)
+
+              4    0    o o o o o # o o fatal   Memory Board (System Slot 1)
+              4    1    o o o # o # o o fatal   Memory Board (System Slot 1)
+              4    2    o o # o o # o o fatal   Memory Board (System Slot 1)
+              4    3    o o # # o # o o fatal   Memory Board (System Slot 1)
+              4    4    o # o o o # o o f&w     Memory Board (cache)
+              4    5    o # o # o # o o f&w     Memory Board (cache)
+              4    6    o # # o o # o o f&w     Memory Board (cache)
+
+              5    0    o o o o o # o # fatal   Memory Board (System Slot 2)
+              5    1    o o o # o # o # fatal   Memory Board (System Slot 2)
+              5    2    o o # o o # o # fatal   Memory Board (System Slot 2)
+              5    3    o o # # o # o # fatal   Memory Board (System Slot 2)
+              5    4    o # o o o # o # f&w     Memory Board (cache)
+              5    5    o # o # o # o # f&w     Memory Board (cache)
+              5    6    o # # o o # o # f&w     Memory Board (cache)
+
+              6    0    o o o o o # # o fatal   Memory Board (System Slot 3)
+              6    1    o o o # o # # o fatal   Memory Board (System Slot 3)
+              6    2    o o # o o # # o fatal   Memory Board (System Slot 3)
+              6    3    o o # # o # # o fatal   Memory Board (System Slot 3)
+              6    4    o # o o o # # o f&w     Memory Board (cache)
+              6    5    o # o # o # # o f&w     Memory Board (cache)
+              6    6    o # # o o # # o f&w     Memory Board (cache)
+
+              7    0    o o o o o # # # fatal   Memory Board (System Slot 4)
+              7    1    o o o # o # # # fatal   Memory Board (System Slot 4)
+              7    2    o o # o o # # # fatal   Memory Board (System Slot 4)
+              7    3    o o # # o # # # fatal   Memory Board (System Slot 4)
+              7    4    o # o o o # # # f&w     Memory Board (cache)
+              7    5    o # o # o # # # f&w     Memory Board (cache)
+              7    6    o # # o o # # # f&w     Memory Board (cache)
+
+              8    0    o o o o # o o o warning Video Board (VRAM)
+              8    0    o o o o # o o o warning Video Board (VRAM)
+              8    0    o o o o # o o o warning Video Board (Color LUT)
+              8    0    o o o o # o o o warning Video Board (ALL)
+              8    0    o o o o # o o o warning Video Board (Mouse/Kbd SCC)
+
+              9    0    o o o o # o o # warning Mouse/Keyboard (Keyboard)
+
+             10    0    o o o o # o # o warning Floppy Disk
+
+             11    0    o o o o # o # # warning SCSI disk (Bootable device)
+             11    1    o o o # # o # # warning SCSI disk (Controller)
+
+             12    0    o o o o # # o o warning SCSI tape (Bootable device)
+             12    1    o o o # # # o o warning SCSI tape (Controller)
+
+             13    0    o o o o # # o # warning Ethernet: (Bootable device)
+
+             Note that the "82380" referred to in the tests for
+             sub-systems 1, 2 and 3 is the Intel 82380 controller
+             which, among other things, handles the DMA.
+
+             Note also that "Memory Board (System Slot 4)" in the
+             sub-system 7 tests refers to a memory board installed in
+             what would normally be the frame-buffer slot (see 5.02).
+     
+     9.05    How can I boot the 386i in single-user mode?
+
+             You can boot into single-user mode at the ROM monitor
+             prompt (see 9.01) by entering "b -s"
+
+             As noted in 9.01 you can also get to single-user mode by
+             using "shutdown" if already running in multi-user mode
+             but you must be logged in as "root" or have run "su" to
+             do this.
+
+             You can reboot into single-user mode from single-user
+             mode with the command "reboot -- -s"
+
+             Once in single-user mode (unless you have simply used
+             "shutdown" from multi-user mode), you can mount all the
+             usual file systems (those listed in "/etc/fstab") with
+             the "mount -a" command.  You will probably get some error
+             messages at this point because of missing mount points so
+             just enter "mount -a" again.
+
+     9.06    How can I boot to single-user mode using the installation
+             diskettes?
+
+             Using the installation diskettes seems to be the only way
+             to boot into single-user mode from the diskette drive.
+             It is far from being an ideal method but it can be used to
+             recover from system errors which might otherwise make
+             booting impossible.
+
+             Insert "application diskette #1" in the drive and then
+             enter "b" at the ROM monitor prompt (see 9.01). Insert
+             the second diskette when prompted and wait a minute or
+             two while a RAM-disk is created.
+
+             A series of menus will then be presented - select "Expert
+             mode" and then deliberately create an error situation
+             when asked about the disk configuration. Answer "n" if
+             you get the question about repartitioning a disk and then
+             select single-user mode from the final menu (if there is
+             a better way of getting to this point without having to
+             make incorrect entries I would be delighted to hear about
+             it).
+
+             You will get a normal "Password:" prompt and the "correct"
+             thing to enter is your system's host-ID which is
+             displayed on the boot-screen at every boot-up (see also
+             9.09).
+
+             Only a very-limited set of utilities will be available. 
+             There will be no editor, no "dump/restore" and no "ls". 
+             To list files you will have to use "echo *" but there
+             will be none of the usual formatting of the display. 
+             Copying such utilities as "restore" or "ex" to the second
+             diskette appear to render it unusable (see also 9.08 and
+             9.13).
+
+             You will, however, be able to change directories and
+             mount a hard-disk file-system on "/mnt" and use utilities
+             from that disk (with a full pathname).
+
+             If your problem is that your one and only hard disk has
+             crashed you will probably have little option but to
+             re-install SunOS (see Section 11) unless your backups are
+             in "bar" format (the "bar" utility is available on the
+             installation diskettes).
+
+     9.07    Is it possible to boot to single-user mode without knowing
+             the root password?
+
+             It is a simple matter to arrange but, of course, it is not
+             something you should enable if other people have easy,
+             physical access to your 386i!
+
+             All you have to do is edit the "console" entry in
+             "/etc/ttytab" and add the word "secure" to the end of the
+             line so that it reads as follows:
+
+                 console "/usr/etc/getty -n -s -l std.9600"  sun  off  secure
+
+             Your entry may look like this:
+
+                 console "/usr/etc/getty std.9600"  sun  off  secure
+
+             that is, without the "-n -l -s" options.  That is not
+             important if the word "off" appears.  If the word "on" is
+             there it should not be changed to "off" or you will lose
+             the console login.  If the getty is being run (i.e.  if
+             the word "on" is there) the "-n -l -s" options should be
+             left in place if they are present because they mean that
+             the graphical "logintool" window and SunView are being
+             run.
+
+             The change will not take effect until you reboot the
+             system.
+
+             The "main" purpose of adding the "secure" key-word to the
+             "ttytab" entry is to enable a user to login as "root" on
+             the console instead of having to use "su" later but the
+             side-effect is to also allow no-password, single-user
+             logins. Note that the "secure" key-word is effective even
+             if there is no getty running - i.e. you are not using a
+             normal "login" prompt on the console (see 9.27).
+
+     9.08    What can I do when I've lost/forgotten the root password?
+
+             The possibility of this happening is one good argument
+             for setting-up the system so that you can boot into
+             single-user mode (see 9.05) without the need for a
+             password (see 9.07).  If you have not done so (possibly
+             for security reasons) you will have considerably-more
+             trouble.
+
+             If you have two hard disks it might be worth considering
+             setting-up that disk so that you can boot from it instead
+             of the "system" disk.  This could have advantages in a
+             number of situations and one of them is a lost root
+             password.
+
+             You would have to install a boot block on the second
+             drive (see 9.19).  You would also need to make a number
+             of changes to the files in the alternate root partition
+             and one of them would be to have an "/etc/password" entry
+             for "root" with no password.  This would not be a
+             security issue because that partition would not normally
+             be mounted.
+
+             Once up and running you would need to mount the usual
+             root partition and use an editor to remove the "root"
+             password.  Don't forget to reset it after you have done a
+             normal reboot.
+
+             If you do not have a second disk or if it does not have
+             an alternate root partition and boot block you will have
+             to use the SunOS 4.0.1 installation diskettes (see 9.0.6)
+             to boot the system.
+
+             Enter "expert mode" and then single-user mode.  Now you
+             need an editor and it will not be the time when you would
+             wish to have to search-out its torturous path.  I suggest
+             that it would be a good idea to keep a copy - not a
+             symbolic link - of the editor in a top-level directory. 
+             Either way, mount the root file-system on "/mnt" and then
+             mount the file-system containing the editor on, for
+             example, "/mnt/mnt" and then edit "/mnt/etc/password" as
+             noted above.  Note that you will have to use full
+             pathnames.
+
+             Enter "halt" and then remove the diskette from the drive
+             before rebooting.
+
+             There is another, perhaps simpler, method.  Boot to
+             single-user mode as noted above and mount the hard-disk
+             root partition.  The "cp" and "cat" utilities are
+             available on the installation diskettes so make a copy of
+             the old "/mnt/etc/password" and then use "cat" to create
+             a "new" one with the command:
+
+                 cat > /mnt/etc/passwd
+
+             The enter the following line as shown (but without any
+             leading white-space):
+
+                 root::0:1::/:/usr/bin/sh
+
+             Enter <CONTROL-D> and then boot to single-user mode from
+             the hard disk so you can restore the original password
+             file. Edit that file so that the password field is blank
+             and then run "passwd" to set a new one.
+
+     9.09    How can I find my system's host ID?
+
+             The host ID is the hex number that is the last item in
+             the banner displayed at boot-up but you can also find it
+             in the "/etc/systems" file.
+
+             A typical file might look like this (the line in the
+             example has been split and compressed horizontally):
+
+             ip.address  s386  sunos4.0.2  "2200503f"  16384  2070528 
+             master_bootserver
+
+             The fourth item (within the "") is the host ID. As a
+             matter of interest, the fifth item is the amount of
+             physical memory and the sixth is the total amount of disk
+             space on the system in Kbytes.
+
+     9.10    How can I boot from the disk in the peripheral (expansion)
+             unit?
+
+             On a normal boot-up (and assuming the NVRAM is set to
+             poll the boot devices - see Section 12), the system will
+             check the following devices, in order, for a valid
+             boot-block:
+
+                 diskette
+                 cartridge tape (if present)
+                 hard disk (sd02)
+
+             and, failing that, will try to boot off the network.
+
+             You can boot from sd0 (which is normally in the peripheral
+             unit) by issuing a specific boot command as in:
+
+                 b sd(0,0,0)
+
+             from the ROM monitor (see 9.01)
+
+             You can also set an NVRAM location so that the system
+             will boot only from a device which you can specify by
+             setting other NVRAM locations (see section 12).
+
+             Note that the device must have a valid bootblock (see
+             9.19), the file-systems and files needed for start-up.
+
+     9.11    Why can't I boot from sd01 or sd03?
+
+             The ROM monitor will recognise only sd02 and sd0 as
+             hard-disk boot devices.
+
+     9.12    How can access to su be restricted?
+
+             This can be done easily. Create a line such as the
+             following in "/etc/group":
+
+                 wheel:*:0:ran,dilbert,dogbert
+
+             If the line is there already you can just add the names
+             of the users as shown.
+
+             If you are running YP and wish to put the entry in
+             "/etc/ypgroup" you will then have to cd to "/var/yp" and
+             run "make".
+
+             Once all that is done, only those users whose names
+             appear in the list at the end of the line will be able to
+             su.  This means that a user could actually know the root
+             password but would be unable to gain root privs via su
+             (or even to login as root if the terminal being used was
+             not marked as "secure" in "/etc/ttytab").
+
+     9.13    How can I restore a file system from dump tapes?
+
+             This can be a real headache if you are restoring the file
+             system on your one and only hard disk because "restore"
+             is not available on the installation diskettes (see 9.06
+             and 9.08). If you cannot borrow a hard disk from which
+             you can boot into single-user mode (see 9.05) you will
+             have little choice but to re-install 4.0.1/4.0.2 from the
+             distribution diskettes (see section 11). You could then
+             use the "restore" now on the hard disk to get your old
+             file systems back on to the disk.
+
+             It would be a good idea to take out some insurance in the
+             form of "bar" backups of the "root" and "usr" file
+             systems because "bar" is available on the installation
+             diskettes. That would enable you to restore those file
+             systems and, once that was done, you could boot from the hard
+             disk and restore everything else.
+
+             Another thought when upgrading a hard disk would be to
+             keep the old one as an emergency boot device (if it is
+             still working).
+
+             If you have two hard disks you should keep a copy of
+             "restore" (and an editor) in an easily-accessible,
+             top-level directory on each disk.  This will make it easy
+             to mount the appropriate file system on "/mnt" and use
+             the utilities when you have booted from the installation
+             diskettes.
+
+             After reading all of the above (as well as 9.06 and 9.08)
+             you might well be asking why you can't simply mount the
+             second installation diskette and copy "restore" or an
+             editor to the "bin" directory so that it is there when you
+             need it - there is, after all, room on the diskette to do
+             this.  And, indeed, a similar suggestion has been made at
+             least once on the mailing list.  However, I tried it and
+             the diskette was then rejected at boot time.  Does
+             anybody have any further information on this?
+
+     9.14    How can I add a new user without using SNAP?
+
+             Edit "/etc/password" and add a complete entry for the new
+             user but leave the password field (the second field
+             between colons) blank.  Make sure that the UID and GID
+             are correct and that they do not conflict with any
+             others.  And don't forget the user's shell as the last
+             entry on the line.
+
+             The entry may look something like:
+
+                 dogbert::100:101::/files2/home/users/dogbert:/usr/bin/sh
+
+             The second blank field (the fifth field) can contain the
+             user's real name (or other information) if you wish to
+             add it.
+
+             Do not forget to create the user's home directory and to
+             set ownership, group and permissions.  You should also
+             create a basic ".profile" (for the Bourne shell) or
+             ".login" and ".cshrc" (for csh/tcsh) with the correct
+             ownership and permissions in the new user's home
+             directory.
+
+             When it's all done, run "passwd" with the new username as
+             the argument and enter the new password when prompted.
+
+             If you wish to put the entry in "/etc/yppasswd" you will
+             then have to cd to "/var/yp" and run "make".
+
+             You must be logged-in as "root" (or have run "su") to
+             carry-out the above procedures.
+
+     9.15    How can the floppy diskette be accessed from SunOS?
+
+             The diskette must first be formatted for SunOS using the
+             "/usr/etc/fdformat" utility if formatting a 1.44-MByte,
+             high-density diskette or "/usr/etc/fdformat -L" if
+             formatting a 720-Kbyte diskette.
+
+             The next step is to make a file system on the diskette. 
+             "Newfs" doesn't "know" about the diskette so you should
+             use the following command (or put the whole thing,
+             including the call to "fdformat", in an executable
+             shell-script):
+
+                 mkfs /dev/rfd0c 2880 18 2 4096 512 8 5 6
+
+             The diskette can then be mounted - the "usual" mount
+             point is the empty "/mnt" directory - after which it can
+             be accessed in the same way as any mounted file system.
+             The command to mount the file system would be:
+
+                 mount /dev/fd0c /mnt
+
+             but you should use the read-only option to avoid write
+             errors if the diskette is write-protected as in:
+
+                 mount -r /dev/fd0c /mnt
+
+             Do not forget to unmount the file system before removing
+             the diskette from the drive with the command:
+
+                 umount /dev/fd0c
+
+             and give sufficient time for any buffers to be flushed.
+
+             You must be logged-in as "root" (or have run "su") to
+             mount or unmount the diskette.  However, you can enable
+             access to the diskette by other users by changing the
+             ownership and/or modes of "/mnt" AFTER the diskette has
+             been mounted.
+
+     9.16    How can MS-DOS floppy diskettes be accessed from SunOS?
+
+             MS-DOS floppies can, of course, be accessed from a DOS
+             window under SunView but that's not much help if you run
+             X11.  However, there is a simple solution in the
+             versatile "mtools" package which provides a full set of
+             DOS-like utilities allowing the formatting, labeling and
+             so on of MS-DOS diskettes with the ability to copy files
+             in either direction between the diskette and SunOS.  The
+             source code for the package is available on many sites
+             and can be found with an "archie" search.  Alternatively,
+             the source code and a compiled package for the 386i will
+             be on the FTP site (see 1.04).
+
+     9.17    Can a boot diskette be created for the 386i?
+
+             To the best of my knowledge, nobody has managed this so
+             the only way to boot from diskette is to use the first
+             two SunOS 4.0.1 application diskettes (see 9.06) which is
+             less than ideal.  I would be delighted if somebody
+             corrects me on this!
+
+     9.18    How can copies of the boot/install diskettes be made?
+
+             This is a simple process using the "dd" utility.
+
+             With the first application diskette in the drive (the
+             diskette may be write-protected for safety), enter the
+             command line:
+
+                 dd if=/dev/rfd0c of=app.001 bs=9k count=160
+
+             Do the same for the second diskette but, of course,
+             change the name of the output file to "app.002" (or
+             whatever naming-system you choose). You will find the two
+             (rather large) files in your current directory.
+
+             Put a blank, high-density diskette in the drive, run
+             "fdformat" to format it for SunOS (but do not make a
+             file-system - see 9.15) and then enter:
+
+                 dd if=app.001 of=/dev/rfd0c bs=9k count=160
+
+             Repeat the process with a second diskette for the second
+             file.
+
+     9.19    What is the proper method for installing a boot block?
+
+             This is one of the procedures which causes endless
+             confusion and problems. The man page for "installboot"
+             says:
+
+                 "To install the bootblocks onto the root partition on
+                  a Xylogics disk:
+
+                      example% cd /usr/mdec
+                      example% installboot -vlt /boot bootxy /dev/xy0a"
+
+             However, this will not work because the "-t" option causes
+             "installboot" to make some tests without actually
+             installing the bootblock.
+
+             The correct command sequence (taken from a shell-script
+             on one of the installation diskettes) is:
+
+                 cd /usr/mdec
+                 installboot /boot bootsd /dev/sd2a
+
+             which will install the bootblock on the root partition
+             and the file "bootsd" into the root directory on the hard
+             disk usually fitted in the system unit.
+
+     9.20    How do I rebuild the kernel?
+
+             This is really a simple process and is covered well in
+             the "README" file in "/usr/sys/sun386/conf" - just follow
+             the directions.
+
+             There will probably little need to remake the kernel. 
+             Not much space is saved by leaving out the few drivers
+             that you might not need and it is most likely that you'll
+             actually be adding drivers when you add devices such as a
+             tape drive or VGA card.
+
+             Be careful when editing the configuration file - heed the
+             warnings in the configuration templates about what must
+             NOT be changed or removed!
+
+             The whole procedure is best carried-out while in
+             single-user mode. Do not replace the existing "/vmunix"
+             with the new one while in multi-user mode! And do NOT
+             "strip" the file!!
+
+     9.21    How can the 386i be used with an ordinary terminal?
+
+             Simply connect the terminal to the serial port with a
+             three-wire cable (with pins 2 and 3 crossed). Set the
+             terminal for 9600 Baud, 8 data bits, 1 stop bit and no
+             parity.
+
+             Edit "/etc/ttytab" and add the following line (or edit
+             the existing one if it's there) for /dev/ttya:
+
+                 ttya  "/usr/etc/getty std.9600"  vt100  on  local
+
+             You will want to disable hardware carrier-detect (DCD). 
+             Enter "ttysoftcar /dev/ttya" and, with any luck, you will
+             get:
+
+                 ttysoftcar: /dev/ttya is y
+
+             which is what you want.  If, however, you find that the
+             "soft-carrier" is off (i.e.  you get "n" instead of "y")
+             you can turn it on (and disable hardware carrier-detect)
+             with the command "ttysoftcar -y /dev/ttya" and, for
+             future convenience, you can put the following line in
+             your "/etc/rc.local":
+
+                 /usr/etc/ttysoftcar -y /dev/ttya
+
+             Enter "kill -1 1" (or reboot) to enable the getty.          
+
+             You can use a terminal connected to the serial port as
+             the primary interface by resetting a location in the
+             NVRAM (see Section 12).  And note that the serial port
+             will be used automatically if no terminal is connected to
+             the frame-buffer or if the frame-buffer itself is not
+             installed in the system.
+
+     9.22    How can dial-in/dial-out access be enabled via the serial port?
+
+             This is a simple procedure and involves little more than
+             editing a couple of files.
+
+             Add the following line (or edit the existing line for
+             ttya if it's there) to "/etc/ttytab":
+
+                 ttya  "/usr/etc/getty mdm.19200"  vt100  on  remote
+
+             Then add the following entry to "/etc/gettytab" (after the
+             first block of entries would probably be a good place):
+
+                 i|mdm.19200|19200-mdm:\
+                         :p8:lm=\r\nremote-login\72 :ms=crtscts:sp#19200:
+
+             The entry shown assumes a fixed baud-rate between the
+             system and the modem of 19,200 - vary this as required
+             (but see 5.10).
+
+             You then need to ensure that hardware carrier-detect
+             (DCD) is turned-on.  Enter "ttysoftcar /dev/ttya" and you
+             will get something like the following:
+
+                 ttysoftcar: /dev/ttya is n
+
+             which is what you want.  If, however, you find that the
+             "soft-carrier" is on (i.e.  you get "y" instead of "n")
+             you can turn it off (and enable hardware carrier-detect)
+             with the command "ttysoftcar -n /dev/ttya" and, for
+             future convenience, you can put the following line in
+             your "/etc/rc.local":
+
+                 /usr/etc/ttysoftcar -n /dev/ttya
+
+             Connect the modem to the serial port with a simple,
+             "straight-through" 25-wire cable and run a communications
+             program to set-up the modem (KERMIT is highly recommended
+             for all these purposes and is available on the FTP site -
+             see 1.04 and 7.03).
+
+             When all is done, enter "kill -1 1" (or reboot) to enable
+             the getty.
+
+             Note that you should use "/dev/cuaa" for ALL
+             communications from the 386i to the modem - including
+             dial-out access - because that device can be used even
+             when a getty is running on "/dev/ttya" (you will have
+             great difficulty if you try to use "/dev/ttya" to
+             dial-out or to "talk" to the modem while a getty is
+             running).
+
+             To dial-out you can use KERMIT - you might want something
+             similar to the following in ~/.kermrc which obviates the
+             need for command line arguments:
+
+                 set line /dev/cuaa
+                 set modem hayes
+                 set speed 19200
+                 set dial speed-matching off ; Use speed buffering.
+                 set dial timeout 90 ; allow for multiple retraining
+                 set file type binary
+                 set file name literal
+                 set file collision backup
+                 set file display serial
+                 set block 3
+                 set window 10
+                 set send packet-length 2048
+                 set receive packet-length 2048
+
+             The last three lines may need some tuning after you see
+             how it works with whatever system you connect to.
+
+     9.23    How can terminal or dial-in/dial-out access be enabled via a
+             "PC" serial card or an internal modem?
+
+             Apart from actually installing a serial card in one of
+             the AT slots and setting the IRQs ("IRQ4" for
+             "/dev/ttym0" and "IRQ3" for "/dev/ttym1" - see 5.13), you
+             will need only to make changes to two files.
+
+             Uncomment (remove the leading "#" character) from the
+             following line in "/etc/rc.local" (note that the line has
+             been split in the example below):
+
+                 modload ats.o -exec ats.script -conf ats_conf &&
+                 chat 'AT serial port driver'
+
+             This will modload the AT serial port driver by linking it
+             dynamically with the kernel at boot-up and will also make
+             the necessary devices in "/dev".  You would need to
+             reboot the system for the change to take effect although
+             you could "cd" to "/etc/modules" and enter:
+
+                 modload ats.o -exec ats.script -conf ats_conf
+
+             Before rebooting, you would also need to add the
+             following lines to "/etc/ttytab" (or edit them if they
+             already exist):
+
+                 ttym0 "/usr/etc/getty std.9600"  vt100  on  local
+                 ttym1 "/usr/etc/getty std.9600"  vt100  on  local
+
+             This assumes that you will using both ports for
+             terminals.  Omit one of them (or change "on" to "off") if
+             you will be using only one port.
+
+             If you are using an external modem instead of one or
+             both of the terminals you should also change the word
+             "local" to "remote" in the appropriate entry to support
+             dial-in access on that port.  Dial-out access would be
+             via "/dev/cum0" and "/dev/cum1" in the same manner as
+             with the on-board serial port (see 9.22).
+
+             There is also no reason why you should not install an
+             internal modem for one of the ports.
+
+             Note the speed of 9600 Baud. The early Sun documentation
+             suggested a limit of 2400 Baud with a note that an
+             improvement to 4800 was being sought. However, 9600 Baud
+             has been shown to give satisfactory results with a terminal
+             and users have reported using 19200 Baud with an
+             error-correcting modem.
+
+             Enter "kill -1 1" to enable the gettys if you are not
+             re-booting.
+
+     9.24    How do I create the "/dev/ttym" and "/dev/cum" devices for use
+             with a "PC" serial card?
+
+             They are created automatically by the shell script
+             invoked in "/etc/rc.local" when the AT serial port driver
+             is modload'ed (see 9.23).
+
+     9.25    How can zmodem be run from KERMIT?
+
+             Zmodem is a useful alternative to using KERMIT for
+             transferring data over dial-up lines but none of the free
+             versions available for UNIX has an interactive interface. 
+             The simple solution is to use KERMIT for its interface
+             and then run zmodem from within KERMIT.
+
+             The easiest method is to create two shell scripts - one
+             for rz (receiving data) and one for sz (sending data). 
+             Here are two examples (which assume the use of the
+             on-board serial port):
+
+             # rrz to receive data via kermit
+
+             /usr/local/bin/rz > /dev/cuaa < /dev/cuaa
+
+             # rsz to send data via kermit
+
+             /usr/local/bin/sz -w 8192 $* > /dev/cuaa < /dev/cuaa
+             
+             To run rz you simply run sz on the remote system, escape
+             back to the local KERMIT and enter "!rrz" on the KERMIT
+             command line.
+
+             Sz is run in a similar fashion except that rz should be
+             run automatically on the remote system when you enter the
+             KERMIT command "!rsz file1 file2 ..." on the KERMIT
+             command line.
+
+             You will note that the window size has been set to 8192
+             in rsz with the "-w 8192" option.  This is necessary
+             because zmodem's default "streaming" mode does not cope
+             well with network delays.  And there will be delays - if
+             only because of the 386i's periodic "freeze" (see 10.03). 
+             Indeed, when communicating with some heavily-loaded
+             systems you may need to reduce the window size to, for
+             example, 4096 or even 2048.  This does not have a major
+             impact on data-transfer speeds.
+
+             An obvious point is that the window size should also be
+             set when running sz on the remote system (but then does
+             not have been set for the local rz).
+
+     9.26    Can PPP be set-up on the 386i?
+
+             The latest version of PPP available for the 386i (2.1.2)
+             was compiled by Tim Wood (timwood@slip.net), a prolific
+             contributor to the mailing-list over the years.  Get the
+             PPP package from the FTP site (see 1.04).  It contains
+             all the binaries and documentation as well as the source
+             (which Tim had to modify because of missing POSIX
+             features).
+
+             The following description is a distillation of Tim's
+             posting to the mailing-list about setting-up PPP.
+
+             Copy "ppp_driver.o" to "/etc/modules".  Then copy "pppd",
+             "chat" and "pppstats" to "/usr/local/etc".  You should
+             then copy "ppp-on" and "ppp-off" to a place where other
+             admin scripts live (such as "/var/adm").
+
+             You will have to modify "/etc/rc.local" to modload the
+             "ppp_driver.o" object file.  Tim writes, "Use the -sym
+             flag to ensure proper linking with respect to the current
+             /vmunix, though this is a bit slower." This would be
+             achieved with the following command line which should be
+             placed somewhere near the end of "/etc/rc.local":
+
+                 modload -sym ppp_driver.o && chat 'PPP driver.'
+
+             Your modem and the tty must be configured for hardware
+             carrier detect (see the references to "ttysoftcar" in
+             9.22).
+
+             If your host expects dynamic IP you should set
+             "OUR_IP_ADDR" to null in "ppp-on" which is also the place
+             to set the phone number, login and password.  Running
+             "ppp-on" starts the whole service.  See also the "SETUP"
+             and "README" files in the package.
+
+             With all due respect to Tim, I have had little success in
+             getting PPP running which may well be a problem with the
+             server. Others on the mailing-list have reported success
+             and a "step-by-step" guide from anybody who succeeded
+             would be most welcome!
+
+     9.27    How can I get a normal "login" prompt on the console without
+             running X11 or SunView at boot time?
+
+             Edit the line in "/etc/ttytab" so that it reads as
+             follows:
+
+                 console "/usr/etc/getty std.9600"  sun  on  secure
+
+             You may wish to keep and comment-out a copy of the
+             original line. The word "secure" may be removed from the
+             end of the line if you do not wish to enable root logins
+             on the console and password-free single-user logins (see
+             9.07).
+
+             You should also comment-out any automatic start-up lines
+             for X11 or SunView - for example, the following lines
+             would be commented-out as shown in "/etc/rc" to stop X11
+             start-up:
+
+                 # chat 'starting X'
+                 # /usr/bin/X11/xdm
+
+     9.28    How can I stop all those GCC warnings about "incompatible
+             types", making "a pointer from int without a cast" and so on?
+
+             Many of the problems occur because of incompatibilities
+             between the code and the standard SunOS header files. 
+             Include the define "-D__USE_FIXED_PROTOTYPES__" on the
+             command line or in the appropriate place in application's
+             Makefile and most of the problems should disappear (this
+             assumes that GCC 2.6.3 has been installed - see 7.01).
+
+     9.29    How can I get "man" to access all the man pages?
+
+             By default, "man" will search "/usr/man" (which is a
+             symbolic link to "/usr/share/man").
+
+             You can use the "-M" option to change the search path as
+             in:
+
+                 man -M /usr/man:/usr/local/man manpage
+
+             but a better method would be to set or change the MANPATH
+             environment variable. Under "csh" you would put the line:
+
+                 setenv MANPATH /usr/man:/usr/local/man
+
+             in your "~/.login" file. If running "sh" you would have
+             the following line in "~/.profile":
+
+                 export MANPATH
+                 MANPATH=/usr/man:/usr/local/man
+
+             See the manpage for "man".
+
+     9.30    How can I disable Yellow Pages?
+
+             According to a posting to the mailing-list, you can
+             disable YP by simply renaming the file:
+
+                 /var/yp/`domainname`
+
+             although I have not tried it.
+
+     9.31    Can MS-DOS programs be run from an X11 window?
+
+             Simply enter "dos -w" in an X11 or SunView window to run
+             DOS text-only commands and applications in the current
+             window.  You will get a DOS-type prompt and must use DOS
+             syntax (including the dreaded back-slash).
+
+             You will get a large file named "C:" in your "~/pc"
+             directory which, among other things, acts as though it
+             were the C: drive.  There will also be two small files
+             named "setup.pc" and ".quickpc".  The directory can be
+             removed to preserve disk space when you no longer wish to
+             run DOS programs in this manner.
+
+======================================================================
+
+Section 10 - Frequently-encountered problems
+
+    10.01    What is the meaning of the "ie0: init failed: no intr:"
+             message at boot-up?
+
+             This message is almost-certainly caused by the fact that
+             your system's NVRAM is dead (or dying from battery
+             failure).  See Section 12 for full details.
+
+    10.02    What is the meaning of "zs0: ring buffer overflow"?
+
+             There are, in fact, four "similar" messages which might
+             be seen but the one given above is by far the most
+             common.  It means that the on-board serial-port driver's
+             character-input ring-buffer overflowed before it could be
+             serviced.  If the message refers to "zs1" the
+             keyboard/mouse buffer was the one involved.
+
+             Similarly, "zs[01]:  silo overflow~ means that the 8530
+             UART's character-input silo overflowed before it could be
+             serviced.
+
+             These are not "panic" messages although data will have
+             been lost. This will be obvious if the data are being
+             displayed on the terminal but your communications program
+             should recover if data-transfer is taking place (zmodem
+             usually seems to cope with this better than most as long
+             as the window-buffer size is set properly - see 9.25).
+
+             The phenomena will occur most-often during the regular
+             system "freeze" (see 10.03).
+
+    10.03    Why does the system "freeze" for a few seconds every four
+             minutes?
+
+             This should happen only on a system which is not
+             connected to a network or which is connected to a network
+             with little traffic.  What happens is that the ethernet
+             controller is reset, to ensure that the receive unit is
+             working, if no packet has been received within four
+             minutes.
+
+             The only solution appears to be to "ping" another system
+             on the network every two or three minutes. If your system
+             is not on a network ...
+
+    10.04    Why do I get hard-disk (or other SCSI-bus) errors after the
+             386i has been operating for several hours?
+
+             This is almost-certainly caused by overheating and,
+             unless either of the fans in the front of the system unit
+             has failed, it is relatively easy to fix.  The problem is
+             usually caused by "fluff" collected by the metal "grille"
+             at the rear of the fan housing.  It can block the
+             air-flow substantially.
+
+             To clean them properly you must remove the bezel
+             (Sun-speak for "front-panel") which is secured by four
+             small screws inside the system unit.  Use a vacuum
+             cleaner crevice nozzle to get "behind" the fan blades to
+             remove the "fluff" and take the opportunity to clean the
+             fan blades as well!
+
+             It would also be worth checking the fans in the power
+             supplies periodically.
+
+    10.05    Why has my 386i suddenly become unable to detect the
+             system-disk/tape-drive?
+
+             That question often follows a power-outage or the
+             installation of a new device and is accompanied
+             frequently by a list of the various combinations of
+             devices or SCSI terminations that work or don't work. 
+             Almost inevitably it is a termination problem and has
+             probably been caused by a blown SCSI-bus fuse.
+
+             Pull out the power supply and check the two fuses (they
+             are black, cylindrical and of the two-prong, plug-in
+             type) near the SCSI bus connector.  One of them (probably
+             the one nearest the front of the system unit) will have
+             blown.  Replace it with one of the correct rating (1 amp
+             25 volts).  And, as there are three of them on the
+             motherboard, it would probably be worth stocking a couple
+             as spares.
+
+    10.06    Why does the diagnostic diskette not recognise that my
+             system has a hard disk installed?       
+
+             Unless you have a hardware problem the probability is
+             that your hard disk is not one of those "recognised" by
+             the diagnostic software.  In other words, it is not one
+             of those originally fitted to the 386i.  The diagnostic
+             software will reset the parameters to "disk not present"
+             even if you have selected it for testing.  This means
+             only that you cannot perform the hard-disk tests - it
+             does not cause any other problems.
+
+    10.07    Why does dump give write errors at the end of a tape?
+
+             The "dump" program has a problem with the size of the
+             last block to be written and end-of-tape with
+             multi-volume archives.  The solution is to use the "s"
+             option and set the length of the cartridge to a few feet
+             fewer than the actual length.
+
+    10.08    I have this problem using SNAP ...
+
+             Don't use SNAP! (see 8.05)
+
+======================================================================
+
+Section 11 - Installing/upgrading SunOS 4.0.1/4.0.2    
+
+    11.01    What is the correct procedure for installing/upgrading?
+
+             It is probably a reasonable assumption that most users
+             will be installing/upgrading from the diskettes. No
+             problems have been reported from installing 4.0.1 but
+             there have been problems when upgrading to 4.0.2. The
+             following note accompanies the diskette-images on the FTP
+             site (see 1.04):
+
+                 "If you are installing SunOS fresh onto the disk, do
+                  NOT install the upgrade when it asks 'install any
+                  upgrade disks'.
+
+                 "The best way to install the upgrade I have found is
+                  to boot single user, remove '/tmp' and symlink it to
+                  a partition with enough space (maybe make
+                  '/files/tmp'), and unbar the first upgrade disk into
+                  it.  (Can't remember if you need to give the 'Z'
+                  option to bar - look at the files after they've
+                  unbarred to see).  Then simply run the script that
+                  is extracted."
+
+             The "Z" option referred to above is used to tell "bar" to
+             use compression - the "x" option is used for
+             decompression using the "compress" utility which is
+             supplied on the boot diskettes.
+
+             See the "INSTALL" file that "comes with" the upgrade (see
+             4.05).
+
+    11.02    What is the patch for the problems when loading clusters
+             from tape during the upgrade?
+
+             The following is an extract from the July, 1990, Software
+             Technical Bulletin (Sun publication):
+
+                 Patch for the loadc command for those running
+                 SunOS Sun386i 4.0.2.
+
+                 Symptom:  Clusters upgraded by SunOS Sun386i 4.0.2
+                           cannnot be loaded from tape using the loadc
+                           command.
+
+                 Problem:  For those running SunOS Sun386i 4.0.2, the
+                           following error message is encountered when
+                           using the load or the loadc commands to
+                           load any clusters modified as part of the
+                           SunOS Sun386i 4.0.2 release.  This occurs
+                           for those using tape media only, and does
+                           not occur when using the diskette media.
+
+                 "The wrong tape is in the drive."
+
+                 The above error message always occurs, and after the
+                 user has correctly inserted the SunOS Sun386i 4.0.2
+                 release tape which the system requested.  This
+                 problem occurs after reinserting the requested tape.
+
+                 Without the below workaround to this problem, the
+                 user cannot load the following clusters:
+
+                     advanced_admin       base_devel
+                     man_pages            config
+                     networking_plus      proflibs
+                     sysV_commands        sunview_devel
+
+                 Also, loading either or both of the below 'special'
+                 global names will fail:
+
+                     appl                 devel
+
+                 Workaround:  Use the below procedure to work around
+                              the loadc problem (ie.  patches the
+                              program).
+
+                     1.  Log in as root or change to superuser
+                         (represented by the sharp character, #,
+                         below).  Then issue the commands shown in the
+                         following steps.
+                     2. # mount -o remount /usr      <-- make /usr writable
+                     3. # cd /usr/lib/load
+                     4. # cp load load.old
+                     5. # sed -e '361s/)/|*"$1 $NAME"*)/' load.old > load
+                     6. # sum load
+                     7. If the checksum from the sum command is as shown
+                        below,
+
+                            61115    14
+
+                        then enter the commands shown next.
+
+                        # rm load.old
+                        # sync; sync; reboot
+
+                     8. If the checksum from the sum command is not as
+                        shown below,
+
+                            61115    14
+
+                        then enter the following command
+
+                        # cp load.old load
+
+                        and return to step 5 above.
+
+                 After rebooting, the system should now allow the
+                 clusters listed above to be loaded without further
+                 difficulty.
+
+======================================================================
+
+Section 12 - NVRAM problems and solutions
+
+    12.01    General information about the 386i NVRAM (TIMEKEEPER) chip.
+
+             This section has been left to the last only because of
+             its length - arguably it should have been first given the
+             number of problems and pleas for help caused by NVRAM
+             (non-volatile-RAM) failure.
+
+             The NVRAM chip installed originally in the 386i is the
+             SGS-Thomson Micro-Electronics MK48T02B-25 2Kx8 Zeropower
+             (TM)/Timekeeper (TM) RAM (some chips, particularly those
+             fitted in earlier models, carried the MK48T02BU-25 part
+             number).
+
+             Depending on which source you believe, the on-chip
+             lithium battery has a power-on life of five or ten years
+             but considerably less if the system is powered-down
+             frequently. Be that as it may, you should take out some
+             "insurance" (see 4.06, 12.03 and 12.05) because your NVRAM's
+             days are numbered. So mote it be!
+    
+    12.02    The functions of the NVRAM.
+
+             Apart from the clock, it stores system-specific
+             configuration information which is used at boot-up.
+
+             NVRAM parameters set the following functions:
+
+                 o  the amount of memory checked during the self-test.
+                 o  the default action following a reset.
+                 o  boot from a specified device or poll the devices.
+                 o  set a device as the primary terminal or console.
+                 o  display the Sun banner or a custom banner at power-up.
+                 o  store a custom banner for display at power-up.
+                 o  turn keyboard-click on or off (does not work with X11)
+                 o  select special keyboard characters
+                 o  inhibit serial-port DTR and RTS signals
+                 o  store a system configuration
+                 o  store the value in the LED register after self-test
+                    error
+                 o  control self-test modes
+
+
+    12.03    Getting a dump of your NVRAM contents.
+
+             This is without a doubt the most-important thing you can
+             do BEFORE your NVRAM dies the inevitable death. It is so
+             much easier to reprogram the new NVRAM if you have a
+             hard-copy print-out in front of you instead of having to
+             wade through 12.08 and work out what you think should be
+             there.
+
+             You can dump the NVRAM contents to a file using dd with
+             the following command line:
+
+                 dd if=/dev/eeprom of=nvram.dump count=4
+
+             You then need to convert the file to a human-readable
+             form.  One way (which was used for the dumps mentioned in
+             12.10) is to use bpe (see 7.03) to create the displays
+             and then cut-and-paste to an editor.  An alternative is
+             to compile the code in 12.09 and use it to produce a
+             similar layout.  Make a hard-copy (or two) and keep them
+             in a safe place!
+
+    12.04    Symptoms of NVRAM failure.
+
+             You name it and a dying (or dead) NVRAM has probably
+             caused it! Seriously, it can cause many strange and
+             varied problems. Some of the more common are:
+
+                 o  The system complains that "ethernet is not properly
+                    connected, boot can not continue" early in the boot
+                    sequence.
+
+                 o  A claim by the system during bootup that something is
+                    newly-connected to the ethernet port.
+
+                 o  The infamous "ie0: init failed: no intr:" message.
+
+                 o  Volatility of the supposedly non-volatile RAM - in
+                    other words, the NVRAM fails to hold its contents
+                    after a power-down.
+
+                 o  System time varies eratically.
+
+                 o  The system dies a strange, lingering and tortured
+                    death starting some hours after power-on with
+                    windows disappearing one-by-one until there's
+                    nothing left.
+
+    12.05    How to get a new NVRAM chip.
+
+             Unless you have a recently-installed NVRAM chip, it is
+             worth getting one so that you will be ready when (not if)
+             your chip dies.
+
+             Several US suppliers have been noted in the list over the
+             years but it would probably be best to check with
+             SGS-Thomson (or their distributors) in your city/country.
+
+             It appears that the original chip (the MK48T02B-25) is no
+             longer made (although it may still be available).  But
+             don't panic - it has been replaced by faster models.  The
+             three models which are now available are:
+
+                 Part number      speed     capacity
+
+                 M48T02-200PC1    200 ns    2 kB
+                 M48T02-150PC1    150 ns    2 kB
+                 M48T02-120PC1    120 ns    2 kB
+
+             SGS-Thomson's data sheets indicate that all are form, fit
+             and function compatible with the original, 250 ns chip
+             and all are said to be suitable for use in the 386i. 
+             However, I have no personal experience of using one of
+             the faster chips and feedback would be most welcome from
+             anybody who has used any of them.
+
+             The cost is generally quoted at between 20 and 30 US
+             dollars but vendors in Australia say that SGS-Thomson
+             imposes a 38-piece minimum order.
+       
+             However, there are two equivalent chips available from
+             Dallas Semiconductor. The models are:
+       
+                 Part number      speed     capacity
+       
+                 DS1642-150       150 ns    2 kB
+                 DS1642-120       120 ns    2 kB
+       
+             The data sheets say the two chips are form, fit and
+             function compatible with the MK48T02 family.
+       
+             Clock accuracy is rated at plus-or-minus 1 minute per
+             month at 25 degrees Celcius. The clock is calibrated at
+             the factory and field calibration is not available (even
+             though the chip "appears to accept calibration data").
+       
+             The chips are shipped with the internal clock oscillator
+             turned-off and the shelf life of the lithium battery is
+             given as 20 years.  Dallas Semiconductor says the battery
+             should also last up to 20 years with the clock running
+             when external power is applied.  With no external power
+             and with the clock running the battery life is rated at
+             approximately ten years.
+       
+             The one-chip cost is approximately $US 20.
+
+    12.06    How to install the NVRAM chip.
+
+             The chip is located on the motherboard in a socket near
+             to and towards the rear of the system unit from the
+             frame-buffer and memory-board sockets.  Power-down the
+             system, remove the frame buffer and memory board and,
+             after noting the orientation of the NVRAM chip, remove it
+             from the socket.  Insert the new chip with the same
+             orientation.  Make sure that you take normal anti-static
+             precautions.  Re-assemble the rest of the system,
+             power-up and program the new chip.
+
+    12.07    How to program the NVRAM chip.
+
+             It is actually possible to boot with garbage in most of
+             the NVRAM locations but it is worth setting some values
+             first.  So, the first thing you need to do is get into
+             the ROM monitor (see 9.01).
+
+             Enter "q 111 03" at the ">" prompt which will set the CPU
+             board "artwork level" to a "sane" value and allow you to
+             boot from the diskette.  Then, when out of the edit mode,
+             put the diagnostic diskette in the drive and enter "b fd()"
+             to boot from it.
+
+             When you get the diagnostic-diskette menu on screen,
+             select the items and, where appropriate, the values you
+             wish to "test".  The diagnostic sequences will then set
+             most of the hardware-configuration locations (see 12.08).
+             At the end of the test sequences, do not hit <RETURN> but
+             drop back to the monitor with the L1/A sequence (see
+             9.01) and start entering the other values one by one.
+
+             Probably the easiest way is to enter just "q" at the ">"
+             prompt - each address and its contents will be displayed
+             as you hit <RETURN>.  Enter a value for any location you
+             wish to change and hit <RETURN> to move on to the next. 
+             You should not change any which have been set by booting
+             from the diagnostic diskette although it would be worth
+             checking that the locations concerned contain sensible
+             values.  Enter just <RETURN> to move to the next location
+             without making any change.  Entering a non-hex character
+             (such as "q" for "quit") will exit the editor.
+
+             Then cross your fingers and enter "b -s" at the ">" prompt.
+
+             With any luck the system will boot normally into
+             single-user mode although you will probably get a
+             complaint about the date and time.  Use the "date"
+             command from SunOS to set the correct date and time -
+             this will also initialise and set the NVRAM clock.
+
+    12.08    NVRAM data
+
+             The following table shows the functions and contents of
+             the various NVRAM locations. It can be used to program
+             your NVRAM if you do not have a dump of a working model.
+
+             Note those locations (marked with a "*" character) which
+             can be set using the diagnostic diskette and those
+             locations (marked with a "!") where the contents in
+             actual dumps of working NVRAMs seem to differ from that
+             given in the documentation.
+
+             NVRAM location   function/contents
+
+             0x000 - 0x003    used during CPU diagnostics
+             0x004 - 0x009    three two-byte write counters for the
+                              diagnostic area of NVRAM (all three should
+                              contain the same count)
+             0x00c - 0x00e    three one-byte checksums (should all be the
+                              same)
+             0x010 - 0x013    date of last system update in seconds since
+                              January 1, 1970.
+                     0x014    total number (in hex) of Megabytes of RAM
+                              installed.
+                     0x015    total number (in hex) of Megabytes of RAM
+                              to test at boot-up.
+                     0x016    monitor screen size
+                                  0x00 = 1152 x 900
+                                  0x12 = 1024 x 1024
+                                  0x13 = 1600 x 1280
+                                  0x14 = 1440 x 1440
+                     0x017    Watchdog reset action
+                                  0x00 = go to boot PROM monitor
+                                  0x12 = power-on reset
+                     0x018    Operating system bootup (normal boot)
+                                  0x00 = poll devices
+                                  0x12 = use NVRAM-specified device
+             0x019 - 0x01a    first and second characters of specified
+                              device
+                                  0x66, 0x64 = floppy disk (fd)
+                                  0x73, 0x64 = SCSI disk (sd)
+                                  0x69, 0x65 = Intel Ethernet (ie)
+                                  0x73, 0x74 = SCSI quarter-inch tape (st)
+                     0x01b    controller number (values given for SCSI disk
+                              usually installed in the system unit)
+                                  0x00
+                     0x01c    unit number
+                                  0x02
+                     0x01d    partition number
+                                  0x00
+                     0x01e    non-sun keyboard (currently ignored)
+                     0x01f    primary terminal or user interface
+                                 0x00 = use serial port A
+                                 other value = use video monitor
+                     0x020    display Sun banner or custom banner
+                                 0x00 = display the Sun banner
+                                 0x12 = display the custom banner
+                     0x021    keyboard click (does not appear to work
+                              with X11)
+                                 0x00 = off
+                                 0x12 = on
+             0x022 - 0x023    first and second characters of diagnostic
+                              boot device
+                                  0x66, 0x64 = floppy disk (fd)
+                                  0x73, 0x64 = SCSI disk (sd)
+                                  0x69, 0x65 = Intel Ethernet (ie)
+                                  0x73, 0x74 = SCSI quarter-inch tape (st)
+                     0x024    controller number (values given for SCSI disk
+                              usually installed in the system unit)
+                                  0x00
+                     0x025    unit number
+                                  0x02
+                     0x026    partition number
+                                  0x00
+             0x028 - 0x04f    40-character string for a user-specified
+                              diagnostic path, (i.e. /stand/diag). The ASCII
+                              characters must be entered using their hex
+                              values starting at address 0x028 and terminated
+                              with 0x00
+                     0x050    hi-res size - number of columns
+                     0x051    hi-res size - number of rows
+                     0x058    serial port A default Baud rate
+                                  0x00 = use default 9600 Baud
+                                  0x12 = use NVRAM-defined Baud rate
+             0x059 - 0x05a    serial port A user-defined Baud rate
+                                  0x01, 0x2c =   300
+                                  0x02, 0x58 =   600
+                                  0x04, 0xb0 =  1200
+                                  0x09, 0x60 =  2400
+                                  0x12, 0xcd =  4800
+                                  0x25, 0x80 =  9600
+                                  0x4b, 0x00 = 19200
+                                  0x96, 0x00 = 38400
+                     0x05b    serial port A assert DTR/RTS
+                                  0x00 = assert DTR/RTS
+                                  0x12 = do not assert DTR/RTS
+             0x068 - 0x0b7    an 80-character buffer for a user-specified
+                              banner to be displayed if the value of NVRAM
+                              location 0x020 is set to 0x12 - the buffer
+                              must be terminated with 0x00 and all bytes
+                              not filled with with the hex value of an
+                              ASCII character must contain zeroes
+             0x0b8 - 0x0b9 !  two bytes to provide a known data test
+                              pattern to check NVRAM data lines. [see 1]
+                                  0x0aa, 0x055
+             0x0bc - 0x0ff    unused
+
+             The contents of locations 0x100 to 0x112 represent the
+             hardware configuration of the system - and it is the area
+             where problems usually start when the NVRAM is dying.
+
+             Most of the values can be set automatically by booting
+             with the diagnostic diskette and selecting all items to
+             be tested with, where appropriate, the correct values. 
+             However, it would still be worth checking the values after
+             booting with the diagnostic diskette.
+
+                     0x100    CPU
+                                  0 = not present
+                                  1 = present
+                     0x101 *  number of MBytes of RAM
+                     0x102 *  hard disk
+                                  0 = no disk (also means no "Sun" disk)
+                                  1 = 91 MByte disk
+                                  2 = 372 MByte disk
+                     0x103 *  diskette
+                                  0 = not present
+                                  1 = present
+                     0x104 *! display [see 2]
+                                  0 = not present
+                                  1 = hi-res colour
+                                  2 = lo-res colour
+                                  3 = lo-res monochrome
+                                  4 = hi-res monochrome
+                     0x105 *  cartridge tape
+                                  0 = not present
+                                  1 = present
+                     0x106 *  floating point
+                                  0 = not present
+                                  1 = present
+                     0x107    checksum for 0x100 to 0x106
+             0x108 - 0x19e    unused
+                     0x10f    NVRAM update flag
+                     0x110 *  CPU board revision level
+                     0x111 *  CPU board artwork level
+                                  01 = Rev 1.5 (none present in the field)
+                                  02 = Rev 2.0
+                                  03 = Rev 3.0
+                     0x112 *  ECO rev level
+
+             0x113 - 0x11f    reserved for kernel
+             0x120 - 0x18b    unused/reserved
+             0x190 - 0x20f    NVRAM lower case key table
+                                  (usually all 0x00)
+             0x210 - 0x28f    NVRAM upper case key table
+                                  (usually all 0x00)
+             0x290 - 0x48f    custom logo
+                                  (usually all 0x00)
+                     0x490    LED register copy represents the value of
+                              the LED register after an error occurs
+                              during the POST phase.
+                     0x491    POST loop on test - entering the hex value of
+                              the POST number causes the given test to loop
+                              regardless of results
+                                  (usually 0x00)
+                     0x492    PROM mode control
+                                  0x07 = normal
+                                  0x06 = diagnostic
+                     0x493    default colors for console (said to be unused)
+                     0x494    auto-configuration messages during boot-up
+                                  0x00 = no messages
+                                  0x01 = Sun3 (Unix-expert type messages)
+                                  0x02 = verbose
+                                  other values = reserved
+             0x500 - 0x505    three 2-byte write counters for the reserved
+                              area of NVRAM (all three should contain the
+                              same count)
+             0x508 - 0x50a    checksums for the reserved area of NVRAM (all
+                              three checksums should be the same)
+             0x600 - 0x700    scratchpad
+             0x700 - 0x705    three 2-byte write counters for the software
+                              area of NVRAM (all three should contain the
+                              same count)
+             0x708 - 0x70a    checksums for the software area of NVRAM (all
+                              three checksums should be the same)
+             0x70a - 0x7f7    reserved
+                     0x7f8    read/write control register (do not enter
+                              anything for this register) [see 3]
+       
+             The following registers hold the hardware-clock time. 
+             They are set on a normal shut-down or whenever the "date"
+             command is used from SunOS. They cannot be modified from
+             the monitor.
+       
+                     0x7f9    seconds (00-59) [see 4]
+                     0x7fa    minutes (00-59)
+                     0x7fb    hour    (00-23)
+                     0x7fc    day     (01-07)
+                     0x7fd    date    (01-31)
+                     0x7fe    month   (01-12)
+                     0x7ff    year    (00-99) [see 5]
+
+             Notes
+
+             [1] data test pattern to check NVRAM data lines - the
+                 documentation states that location 0x0b8 should contain
+                 0x0aa and that 0x0b9 should contain 0x055.  However, the
+                 NVRAM dumps I have seen (for an early-model 150 and a
+                 late-model 250) have the bytes in the reverse order.
+
+             [2] display - the NVRAM dumps I have seen show 0x080 in
+                 location 0x104 for the hi-res colour display (I do not
+                 have any information on values for other displays).
+
+             [3] read/write control - will contain 0x00 during normal
+                 operation but is modified during write-operations by
+                 the monitor.
+       
+             [4] seconds - entering an in-range value via the "date"
+                 command will set the MSB to "0" and start the clock.
+                 The clock can be stopped (to preserve battery life) by
+                 setting the MSB to "1" but this cannot be done with
+                 "date" or from the monitor.
+       
+             [5] year - this register will "roll-over" to "00" when
+                 the year 2000 arrives (see 8.06).
+
+    12.09    NVRAM-display utility.
+
+             The following utility will produce a hex/ASCII display
+             from an NVRAM (or any other) data file.  Beware of using
+             it with large input files because you will end up with a
+             HUGE output file.  The 2-Kbyte NVRAM dump, for example,
+             results in a 10,470-byte output!
+
+             ------------------------------------------------------
+
+/* ndump.c - this utility takes its input from stdin and directs its
+   output to stdout. Compile with:
+   
+        cc ndump.c -s -o ndump
+
+   or get the pre-compiled binary (see below). Typical usage would be:
+
+        ndump < nvram.dump > nvram.hex
+
+   where nvram.dump was produced using the procedure in 12.03 or you
+   can by-pass the need for the intermediate file when doing a 386i
+   NVRAM dump:
+
+        dd if=/dev/eeprom count=4 | ndump > nvram.hex
+
+*/
+
+#include <stdio.h>
+
+int main()
+
+{
+             
+        void dump_file();
+
+        static char *scale = "ADDRESS      00 01 02 03 04 05 06 07 08 09 \
+0A 0B 0C 0D 0E 0F   ASCII";
+
+        static char *grid = "---------------------------------------------\
+----------------------------------";
+
+        (void) fprintf(stdout, "\n%s\n%s", scale, grid);
+        dump_file();
+        (void) fprintf(stdout, "\n%s\n", grid);
+        return(0);
+
+}
+
+void dump_file()
+
+{
+
+        int d, e, f;
+        long int c = 0l;
+        unsigned char inbuf[16];
+
+        while ((d = fread(inbuf, 1, 16, stdin)) > 0)
+                {
+                (void) fprintf(stdout, "\n0x%08lX   ", c);
+                for (e = 0; e < d; e++)
+                        (void) fprintf(stdout, "%02X ", inbuf[e]);
+
+                for (e = 16 - d; e; e--)
+                        (void) fprintf(stdout, "   ");
+
+                (void) fprintf(stdout, "  ");
+                for (e = 0; e < d; e++)
+                        (void) fprintf(stdout, "%c", (f = inbuf[e]) < 0x20 ||
+                            f > 0x7e ? 0x2e : f);
+
+                c += 16;
+                }
+
+}
+
+             ------------------------------------------------------
+
+             A compiled, statically-linked version of ndump can be
+             found on the FTP site (see 1.04) or it can be obtained
+             at the following URL:
+
+                 http://www.dgs.monash.edu.au/~ran/sun386i/ndump.Z
+
+    12.10    Dumps of 386i/150 and 386i/250 NVRAM contents.
+
+             Two files containing printable versions of NVRAM dumps
+             are available and they can be used in an "emergency" as a
+             guide to programming a new NVRAM. They should not really
+             be regarded as a substitute for having a dump of your own
+             NVRAM. In particular, there may well be system-hardware
+             differences and is it essential that you follow the steps
+             outlined in 12.07 for booting from the hardware diagnostic
+             diskette and that you cross-check with the data in 12.08.
+
+             Printable dumps for the 386i/150 and the 386i/250 are
+             available although there do not seem to be any major
+             differences between them.
+
+             The URLs for the two files are:
+
+                 http://www.dgs.monash.edu.au/~ran/sun386i/sun386i-150-dump.Z
+
+                 http://www.dgs.monash.edu.au/~ran/sun386i/sun386i-250-dump.Z
+
+======================================================================
+
+End of Sun 386i FAQ
+
+Ralphe Neill (ran@dgs.monash.edu.au),
+Melbourne, Australia.
+
+======================================================================
+
+

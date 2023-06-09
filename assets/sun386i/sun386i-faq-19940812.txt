@@ -1,0 +1,1217 @@
+Sun386i (RoadRunner) Frequently Asked Questions
+
+This FAQ dfescribes the Sun386i computer, common problems, solutions,
+software available, hardware available, and almost anything else
+people on the sun386i mailing list have discussed over the past few
+years. Please feel free to make your own contributions and help fix
+any bugs.
+
+Last Updated: August 12, 1994/Stephen Houser (houser@usm.maine.edu)
+
+0-0.  Table of Contents
+
+1-0.  General Information about the FAQs and the Sun386i
+   1-1.  Where is the FAQ?
+   1-2.  Who do I ask questions?
+   1-3.  What is a sun386i, RoadRunner, etc.
+   1-4.  Where did the 386i get the name 'RoadRunner'?
+
+2-0.  Software for the Sun386i
+   2-1.  Anonymous FTP sites for the Sun386i
+   2-2.  SunOS 4.0.2 Upgrade, Where can I get it?
+   2-3.  SunOS 4.0.2 Problems installing from tape
+   2-4.  Synopsis of available 'free' software
+   2-5.  GCC 2.2.2
+   2-6.  GCC 2.5.8
+   2-7.  GhostScript 2.6.1
+   2-8.  GDB 4.7 (does not work)
+   2-9.  GNU EMACS 18.58
+   2-10. PERL version 4.036
+   2-11. XWindows version 11 release 5
+   2-12. XWindows version 11 release 6
+   2-13. GnuPlot 3.5
+   2-14. HP LJ III printcap
+   2-15. PPP (ppp-sunos4.1.pl6.tar.Z) on a 386i
+   2-16. SNAP Cannot Create New Users
+   2-17. Removing NIS YellowPages
+
+3-0.  Hardware for the Sun386i
+   3-1.  NVRAM Problems and Solutions (lots of problems)
+   3-2.  NVRAM Suppliers (Sun Battery)
+   3-3.  Memory Expansion
+   3-4.  486 upgrade for the 386i
+   3-5.  Large SCSI disks
+   3-6.  Running around topless (i.e. without a framebuffer/monitor)
+
+
+
+
+1-0.  General Information about the Sun386i
+
+
+
+-----------------------------------------------------------------------
+1-1.  Where is the FAQ
+-----------------------------------------------------------------------
+   I (Stephen Houser) maintain the FAQ and try to post it to the=
+ list
+   semi-regularly (i.e. every so often). If you are really desperate
+   look in the ftp sites listed in this copy of the FAQ.
+
+   If you are really really desperate and cannot find it there...=
+ I have
+   anonymous ftp setup on my own (working machine) with the current=
+ FAQ
+   and perhaps a few other files (as I compile them, and before the
+   other sites get them).
+
+   ftp://cxc1.msu.edu/386i/list_archive
+      Michigan State University
+      Charles Henrich <henrich@crh.cl.msu.edu>
+      http://rs560.msu.edu/~henrich
+
+   ftp://sahsun.usmacs.maine.edu/pub/sun386i   (temporary site)
+      University of Southern Maine
+      Stephen Houser <houser@usm.maine.edu>
+      http://csir1.usmacs.maine.edu/~houser
+
+   I'm also working on an HTML version of the FAQ so you can perhaps
+   find it via my home page URL given above.
+
+-----------------------------------------------------------------------
+1-2.  Who do I ask questions?
+-----------------------------------------------------------------------
+   There is a mailing list for Sun 386i users maintaned by;
+
+                  forgotten@some.unknown.site.drat!
+   In other words, I forgot, please tell me, my mail to ...-request
+   seems to bounce
+
+   To get added to the list (or subtracted) send mail to:
+                  sun-386i-request@itc.yorku.ca  -- bounces?!?
+
+   For general things, like postings, and all that send mail to:
+                  sun-386i@itc.yorku.ca
+
+-----------------------------------------------------------------------=
+=20
+1-3.  What is a sun386i, RoadRunner, etc. =20
+-----------------------------------------------------------------------=
+=20
+   It's an Intel 80386-based UNIX computer produced for a short while
+   by Sun Microsystems. There are 2 standard models the 150, and=
+ the
+   250.
+
+   Sun386i 150 -
+      A 20Mhz 80386?
+
+   Sun386i 250 -
+      25Mhz 80386 CPU, 80387 Co-processor, 327 or 91 Mb=20CDC Wren=
+ IV
+      Hard disk, 1 Rs232 port, 1 Centronics printer port, standard=
+=20
+      (AUI) Ethernet port, 3 Sun (??) bus expansion slots, 5 PC AT
+      ISA bus expansion slots.
+  =20
+-----------------------------------------------------------------------
+1-4.  Where did the 386i get the name 'RoadRunner'?
+-----------------------------------------------------------------------
+
+   ... under construction ...
+
+
+
+
+
+2-0.  Software for the Sun386i
+
+
+
+-----------------------------------------------------------------------
+2-1.  Are there any anonymous FTP sites for the Sun386i?
+-----------------------------------------------------------------------
+   Here are the URLs of the popular sites that I know of. They contain
+   both binaries and archives of the mailing list:
+
+   ftp://cxc1.msu.edu/386i
+      Michigan State University
+      Charles Henrich <henrich@crh.cl.msu.edu>
+      http://rs560.msu.edu/~henrich
+
+   ftp://ftp.primus.com/pub/sun386
+      Primus Control (who maintains it??>
+
+   ftp://usc.edu/archive/usenet/systems/sun/sun-386i
+      (maintainer?)
+
+-----------------------------------------------------------------------
+2-2.  SunOS 4.0.2 Upgrade; Where can I get it?
+-----------------------------------------------------------------------
+   ftp://cxc1.msu.edu/386i/software/sunos4.02
+      INSTALL
+      README
+      diskette.[1-8]
+
+   Contains images of eight floppies used to upgrade both the runtime
+   operating system and the development system. On of the disks is=
+ a
+   replacement diagnostics disk, that does not seem to boot?
+
+   Get the README file along with the INSTALL and diskette.* files.=
+ It
+   describes step-by-step how to make floppies from the images and=
+ how
+   to install the upgrade. You will need to have a working SunOS=
+ 4.0.1
+   system to do the upgrade.
+
+-----------------------------------------------------------------------
+2-3.  SunOS 4.0.2 Problems installing from tape
+-----------------------------------------------------------------------
+   From the July 1990 Software Technical Bulletin (Sun publication),
+
+   SunOS Sun386i Patch - page 39-40:
+   ------------------------------------------------------------------
+   Patch for the loadc command for those running SunOS Sun386i 4.0.2.
+
+   Symptom:  Clusters upgraded by SunOS Sun386i 4.0.2 cannnot be=
+ loaded
+             from tape using the loadc command.
+
+   Problem:  For those running SunOS Sun386i 4.0.2, the following=
+ error
+             message is encountered when using the load or the loadc
+             commands to load any clusters modified as part of the
+             SunOS Sun386i 4.0.2 release.  This occurs for those=
+ using
+             tape media only, and does not occur when using the
+             diskette media.
+                       "The wrong tape is in the drive."
+
+   The above error message always occurs, and after the user has
+   correctly inserted the SunOS Sun386i 4.0.2 release tape which=
+ the
+   system requested. This problem occurs after reinserting the
+   requested tape.
+
+   Without the below workaround to this problem, the user cannot=
+ load
+   the following clusters:
+               advanced_admin       base_devel
+               man_pages            config
+               networking_plus      proflibs
+               sysV_commands        sunview_devel
+
+   Also, loading either or both of the below 'special' global names
+   will fail:
+               appl                 devel
+
+   Workaround:  Use the below procedure to work around the loadc
+                problem (ie. patches the program).
+
+   1. Log in as root or change to superuser (represented by the sharp
+      character, #, below).  Then issue the commands shown in the
+      following steps.
+   2. # mount -o remount /usr      <-- make /usr writeable
+   3. # cd /usr/lib/load
+   4. # cp load load.old
+   5. # sed -e '361s/)/|*"$1 $NAME"*)/' load.old > load
+   6. # sum load
+   7. If the checksum from the sum command is as shown below,
+         61115    14
+
+      then enter the commands shown next.
+         # rm load.old
+         # sync; sync; reboot
+
+   8. If the checksum from the sum command is not as shown below,
+         61115    14
+
+      then enter the following command
+         # cp load.old load
+
+      and return to step 5 above.
+
+   After rebooting, the system should now allow the clusters listed
+   above to be loaded without further difficulty.
+
+-----------------------------------------------------------------------
+2-4.  Free software
+-----------------------------------------------------------------------
+   Here is a short list of current versions that work on the RoadRunner,
+   and perhaps are avaliable in binary form for anonymous ftp from=
+ some
+   nice person. Many programs compile without incident, those that=
+ cased
+   us problems are noted, and have seperate compilation directions.=
+ For
+   the most part many GNU programs do work, allthough they usually=
+ need
+   a little tweaking.
+
+   If you don't see what you like ask on the list and let's get more
+   programs added to this list.
+
+   Most of these that have been checked were done so with the GNU=
+ gcc
+   compiler. Using the distributed Sun cc compiler may not work
+   (especially with X windows).
+
+      GCC         2.5.8 (C/C++ compiler)
+         GCC      2.2.2 (C compiler)
+      BASH        1.12  (shell replacement, like ksh)
+      EMACS       19.24 (text editor/operating system)
+      GhostScript 2.6.1 (PostScript interpreter)
+      PERL        4.036 (text processing languange)
+      PATCH       2.1   (file patcher)
+      GZIP        1.2.4 (compression)
+      ZOO         2.0.1 (compression)
+      XMODEM      3.9   (file transfer)
+      ZIP         1.0   (PC-compatible compression)
+      UNZIP       5.0   (PC-compatible compression)
+      Oleo        1.5   (spreadsheet)
+      ISpell      4.0   (spell checker)
+      GnuPlot     3.5   (graph plotting program)
+
+      TeX         3.1415 (C version 6.1)  (text formatting system)
+         LaTeX2e  1994/06/01 patch level 3
+         Dvipsk   5.55a    (TeX drivers for PostScript)
+         Xdvik    1.8      (Tex previewer for X Windows)
+
+      XWindows    11 release 5 patchlevel 25 (X Window system)
+         XMosaic     2.1      (WWW client for X)
+         XV          3.00     (Graphic viewer for X)
+         XView       3.20     (Window manager for X)
+
+      XWindows    11 release 6 (work in progress)
+
+   Here is a list of some programs that DO NOT WORK on the RoadRunner.
+   There may be people working on getting them to go, post to the=
+ list
+   with any information or insight that might make them work!
+
+      GDB         4.2   (see notes below, does not work?)
+
+   If you have compiled some of these or others and had to jump through
+   hoops, post it so we can include the directions here.
+
+-----------------------------------------------------------------------
+2-5.  GCC 2.2.2
+-----------------------------------------------------------------------
+   Gcc 2.2.2 is an older version of the GNU Gcc compiler. The directions
+   are kept here because you will need an 'older' version such as=
+ this
+   one to compile some of the newer versions of Gcc. For some reason=
+ the
+   Sun supplied cc compiler loops indefinately when compiling newer
+   versions of Gcc.
+
+   Gcc 2.2.2 compiles without any problems on Sun386i with SunOS=
+ 4.0.2:
+
+      ./configure sun386i
+      make LANGUAGESc
+      make stage1
+      make CC"stage1/gcc -Bstage1/" CFLAGS"-g -O"
+      make stage2
+      make CC"stage2/gcc -Bstage2/" CFLAGS"-g -O"
+      make compare
+      make CC"stage2/gcc -Bstage2/" CFLAGS"-g -O" install
+      make install-fixincludes
+
+   After you have done all this, you can remove (erase) the source=
+ tree
+   for gcc-2.2.2 and begin compiling a newer version of gcc.
+
+   GCC Pointers...
+   ---------------
+   See GCC 2.5.8
+  =20
+-----------------------------------------------------------------------
+2-6.  GCC 2.5.8
+-----------------------------------------------------------------------
+   To compile newer versions of Gcc (like 2.5.8) you will need an=
+ older
+   version of GCC (like version 2.2.2). For some reason the compile=
+ of
+   2.2+ hangs when using the Sun supplied compiler. Gcc 2.2.2 is=
+ the
+   last version of Gcc know to compile with the Sun supplied cc
+   compiler.
+
+      ./configure sun386i
+      make LANGUAGESc
+      make stage1
+      make CC"stage1/gcc -Bstage1/" CFLAGS"-g -O"
+      make stage2
+      make CC"stage2/gcc -Bstage2/" CFLAGS"-g -O"
+      make compare
+      make install CC"stage2/gcc -Bstage2/" CFLAGS"-g -O"
+
+   Somehow 'setjmp.h' appears to get munged. I fixed it with the
+   following changes to the private copy GCC keeps in:
+   '/usr/local/lib/gcc-lib/sun386i/2.5.8/include/setjmp.h'
+
+      --------------------------- CUT HERE ----------------------------
+      47,53d46
+      < typedef int jmp_buf[_JBLEN];
+      <
+      < /*
+      <  * One extra word for the "signal mask saved here" flag.
+      <  */
+      < typedef   int sigjmp_buf[_JBLEN+1];
+      <
+      74a68,74
+      >
+      > typedef int jmp_buf[_JBLEN];
+      >
+      > /*
+      >  * One extra word for the "signal mask saved here" flag.
+      >  */
+      > typedef   int sigjmp_buf[_JBLEN+1];
+      --------------------------- CUT HERE ----------------------------
+
+   GCC Pointers...
+   ---------------
+   ftp://cxc1.msu.edu/386i/software
+      gcc-2.5.8.sun386i.bin.filelist
+      gcc-2.5.8.sun386i.bin.tar.gz
+         Sun386i version of GCC version 2.5.8. Compiled with GCC=
+ 2.4.5.
+
+      gcc-2.5.8.sun386i.setjmp-fix
+         'setjmp.h' fix file (including comments on the problem)
+
+   ftp://prep.ai.mit.edu/pub/gnu/
+      gcc-2.5.8.tar.gz
+         GCC 2.5.8 sources as distributed from GNU.
+
+-----------------------------------------------------------------------
+2-7.  Ghostscript 2.6.1
+-----------------------------------------------------------------------
+   Yes, you can get GhostScript 2.6.1 to work on the Road Runner!
+
+   First you should get all the fixes that have been put out by the
+   GhostScript maintainers (from prep.ai.mit.edu or some other GNU
+   site). Apply these fixes with patch. Then you will need to fix=
+ the
+   file 'gdevmem.h' with the following patch:
+
+      --------------------------- CUT HERE ----------------------------
+      *** gdevmem.h.~1~   Wed May 26 21:52:04 1993
+      --- gdevmem.h       Mon Dec 13 13:39:30 1993
+      ***************
+      *** 119,124 ****
+      --- 119,125 ----
+         (byte **)0,      /* line_ptrs (filled in by mem_open) */\
+         0,         /* invert (filled in for mono) */\
+         0, (byte *)0,      /* palette (filled in for color) */\
+      +  0,         /* target */\
+         0         /* memory_procs */\
+         }
+      --------------------------- CUT HERE ----------------------------
+
+   If you don't use the patch you will mos likely get something that=
+ looks
+   like the following, when trying to display fonts (here using the=
+ example
+   program 'prfont.ps'):
+
+      $ gs prfont.ps
+      Initializing... done.
+      Ghostscript 2.6.1 (5/28/93)
+      Copyright (C) 1990-1993 Aladdin Enterprises, Menlo Park, CA.
+      All rights reserved.
+      Ghostscript comes with NO WARRANTY: see the file COPYING for=
+ details.
+      Loading Times-Roman font from ptmr.gsf... 199192 187947 0 done.
+      GS>/Times-Roman DoFont
+      Segmentation fault
+
+   The rumor is the GhostScript people were notified. As of June=
+ 10,
+   1994 when I fetched fix-04 this problem was still there. Perhaps=
+ they
+   will eventually fix it in the offocial sources.
+
+   GhostScript Pointers...
+   ------------------------
+   ftp://cxc1.msu.edu/386i/software
+      ghostscript-2.6.1.sun386i.bin.tar.gz
+         Sun386i version of GhostScript version 2.6.1, patched up=
+ to fix
+         #04, and 'gdevmem.h' fix. Compiled with GCC 2.5.8.
+
+      ghostscript-2.6.1.gdevmem-fix
+         'gdevmem.h' fix file (including comments about the problem)
+
+  =20ftp://prep.ai.mit.edu/pub/gnu/
+      ghostscript-fonts-2.6.1.tar.gz
+         GhostScript fonts for use with GhostScript 2.6.1.
+
+      ghostscript-2.6.1.tar.gz
+         GhostScript 2.6.1 source code as distributed from GNU.
+
+      ghostscript-2.6.1.fix-01.gz
+      ghostscript-2.6.1.fix-02.gz
+      ghostscript-2.6.1.fix-03.gz
+      ghostscript-2.6.1.fix-04.gz
+         GhostScript 2.6.1 source code fixes as distributed from=
+ GNU.
+
+
+-----------------------------------------------------------------------
+2-8.  GDB 4.7 (does not work)
+-----------------------------------------------------------------------
+   When compiling gdb-4.7 i get the following errors on files gdb/solib.c
+   and gdb/sun386-nat.c (all others files compiled fine)
+
+      cc -c -g      -I. -I. -I./../include  solib.c
+      "solib.c", line 261: rtc_sp undefined
+      "solib.c", line 264: N_COMM undefined
+      "solib.c", line 269: n_un undefined
+      "solib.c", line 269: n_strx undefined
+      "solib.c", line 272: member of structure or union required
+      "solib.c", line 272: cannot recover from earlier errors: goodbye!
+      *** Error code 1
+
+      cc -c -g      -I. -I. -I./../include  sun386-nat.c
+      "sun386-nat.c", line 208: unknown size
+      "sun386-nat.c", line 209: unknown size
+      "sun386-nat.c", line 214: PTRACE_GETREGS undefined
+      "sun386-nat.c", line 214: inferior_pid undefined
+      "sun386-nat.c", line 215: PTRACE_ARG3_TYPE undefined
+      "sun386-nat.c", line 216: PTRACE_GETFPREGS undefined
+      "sun386-nat.c", line 219: unknown size
+      "sun386-nat.c", line 221: f_st undefined
+      "sun386-nat.c", line 221: FP0_REGNUM undefined
+      "sun386-nat.c", line 222: member of structure or union required
+      "sun386-nat.c", line 222: cannot recover from earlier errors:=
+ goodbye!
+      *** Error code 1
+
+   >From what i could guess, in the first case the errors are due=
+ to
+   the non standard format of sun386 a.out files (coff ``mixed''=
+ with
+   a.out at least in the headers) but i could not find a satisfactory
+   solution (except commenting out the affected code).
+
+   The second one in did not completely understand. Apparently the
+   <sys/exec.h> is ``not'' included because of the #define _EXEC_=
+ in
+   tm-sun386.h.
+
+   I tried to compile gdb because I had problems compiling gcc-2.3.3:
+   first i got a warning from as when compiling cse.c (first pass,
+   compiling with stock compiler):
+
+      cc -c  -DIN_GCC   -g     -I. -I. -I./config cse.c
+      Assembler: cse.c
+           aline 16087 : Warning: Table overflow: some optimizations=
+ lost
+      (Labels)
+
+   Then it hanged when first using the generated cc1 to compile
+   libgcc2.a it seems that cc1 is stuck in a cpu-bound loop:
+
+      if [ -f libgcc2.ready ] ; then true; else touch libgcc2.ready;=
+ fi
+      rm -f tmplibgcc2.a
+      ; ar rc tmplibgcc2.a ${name}.o; rm -f ${name}.o; done
+      _muldi3                    < Here it HANGS!!! (cc1 never=
+ terminates)
+
+   Any help would be GRATELY appreciated.
+
+   [Unresolved - Stephen]
+
+-----------------------------------------------------------------------
+2-9.  GNU EMACS 18.59
+-----------------------------------------------------------------------
+   I had no problems compiling GNU Emacs on the 386i. I used GCC=
+ 2.3.2
+   running on SunOS 4.0.2. Here is a simplifed explanation of how=
+ to do
+   it...
+
+   -  Get the compressed file (emacs-18.59.tar.z) and expand it into=
+ a
+      directory to compile under. [Note: .z is different than .Z,=
+ the
+      small one uses GNU's gzip program not the UNIX compress program]
+            $ zcat emacs-18.59.tar.z | tar xvf -
+
+   -  Edit the makefile and change any directories you do not like...
+      (I changed /usr/local/emacs to /usr/local/lib/emacs, cause=
+ I did
+      not want to clutter up my /usr/local directory)
+            LIBDIR/usr/local/lib/emacs
+            BINDOR/usr/local/bin
+            MANDIR/usr/local/man
+
+   -  If you want an optimized editor, edit ./src/ymakefile and specify
+      it by changing the CFLAGS line=20to reflect that....
+
+         change:
+            CFLAGS C_DEBUG_SWITCH ...
+         to:
+            CFLAGS C_OPTIMIZE_SWITCH .....
+
+   -  Copy ./src/config/h-dist to ./src/config.h and edit it to include
+      386i include files.
+            $ cp src/config.h-dist src/config.h
+
+         These lines replace the #include lines in config.h
+            #include "s-sunos4-0.h"
+            #include "m-sun386.h"
+
+         You may want to check other settings in config.h for XWindow
+         capability, that is if you want it.
+            #define HAVE_X_WINDOWS
+
+   -  Make the sucker... (or just do the next step and install at=
+ the
+      same time)
+            $ make all
+
+   - Install it....
+            $ make install
+
+   That's all there is to it. My version appears to work fine, I=
+ have
+   used it for editing, sending mail, etc. I have not tried some=
+ of the
+   news reading functions, etc. So you are on your own there, I imagine
+   it works.
+
+   GNU EMACS Pointers...
+   ---------------------
+
+-----------------------------------------------------------------------
+2-10. PERL version 4.036
+-----------------------------------------------------------------------
+   I give up, what do I have to tweak to get perl-4.036 to compile=
+ on
+   my sun386i? It dies looking to link with h_errno
+
+   -  In the Configure script.  When you are prompted for additional
+      libraries enter: "-ldbm -lm -lresolv"
+
+   -  When you run the tests, it'll complain about a missing program.
+         Copy that missing program by hand to (presumably)
+         /usr/local/bin, and re-run the tests.
+
+   These two hacks were the only things I had to do to install
+   perl-4.036 on my 386i with SunOS 4.0.2.
+
+   PERL Pointers...
+   ----------------
+
+-----------------------------------------------------------------------
+2-11. XWindows version 11 release 5
+-----------------------------------------------------------------------
+   XWindows 11 release 5 can be compiled on the roadrunner. A few
+   importlant things should be said first;
+
+   1. Use GCC, the sun compiler will not work;
+      Edit 'site.def' and define HasGcc to be "YES"
+
+         #define HasGcc YES
+
+      Edit 'sun.cf' and define the right SunOS 4.0.2, and other things.
+
+   2. Xload is messed up, it cannot find some 'kvm' routines. You=
+ can
+      hand edit the make file and add -lkvm on the SYS_LIBRARIES=
+ line,
+      and it should compile fine.
+
+         SYS_LIBRARIES  -lkvm
+
+   3. When you start you make, use -DNOSTDHDRS for the make;
+
+         make World BOOTSTRAPCFLAGS"-DNOSTDHDRS"
+
+   I have compiled almost every patchlevel of X11R5 up to patch #26
+   with this method and have had no problems other than those=20
+   mentioned.
+
+   X11R5 Pointers...
+   -----------------
+   ftp://cxc1.msu.edu/386i/software
+      X11R5.26.sun386i.bin.tar.filelist
+      X11R5.26.sun386i.bin.tar.Z
+         X11R5 binaries for sun386i (and a filelist).
+         =20
+      X11R5.26.sun386i.man.tar.filelist
+      X11R5.26.sun386i.man.tar.Z
+         X11R5 manual pages for X11R5.
+        =20
+-----------------------------------------------------------------------
+2-12. XWindows version 11 release 6
+-----------------------------------------------------------------------
+
+   Problems building shared libraries with GCC caused my build to=
+ die,=20
+   and I have not had the time to look into the problem.
+  =20
+   Anyone get it to work yet?=20
+
+   X11R6 Pointers...
+   -----------------
+
+----------------------------------------------------------------------
+2-13. GnuPlot 3.5
+----------------------------------------------------------------------
+
+  GnuPlot has 2 problems compiling on the 386i:
+ =20
+     1. Header file inclusion is really messed up
+     2. The 386i enforces non-writeable data segments
+ =20
+  Patches to version 3.5 of GnuPlot are available. The patches include=
+=20
+  commenting out the redundant (and erroneous) #includes of time=
+=20
+  structures, and a fix to gnuplot_x11 (where they try to sscanf()=
+ a=20
+  constant character string).
+
+=20  ... under construction, the file below may not be available=
+ ...
+
+   GnuPlot Pointers...
+   -------------------
+   ftp://sahsun.usmacs.maine.edu/pub/sun386i
+      gnuplot-patches.tar.Z
+         Patches to GnuPlot source files to make them compile=20
+         correctly on the sun386i.
+  =20
+----------------------------------------------------------------------
+2-14. HP LaserJet Printcap Entries
+----------------------------------------------------------------------
+      Printcap Entry:
+      --------------------------- CUT HERE ----------------------------
+      lp|LaserJetIII:\
+         :pw#80:\
+         :lp/dev/pp0:\
+         :sd/var/spool/(null):\
+         :br#9600:\
+           :fs#06030:\
+         :fc#0300:\
+         :of/usr/lib/hplaserjet:
+      --------------------------- CUT HERE ----------------------------
+
+      hplaserjet filter script:
+      --------------------------- CUT HERE ----------------------------
+      #!/bin/csh -f
+      #
+      # @(#)hplaserjet 1.1 88/10/27 Sun Microsystems Inc 1988
+      #
+      #
+      # This is the output filter form use with HP laserjets I and=
+ II.
+      # It is called via the of entry in the generic_hp printcap=
+ entry
+      # All it does is send the escape sequence to the printer, so=
+ that:
+      #   CR is mapped to CR
+      #   LF is mapped to CR LF
+      #   FF is mapped to CR FF
+      /usr/bin/echo -n '<CRTL-V><ESC>k2G'
+      #enable wraparound
+      /usr/bin/echo -n '<CTRL-V><ESC>s0C'
+      /usr/bin/cat
+      if ($status  0) then
+         exit 0
+      else
+         exit 1
+      endif
+      --------------------------- CUT HERE ----------------------------
+
+   Note that I've substituted <CTRL-V> and <ESC> for the actual
+   characters in the script.  Edit the actual two characters in each
+   line before trying to use the script, of course.
+
+   [Rick Emerson]
+
+----------------------------------------------------------------------
+2-15. PPP (ppp-sunos4.1.pl6.tar.Z) on a 386i
+----------------------------------------------------------------------
+   Here is a summary of the steps I had to go through to bring up=
+ PPP on
+   my 386i.
+
+   1) PPP Software:
+    I used the ppp-sunos4.1.pl6.tar.Z package and installed it as=
+ is.
+
+   2) setting up the modem:
+    I have a Multitech II V32bis/V42bis modem, the only non-default
+    set-up I required was to get it to use hardware RTS/CTS flow
+    control.
+
+   3) dialing up:
+    at work we have a Telebit netblazer, with a couple of dial-back
+    modems. I use a combination of a shell script and tcl/expect=
+ to
+    dial up work, wait for the dial-back, run ppp (and then kill=
+ the
+    now spurious tip process which eats lots of CPU).
+
+    Here's the shell script, ppp-start is the expect script and all=
+ the
+    rest is just messing around to kill the tip process(es) I use=
+ to
+    communicate with the modem, but which get confused and gobble=
+ CPU
+    when ppp is actually running.
+
+      --------------------------- CUT HERE ----------------------------
+      #!/bin/sh
+
+      find() {
+         ps -ax | egrep " $1 " | egrep -v "egrep" |\
+         sed 's/^\([ 0-9]*\) .*/\1'/
+      }
+
+      PPP`find ppp`
+      TIP`find tip`
+      if [ ! -z "$PPP" -o ! -z "$TIP" ]; then
+         echo "ppp or tip already running, ppp: $PPP, tip: $$TIP"
+         exit 1
+      fi
+
+      ppp-start &
+
+      while true; do
+         PPP`find ppp`
+         if [ ! -z "$PPP" ]; then break; fi
+         sleep 30
+      done
+
+      PIDS`find tip`
+      echo "Killing tip processes: $PIDS"
+      kill $PIDS
+      exit 0
+      --------------------------- CUT HERE ----------------------------
+
+   Here's the expect script:
+      --------------------------- CUT HERE ----------------------------
+      #!/usr/local/bin/expect
+
+      spawn tip UNIX-mtechII
+      expect "*connected*"
+      send "ATZ\r"
+      expect "OK"
+      send "ATX1\r"
+      expect "OK"
+      # use RTS/CTS
+      send "AT&E4\r"
+      expect "OK"
+      send "ATDT(your phone number)\r"
+      for {} 1 {} {
+     =20    expect "*Where:*" break
+      }
+      send "<name of dial-back>\r"
+      expect "NO CARRIER"
+      send "AT&E4\r"
+      expect "OK"
+      send "ATX1\r"
+      expect "OK"
+      set timeout 60
+
+      expect "*RING*"
+      exec ppp mru 1500 192.5.254.52:192.5.254.47 /dev/cua0
+      --------------------------- CUT HERE ----------------------------
+
+   I'm not sure the second set of AT&E4 and ATX1 are really necessary,
+   they got put in when I was debugging and never got taken out!
+
+   As you've probably guessed this scripts are modelled on those
+   supplied Karl Fox in the ppp release I used. I just preferred=
+ to use
+   expect in place of his chat program.
+
+   So far, so good.
+
+   IP routing, or put another way, now the real work/fun starts!
+
+   My 386i, dredd, has two ip interfaces - ie0 (which is broken 'cos=
+ I
+   don't have an ethernet or a transceiver at home) and ppp0, after
+   booting sunos gives me two routes:
+
+   Destination    Gateway     Flags    Refcnt Use Interface
+   192.5.254.0    dredd       U        21     1480 ie0
+   loopback       localhost   U        24     181 lo0
+
+   The first of these will never work, cos there's no ethernet, but=
+ all
+   is well since I don't try and talk to anything else over the ethernet
+   - or so I thought, removing it appears to trash yp!?
+
+   Karl's suggestions for routed use two routes in the /etc/gateways
+   file:
+
+   net 0.0.0.0 gateway gatekeeper.ansa.co.uk metric 1 passive
+   host dredd gateway dredd metric 0 passive
+
+   on startup, routed then does the following:
+
+   installs these routes and *deletes* 192.5.254.0 via ie0
+
+   it's a good job it deletes 192.5.254.0 via dredd over ie0 'cos=
+ it
+   won't work.
+
+   Now here comes the snag, as soon as I try and use ppp0, routed
+   re-installs my new routes (from /etc/gateways) and also re-installs
+   the ie0 (or forgets to remove it if it is added by ip).
+
+   Once the ie0 route is back, all my data vanishes down my ie0
+   interface which is good approximation to /dev/null. Or rather=
+ all
+   data destined for machines on the same subnet as me (i.e. at work)
+   gets trashed, I can talk to the rest of the internet (see end).
+
+   So, the solution I adopted is to avoid using routed and manaully
+   install the routes I require as follows:
+
+   /usr/etc/route -n add 0.0.0.0 gatekeeper.ansa.co.uk 1
+   /usr/etc/route add dredd dredd 0
+   /usr/etc/route -n delete 192.5.254.0 dredd
+
+   This works and when running ppp adds its own route:
+
+   gatekeeper.ansa.co.u dredd                UH       0      0 ppp0
+
+   and at this point I can access the rest of the internet and all=
+ the
+   machines at work.
+
+   I suspect routed/IP gets confused because my home machine is on=
+ the
+   same network (i.e. 192.5.254) as all the other's at work. Karl's
+   setup at morningstar has all of the PPP machines on a differnet
+   subnet. Given that IP has no way of telling that my machine is
+   special (other than via its IP address) I'm happy to beleive this=
+ is
+   the case. Ideally I'd like to move our PPP machines onto a differnet
+   subnet and then be able to use routed.
+
+   Can anyone offer any advice as to whether this is a correct
+   understanding of what is happening?
+
+   The fun was experimenting with things like removing the 192.5.254.0
+   via dredd over ie0 route before adding the new routes and then=
+ trying
+   to use yellow pages. I even managed to blow away my X server a=
+ couple
+   of times by trashing its network from underneath it - a good job=
+ I
+   wasn't installing this for anyone else!
+
+   [Cosmos Nicolaou]
+
+   PPP Pointers...
+   ---------------
+
+----------------------------------------------------------------------
+2-16. SNAP Cannot Create New Users
+----------------------------------------------------------------------
+   I can no longer create users with SNAP or from the login screen.=
+  The
+   Sun386 claims I should speak with my system administrator concerning
+   the publickey file.
+
+   Well. I AM the system administrator, and the manuals don't help
+   much. The publickey seems like it's in fairly good shape.  The=
+ books
+   also suggested I should use newkey.  Done already - and with no
+   results.
+
+      Yes I have had this problem.. The way I found out what was=
+ causing
+      it was trial and error and many sleepless nights.. :)
+
+      OK.. Have you edited ANY of the files that snap needs to change,
+      so that a new user can be added.. These files include, passwd,
+      group, etc...  If you used either edit or vi on the files snap
+      will no longer WANT to change or add to the files..
+
+      The way I found to get around all of this.. is to use sunview=
+ and
+      then the edit file  option/program.  Edit the passwd and group
+      file and then save them back to the disk.
+
+      For SOME UNKNOWN reason snap wants to see something on the=
+ bottom
+      of the file or the way the file has been saved before it will
+      attempt to add or delete users...
+
+      Hope this helps... Its the way I fixed snap on my machine...
+
+      [Brett]
+
+----------------------------------------------------------------------
+   Forget SNAP ! Setting up new users is trivial.
+
+   1. Edit /etc/passwd with "vipw". Add a line for the new user,=
+ with no
+      encrypted password. Make sure UID numbers are correct (i.e.=
+ same
+      as that user has on other machines wich may cross-mount the=
+ user's
+      home directory.)
+
+   2. Go to ~users, run the script "copy_home", suitably modified=
+ to
+      suit your needs (mine does a chown -R on the new user's home
+      directory, among other things.).
+
+   3. Put a logical link for the new user into the /exports directory
+      system if that user wants to mount his or her filesystem remotely.
+      Put into /etc/exports. Run  exportfs -a. (This could very easily
+      be put into copy_home).
+
+   4. Edit /etc/aliases if mail is involved. Run "newaliases" (though=
+ I
+      think sendmail updates the compiled aliases files automatically
+      anyway).
+
+   5. Log in as the new user, set up a temporary password with "passwd",
+      test the account (e.g. mail).
+
+   Note that the model users' home directory in ~users/defaults can=
+ be
+   edited to your heart's content.
+
+   This procedure is much better in my view than running SNAP. And=
+ you
+   could automate quite a bit of it in the "copy_home" script.
+
+   If SNAP is the only reason you keep YP running, get rid of both=
+ ASAP!
+   You're much better off learning about this stuff than being kept=
+ in
+   ignorance by SNAP. The 386i is quite a nice UNIX box without all=
+ this
+   YP/SNAP stuff intended once upon a time to quell the fears of
+   UNIX-phobes in the business world.
+
+   [Stefan Mochnacki]
+
+----------------------------------------------------------------------
+2-17. Removing NIS YellowPages
+----------------------------------------------------------------------
+   Temporarily remount your /usr partition write-enabled and rename
+   /usr/etc/ypbind and /usr/etc/ypserv to something else (see Ch.14,=
+=20
+   p.369 of "System and Network Administration", Part No. 800-1733-10,
+   Rev. A, 9 May 1988).
+
+   Addresses and netmasks may need to be more explicitly stated in
+   "ifconfig" statements and the like, and corresponding "if" and=
+=20
+   "fi" statements need to be commented out.
+   [Stefan Mochnacki]
+
+
+
+
+3-0.  Hardware for the Sun386i
+
+
+
+-----------------------------------------------------------------------
+3-1.  NVRAM Problems and Solutions (lots of problems)
+-----------------------------------------------------------------------
+   A Bad, or nearly bad NVRAM/TIMER chip causes many, very strange,=
+=20
+   problems on the 386i. The most common problems are listed below:
+
+   * On power up, after the Auto booting in progress.... it conplains
+     that "ethernet is not properly connected, boot can not continue."
+     Usually  a disk address and loading vmunix message will appear.
+
+   * A claim by the system during bootup that something is newly
+     connected to the ethernet port.
+    =20
+   * Later in the bootup, because it has falsely concluded that there's
+     something connected there, additional tweaking is done on the
+     port. It is this that leads to the "ie0: init failed: no intr:"
+     message.
+
+   * Most conspicuously, volatility of the non-volatile RAM (NVRAM).
+
+   * With the system up, it is easy to examine the content of NVRAM,
+     using maybe od or some such.  The timer is in the last few words.
+     You should see it counting on successive examinations if it's
+     working ok.
+
+   * The system will die a strange, tortured death (beginning around
+     six hours after bootup by one account). One by one, windows=
+ would
+     die or partially die, until there was nothing left.
+
+   These problems indicate you will need to replace the NVRAM/TIMER.=
+ =20
+   The exact part number is MK48T02B25 2Kx8 Zeropower (TM) / Timekeeper=
+=20
+   (TM) RAM by SGS-Thomson Microelectronics.  It fits in a socket=
+ on the=20
+   CPU board (no soldering required).  After it's installed its content=
+=20
+   have to be initialized, of course.  It's possible to boot up with=
+=20
+   garbage in most of the bytes, after which a procedure can be used=
+ to=20
+   initialize all of it.
+
+   The procedure and some helpful utilities have been posted to the=
+ 386i=20
+   list, they are collected in SUN-NVRAM.TXT on some 386i ftp sites.
+
+   NVRAM Pointers...
+   -----------------
+   ftp://sahsun.usmacs.maine.edu/pub/sun386i/sun-nvram.txt
+         Copy of NVRAM utilities created by John E. Kreznar.
+        =20
+-----------------------------------------------------------------------
+3-2.  NVRAM Suppliers (Sun Battery)
+-----------------------------------------------------------------------
+   Solar Systems,
+   phone #'s: 800-253-5764 if you are in the States or 206-869-9354.
+   This is an aftermarket product and cost approximately $150 US=
+ last
+   year. They ship overnight COD.
+
+   ... A good (cheaper!) supplier would be nice if people have them...
+
+-----------------------------------------------------------------------
+3-3.  Sun386i Memory Expansion
+-----------------------------------------------------------------------
+   "It looks like the 386i SIMMs are 80 ns, whereas the spec for=
+ the PC
+   is 100 or 120ns.  Does anyone know if these 386i simms will work=
+ OK
+   in the PC?"
+
+   Yes; they should be OK. I have swapped SIMMs between my 386 PC=
+ and
+   the 386i model 250 several times. My 386i runs OK with 100ns SIMMs.
+   [John <hysell@kodak.com>]
+
+   Mine also works fine with PC SIMMs
+   [Stephen Houser]
+
+-----------------------------------------------------------------------
+3-4.  Is there a 486 upgrade for the 386i?
+-----------------------------------------------------------------------
+   Nope.
+
+   The Cyrix was rumored to work, but no one will admit they have=
+ one
+   running.
+
+   There were also rumors of Sun producing a 486 upgrade motherboard,
+   to which one person replied:
+
+      I have definately seen some (actually running) albeit within=
+ Sun's
+      offices.  Apparently they made a few dozen prototypes and actually
+      shipped a couple to really power desparate customers before=
+ the
+      Sparc project killed the whole intel based line.  The product=
+ was
+      offered only as a CPU board swap for existing systems. As far=
+ as I
+      know the ones made all had some problems above and beyond what
+      goes on with a normal 386i which may explain why nobody claims=
+ to
+      be running one today. [TEG@vicor.com]
+
+-----------------------------------------------------------------------
+3-5.  Large SCSI disks...
+-----------------------------------------------------------------------
+   Larger drives will work fine on a Sun.
+
+   You are still limited to 2GB filesystems (i.e partitions) by SunOS=
+=20
+   and Solaris.  The only "gotcha" is that you cannot low level format=
+=20
+   this drive with the format program.  The sd device driver times=
+ out=20
+   before the format is complete and slams a scsi bus reset which=
+ then=20
+   aborts the format on the drive leaving it in a unuseable state.=
+  As=20
+   long as you don't format the drive you should be safe. So get=
+ a
+   pre-formatted drive, or format it on another Sun (Sparc?) that=
+ does
+   not have this problem.
+
+   Here are some disks people are using in their RoadRunners (capacities
+   are 'formatted' capacity):
+
+      Seagate, ST702N (Wren V), 702MB (really 600MB)
+                     Have only used 400MB of it so far (in one
+                     partition). Used the SPARC format.dat entry.
+               ST43400N (Elite 3), 3.15 Gig
+                     Have only been able to use 75 sectors per cylinder=
+=20
+                     giving 2 Gig formatted capacity. The drive has=
+ a
+                     variable number of sectors per cylinder [75-109?]
+
+      Micropolis, 1908-15, 1381MB
+
+      CDC, Wren IV, 330 Meg
+           Wren V, 600 Meg
+           Wren VI, 600 Meg
+    =20
+      Fujitsu, 2623SA, 680 Meg
+               M2263SA, 670 Meg
+               M2266SA, 1.2 Gig
+               M2624FA, 520 Meg
+
+   Disk Drive Pointers...
+   ----------------------
+      ftp://sahsun.usmacs.maine.edu/pub/sun386i
+         sun-disks.txt
+            Copy of 'format.dat' entries for large SCSI disks.  =
+      =20
+
+-----------------------------------------------------------------------
+3-6.  Running around topless (i.e. without a framebuffer/monitor)
+-----------------------------------------------------------------------
+
+   ... under construction ...
+
+---------------------------------------------------------------------
+This is the end of the FAQ.     Stephen Houser <houser@usm.maine.edu>
+This is the end of the FAQ.     Stephen Houser <houser@usm.maine.edu>
+
+
+
+--========================_21701170==_
+Content-Type: text/plain; charset="us-ascii"
+
+
+Stephen
+
+______________________________________________________________________
+Stephen Houser (N1QWF)           http://csir1.usmacs.maine.edu/~houser
+University of Southern Maine
+Academic Computing Services
+144 Luther Bonney Hall              BITNET: houser@portland
+96 falmouth Street                Internet: houser@usm.maine.edu
+Portland, Maine  04103                AT&T: (207)780-4588
+
+
+
+

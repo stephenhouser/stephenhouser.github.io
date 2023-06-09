@@ -60,6 +60,15 @@ pre.highlight {
     padding: 1px 5px;
 }
 
+
+.highlight {
+    color: $text-color;
+    border: 1px solid lighten($grey-color-dark, 5%);
+    border-radius: 3px;
+    background-color: $code-background-color;
+    padding: 1px 5px;
+}
+
 time {
     display: inline-block;
     text-align: right;
