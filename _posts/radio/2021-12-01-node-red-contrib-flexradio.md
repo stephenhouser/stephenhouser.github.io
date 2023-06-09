@@ -13,7 +13,7 @@ permalink:  /node-red-contrib-flexradio
 ---
 A set of "nodes" for the flow based programming tool [Node-RED](https://nodered.org) that connect to, control, and monitor [Flexradio 6xxx series](https://www.flexradio.com) radios. With these nodes you can inject data from the radio into your flows (programs) and combine it with other data and then send commands to the radio, changing frequency, settings, and just about anything on the radio.
 
-![Flexradio Dashboard]({{site.baseurl}}/assets/projects/flex-dashboard.png)
+![Flexradio Dashboard]({{site.baseurl}}/assets/radio/flex-dashboard.png)
 
 Releases are installed from within [Node-RED](https://nodered.org) via the "Manage Palette" feature. Current and test releases are available on [NPM](https://www.npmjs.com/package/node-red-contrib-flexradio).
 
