@@ -40,13 +40,13 @@ maintain the <a href="http://people.usm.maine.edu/pgillis/pidgin/">core
 plugin</a>. My code simply includes his sources and uses it as-is. Any
 needed changes are being contributed back to his codebase.
 
-## Files
+## Files (inactive)
 
 * [InOutBoardPlugin-Adium1.5.9+-v.1.1.zip]({{"/projects/inoutboard-adium/InOutBoardPlugin-Adium1.5.9+-v.1.1.zip"|prepend:site.filesurl}}): binary of version 1.1 to work with Adium >= version 1.5.9
 * <b>Adium Plugin Source</b>: Not yet available.
 * <a href="http://people.usm.maine.edu/pgillis/pidgin/">Pidgin Plugin</a>: Pete's core plugin code (binary and source).
 
-## Archive
+## Archive (inactive)
 
 * [InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip]({{"/projects/inoutboard-adium/InOutBoardPlugin-Adium1.5.8+-v.1.0.7.zip"|prepend:site.filesurl}}): binary of version 1.0.7 to work with Adium >= version 1.5.8
 * [InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip]({{"/projects/inoutboard-adium/InOutBoardPlugin-Adium1.5.6+-v.1.0.6.zip"|prepend:site.filesurl}}): binary of version 1.0.6 to work with Adium >= version 1.5.6
