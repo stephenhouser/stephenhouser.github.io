@@ -1,6 +1,6 @@
 # Professional
 - name: About.me
-  url: http://about.me/stephenhouser
+  url: https://about.me/stephenhouser
   username: stephenhouser
   icon: /logos/icon-aboutme.png
   svg: /logos/icon-aboutme.png
@@ -27,21 +27,21 @@
   show: [header, footer]
 
 - name: Twitter
-  url: http://twitter.com/stephenhouser
+  url: https://twitter.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-twitter.png
   svg: /logos/twitter.svg
   type: social
 
 - name: LinkedIn
-  url: http://www.linkedin.com/in/stephenahouser
+  url: https://www.linkedin.com/in/stephenahouser
   username: stephenshouser
   icon: /logos/icon-linkedin.png
   svg: /logos/linkedin.svg
   type: social
 
 - name: YouTube
-  url: http://www.youtube.com/stephenhouser
+  url: https://www.youtube.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-youtube.png
   svg: /logos/youtube.svg
@@ -49,14 +49,14 @@
   show: footer
 
 - name: flickr
-  url: http://www.flickr.com/stephenhouser
+  url: https://www.flickr.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-flickr.png
   svg: /logos/flickr.svg
   type: social
 
 - name: Github
-  url: http://github.com/stephenhouser
+  url: https://github.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-github.png
   svg: /logos/github.svg
@@ -64,7 +64,7 @@
   show: [header, footer]
 
 - name: StackOverflow
-  url: http://stackoverflow.com/users/1277343/stephenhouser
+  url: https://stackoverflow.com/users/1277343/stephenhouser
   username: stephenhouser
   icon: /logos/icon-stackoverflow.png
   svg: /logos/icon-stackoverflow.png
@@ -72,7 +72,7 @@
   show: footer
 
 - name: StephenHouser.com
-  url: http://stephenhouser.com
+  url: https://stephenhouser.com
   type: web
 
 # - name: Maker9
@@ -81,7 +81,7 @@
   
 # Work (Bowdoin)
 - name: Stephen Houser @ Bowdoin
-  url: http://bowdoin.edu/~houser
+  url: https://bowdoin.edu/~houser
   type: web
 
 - name: Stephen Houser @ Bowdoin
@@ -90,7 +90,7 @@
 
 # Work (USM and UMS)
 - name: Stephen Houser @ USM
-  url: http://cs.usm.maine.edu/~houser
+  url: https://cs.usm.maine.edu/~houser
   type: web
 
 - name: Stephen Houser @ USM
@@ -99,7 +99,7 @@
 
 # Personal (Friends and Family)
 - name: Facebook
-  url: http://www.facebook.com/stephenhouser
+  url: https://www.facebook.com/stephenhouser
   username: stephenhouser
   icon: /logos/icon-facebook.png
   svg: /logos/facebook.svg
@@ -111,13 +111,13 @@
 #   type: web
 
 - name: QRZ
-  url:  http://www.qrz.com/db/N1SH
+  url:  https://www.qrz.com/db/N1SH
   icon: /logos/icon-qrz.png
   type: radio
   username: N1SH
 
 - name: ARRL
-  url:  http://www.arrl.org/member-profile/stephen-houser
+  url:  https://www.arrl.org/member-profile/stephen-houser
   icon: /logos/icon-arrl.png
   username: N1SH
   type: radio
