@@ -157,3 +157,71 @@ time {
 #app-store img {
     height: 50px;
 }
+
+.gallery-wrapper {
+    overflow: hidden;
+    height: 640px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+  
+    @media screen and (min-width: $on-laptop) {
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: auto;
+    }
+  }
+  
+.gallery {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+  
+    @media screen and (min-width: $on-laptop) {
+      display: block;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+    }
+}
+  
+.gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 640px;
+    object-fit: cover;
+}
+
+.gallery-nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    grid-row-start: 2;
+  
+    @media screen and (min-width: $on-laptop) {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      display: block;
+      grid-row-start: auto;
+    }
+}
+  
+.gallery-nav a {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+  
+.gallery-nav__img {
+    object-fit: cover;
+    min-width: 64px;
+
+    filter: saturate(0.33);
+    transition: 0.3s ease all;
+}
+  
+.gallery-nav__img:hover {
+    transform: scale(1.10);
+    filter: saturate(1);
+}
