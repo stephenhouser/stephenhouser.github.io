@@ -34,7 +34,7 @@ It was August 28, 2011 when I first made a mockup of a virtual pinball machine t
 }
 </style>
 
-<img src="{{site.baseurl}}/assets/games/minipin/minipin-cutout.png" alt="The MiniPin in 2023" class="right"/>
+<img src="{{site.baseurl}}/assets/games/minipin/minipin-cutout.png" alt="The MiniPin in 2023" class="right">
 
 ## Overview
 
@@ -48,7 +48,7 @@ The hardware is the most obvious part of the build. It is a combination of arcad
 
 The carcass of the pinball machine was, as you would suspect, a woodworking project. While it's *just a box*, that box has sloped sides, needs mounting for the backbox and legs, and has a few quirky angles to it.
 <a href="{{site.baseurl}}/assets/games/minipin/cabinet-sketch.png">
-<img src="{{site.baseurl}}/assets/games/minipin/cabinet-sketch.png" alt="The MiniPin carcass" class="left" />
+<img src="{{site.baseurl}}/assets/games/minipin/cabinet-sketch.png" alt="The MiniPin carcass" class="left">
 </a>
 The main design parameter was where and how the computer, solenoids, knocker, control panels, speakers, power supply, and all the wires were going to go. Not to mention if the computer and components generated heat, where was that going to go?
 
@@ -61,7 +61,7 @@ The backbox holds the backglass display as well as wiring for the "topper" LEDs 
 There are a number of choices for the core computer of a virtual pinball cabinet, and the key component is the display adapter. While more is always better, I was able to get acceptable results with a ~~Mid 2011~~ Late 2012 Apple Mac mini and it's Inel HD Graphics 4000. I used the mini for two key reasons;
 
 <a href="{{site.baseurl}}/assets/games/minipin/bottom-level.jpg">
-<img src="{{site.baseurl}}/assets/games/minipin/bottom-level.jpg" alt="The MiniPin computer level" class="right" />
+<img src="{{site.baseurl}}/assets/games/minipin/bottom-level.jpg" alt="The MiniPin computer level" class="right">
 </a>
 
 1. It's small size and ability to fit in my smaller sized cabinet
@@ -87,7 +87,7 @@ Here are the specs of the Mac mini (Late 2012)
 One of the keys to an immersive experience is the pair of displays; one for the playfield and one for the active backglass. The only critical feature when choosing the displays was that they automatically powered on when power was applied. There's no easy way to open the case and push a power switch. So if they don't auto-power on they will be unusable for the project.
 
 <a href="{{site.baseurl}}/assets/games/minipin/display-orientation.png">
-<img src="{{site.baseurl}}/assets/games/minipin/display-orientation.png" alt="The MiniPin computer level" class="left" />
+<img src="{{site.baseurl}}/assets/games/minipin/display-orientation.png" alt="The MiniPin computer level" class="left">
 </a>
 The playfield is perhaps the most important. It's a widescreen (16:9) display that lays down into the cabinet in portrait orientation. Within the virtual pinball community there are a number of opinions about which monitors are the best. There's also a number of folk running 4k displays. I was working with what I had, so a 1080p 24" was it.Unfortunately, the display is not great viewing at some off angles, so at some point a better display might be in order. This is really a problem for people who are watching. In landscape orientation you cannot view the monitor from *below*. When put in portrait orientation it makes one side (left or right) unusable for people to watch you play.
 
@@ -98,7 +98,7 @@ The backglass isn't anything special. I used a 15" 4:3 aspect ratio monitor. On 
 There's a fair amount to the electronics in the Minipin beyond the computer. To drive most of them I used an old PC power supply. It worked out well as it provided 5V and 12V and has plenty of *juice* (watts) to run the higher power components like car starter solenoids and high power LEDs.
 
 <a href="{{site.baseurl}}/assets/games/minipin/minipin-labelled.jpg">
-<img src="{{site.baseurl}}/assets/games/minipin/minipin-labelled.jpg" alt="The MiniPin component level, labelled" class="right" />
+<img src="{{site.baseurl}}/assets/games/minipin/minipin-labelled.jpg" alt="The MiniPin component level, labelled" class="right">
 </a>
 
 There are two main interface components, a [Pinball Wizard](https://www.pr.com/press-release/116445) controller and an [LEDWiz](https://groovygamegear.com/webstore/index.php?main_page=product_info&products_id=239) controller. The Pinball Wizard is used *mostly* for input and the LEDWiz for output. Pretty much everything is wired to one of these two controller boards. There are two relay boards as well, but these are controlled by the LEDWiz to isolate the high power (12V) components from the low power (5V) of USB and the computer.
@@ -108,7 +108,7 @@ The [Pinball Wizard](https://www.pr.com/press-release/116445) was custom built t
 The [LEDWiz](https://groovygamegear.com/webstore/index.php?main_page=product_info&products_id=239) is used to control all the solenoids, LEDs, knockers, etc. in the cabinet. The 12V components (and some of the 5V ones) are connected via a relay board to isolate things and keep the magic smoke from escaping. The LEDWiz has 32 ports but I've found that's barely enough for what I've put in there and have planned for the future. The outputs are controlled from within a pinball table via the [Direct Output Framework](http://pinball.weilenmann.net/docu/DirectOutputWIP/index.html). Fortuantely there's a relatively easy to use configuration program the [DOF Configtool](http://configtool.vpuniverse.com/index.php). While it's not perfect, it creates the appropriate configuration based on where things are wired. Most pinball tables I've come across have their play elements entered into the DOF database, so you don't need to configure them manually any longer.
 
 <a href="{{site.baseurl}}/assets/games/minipin/input-output.png">
-<img src="{{site.baseurl}}/assets/games/minipin/input-output.png" alt="The MiniPin component level, labelled"/>
+<img src="{{site.baseurl}}/assets/games/minipin/input-output.png" alt="The MiniPin component level, labelled">
 </a>
 
 You can see from the above wiring and configuration there are a number of outputs. I won't go into detail on each individual one. Besides, this list will likely be out of date when you read this.
