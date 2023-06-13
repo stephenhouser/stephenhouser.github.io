@@ -54,6 +54,10 @@ whitelist:
     - jekyll-sitemap
     - jekyll-gist
 
+collections:
+  photos:
+    output: true
+
 # Default settings for posts and the like...
 defaults:
   - scope:

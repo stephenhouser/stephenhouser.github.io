@@ -1,0 +1,32 @@
+---
+layout: default
+title: Photos
+permalink: /photos/
+---
+{% assign albums = site.photos | sort_by: "date" %}
+
+<div class="home">
+    <ul class="post-list project-list">
+    {% for album in albums %}
+        {% if album.archive != true  %}
+            <li><a href="{{site.baseurl}}{{album.url}}">{% capture thumbnail %}{% if album.thumbnail contains 'http' %}{{ album.thumbnail }}{% else %}{{site.baseurl}}/assets/{{album.thumbnail}}{% endif %}{% endcapture %}
+                <img src="{{ thumbnail }}"><h1>{{album.title}}</h1></a>
+                <div class="excerpt">
+                    {{ album.content | split:site.excerpt_separator | first | remove:'<p>' | remove:'</p>' }}
+                </div>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+	<!--
+    <h2>album Archive</h2>
+    <ul class="archive-list">
+		{% for album in albums %}
+			{% if album.archive == true %}
+				<li><time>{{ album.date | date: '%b %Y' }}</time> • <a href="{{site.baseurl}}{{page.url}}">{{album.title}}</a></li>
+			{% endif %}
+		{% endfor %}
+    </ul>
+	-->
+</div>
