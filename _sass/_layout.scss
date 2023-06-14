@@ -173,9 +173,9 @@
     margin-left: 0;
     list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+    // > li {
+    //     margin-bottom: $spacing-unit;
+    // }
 }
 
 .post-meta {
@@ -185,7 +185,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    // font-size: 24px;
 }
 
 
@@ -211,7 +211,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        // font-size: 32px;
 
         @include media-query($on-laptop) {
             font-size: 28px;

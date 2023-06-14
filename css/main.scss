@@ -126,6 +126,10 @@ time {
     margin-bottom: 1em;
 }
 
+.excerpt p {
+    margin-bottom: 0;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -137,7 +141,6 @@ time {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 #paginator {
     width: 80%;
