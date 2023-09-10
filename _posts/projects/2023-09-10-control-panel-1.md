@@ -19,4 +19,4 @@ An old-school toggle-switch control panel for Home Automation. I've fast grown t
 More details to come. For the moment there are construction and parts details on the [GitHub Project Page](https://github.com/stephenhouser/Control_Panel_1).
 
 ![Dev Version]({{site.baseurl}}/assets/projects/control-panel-1/dev-control-panel.jpg)
-![First prototype]({{site.baseurl}}/assets/projects/control-panel-1/prototype-1-complete.jpg)
+![First prototype]({{site.baseurl}}/assets/projects/control-panel-1/prototype-1.jpg)

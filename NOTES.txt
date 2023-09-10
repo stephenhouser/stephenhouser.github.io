@@ -1,0 +1,50 @@
+# Notes and Ideas
+
+## GitHub
+
+
+https://pages.github.com/versions/
+
+Default Plugins
+
+jekyll-coffeescript
+jekyll-default-layout
+jekyll-gist
+jekyll-github-metadata
+jekyll-optional-front-matter
+jekyll-paginate
+jekyll-readme-index
+jekyll-titles-from-headings
+jekyll-relative-links
+
+## Comments
+
+https://staticman.net/
+
+
+## In-page gallery
+
+From: https://dexp.in/articles/advanced-jekyll/
+https://github.com/DeXP/dexp.github.io/blob/master/_includes/gallery
+---
+layout: page
+title:  "One Manga Day"
+gallery:
+    - image_url: omd/OMD-s0001.jpg
+    - image_url: omd/OMD-s0002.jpg
+    - image_url: omd/OMD-s0003.jpg
+...
+---
+Manga are... 
+include gallery 
+
+<div>
+	<ul class="clearing-thumbs small-block-grid-4" data-clearing>
+		{% for item in page.gallery %}
+		{% capture url %}{{ item.image_url }}{% endcapture %}
+		{% assign split_url = url | split: '.' %}
+		{% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+		<li><a href="{{ site.urlimg }}{{ item.image_url }}"><img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %} src="{{ site.urlimg }}{{ thumb_url }}" alt="{{ item.caption }}"></a></li>
+		{% endfor %}
+	</ul>
+</div>
