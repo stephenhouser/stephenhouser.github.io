@@ -16,4 +16,6 @@ An hour of talking with Kyle and his viewers about the NodeRed nodes to interact
 
 The stream shows how to build a simple flow and decode traffic, how to import some of the example flows, how to build on them, and finally how to control WSJT-X over the network from NodeRed.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/08y0yRGPq2s?si=eXmflNU1VMI1m07w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Thanks Kyle for the oppurtunity to give an introduction and to the great folks over on [Groups.io/nodered-hamradio](https://groups.io/g/nodered-hamradio) who have been testing and building on these nodes over the past few years!
