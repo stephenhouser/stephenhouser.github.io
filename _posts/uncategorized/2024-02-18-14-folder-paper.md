@@ -7,7 +7,7 @@ tags: 		[notes]
 keywords:	3folders 43folders 14folders personal organization
 description:
 ---
-A brief description of the *14 Folder Paper System* that I use to manage receipts, paper bills, and similar physical paperwork I receive. Like the [3 Folder Email System]({% post_url 2024-02-18-3-folder-paper.html %}) it has worked relatively well for me over the past several years. I'll also freely admit that I fall off the wagon frequently and don't always follow through with all the steps and processes here. We are all a work in progress.
+A brief description of the *14 Folder Paper System* that I use to manage receipts, paper bills, and similar physical paperwork I receive. Like the [3 Folder Email System]({% post_url 2024-02-18-3-folder-paper %}) it has worked relatively well for me over the past several years. I'll also freely admit that I fall off the wagon frequently and don't always follow through with all the steps and processes here. We are all a work in progress.
 
 The goals of the system are to get bills paid on time, follow up on rebates or other timely things, and keep important paperwork without a large filing cabinet. I do scan some paperwork and had a go at scanning everything. Frankly, it seemed like a waste of time. Now I only scan paperwork very selectively.
 
