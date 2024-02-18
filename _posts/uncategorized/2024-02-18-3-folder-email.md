@@ -7,7 +7,7 @@ tags: 		[notes]
 keywords:	3folders 43folders 14folders personal organization
 description:
 ---
-A brief description of the *3 Folder Email System* that I use to manage email. Like the [14 Folder Paper System]({% post_url /blog/uncategorized/2024-02-18-14-folder-paper %}) it has worked relatively well for me over the past several years. I'll also freely admit that I fall off the wagon frequently and don't always follow through with all the steps and processes here. We are all a work in progress.
+A brief description of the *3 Folder Email System* that I use to manage email. Like the [14 Folder Paper System]({% post_url /uncategorized/2024-02-18-14-folder-paper %}) it has worked relatively well for me over the past several years. I'll also freely admit that I fall off the wagon frequently and don't always follow through with all the steps and processes here. We are all a work in progress.
 
 There are a few intermixed goals for the 3 folder system; to get things done, not lose track of things that need doing, and minimize the time spent looking at the same messages over and over again. This assumes you rarely look up old messages. That you are willing to spend more time searching when you do want an old message. And that you can accumulate time savings by not pre-sorting all your messages into folders when you receive them.
 
