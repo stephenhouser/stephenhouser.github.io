@@ -1,6 +1,6 @@
 ---
 title: 		14 Folder Paper System
-date: 		2024-02-10 12:00:00
+date: 		2024-02-18 12:00:00
 thumbnail:
 category:   notes
 tags: 		[notes]
