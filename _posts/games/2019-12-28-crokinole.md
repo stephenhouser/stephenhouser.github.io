@@ -5,7 +5,8 @@ thumbnail:	/games/crokinole/crokinole-top-115.jpg
 category:	woodworking
 tags: 		[woodworking, games]
 keywords:
-description:    Building a Crokinole board.
+description: Building a Crokinole board.
+updated:    2024-08-05 01:40:00
 
 layout:     project
 archive:	false
