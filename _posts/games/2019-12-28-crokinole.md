@@ -36,12 +36,14 @@ That's about where most sites leave off, neglecting some relevant dimensions whi
 
 The pegs were a real dilemma. I could find no solid information on their size. Descriptions ranged from "doesn't matter" to "Posts (pegs) are brass tubing recessed 1/4″ deep into surface and secured with brass screw to ensure straight alignment and durability." which gives absolutely *no* information about what size they are. In my first build, I settled on 3/8" diameter and 1/2" tall.
 
-![Crokinole Board 1/4 sheet cut diagram]({{site.baseurl}}/assets/games/crokinole/crokinole-cut-diagram.svg)
-
 
 ## Building the Board
 
-I really liked the [Hilinski](http://www.hilinski.net/woodgames/) method using a 1/2 sheet of 1/2" plywood. From that 1/2 sheet you can get two playing surfaces, and using the cutoffs make up the base/ditch. This was just an amazing layout and planning job with hardly anything wasted. Even better, it would provide me **two Crokinole boards**! I used my small router to cut out the two playing surfaces, using a simple "nail through a piece of wood in the center" trick. I could have used a jig saw if I actually had one and then cleaned it up on the band saw. The router however, left a nice finished edge, so no additional work needed.
+I really liked the [Hilinski](http://www.hilinski.net/woodgames/) method using a 1/2 sheet of 1/2" plywood. From that 1/2 sheet you can get two playing surfaces, and using the cutoffs make up the base/ditch. This was just an amazing layout and planning job with hardly anything wasted. Even better, it would provide me **two Crokinole boards**! Here's a rough cutout diagram for the 1/2 sheet of plywood. I used maple.
+
+![Crokinole Board 1/4 sheet cut diagram]({{site.baseurl}}/assets/games/crokinole/crokinole-cut-diagram.svg)
+
+I used my small router to cut out the two playing surfaces, using a simple "nail through a piece of wood in the center" trick. I could have used a jig saw if I actually had one and then cleaned it up on the band saw. The router however, left a nice finished edge, so no additional work needed.
 
 ![Crokinole Base Parts]({{site.baseurl}}/assets/games/crokinole/crokinole-base.jpg)
 ![Crokinole Base Parts]({{site.baseurl}}/assets/games/crokinole/crokinole-top-on-base.jpg)
