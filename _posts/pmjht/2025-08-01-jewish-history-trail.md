@@ -32,3 +32,16 @@ Much of the framework from the Women's History Trail was carried forward but the
 have been a lot of changes in technology since then and it was nice to have the
 oppurtunity to streamline a lot of the inner workings and update the core. All those updates
 are also getting back-ported to the Women's Trail as well! Updates all around.
+
+  [1]: http://usm.maine.edu/wgs/eileen-eagan
+  [2]: https://usm.maine.edu/sites/default/files/history/A%20Woman's%20History,%20Eagen.pdf
+  [3]: http://jquerymobile.com
+  [4]: http://pmwht.org
+  [5]: http://jekyllrb.com
+  [6]: http://daringfireball.net/projects/markdown/
+  [screencap1]: {{site.baseurl}}/assets/pmwht/pwht-map.png
+  [screencap2]: {{site.baseurl}}/assets/pmwht/pwht-site.png
+  [googlestore]: https://play.google.com/store/apps/details?id=com.maker9.pmwht
+  [playlogo]: https://developer.android.com/images/brand/en_app_rgb_wo_60.png
+  [appstorelogo]: {{site.baseurl}}/assets/logos/download-on-the-app-store.png
+  [applestore]: https://itunes.apple.com/us/app/portland-womens-history-trail/id984535668?mt=8
