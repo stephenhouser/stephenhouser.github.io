@@ -16,9 +16,9 @@
 #
 
 # How to run jekyll
-#JEKYLL_CMD=bundle exec jekyll
-WD=$(shell pwd)
-JEKYLL_CMD=docker run --rm --volume=$(WD):/srv/jekyll:Z --publish 4000:4000 -it jekyll/jekyll jekyll
+JEKYLL_CMD=bundle exec jekyll
+#WD=$(shell pwd)
+#JEKYLL_CMD=docker run --rm --volume=$(WD):/srv/jekyll:Z --publish 4000:4000 -it jekyll/jekyll jekyll
 
 # Set to do a dry run.
 #RSOPTS=-n --delete
